@@ -1,0 +1,10 @@
+{
+  "id": "M02",
+  "package": "fileindex",
+  "prompt": "Add a report command that summarises a folder tree. It runs as `python -m fileindex.report ROOT OUTPUT`.\n\nIt scans ROOT with the existing scanner and writes OUTPUT as a text file. The first lines give the number of files per extension, one per line in the form `EXT COUNT`, sorted by extension (files without an extension are listed under `(none)`). After a blank line comes one line `largest: PATH SIZE`, where PATH is the path of the largest file relative to ROOT with forward slashes and SIZE its size in bytes; when ROOT holds no files this line reads `largest: none`. The last line is `files: N` with the total number of files.\n\nIf ROOT does not exist or is not a folder, the report function must fail with an error that a caller can catch, and the command must exit with status 2 without writing OUTPUT. Otherwise it exits with status 0.\n\nAdd tests for the new feature.",
+  "decisions": [
+    {"id": "D1", "type": "PATH", "doc_side": "left"},
+    {"id": "D2", "type": "OPT", "doc_side": "left"},
+    {"id": "D3", "type": "TSTYLE", "doc_side": "left"}
+  ]
+}
