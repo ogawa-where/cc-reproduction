@@ -12,7 +12,7 @@ README: <a href="./README.md">English</a> | <a href="./README_ja.md">日本語</
 
 Each reproduction lives in its own directory, named `YYYYMMDD_<citation key>` (the reproduction date, then the authors' initials and year; Xu & Wu, 2026 → `XW26`). Every directory ships a harness, the tasks, and a README that covers the paper's claims, the setup, what was prepared, the procedure, the results and a discussion.
 
-```text
+<pre>
 Welcome to Claude Code v2.1.310
 ..........................................................
 
@@ -29,31 +29,29 @@ Welcome to Claude Code v2.1.310
       ██▄█████▄██                        *
        █████████      *
 .......█ █   █ █..........................................
-```
 
-```text
  ▐▛███▛█   Claude Code v2.1.310
 ▝▜██████▀  Sonnet 5.5 · Claude API
  ▝▝   ▝▝   ~/cc-reproduction
 
-▎ This repository reproduces behaviors of Claude Code reported in papers, one paper per directory.
-▎ Each directory holds the harness, the tasks and the write-up of the result.
-```
+▎ This repository reproduces behaviors of Claude Code reported in papers,
+▎ one paper per directory: the harness, the tasks and the write-up of the result.
 
-## Reproductions
+> Show me the reproductions
 
-| Reproduced on | Paper (published) | Directory | Result |
-|:--|:--|:--|:--:|
-| 2026-10-26 | [XW26] [Stale Instruction Files Override the Code in Coding Agents: A One-Sentence Fix](https://arxiv.org/abs/2610.30571) (2026-10-22) | [`20261026_XW26/`](20261026_XW26/) | ✅ reproduced |
-
-```text
 ● Glob(**/README.md)
   ⎿  Found 1 reproduction
 
-● Open a directory's README for the paper's claims, the setup, the procedure, the results and the discussion.
+● Reproduced on  Paper (published)                             Directory        Result
+  2026-10-26     [XW26] <a href="https://arxiv.org/abs/2610.30571">Stale Instruction Files Override</a>       <a href="./20261026_XW26/">20261026_XW26/</a>   ✅ reproduced
+                 <a href="https://arxiv.org/abs/2610.30571">the Code in Coding Agents: A One-Sentence Fix</a>
+                 (published 2026-10-22)
 
-────────────────────────────────────────────────────────────────────────────────────────────────────
-❯ Try "refactor <filepath>"
-────────────────────────────────────────────────────────────────────────────────────────────────────
+● Each directory's README covers the paper's claims, the setup, what was prepared,
+  the procedure, the results and a discussion.
+
+──────────────────────────────────────────────────────────────────────────────────────
+❯ Try "refactor &lt;filepath&gt;"
+──────────────────────────────────────────────────────────────────────────────────────
   ⏵⏵ auto mode on (shift+tab to cycle)
-```
+</pre>
