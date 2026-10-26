@@ -42,10 +42,10 @@ Welcome to Claude Code v2.1.310
 ● Glob(**/README.md)
   ⎿  Found 1 reproduction
 
-● 再現日         対象論文（公開日）                            ディレクトリ     再現
-  2026-10-26     [XW26] <a href="https://arxiv.org/abs/2610.30571">Stale Instruction Files Override</a>       <a href="./20261026_XW26/">20261026_XW26/</a>   ✅ できた
-                 <a href="https://arxiv.org/abs/2610.30571">the Code in Coding Agents: A One-Sentence Fix</a>
-                 （公開 2026-10-22）
+● 再現日       対象論文（公開日）                       ディレクトリ    再現
+  2026-10-26   [XW26] <a href="https://arxiv.org/abs/2610.30571">Stale Instruction Files Override</a>  <a href="./20261026_XW26/">20261026_XW26/</a>  ✅ できた
+               <a href="https://arxiv.org/abs/2610.30571">the Code in Coding Agents:</a>
+               <a href="https://arxiv.org/abs/2610.30571">A One-Sentence Fix</a>（2026-10-22）
 
 ● 各ディレクトリの README に、論文の主張・実験環境・準備したもの・手順・結果・考察を
   まとめています。
