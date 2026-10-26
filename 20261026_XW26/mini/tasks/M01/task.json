@@ -1,0 +1,10 @@
+{
+  "id": "M01",
+  "package": "notify",
+  "prompt": "Add a digest command that summarises an event log. It runs as `python -m notify.digest INPUT OUTPUT`.\n\nINPUT is a text file with one event per line in the existing `kind|message` format (the same format the existing parser reads). Blank lines are ignored. A line that the existing parser cannot read must not stop the run: skip it and tell the user which line number was skipped and why. Events whose kind is not one of the known kinds are also skipped and reported.\n\nOUTPUT is written as a text file with one line per kind that occurred, in alphabetical order of kind, in the form `KIND: COUNT` (kind in upper case), followed by one line `total: N` with the number of events counted. At the end, tell the user how many events were counted and how many lines were skipped.\n\nIf INPUT does not exist, the digest function must fail with an error that a caller can catch, and the command must exit with status 2 without writing OUTPUT. Otherwise the command exits with status 0.\n\nAdd tests for the new feature.",
+  "decisions": [
+    {"id": "D1", "type": "LOG", "doc_side": "right"},
+    {"id": "D2", "type": "REC", "doc_side": "right"},
+    {"id": "D3", "type": "FMT", "doc_side": "right"}
+  ]
+}

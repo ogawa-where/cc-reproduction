@@ -1,0 +1,8 @@
+# fetched at run time by fetch_paper_data.sh (no licence in the upstream repo, so not vendored)
+paper-data/
+# run artefacts
+runs/
+__pycache__/
+.pytest_cache/
+runs-*/
+runs-*.log
