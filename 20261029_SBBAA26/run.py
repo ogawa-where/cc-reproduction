@@ -199,16 +199,24 @@ def transcript_summaries(cfg):
 
 # ---------------------------------------------------------------- judges
 
+def judge_env(env):
+    """The judge runs the current `claude` with the user's own login: keep the parent's CLAUDE_CONFIG_DIR
+    (or the default ~/.claude) instead of the tested agent's fresh config dir. --safe-mode already
+    switches off instruction files, skills, plugins, hooks and MCP servers (paper Appendix A)."""
+    jenv = dict(env)
+    jenv.pop("CLAUDE_CONFIG_DIR", None)
+    if os.environ.get("CLAUDE_CONFIG_DIR"):
+        jenv["CLAUDE_CONFIG_DIR"] = os.environ["CLAUDE_CONFIG_DIR"]
+    return jenv
+
+
 def call_judge(system_prompt, schema, user_text, model, env, parent, timeout=600):
-    cfg = os.path.join(parent, "judge_cfg")
-    os.makedirs(cfg, exist_ok=True)
-    open(os.path.join(cfg, "CLAUDE.md"), "w").close()
     cwd = os.path.join(parent, "judge_cwd")
     os.makedirs(cwd, exist_ok=True)
     cmd = ["claude", "-p", "--model", model, "--safe-mode", "--tools", "", "--strict-mcp-config",
            "--no-session-persistence", "--output-format", "json", "--json-schema", schema,
            "--system-prompt", system_prompt]
-    jenv = dict(env, CLAUDE_CONFIG_DIR=cfg)
+    jenv = judge_env(env)
     last = ""
     for _ in range(3):
         try:
@@ -388,6 +396,11 @@ def one_run(args, scenario, rep, out_dir, keep_prefixes):
             for c in rec["constraints"]:
                 c["judge_category"] = cls.get(c["id"], {}).get("category")
         n_drop = sum(1 for c in rec["constraints"] if c["verdict"] in ("dropped", "contradicted"))
+        n_none = sum(1 for c in rec["constraints"] if not c["verdict"])
+        if n_none:
+            err = next((c.get("error") for c in rec["constraints"] if c.get("error")), "")
+            rec["failures"].append({"stage": "judge", "unjudged": n_none, "error": err})
+            log(f"{run_id}: WARNING {n_none} constraints without a verdict ({err}); re-run judging with rejudge.py")
         log(f"{run_id}: done in {rec['seconds']}s, pre_tokens={rec['compact_metadata'].get('pre_tokens') if rec['compact_metadata'] else None}, "
             f"dropped {n_drop}/{len(rec['constraints'])}, checks={rec['checks']}")
     except Exception as exc:  # noqa: BLE001
