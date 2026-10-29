@@ -28,6 +28,9 @@ import sys
 import tempfile
 import time
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import fixtures  # noqa: E402
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 SCENARIOS = os.path.join(HERE, "scenarios")
 PROMPTS = os.path.join(HERE, "prompts")
@@ -141,6 +144,17 @@ class Session:
         err = self.p.stderr.read() if self.p.stderr else ""
         self.stream.close()
         return err
+
+
+def render_turn(spec):
+    """A turn is a string, or {"text": ..., "paste": {"kind", "seed", "kb"}} with a long paste appended."""
+    if isinstance(spec, str):
+        return spec
+    text = spec["text"]
+    if spec.get("paste"):
+        p = spec["paste"]
+        text += "\n\n```\n" + fixtures.make(p["kind"], p["seed"], p["kb"]) + "\n```"
+    return text
 
 
 def turn_stats(events):
@@ -283,7 +297,8 @@ def one_run(args, scenario, rep, out_dir, keep_prefixes):
         s = Session(ws, env, args.model, args.autocompact, os.path.join(art, "stream.jsonl"))
         turns = []
         t0 = time.time()
-        for i, text in enumerate(scenario["turns"], start=1):
+        for i, spec in enumerate(scenario["turns"], start=1):
+            text = render_turn(spec)
             evs = s.turn(text, args.turn_timeout)
             st = turn_stats(evs)
             turns.append({"index": i, "kind": "task", **{k: st[k] for k in ("num_turns", "is_error", "usage", "denials")},
