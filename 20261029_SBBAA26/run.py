@@ -342,6 +342,7 @@ def one_run(args, scenario, rep, out_dir, keep_prefixes):
                 turns.append({"index": len(turns) + 1, "kind": "compact", "tool_calls": 0, "compactions_so_far": len(s.compactions)})
             log(f"{run_id}: compaction round {k} done ({len(s.compactions)} compactions so far)")
         err = s.close()
+        rec["n_compactions"] = len(s.compactions)
         rec["turns"] = turns
         rec["seconds"] = round(time.time() - t0, 1)
         if err.strip():
