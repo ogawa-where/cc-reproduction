@@ -56,6 +56,12 @@
 python -m pip install pytest
 python run.py --reps 2 --compactions 3 --classify     # 3 シナリオ × 2 回、圧縮 3 回
 python summarize.py runs/runs.jsonl --runs
+
+# 古い版の Claude Code で同じ実験を回す（プロンプト変更の効果を直接測る）
+npm install --prefix ../ccold @anthropic-ai/claude-code@2.1.128
+CLAUDE_CONFIG_DIR=$HOME/.claude-old ../ccold/node_modules/.bin/claude /login   # 古い版で一度ログイン
+python run.py --claude-bin ../ccold/node_modules/.bin/claude --copy-credentials ~/.claude-old \
+              --reps 2 --compactions 3 --out runs-2.1.128
 ```
 
 ## 結果

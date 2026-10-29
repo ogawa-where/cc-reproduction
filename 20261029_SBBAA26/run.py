@@ -291,6 +291,12 @@ def one_run(args, scenario, rep, out_dir, keep_prefixes):
         cfg = os.path.join(parent, "cfg")
         os.makedirs(cfg)
         open(os.path.join(cfg, "CLAUDE.md"), "w").close()
+        if args.copy_credentials:
+            src = os.path.join(os.path.expanduser(args.copy_credentials), ".credentials.json")
+            if not os.path.exists(src):
+                raise FileNotFoundError(f"no .credentials.json in {args.copy_credentials}; run `/login` with that CLAUDE_CONFIG_DIR first")
+            shutil.copyfile(src, os.path.join(cfg, ".credentials.json"))
+            os.chmod(os.path.join(cfg, ".credentials.json"), 0o600)
         env = clean_env(keep_prefixes, {"CLAUDE_CONFIG_DIR": cfg, "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1",
                                         "DISABLE_AUTOUPDATER": "1", "PYTHONIOENCODING": "utf-8"})
         log(f"{run_id}: start")
@@ -416,9 +422,14 @@ def main():
     ap.add_argument("--keep-env", default="", help="env-var prefixes to keep although they are scrubbed by default")
     ap.add_argument("--keep-workspaces", action="store_true")
     ap.add_argument("--claude-bin", default="claude", help="Claude Code executable for the tested agent (e.g. an older release)")
+    ap.add_argument("--copy-credentials", default="",
+                    help="config dir whose .credentials.json is copied into each run's fresh CLAUDE_CONFIG_DIR "
+                         "(needed when the tested binary is logged in via a config dir, e.g. ~/.claude-old or ~/.claude)")
     args = ap.parse_args()
     ids = [s for s in args.scenarios.split(",") if s] or sorted(
         d for d in os.listdir(SCENARIOS) if os.path.isfile(os.path.join(SCENARIOS, d, "scenario.json")))
+    if os.sep in args.claude_bin or "/" in args.claude_bin:
+        args.claude_bin = os.path.abspath(args.claude_bin)   # the agent runs with cwd set to a temp workspace
     if shutil.which(args.claude_bin) is None:
         sys.exit(f"{args.claude_bin} not found")
     os.makedirs(args.out, exist_ok=True)
