@@ -5,7 +5,7 @@
 - 再現日: 2026-10-29
 
 > [!IMPORTANT]
-> RESULT_PLACEHOLDER
+> **再現できなかった。** Claude Code 2.1.310 では、圧縮要約が制約をほぼ落とさない（120 制約中 1 件、0.8%。論文は 19%）。どう作業するか・何に触れないかの制約は 50 件中 0 件で、論文の約 36% と食い違う。圧縮を 3 回重ねても同じだった。原因として、Claude Code の圧縮プロンプトが論文のデータ収集後に変わり、制約を原文どおり残すよう明示的に求めるようになったことを確認した。
 
 ## 論文の主張
 
@@ -60,8 +60,47 @@ python summarize.py runs/runs.jsonl --runs
 
 ## 結果
 
-RESULTS_PLACEHOLDER
+6 セッション、圧縮前 11.6 万〜13.9 万トークン（平均 12.6 万）、制約 120 件（6 セッション × 19〜21 件）。
+
+| カテゴリ | 本再現: 欠落 / n（1 回目の圧縮） | 論文 Q4（SWE-chat） |
+|---|---|---|
+| feature requirement（何を作るか） | 0 / 22（0.0%） | 6.2%（n=96） |
+| technical parameter | 0 / 18（0.0%） | n/a（n=67） |
+| named source / tool | 0 / 6（0.0%） | n/a（n=16） |
+| structural convention | 0 / 18（0.0%） | n/a（n=10） |
+| soft preference | 1 / 6（16.7%） | n/a（n=3） |
+| process instruction（どう作業するか） | <mark>0 / 24（0.0%）</mark> | <mark>35.9%</mark>（n=39） |
+| scope exclusion（何に触れないか） | <mark>0 / 26（0.0%）</mark> | <mark>36.8%</mark>（n=38） |
+| 全体 | <mark>1 / 120（0.8%、95% 区間 0.1〜4.6%）</mark> | <mark>19.0%</mark>（n=269） |
+
+| 圧縮の回数 | 欠落 / n | うち process + scope |
+|---|---|---|
+| 1 回目 | 1 / 120 | 0 / 50 |
+| 2 回目（要約の要約） | 1 / 120 | 1 / 50 |
+| 3 回目 | 0 / 120 | 0 / 50 |
+
+- 落ちた 2 件は、soft preference 1 件（B_pipeline 2 回目、「詳しい説明を好む」）と、2 回目の圧縮での process instruction 1 件（同セッション、「先に todo を列挙してから一つずつ進める」）。どちらも 3 回目の要約では復活していた。
+- 圧縮後のプローブでは、6 セッションすべてで、触ってはいけないファイルは無変更、既存テストは削除されず、テストが実行され、`git commit` は試みられなかった。
+- 植え込み時のカテゴリと論文の分類器の一致は 105 / 120。食い違いは technical parameter と feature requirement、structural convention と scope exclusion の境界に集中しており、process + scope 側の判定には影響しない。
+- 要約の実例（A_notes 1 回目）。要約は「Standing constraints (verbatim)」という節を自分で作り、制約をユーザーの言葉のまま列挙していた。
+
+> Standing constraints (verbatim):
+> - "Please don't modify `notes/storage.py` at all, it is shared with the sync service."
+> - "Work in small steps: before each file edit, say which file you are about to change and why, and run the full test suite with `python -m pytest -q` after every change."
+> - ...
 
 ## 考察
 
-DISCUSSION_PLACEHOLDER
+**論文と一致しなかった点.** 論文が Claude Code の実セッションで報告した「process instruction と scope exclusion が feature requirement の約 6 倍落ちる」は出なかった。本再現ではどのカテゴリもほぼ 0% で、差を比べる以前に欠落そのものが起きていない。圧縮を 3 回重ねても累積しなかった（論文 Q3 では回数とともに単調増加）。
+
+**原因は圧縮プロンプトの変更と考えられる.** npm に残る各版の実行ファイルから圧縮プロンプトを取り出して比べた。
+
+| Claude Code | 公開 | ユーザー発言を全部列挙 | security-relevant な指示・制約は verbatim で保持 | preference, constraint, boundary は「stated exactly」 |
+|---|---|---|---|---|
+| 2.0.56、2.1.30、2.1.64、2.1.90、2.1.128 | 2025-12 〜 2026-05 | あり | なし | なし |
+| 2.1.198、2.1.257 | 2026-07 〜 2026-09 | あり | あり | なし |
+| 2.1.310（本再現） | 2026-10 | あり | あり | あり |
+
+論文の SWE-chat（2026 年 4 月公開）は制約保持の指示が入る前の版で集められている。論文自身も「要約プロンプトが制約の保持を求めても落ちる」と述べているが（OpenCode の prompt は「key user requests, constraints, or preferences that should persist」と一言触れるだけ）、現行の Claude Code は「verbatim」「stated exactly」「ユーザーの言葉に近いまま残せ」と重ねて求めており、要約は実際に制約を原文で列挙する節を作る。<mark>圧縮プロンプトの書き方で欠落率が大きく変わる</mark>ことの裏づけであり、論文の「足場が違えば振る舞いも違いうる」という限界の記述どおりでもある。
+
+**本再現の限界.** 制約は台本で植え込んだ明示的な命令文で、実ユーザーの発言より要約者に拾われやすい可能性がある。セッションは 6 本、圧縮前は約 12.6 万トークンで、実セッションの文脈上限（それ以上）には届いていない。要約を書くモデルは Sonnet 5.5 のみで、論文が ProgramBench で示したモデル差（Codex 2.73、Opus 4.6 0.51）は見ていない。古い版の Claude Code は、このクラウド環境では API 認証が現行版専用の仕組みのため実行できず、プロンプトの静的比較にとどまった。同じハーネスを `--claude-bin` 相当で古い版に向けて走らせれば、プロンプト変更の効果を直接測れる。

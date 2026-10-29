@@ -1,6 +1,6 @@
 # cc-reproduction: Reproducing reported Claude Code behaviors, one paper at a time
 
-[![reproductions](https://img.shields.io/badge/reproductions-1-blue)](#reproductions)
+[![reproductions](https://img.shields.io/badge/reproductions-2-blue)](#reproductions)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-v2.1.310-black?logo=anthropic)](https://code.claude.com)
 [![papers](https://img.shields.io/badge/papers-arXiv-b31b1b?logo=arxiv)](https://arxiv.org)
 
@@ -40,18 +40,21 @@ Welcome to Claude Code v2.1.310
 > Show me the reproductions
 
 ● Glob(**/README.md)
-  ⎿  Found 1 reproduction
+  ⎿  Found 2 reproductions
 
 ● Here are the reproductions so far:
 
-  ┌───────────────┬─────────────────────────────────────┬────────────────┬────────┐
-  │ Reproduced on │ Paper (published)                   │ Directory      │ Result │
-  ├───────────────┼─────────────────────────────────────┼────────────────┼────────┤
-  │ 2026-10-26    │ [XW26] <a href="https://arxiv.org/abs/2610.30571">Stale Instruction Files</a>      │ <a href="./20261026_XW26/">20261026_XW26/</a> │ OK     │
-  │               │ <a href="https://arxiv.org/abs/2610.30571">Override the Code in Coding Agents:</a> │                │        │
-  │               │ <a href="https://arxiv.org/abs/2610.30571">A One-Sentence Fix</a>                  │                │        │
-  │               │ (2026-10-22)                        │                │        │
-  └───────────────┴─────────────────────────────────────┴────────────────┴────────┘
+  ┌───────────────┬───────────────────────────────────────┬───────────────────┬────────┐
+  │ Reproduced on │ Paper (published)                     │ Directory         │ Result │
+  ├───────────────┼───────────────────────────────────────┼───────────────────┼────────┤
+  │ 2026-10-26    │ [XW26] <a href="https://arxiv.org/abs/2610.30571">Stale Instruction Files</a>        │ <a href="./20261026_XW26/">20261026_XW26/</a>    │ OK     │
+  │               │ <a href="https://arxiv.org/abs/2610.30571">Override the Code in Coding Agents:</a>   │                   │        │
+  │               │ <a href="https://arxiv.org/abs/2610.30571">A One-Sentence Fix</a>                    │                   │        │
+  │               │ (2026-10-22)                          │                   │        │
+  │ 2026-10-29    │ [SBBAA26] <a href="https://arxiv.org/abs/2610.31778">Benchmarks Are Surprisingly</a> │ <a href="./20261029_SBBAA26/">20261029_SBBAA26/</a> │ NG     │
+  │               │ <a href="https://arxiv.org/abs/2610.31778">Compaction-Friendly</a>                   │                   │        │
+  │               │ (2026-10-22)                          │                   │        │
+  └───────────────┴───────────────────────────────────────┴───────────────────┴────────┘
 
 ● Each directory's README covers the paper's claims, the setup, what was prepared,
   the procedure, the results and a discussion.
