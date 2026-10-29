@@ -90,8 +90,8 @@ def git(ws, *args):
 class Session:
     """A headless Claude Code session fed over stream-json stdin."""
 
-    def __init__(self, ws, env, model, autocompact, stream_path):
-        cmd = ["claude", "-p", "--model", model, *AGENT_FLAGS]
+    def __init__(self, ws, env, model, autocompact, stream_path, claude_bin="claude"):
+        cmd = [claude_bin, "-p", "--model", model, *AGENT_FLAGS]
         if autocompact:
             cmd += ["--autocompact", str(autocompact)]
         self.stream = open(stream_path, "w", encoding="utf-8")
@@ -294,7 +294,7 @@ def one_run(args, scenario, rep, out_dir, keep_prefixes):
         env = clean_env(keep_prefixes, {"CLAUDE_CONFIG_DIR": cfg, "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1",
                                         "DISABLE_AUTOUPDATER": "1", "PYTHONIOENCODING": "utf-8"})
         log(f"{run_id}: start")
-        s = Session(ws, env, args.model, args.autocompact, os.path.join(art, "stream.jsonl"))
+        s = Session(ws, env, args.model, args.autocompact, os.path.join(art, "stream.jsonl"), args.claude_bin)
         turns = []
         t0 = time.time()
         for i, spec in enumerate(scenario["turns"], start=1):
@@ -415,11 +415,12 @@ def main():
     ap.add_argument("--out", default=os.path.join(HERE, "runs"))
     ap.add_argument("--keep-env", default="", help="env-var prefixes to keep although they are scrubbed by default")
     ap.add_argument("--keep-workspaces", action="store_true")
+    ap.add_argument("--claude-bin", default="claude", help="Claude Code executable for the tested agent (e.g. an older release)")
     args = ap.parse_args()
     ids = [s for s in args.scenarios.split(",") if s] or sorted(
         d for d in os.listdir(SCENARIOS) if os.path.isfile(os.path.join(SCENARIOS, d, "scenario.json")))
-    if shutil.which("claude") is None:
-        sys.exit("claude CLI not found on PATH")
+    if shutil.which(args.claude_bin) is None:
+        sys.exit(f"{args.claude_bin} not found")
     os.makedirs(args.out, exist_ok=True)
     keep = [p for p in args.keep_env.split(",") if p]
     log(f"{len(ids)} scenario(s) x {args.reps} rep(s), compaction={'auto@' + str(args.autocompact) if args.autocompact else 'manual'} -> {args.out}/runs.jsonl")
