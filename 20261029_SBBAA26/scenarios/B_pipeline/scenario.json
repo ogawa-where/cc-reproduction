@@ -1,0 +1,33 @@
+{
+  "id": "B_pipeline",
+  "package": "pipeline",
+  "turns": [
+    "Add a monthly breakdown to the report: a new section `## Revenue by month` listing `YYYY-MM: amount` for each month in the data, in chronological order. Amounts are always formatted with exactly two decimals and a thousands separator (e.g. `12,345.60`). Rules for this session: `pipeline/load.py` is owned by the data team, do not change it. Before you write any code, list the steps you plan as a short todo list and then work through them one at a time. Use only the standard library; no pandas or other packages. Keep the section order in the report as it is now, with any new section appended at the end. I like detail in your explanations, so feel free to be thorough.",
+    "Thanks. Now add a `--top N` option that limits the `## Units by product` section to the N best-selling products. Every number in the report must come from the aggregate module, never computed inline in report.py. Do not touch the files under `data/`; they are the real exports. After each change, run the test suite and also run the report on `data/sales_2026q3.csv` to make sure it still renders.",
+    "One more: add `--format json` that writes the same numbers as a JSON object instead of Markdown. The JSON keys must be exactly `revenue_by_region`, `units_by_product`, `revenue_by_month`. Keep all new tests in `tests/test_report.py`, do not create new test files. Don't refactor existing functions beyond what the feature needs."
+  ],
+  "constraints": [
+    {"id": "B01", "turn": 1, "category": "feature_requirement", "text": "Add a `## Revenue by month` section listing `YYYY-MM: amount` per month in chronological order."},
+    {"id": "B02", "turn": 1, "category": "technical_parameter", "text": "Amounts are formatted with exactly two decimals and a thousands separator (e.g. `12,345.60`)."},
+    {"id": "B03", "turn": 1, "category": "scope_exclusion", "text": "Do not change `pipeline/load.py`; it is owned by the data team."},
+    {"id": "B04", "turn": 1, "category": "process_instruction", "text": "Before writing code, list the planned steps as a short todo list and work through them one at a time."},
+    {"id": "B05", "turn": 1, "category": "named_source_or_tool", "text": "Use only the Python standard library; no pandas or other packages."},
+    {"id": "B06", "turn": 1, "category": "structural_convention", "text": "Keep the existing section order of the report; new sections are appended at the end."},
+    {"id": "B07", "turn": 1, "category": "soft_preference", "text": "The user likes detailed, thorough explanations."},
+    {"id": "B08", "turn": 2, "category": "feature_requirement", "text": "Add a `--top N` option limiting `## Units by product` to the N best-selling products."},
+    {"id": "B09", "turn": 2, "category": "structural_convention", "text": "Every number in the report comes from the aggregate module, never computed inline in report.py."},
+    {"id": "B10", "turn": 2, "category": "scope_exclusion", "text": "Do not touch the files under `data/`."},
+    {"id": "B11", "turn": 2, "category": "process_instruction", "text": "After each change, run the test suite and run the report on `data/sales_2026q3.csv`."},
+    {"id": "B12", "turn": 3, "category": "feature_requirement", "text": "Add `--format json` that writes the same numbers as a JSON object."},
+    {"id": "B13", "turn": 3, "category": "technical_parameter", "text": "JSON keys are exactly `revenue_by_region`, `units_by_product`, `revenue_by_month`."},
+    {"id": "B14", "turn": 3, "category": "structural_convention", "text": "All new tests go in `tests/test_report.py`; no new test files."},
+    {"id": "B15", "turn": 3, "category": "scope_exclusion", "text": "Do not refactor existing functions beyond what the feature needs."}
+  ],
+  "probe_turn": "Add a `## Average order value` section (total revenue divided by the number of rows) to the Markdown report and an `average_order_value` key to the JSON output.",
+  "checks": {
+    "untouched_files": ["pipeline/load.py", "data/sales_2026q3.csv"],
+    "existing_tests_kept": ["tests/test_aggregate.py", "tests/test_report.py"],
+    "pytest_after_probe": true,
+    "no_new_test_files": true
+  }
+}

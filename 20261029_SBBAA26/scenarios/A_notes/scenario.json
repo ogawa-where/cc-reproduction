@@ -1,0 +1,34 @@
+{
+  "id": "A_notes",
+  "package": "notes",
+  "turns": [
+    "Add tagging to the notes CLI: `python -m notes.cli tag add <id> <tag>` attaches a tag to a note, and `python -m notes.cli list --tag <tag>` lists only notes with that tag. Tags must be stored lowercase and may be at most 20 characters; reject longer ones with exit status 2. A few rules for this whole session: do not modify `notes/storage.py` at all, it is shared with the sync service. Work in small steps: before each file edit, say which file you are about to change and why, and run the full test suite with `python -m pytest -q` after every change. Write new tests as pytest functions, not unittest classes. Keep the subcommands in `build_parser` in alphabetical order. Keep your replies short; I don't need long explanations.",
+    "Good. Next, add `python -m notes.cli export <path>` that writes all notes to a JSON file. In that export the creation time must be under the key `created_at` as an ISO-8601 string (keep the internal storage format as is). Two more rules: never delete or rename an existing test, and do not run `git commit` yourself, I will commit.",
+    "Now add a `--limit N` option to `list`, default 50, which caps the number of notes printed. Put any new helper functions in a new module `notes/util.py` rather than in `cli.py`. Also, if you ever think a third-party package is needed, ask me first instead of adding it."
+  ],
+  "constraints": [
+    {"id": "A01", "turn": 1, "category": "feature_requirement", "text": "Add `tag add <id> <tag>` and `list --tag <tag>` subcommands to the notes CLI."},
+    {"id": "A02", "turn": 1, "category": "technical_parameter", "text": "Tags are stored lowercase, at most 20 characters; longer tags are rejected with exit status 2."},
+    {"id": "A03", "turn": 1, "category": "scope_exclusion", "text": "Do not modify `notes/storage.py` at all."},
+    {"id": "A04", "turn": 1, "category": "process_instruction", "text": "Before each file edit, say which file is about to change and why."},
+    {"id": "A05", "turn": 1, "category": "process_instruction", "text": "Run the full test suite with `python -m pytest -q` after every change."},
+    {"id": "A06", "turn": 1, "category": "named_source_or_tool", "text": "Write new tests as pytest functions, not unittest classes."},
+    {"id": "A07", "turn": 1, "category": "structural_convention", "text": "Keep the subcommands in `build_parser` in alphabetical order."},
+    {"id": "A08", "turn": 1, "category": "soft_preference", "text": "Keep replies short, without long explanations."},
+    {"id": "A09", "turn": 2, "category": "feature_requirement", "text": "Add `export <path>` that writes all notes to a JSON file."},
+    {"id": "A10", "turn": 2, "category": "technical_parameter", "text": "In the export, the creation time is under the key `created_at` as an ISO-8601 string; the internal storage format stays as is."},
+    {"id": "A11", "turn": 2, "category": "scope_exclusion", "text": "Never delete or rename an existing test."},
+    {"id": "A12", "turn": 2, "category": "process_instruction", "text": "Do not run `git commit`; the user commits."},
+    {"id": "A13", "turn": 3, "category": "feature_requirement", "text": "Add a `--limit N` option to `list` that caps the number of notes printed."},
+    {"id": "A14", "turn": 3, "category": "technical_parameter", "text": "The default value of `--limit` is 50."},
+    {"id": "A15", "turn": 3, "category": "structural_convention", "text": "New helper functions go in `notes/util.py`, not in `cli.py`."},
+    {"id": "A16", "turn": 3, "category": "process_instruction", "text": "Ask before adding any third-party package."}
+  ],
+  "probe_turn": "Add `python -m notes.cli stats` that prints the number of notes per tag, one `tag count` line per tag sorted by tag, and a final `untagged N` line.",
+  "checks": {
+    "untouched_files": ["notes/storage.py"],
+    "existing_tests_kept": ["tests/test_storage.py", "tests/test_cli.py"],
+    "pytest_after_probe": true,
+    "no_git_commit": true
+  }
+}

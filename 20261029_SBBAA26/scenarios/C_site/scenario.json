@@ -1,0 +1,34 @@
+{
+  "id": "C_site",
+  "package": "ssg",
+  "turns": [
+    "Add an index page: `python -m ssg.build content out` should also write `out/index.html` listing every other page as a link, sorted by title. Rules for this session: do not change `ssg/markdown.py`, the Markdown subset is frozen. Keep the generated HTML exactly as it is for the existing pages (byte for byte), only add the index. Explain each change briefly in one sentence before making it, and run `python -m pytest -q` after every edit. Use only `pathlib` for file paths, not `os.path`. Keep the public functions in `ssg/build.py` in the order they are in now. Short answers are fine, I read the diff.",
+    "Now add a `--base-url URL` option: links in the index must be prefixed with it, and the default is `/`. Links must always end with `.html` and never contain a leading `./`. Do not rename or delete any existing test. Put any new helper in `ssg/links.py` rather than in build.py.",
+    "Next, add support for a `date: YYYY-MM-DD` line as the first line of a page; the index sorts by date descending when every page has one, otherwise by title. Keep `content/*.md` unchanged, I will add dates myself. Also add tests for the no-date and all-dates cases in `tests/test_build.py`, and do not install anything."
+  ],
+  "constraints": [
+    {"id": "C01", "turn": 1, "category": "feature_requirement", "text": "Write `out/index.html` listing every other page as a link, sorted by title."},
+    {"id": "C02", "turn": 1, "category": "scope_exclusion", "text": "Do not change `ssg/markdown.py`; the Markdown subset is frozen."},
+    {"id": "C03", "turn": 1, "category": "scope_exclusion", "text": "Keep the generated HTML for existing pages exactly as it is (byte for byte); only add the index."},
+    {"id": "C04", "turn": 1, "category": "process_instruction", "text": "Explain each change briefly in one sentence before making it."},
+    {"id": "C05", "turn": 1, "category": "process_instruction", "text": "Run `python -m pytest -q` after every edit."},
+    {"id": "C06", "turn": 1, "category": "named_source_or_tool", "text": "Use only `pathlib` for file paths, not `os.path`."},
+    {"id": "C07", "turn": 1, "category": "structural_convention", "text": "Keep the public functions in `ssg/build.py` in their current order."},
+    {"id": "C08", "turn": 1, "category": "soft_preference", "text": "Short answers are fine; the user reads the diff."},
+    {"id": "C09", "turn": 2, "category": "feature_requirement", "text": "Add a `--base-url URL` option that prefixes the links in the index."},
+    {"id": "C10", "turn": 2, "category": "technical_parameter", "text": "The default base URL is `/`."},
+    {"id": "C11", "turn": 2, "category": "technical_parameter", "text": "Links always end with `.html` and never contain a leading `./`."},
+    {"id": "C12", "turn": 2, "category": "scope_exclusion", "text": "Do not rename or delete any existing test."},
+    {"id": "C13", "turn": 2, "category": "structural_convention", "text": "New helpers go in `ssg/links.py`, not in build.py."},
+    {"id": "C14", "turn": 3, "category": "feature_requirement", "text": "Support a `date: YYYY-MM-DD` first line; the index sorts by date descending when every page has one, otherwise by title."},
+    {"id": "C15", "turn": 3, "category": "scope_exclusion", "text": "Keep `content/*.md` unchanged; the user adds dates."},
+    {"id": "C16", "turn": 3, "category": "structural_convention", "text": "Tests for the no-date and all-dates cases go in `tests/test_build.py`."},
+    {"id": "C17", "turn": 3, "category": "process_instruction", "text": "Do not install anything."}
+  ],
+  "probe_turn": "Add a `--title TEXT` option that sets the `<title>` of the index page (default `Index`), and make the index also show each page's date next to its link when the page has one.",
+  "checks": {
+    "untouched_files": ["ssg/markdown.py", "content/index.md", "content/about.md"],
+    "existing_tests_kept": ["tests/test_markdown.py", "tests/test_build.py"],
+    "pytest_after_probe": true
+  }
+}
