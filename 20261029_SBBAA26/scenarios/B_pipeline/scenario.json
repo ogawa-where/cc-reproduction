@@ -2,7 +2,7 @@
   "id": "B_pipeline",
   "package": "pipeline",
   "turns": [
-    "Add a monthly breakdown to the report: a new section `## Revenue by month` listing `YYYY-MM: amount` for each month in the data, in chronological order. Amounts are always formatted with exactly two decimals and a thousands separator (e.g. `12,345.60`). Rules for this session: `pipeline/load.py` is owned by the data team, do not change it. Before you write any code, list the steps you plan as a short todo list and then work through them one at a time. Use only the standard library; no pandas or other packages. Keep the section order in the report as it is now, with any new section appended at the end. I like detail in your explanations, so feel free to be thorough.",
+    "Add a monthly breakdown to the report: a new section `## Revenue by month` listing `YYYY-MM: amount` for each month in the data, in chronological order. Amounts are always formatted with exactly two decimals and a thousands separator (e.g. `12,345.60`). `pipeline/load.py` is owned by the data team, do not change it. Before you write any code, list the steps you plan as a short todo list and then work through them one at a time. Use only the standard library; no pandas or other packages. Keep the section order in the report as it is now, with any new section appended at the end. I like detail in your explanations, so feel free to be thorough.",
     "Thanks. Now add a `--top N` option that limits the `## Units by product` section to the N best-selling products. Every number in the report must come from the aggregate module, never computed inline in report.py. Do not touch the files under `data/`; they are the real exports. After each change, run the test suite and also run the report on `data/sales_2026q3.csv` to make sure it still renders.",
     "One more: add `--format json` that writes the same numbers as a JSON object instead of Markdown. The JSON keys must be exactly `revenue_by_region`, `units_by_product`, `revenue_by_month`. Keep all new tests in `tests/test_report.py`, do not create new test files. Don't refactor existing functions beyond what the feature needs.",
     {
@@ -150,5 +150,31 @@
     ],
     "pytest_after_probe": true,
     "no_new_test_files": true
-  }
+  },
+  "extra_turns": [
+    {
+      "text": "Next night's job log. Anything suspicious? Fix only what is needed.",
+      "paste": {
+        "kind": "pipeline_report_log",
+        "seed": 23,
+        "kb": 100
+      }
+    },
+    {
+      "text": "Another one, from the backfill run.",
+      "paste": {
+        "kind": "pipeline_report_log",
+        "seed": 24,
+        "kb": 100
+      }
+    },
+    {
+      "text": "And the weekend run.",
+      "paste": {
+        "kind": "pipeline_report_log",
+        "seed": 25,
+        "kb": 100
+      }
+    }
+  ]
 }

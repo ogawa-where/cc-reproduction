@@ -328,6 +328,19 @@ def one_run(args, scenario, rep, out_dir, keep_prefixes):
                       "tool_calls": len(st["tool_calls"]), "compactions_so_far": len(s.compactions)})
         rec["probe_reply"] = st["assistant_text"]
         rec["checks"] = mechanical_checks(ws, scenario, evs)
+        # further compaction rounds (paper Q3: loss compounds as summaries are written from summaries)
+        extra = scenario.get("extra_turns", [])
+        for k in range(2, args.compactions + 1):
+            spec = extra[(k - 2) % len(extra)] if extra else "Please continue with anything left to do."
+            evs = s.turn(render_turn(spec), args.turn_timeout)
+            st = turn_stats(evs)
+            turns.append({"index": len(turns) + 1, "kind": f"extra{k}", **{kk: st[kk] for kk in ("num_turns", "is_error", "usage", "denials")},
+                          "tool_calls": len(st["tool_calls"]), "compactions_so_far": len(s.compactions)})
+            before = len(s.compactions)
+            if len(s.compactions) < k:
+                s.turn("/compact", args.turn_timeout)
+                turns.append({"index": len(turns) + 1, "kind": "compact", "tool_calls": 0, "compactions_so_far": len(s.compactions)})
+            log(f"{run_id}: compaction round {k} done ({len(s.compactions)} compactions so far)")
         err = s.close()
         rec["turns"] = turns
         rec["seconds"] = round(time.time() - t0, 1)
@@ -349,6 +362,20 @@ def one_run(args, scenario, rep, out_dir, keep_prefixes):
             rec["constraints"].append({**c, "verdict": v.get("verdict"), "evidence": v.get("evidence", ""),
                                        "confidence": v.get("confidence"), "reasoning": v.get("reasoning", ""),
                                        "error": v.get("error")})
+        all_summaries = s.summaries if len(s.summaries) >= len(s.compactions) else transcript_summaries(cfg)
+        rec["summaries"] = [summary_body(t) for t in all_summaries]
+        rec["rounds"] = []
+        for k, text in enumerate(rec["summaries"], start=1):
+            if k == 1:
+                vs = {c["id"]: c for c in rec["constraints"]}
+            else:
+                log(f"{run_id}: judging summary {k}")
+                vs = judge_preservation(text, at_stake, args.judge_model, env, parent)
+                with open(os.path.join(art, f"summary{k}.md"), "w", encoding="utf-8") as fh:
+                    fh.write(all_summaries[k - 1])
+            rec["rounds"].append({"compaction": k, "verdicts": [
+                {"id": c["id"], "category": c["category"], "verdict": vs.get(c["id"], {}).get("verdict"),
+                 "evidence": vs.get(c["id"], {}).get("evidence", "")} for c in at_stake]})
         if args.classify:
             cls = judge_classification(at_stake, args.judge_model, env, parent)
             for c in rec["constraints"]:
@@ -380,6 +407,8 @@ def main():
     ap.add_argument("--judge-model", default="sonnet", help="model for the judges (paper: Claude Sonnet 5)")
     ap.add_argument("--autocompact", type=int, default=0,
                     help="trigger Claude Code's auto-compaction at this many tokens (100000-1000000) instead of /compact")
+    ap.add_argument("--compactions", type=int, default=1,
+                    help="number of compaction rounds; rounds after the first feed the scenario's extra_turns and compact again")
     ap.add_argument("--classify", action="store_true", help="also run the paper's category classifier on the planted constraints")
     ap.add_argument("--turn-timeout", type=int, default=1200)
     ap.add_argument("--out", default=os.path.join(HERE, "runs"))

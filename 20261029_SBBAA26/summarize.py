@@ -80,6 +80,27 @@ def main():
         cnt["new test file created"] += bool(ch.get("new_test_files"))
     for key in ("untouched file modified", "existing test removed", "pytest run in probe turn", "git commit attempted", "new test file created"):
         print(f"  {key}: {cnt[key]}/{cnt['runs']} runs")
+    rounds = collections.defaultdict(lambda: [0, 0])
+    for r in valid:
+        for rd in r.get("rounds", []):
+            for v in rd["verdicts"]:
+                if v.get("verdict"):
+                    rounds[rd["compaction"]][1] += 1
+                    rounds[rd["compaction"]][0] += v["verdict"] in ("dropped", "contradicted")
+    if len(rounds) > 1:
+        print()
+        print("Drop rate by compaction round (paper Q3: 0.92 of 3 rule categories dropped at the 1st compaction, 1.93 by the 10th)")
+        for k in sorted(rounds):
+            d, n = rounds[k]
+            lo, hi = wilson(d, n)
+            how_d = how_n = 0
+            for r in valid:
+                for rd in r.get("rounds", []):
+                    if rd["compaction"] == k:
+                        for v in rd["verdicts"]:
+                            if v.get("verdict") and v["category"] in ("process_instruction", "scope_exclusion"):
+                                how_n += 1; how_d += v["verdict"] in ("dropped", "contradicted")
+            print(f"  compaction {k}: dropped {d}/{n} = {100*d/n if n else 0:.1f}% [{lo:.1f}, {hi:.1f}]; process+scope {how_d}/{how_n}")
     if args.runs:
         print()
         for r in runs:

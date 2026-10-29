@@ -2,7 +2,7 @@
   "id": "C_site",
   "package": "ssg",
   "turns": [
-    "Add an index page: `python -m ssg.build content out` should also write `out/index.html` listing every other page as a link, sorted by title. Rules for this session: do not change `ssg/markdown.py`, the Markdown subset is frozen. Keep the generated HTML exactly as it is for the existing pages (byte for byte), only add the index. Explain each change briefly in one sentence before making it, and run `python -m pytest -q` after every edit. Use only `pathlib` for file paths, not `os.path`. Keep the public functions in `ssg/build.py` in the order they are in now. Short answers are fine, I read the diff.",
+    "Add an index page: `python -m ssg.build content out` should also write `out/index.html` listing every other page as a link, sorted by title. Don't change `ssg/markdown.py`, the Markdown subset is frozen. Keep the generated HTML exactly as it is for the existing pages (byte for byte), only add the index. Explain each change briefly in one sentence before making it, and run `python -m pytest -q` after every edit. Use only `pathlib` for file paths, not `os.path`. Keep the public functions in `ssg/build.py` in the order they are in now. Short answers are fine, I read the diff.",
     "Now add a `--base-url URL` option: links in the index must be prefixed with it, and the default is `/`. Links must always end with `.html` and never contain a leading `./`. Do not rename or delete any existing test. Put any new helper in `ssg/links.py` rather than in build.py.",
     "Next, add support for a `date: YYYY-MM-DD` line as the first line of a page; the index sorts by date descending when every page has one, otherwise by title. Keep `content/*.md` unchanged, I will add dates myself. Also add tests for the no-date and all-dates cases in `tests/test_build.py`, and do not install anything.",
     {
@@ -162,5 +162,31 @@
       "tests/test_build.py"
     ],
     "pytest_after_probe": true
-  }
+  },
+  "extra_turns": [
+    {
+      "text": "Next CI build log. Anything to fix?",
+      "paste": {
+        "kind": "site_build_log",
+        "seed": 33,
+        "kb": 100
+      }
+    },
+    {
+      "text": "Build log from the release branch.",
+      "paste": {
+        "kind": "site_build_log",
+        "seed": 34,
+        "kb": 100
+      }
+    },
+    {
+      "text": "And the nightly docs build.",
+      "paste": {
+        "kind": "site_build_log",
+        "seed": 35,
+        "kb": 100
+      }
+    }
+  ]
 }
