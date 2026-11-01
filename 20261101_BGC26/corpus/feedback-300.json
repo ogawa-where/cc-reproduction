@@ -1,0 +1,1807 @@
+{
+ "generated": "2026-11-01T14:47:05",
+ "model": "sonnet",
+ "n": 300,
+ "records": [
+  {
+   "id": 1,
+   "alias": "R0001",
+   "timestamp": "2026-04-01T15:35:43",
+   "text": "Everything's been smooth for months, then this week two odd charges: a $2.50 'inactivity fee' and a duplicate grocery charge. Can someone explain?"
+  },
+  {
+   "id": 2,
+   "alias": "R0002",
+   "timestamp": "2026-04-01T16:13:43",
+   "text": "Pending charge from a coffee shop has been sitting there for 6 days and it's lowering my available balance. Is this normal? Can I do anything?"
+  },
+  {
+   "id": 3,
+   "alias": "R0003",
+   "timestamp": "2026-04-01T16:36:43",
+   "text": "Love the fingerprint login, super quick. Would be great if you could also use it to approve transfers over a certain amount instead of retyping the PIN."
+  },
+  {
+   "id": 4,
+   "alias": "R0004",
+   "timestamp": "2026-04-01T17:34:43",
+   "text": "Crash on launch after iOS 18 update. Opens for a split second then back to home screen. Deleted and redownloaded, same thing."
+  },
+  {
+   "id": 5,
+   "alias": "R0005",
+   "timestamp": "2026-04-01T17:53:43",
+   "text": "First time opening the app, the tutorial pointed at a button that didnt exist on my screen (the 'Add widget' one?). Confusing. Then it wouldn't let me close the overlay for like 10 seconds."
+  },
+  {
+   "id": 6,
+   "alias": "R0006",
+   "timestamp": "2026-04-01T18:29:43",
+   "text": "Honestly the agent Priya was fantastic. Solved my locked account in about 5 minutes and followed up by email. More of that please."
+  },
+  {
+   "id": 7,
+   "alias": "R0007",
+   "timestamp": "2026-04-01T19:20:43",
+   "text": "Dark mode please!! My eyes hurt at night checking balance."
+  },
+  {
+   "id": 8,
+   "alias": "R0008",
+   "timestamp": "2026-04-01T19:40:43",
+   "text": "指紋認証が急に使えなくなりました。アップデート後からです。毎回暗証番号を入力するのは面倒なので直してほしいです。"
+  },
+  {
+   "id": 9,
+   "alias": "R0009",
+   "timestamp": "2026-04-01T20:15:43",
+   "text": "Transfer limit of $1,000 per day is too low for me. I'm trying to move money for a down payment and had to split it over 4 days. Any way to raise it?"
+  },
+  {
+   "id": 10,
+   "alias": "R0010",
+   "timestamp": "2026-04-01T21:04:43",
+   "text": "Can you add a fee summary page? I'd like to see all the charges I paid this year in one spot. Right now I have to dig through statements one by one."
+  },
+  {
+   "id": 11,
+   "alias": "R0011",
+   "timestamp": "2026-04-01T21:53:43",
+   "text": "The bot keeps asking me to 'rephrase my question' no matter what I type. I just want to report a stolen card!! Took me 10 minutes to find a human option."
+  },
+  {
+   "id": 12,
+   "alias": "R0012",
+   "timestamp": "2026-04-01T22:32:43",
+   "text": "Fantastic that I can finally get alerts for incoming direct deposits, paycheck hits and I get pinged right away. Please add a sound option and I'd give five stars."
+  },
+  {
+   "id": 13,
+   "alias": "R0013",
+   "timestamp": "2026-04-01T22:52:43",
+   "text": "The 2FA code SMS sometimes takes like 5 minutes to arrive and then it expires. Locked myself out twice this week. Authenticator app support pls"
+  },
+  {
+   "id": 14,
+   "alias": "R0014",
+   "timestamp": "2026-04-01T23:37:43",
+   "text": "Gestern wurde mein Konto ohne Vorwarnung gesperrt, nachdem ich im Urlaub eine Überweisung gemacht habe. Der Support war nett, aber es hat zwei Tage gedauert."
+  },
+  {
+   "id": 15,
+   "alias": "R0015",
+   "timestamp": "2026-04-01T23:56:43",
+   "text": "Foreign exchange rate display in the app would help. Show me the live rate before I send money abroad, not after. Also show the fee up front pls."
+  },
+  {
+   "id": 16,
+   "alias": "R0016",
+   "timestamp": "2026-04-02T00:31:43",
+   "text": "Got declined in Tokyo at a convenience store and then again at a train station. ATM worked though. Why would only some merchants block me? No alert was sent either."
+  },
+  {
+   "id": 17,
+   "alias": "R0017",
+   "timestamp": "2026-04-02T01:16:43",
+   "text": "Card declined at a restaurant in Lisbon even though I set a travel notice in the app. Super embarrassing, had to borrow cash from my friend."
+  },
+  {
+   "id": 18,
+   "alias": "R0018",
+   "timestamp": "2026-04-02T02:14:43",
+   "text": "Face unlock doesn't work if I'm wearing glasses or its dark, but it did before. Also the app forgets my username every time now."
+  },
+  {
+   "id": 19,
+   "alias": "R0019",
+   "timestamp": "2026-04-02T02:36:43",
+   "text": "support chat agent asked me to confirm my full SSN in the chat. I refused. Is that normal?? Felt sketchy even if it was legit."
+  },
+  {
+   "id": 20,
+   "alias": "R0020",
+   "timestamp": "2026-04-02T03:24:43",
+   "text": "The new bottom nav is nice and thumb friendly! But the icons have no text labels so I had to guess what the third one was. Add captions pls."
+  },
+  {
+   "id": 21,
+   "alias": "R0021",
+   "timestamp": "2026-04-02T04:01:43",
+   "text": "bill pay reminder came a day AFTER the due date. paid late, got charged. not happy, want the fee reversed"
+  },
+  {
+   "id": 22,
+   "alias": "R0022",
+   "timestamp": "2026-04-02T04:16:43",
+   "text": "Refund from an online store was supposed to land on my card 10 days ago. App shows nothing. Store says they sent it. Is it stuck on your side?"
+  },
+  {
+   "id": 23,
+   "alias": "R0023",
+   "timestamp": "2026-04-02T05:17:43",
+   "text": "Is there a way to schedule statements to be emailed automatically to my accountant? Would save me a lot of hassle every month end."
+  },
+  {
+   "id": 24,
+   "alias": "R0024",
+   "timestamp": "2026-04-02T05:35:43",
+   "text": "Love the new low balance alert! Saved me from an overdraft fee last Tuesday. Wish I could set the threshold per account instead of one global number though."
+  },
+  {
+   "id": 25,
+   "alias": "R0025",
+   "timestamp": "2026-04-02T06:08:43",
+   "text": "Waited 3 days for an email reply about a fraud alert and by then the money was gone. Fraud line should be 24/7 and actually answer."
+  },
+  {
+   "id": 26,
+   "alias": "R0026",
+   "timestamp": "2026-04-02T07:01:43",
+   "text": "freezing freezing freezing. thats my review"
+  },
+  {
+   "id": 27,
+   "alias": "R0027",
+   "timestamp": "2026-04-02T07:34:43",
+   "text": "Exchange rate on my transfer to the UK was way worse than what google showed. Lost like $40 on a $1000 transfer. Be upfront about the markup please."
+  },
+  {
+   "id": 28,
+   "alias": "R0028",
+   "timestamp": "2026-04-02T08:21:43",
+   "text": "phishing email looked EXACTLY like your statement notification, same logo and everything. only caught it because the sender address was weird. maybe put a 'verify this email' section inside the app?"
+  },
+  {
+   "id": 29,
+   "alias": "R0029",
+   "timestamp": "2026-04-02T08:52:43",
+   "text": "Three different problems this month: bill pay failed, card declined at the pharmacy, and the budget tool double counts my rent. Support fixed the first only and said they'd 'escalate' the rest. No update since."
+  },
+  {
+   "id": 30,
+   "alias": "R0030",
+   "timestamp": "2026-04-02T09:29:43",
+   "text": "家計簿機能が前より使いやすくなりました。星4です。レシート撮影で自動入力できたら星5にします。"
+  },
+  {
+   "id": 31,
+   "alias": "R0031",
+   "timestamp": "2026-04-02T09:57:43",
+   "text": "チャットサポートの担当の方がとても丁寧で、すぐに問題を解決してくれました。ありがとうございました!また、アプリの動作も軽くなった気がします。"
+  },
+  {
+   "id": 32,
+   "alias": "R0032",
+   "timestamp": "2026-04-02T10:26:43",
+   "text": "Love the budgeting tool but the monthly maintenance fee of $12 popped up out of nowhere. I thought it was waived with direct deposit? My paycheck goes in every two weeks."
+  },
+  {
+   "id": 33,
+   "alias": "R0033",
+   "timestamp": "2026-04-02T11:27:43",
+   "text": "Payment to my credit card was marked 'completed' but the card issuer says they haven't received it. Been 5 days."
+  },
+  {
+   "id": 34,
+   "alias": "R0034",
+   "timestamp": "2026-04-02T11:41:43",
+   "text": "Would love weekly spending summary notification. Like 'you spent $212 this week, 15% more than last'. Budgeting tab has the data already."
+  },
+  {
+   "id": 35,
+   "alias": "R0035",
+   "timestamp": "2026-04-02T12:22:43",
+   "text": "Tap to pay on my watch stopped working after I got the new card. Phone wallet fine, watch no. Removing and re-adding fails with error code 4012 or something."
+  },
+  {
+   "id": 36,
+   "alias": "R0036",
+   "timestamp": "2026-04-02T13:18:43",
+   "text": "Everything about transfers is smooth for me honestly. Only wish is that the confirmation screen had a share receipt button so I can send proof to people."
+  },
+  {
+   "id": 37,
+   "alias": "R0037",
+   "timestamp": "2026-04-02T13:28:43",
+   "text": "Transfers to my savings keep failing with error 4012 after the last update. Tried restarting twice. Super annoying when rent is due tomorrow."
+  },
+  {
+   "id": 38,
+   "alias": "R0038",
+   "timestamp": "2026-04-02T14:06:43",
+   "text": "Fine app, nothing special. Does what I need."
+  },
+  {
+   "id": 39,
+   "alias": "R0039",
+   "timestamp": "2026-04-02T14:43:43",
+   "text": "Search in transactions is hard to find, its just a tiny magnifier icon in the corner. A proper search bar at top would be so much better. Also keyboard covers the results."
+  },
+  {
+   "id": 40,
+   "alias": "R0040",
+   "timestamp": "2026-04-02T15:25:43",
+   "text": "ATM locator shows branches that closed years ago. Went to one with my kid for nothing."
+  },
+  {
+   "id": 41,
+   "alias": "R0041",
+   "timestamp": "2026-04-02T16:17:43",
+   "text": "送金の手数料がどこにも書いていなくて、実際に引かれてから気づきました。事前に表示してください。"
+  },
+  {
+   "id": 42,
+   "alias": "R0042",
+   "timestamp": "2026-04-02T16:41:43",
+   "text": "Session times out after what feels like 1 minute. I was halfway through a transfer, switched to my notes app to copy the account number, and got kicked out. Please make it longer or at least warn me."
+  },
+  {
+   "id": 43,
+   "alias": "R0043",
+   "timestamp": "2026-04-02T17:27:43",
+   "text": "Phone menu is awful. Press 1 for this, 2 for that, and then it asks me to type my full card number on the keypad AND again to the agent. Why?"
+  },
+  {
+   "id": 44,
+   "alias": "R0044",
+   "timestamp": "2026-04-02T17:57:43",
+   "text": "notifications stopped working after the last update. android 14, everything is enabled in settings and in the phone. reinstalling didnt help"
+  },
+  {
+   "id": 45,
+   "alias": "R0045",
+   "timestamp": "2026-04-02T18:54:43",
+   "text": "the widget showing my balance is awesome, wish it updated more often tho"
+  },
+  {
+   "id": 46,
+   "alias": "R0046",
+   "timestamp": "2026-04-02T19:12:43",
+   "text": "International card payment charged in dollars instead of euros, then your app converted it AGAIN? Feels like I got double-converted. Lost around 8%."
+  },
+  {
+   "id": 47,
+   "alias": "R0047",
+   "timestamp": "2026-04-02T20:08:43",
+   "text": "Grey text on light grey background for pending transactions is nearly impossible to read. Contrast needs work, I'm not even colorblind and I struggle."
+  },
+  {
+   "id": 48,
+   "alias": "R0048",
+   "timestamp": "2026-04-02T20:33:43",
+   "text": "Bill pay page loads fine but the second I hit 'Add payee' the app closes itself. Samsung S22. This started after the update last week."
+  },
+  {
+   "id": 49,
+   "alias": "R0049",
+   "timestamp": "2026-04-02T21:21:43",
+   "text": "Crashed while I was paying my electric bill on the due date, had to do it twice and now I worry it got charged double. The crashing is really unacceptable."
+  },
+  {
+   "id": 50,
+   "alias": "R0050",
+   "timestamp": "2026-04-02T21:56:43",
+   "text": "I keep getting codes for logins I didn't make. 3 in the last hour. Is someone trying to get into my account?? Nobody from support has replied to me yet."
+  },
+  {
+   "id": 51,
+   "alias": "R0051",
+   "timestamp": "2026-04-02T22:07:43",
+   "text": "Fraud alert push notification came in seconds after a weird charge, tapped 'not me' and the card got locked instantly. Honestly impressed. Replacement came in 3 days."
+  },
+  {
+   "id": 52,
+   "alias": "R0052",
+   "timestamp": "2026-04-02T23:10:43",
+   "text": "カードの利用通知がリアルタイムで届くのがとても便利です。ただ、海外での利用時に金額が円換算で表示されると、もっと助かります。"
+  },
+  {
+   "id": 53,
+   "alias": "R0053",
+   "timestamp": "2026-04-02T23:43:43",
+   "text": "app logged me out in the middle of a transfer and now I'm not sure if it went through. In the meantime I got a security alert email that I can't tell is real. Confusing."
+  },
+  {
+   "id": 54,
+   "alias": "R0054",
+   "timestamp": "2026-04-03T00:27:43",
+   "text": "Honestly the biometric login is great, fast and smooth. Only wish is a timeout setting shorter than 5 min when I leave the app in background."
+  },
+  {
+   "id": 55,
+   "alias": "R0055",
+   "timestamp": "2026-04-03T00:56:43",
+   "text": "Fast response, 2 minutes in chat, and the agent refunded the overdraft fee right away. Thank you!"
+  },
+  {
+   "id": 56,
+   "alias": "R0056",
+   "timestamp": "2026-04-03T01:30:43",
+   "text": "Onboarding was way too long. Six screens of tips before I could even see my balance. Let me skip it!"
+  },
+  {
+   "id": 57,
+   "alias": "R0057",
+   "timestamp": "2026-04-03T02:08:43",
+   "text": "Login keeps asking for verification code even on my own phone. I've checked 'remember this device' every time. Annoying!!"
+  },
+  {
+   "id": 58,
+   "alias": "R0058",
+   "timestamp": "2026-04-03T02:40:43",
+   "text": "Please add a home screen widget showing my checking balance. I open the whole app just to see if rent cleared and it's annoying."
+  },
+  {
+   "id": 59,
+   "alias": "R0059",
+   "timestamp": "2026-04-03T03:24:43",
+   "text": "After the update the dark mode toggle makes the whole app freeze for like 10 seconds, then it flickers. Otherwise I like the new look."
+  },
+  {
+   "id": 60,
+   "alias": "R0060",
+   "timestamp": "2026-04-03T03:59:43",
+   "text": "freeze button is great but it takes like 10 seconds to actually register?? I froze my card after losing my wallet and the app still showed 'active' for a while. scary"
+  },
+  {
+   "id": 61,
+   "alias": "R0061",
+   "timestamp": "2026-04-03T04:44:43",
+   "text": "Love the app for budgeting but support is a maze. Chat -> bot -> FAQ -> back to chat. Add a 'talk to person' button at the top."
+  },
+  {
+   "id": 62,
+   "alias": "R0062",
+   "timestamp": "2026-04-03T05:07:43",
+   "text": "Please add the ability to freeze a savings pot so transfers out are blocked, plus a goal date with a nudge if I'm behind. Otherwise the goals feature is really solid, thanks."
+  },
+  {
+   "id": 63,
+   "alias": "R0063",
+   "timestamp": "2026-04-03T05:50:43",
+   "text": "Voice call option for the verification code saved me when my SMS wasn't working. Took a while to find it though, hidden under tiny text at the bottom."
+  },
+  {
+   "id": 64,
+   "alias": "R0064",
+   "timestamp": "2026-04-03T06:20:43",
+   "text": "Honestly the app is fine, but fees are sneaky. Paid an 'expedited transfer' fee I never chose. I think the default toggle was on."
+  },
+  {
+   "id": 65,
+   "alias": "R0065",
+   "timestamp": "2026-04-03T06:55:43",
+   "text": "Session expired message appears while I'm viewing my statements PDF. Lose my place every time and have to log back in and navigate all over again."
+  },
+  {
+   "id": 66,
+   "alias": "R0066",
+   "timestamp": "2026-04-03T07:48:43",
+   "text": "Can you add dark mode pls"
+  },
+  {
+   "id": 67,
+   "alias": "R0067",
+   "timestamp": "2026-04-03T08:15:43",
+   "text": "App crashes every time I open statements for March. Other months are fine. Android, updated yesterday."
+  },
+  {
+   "id": 68,
+   "alias": "R0068",
+   "timestamp": "2026-04-03T08:40:43",
+   "text": "Duplicate charge on my debit card at the gas station, 2 x $48.20. One of them says pending still after a week. Annoying."
+  },
+  {
+   "id": 69,
+   "alias": "R0069",
+   "timestamp": "2026-04-03T09:18:43",
+   "text": "dark mode toggle in settings changes nothing until I fully close and reopen the app. Pretty sure thats a bug"
+  },
+  {
+   "id": 70,
+   "alias": "R0070",
+   "timestamp": "2026-04-03T10:01:43",
+   "text": "Changed my phone and had to go through a 3 day wait before the new device was trusted. Understand it's for safety but I couldn't pay my rent on time. Maybe offer an in-branch or video verification option."
+  },
+  {
+   "id": 71,
+   "alias": "R0071",
+   "timestamp": "2026-04-03T10:44:43",
+   "text": "I'd pay for a premium tier if it had savings vaults with locked dates. I keep dipping into my emergency fund and need friction."
+  },
+  {
+   "id": 72,
+   "alias": "R0072",
+   "timestamp": "2026-04-03T11:12:43",
+   "text": "Whenever I rotate my phone to landscape while viewing a transaction the app crashes. Minor I guess but annoying. OnePlus 11."
+  },
+  {
+   "id": 73,
+   "alias": "R0073",
+   "timestamp": "2026-04-03T11:40:43",
+   "text": "Me encanta poder pausar la tarjeta al instante, me salvó cuando perdí la cartera. Solo falta poder cambiar el PIN desde la app."
+  },
+  {
+   "id": 74,
+   "alias": "R0074",
+   "timestamp": "2026-04-03T12:21:43",
+   "text": "Can the bot at least tell me my place in the queue? Just sitting at 'an agent will be with you shortly' for 20 min is maddening."
+  },
+  {
+   "id": 75,
+   "alias": "R0075",
+   "timestamp": "2026-04-03T12:58:43",
+   "text": "Can't even get past the splash screen on my Moto G. Stuck on the logo. Cleared cache and storage, no luck."
+  },
+  {
+   "id": 76,
+   "alias": "R0076",
+   "timestamp": "2026-04-03T13:39:43",
+   "text": "Please add an option for authenticator app codes instead of SMS. I travel a lot and never get texts abroad."
+  },
+  {
+   "id": 77,
+   "alias": "R0077",
+   "timestamp": "2026-04-03T14:18:43",
+   "text": "Love the new instant transfer between my own accounts. Took like 2 seconds. Thank you!"
+  },
+  {
+   "id": 78,
+   "alias": "R0078",
+   "timestamp": "2026-04-03T14:55:43",
+   "text": "Thanks for reversing the overdraft fee so quickly, chat agent was great. Still wish there were low balance alerts that actually fire on time though."
+  },
+  {
+   "id": 79,
+   "alias": "R0079",
+   "timestamp": "2026-04-03T15:47:43",
+   "text": "Was charged a duplicate payment on my utility bill, shows twice in transactions. Pending for 5 days now, and chat bot keeps looping me back to the menu."
+  },
+  {
+   "id": 80,
+   "alias": "R0080",
+   "timestamp": "2026-04-03T16:10:43",
+   "text": "Tried logging in over hotel wifi and it just spins forever, no error. On mobile data it works. A message would help."
+  },
+  {
+   "id": 81,
+   "alias": "R0081",
+   "timestamp": "2026-04-03T16:58:43",
+   "text": "Instant transfer to a friend cost me 1.5% which seems steep for sending $200. A cheaper option that takes a day is fine but it's hidden in the menu."
+  },
+  {
+   "id": 82,
+   "alias": "R0082",
+   "timestamp": "2026-04-03T17:15:43",
+   "text": "Joint account is a must for us. My partner and I share bills and right now we're swapping screenshots like its 2009."
+  },
+  {
+   "id": 83,
+   "alias": "R0083",
+   "timestamp": "2026-04-03T18:00:43",
+   "text": "Wire transfer fee was not shown before I confirmed. Found out afterwards, $25. Please show fees upfront!"
+  },
+  {
+   "id": 84,
+   "alias": "R0084",
+   "timestamp": "2026-04-03T18:51:43",
+   "text": "Love the face unlock but why does it ask me to re-register my trusted device every time I update the app? Kinda defeats the point."
+  },
+  {
+   "id": 85,
+   "alias": "R0085",
+   "timestamp": "2026-04-03T19:23:43",
+   "text": "Battery drain + app gets hot and stalls when I leave it open on the budget screen. Galaxy A53. Update made it worse."
+  },
+  {
+   "id": 86,
+   "alias": "R0086",
+   "timestamp": "2026-04-03T19:42:43",
+   "text": "Notification for incoming transfers is delayed by like an hour. Not a huge deal but I'd like to get it right away."
+  },
+  {
+   "id": 87,
+   "alias": "R0087",
+   "timestamp": "2026-04-03T20:19:43",
+   "text": "Would be nice to have a way to freeze only online purchases or only ATM withdrawals instead of the whole card. Right now it's all or nothing."
+  },
+  {
+   "id": 88,
+   "alias": "R0088",
+   "timestamp": "2026-04-03T21:03:43",
+   "text": "app is fine overall. wish budgets could roll over unused money to next month, mine resets to zero and I lose track"
+  },
+  {
+   "id": 89,
+   "alias": "R0089",
+   "timestamp": "2026-04-03T21:37:43",
+   "text": "Currency conversion shows one rate when I confirm and a different amount on my statement. Difference is small but it happens every time. Whats going on"
+  },
+  {
+   "id": 90,
+   "alias": "R0090",
+   "timestamp": "2026-04-03T22:13:43",
+   "text": "Login screen glitch: the keyboard covers the password field on my small phone so I cant see what im typing. Pixel-ish device, android 14."
+  },
+  {
+   "id": 91,
+   "alias": "R0091",
+   "timestamp": "2026-04-03T23:04:43",
+   "text": "The text code never arrives. I tried 5 times, waited like 10 minutes. Locked out of my account and I need to pay rent today!!"
+  },
+  {
+   "id": 92,
+   "alias": "R0092",
+   "timestamp": "2026-04-03T23:32:43",
+   "text": "Love the new budgeting tab. Finally I can see where my money goes each month without a spreadsheet. Would be great if I could set custom categories though, 'Misc' is way too big for me."
+  },
+  {
+   "id": 93,
+   "alias": "R0093",
+   "timestamp": "2026-04-04T00:11:43",
+   "text": "My teenager's card won't activate because the app says the account holder needs to approve, but I AM the account holder and there's no approve button anywhere."
+  },
+  {
+   "id": 94,
+   "alias": "R0094",
+   "timestamp": "2026-04-04T00:49:43",
+   "text": "The statement for September never showed up. October is there, August is there. Support chat said 'try again later' which isn't really an answer."
+  },
+  {
+   "id": 95,
+   "alias": "R0095",
+   "timestamp": "2026-04-04T01:31:43",
+   "text": "Support told me to 'reinstall the app' for literally every issue. Reinstalled 3 times. Still can't see my Feb statement."
+  },
+  {
+   "id": 96,
+   "alias": "R0096",
+   "timestamp": "2026-04-04T01:55:43",
+   "text": "Deposit alerts are great but they dont say who the deposit is from, just 'deposit received $450'. Add the sender or description pls."
+  },
+  {
+   "id": 97,
+   "alias": "R0097",
+   "timestamp": "2026-04-04T02:37:43",
+   "text": "Why was I charged an overdraft fee when my balance showed positive in the app? The pending transactions arent shown clearly. Feels misleading."
+  },
+  {
+   "id": 98,
+   "alias": "R0098",
+   "timestamp": "2026-04-04T03:08:43",
+   "text": "scheduled my car payment for the 15th, which is a Sunday. App didn't warn me it would go Monday and now it's late. $35 late fee from the lender."
+  },
+  {
+   "id": 99,
+   "alias": "R0099",
+   "timestamp": "2026-04-04T03:57:43",
+   "text": "Ordered a replacement card, the tracking in app says 'processing' for 12 days now. Nothing else. Is it lost?"
+  },
+  {
+   "id": 100,
+   "alias": "R0100",
+   "timestamp": "2026-04-04T04:42:43",
+   "text": "Called the support line about a duplicate charge, got hold music for 30 min then it dropped. Called back, same thing. Not great when it's my rent money."
+  },
+  {
+   "id": 101,
+   "alias": "R0101",
+   "timestamp": "2026-04-04T05:03:43",
+   "text": "Notifications on the lock screen show my balance and merchant names. Had a coworker see my balance last week, embarassing. Let me hide details until unlocked!"
+  },
+  {
+   "id": 102,
+   "alias": "R0102",
+   "timestamp": "2026-04-04T06:02:43",
+   "text": "Why does chat close itself when I switch to another app to grab my account number? Had to start over twice and explain everything again."
+  },
+  {
+   "id": 103,
+   "alias": "R0103",
+   "timestamp": "2026-04-04T06:11:43",
+   "text": "Would be great to hold multiple currencies in one account. I travel between UK and Spain every month and the conversion fees on every card swipe add up fast."
+  },
+  {
+   "id": 104,
+   "alias": "R0104",
+   "timestamp": "2026-04-04T06:56:43",
+   "text": "Was transferred between 4 departments for a simple address change. Each one asked me to verify my identity again. Exhausting."
+  },
+  {
+   "id": 105,
+   "alias": "R0105",
+   "timestamp": "2026-04-04T07:29:43",
+   "text": "Screen reader users: the amount on each transaction row gets read before the merchant name, so it's like '42 dollars, grocery store'. Fine, but the date is never read at all."
+  },
+  {
+   "id": 106,
+   "alias": "R0106",
+   "timestamp": "2026-04-04T08:28:43",
+   "text": "Since updating to the newest version my iPhone 13 freezes on the login screen after Face ID succeeds. Spinning wheel forever. Reinstalling didn't help."
+  },
+  {
+   "id": 107,
+   "alias": "R0107",
+   "timestamp": "2026-04-04T08:54:43",
+   "text": "refund took 3 weeks. THREE. and I had to contact support 4 times to get it. Not ok."
+  },
+  {
+   "id": 108,
+   "alias": "R0108",
+   "timestamp": "2026-04-04T09:38:43",
+   "text": "Typing indicator shows for ages then nothing. I think the chat is glitchy, messages show 'sending' forever on my phone."
+  },
+  {
+   "id": 109,
+   "alias": "R0109",
+   "timestamp": "2026-04-04T09:54:43",
+   "text": "Please add an option to see all devices logged into my account and kick them out. I lent my old phone to my brother and now I'm paranoid."
+  },
+  {
+   "id": 110,
+   "alias": "R0110",
+   "timestamp": "2026-04-04T10:38:43",
+   "text": "Autopay for my phone bill failed with an error code 4012 and no explanation. Retried manually and it worked. But I only found out because the bill company emailed me."
+  },
+  {
+   "id": 111,
+   "alias": "R0111",
+   "timestamp": "2026-04-04T11:18:43",
+   "text": "Why can I screenshot my card details?? Seems unsafe. Also virtual card number doesn't hide the CVV unless I tap twice, which is annoying."
+  },
+  {
+   "id": 112,
+   "alias": "R0112",
+   "timestamp": "2026-04-04T12:09:43",
+   "text": "Fraud alerts have been great, caught a $212 charge from a site I never used within minutes and froze the card in two taps. Thank you! Would love a way to unfreeze only for online purchases."
+  },
+  {
+   "id": 113,
+   "alias": "R0113",
+   "timestamp": "2026-04-04T12:30:43",
+   "text": "Interest charge on my savings account? Savings should EARN interest. Pretty sure something is wrong, I saw -$4.12 labeled 'adj fee'."
+  },
+  {
+   "id": 114,
+   "alias": "R0114",
+   "timestamp": "2026-04-04T13:06:43",
+   "text": "Fast and smooth most of the time but the transfers screen is laggy as hell since the update, keyboard takes ages to appear when typing the amount."
+  },
+  {
+   "id": 115,
+   "alias": "R0115",
+   "timestamp": "2026-04-04T13:47:43",
+   "text": "Why did you move the bill pay button into the 'More' menu? It used to be right on the main tab bar and now I have to tap twice. Not an improvement imo."
+  },
+  {
+   "id": 116,
+   "alias": "R0116",
+   "timestamp": "2026-04-04T14:14:43",
+   "text": "二段階認証のSMSコードが届かないことが多く、ログインできません。機種変更したばかりなので特に困っています。"
+  },
+  {
+   "id": 117,
+   "alias": "R0117",
+   "timestamp": "2026-04-04T14:51:43",
+   "text": "La app se cierra sola cuando intento ver mi extracto de septiembre. Me pasa en el móvil de mi esposa también."
+  },
+  {
+   "id": 118,
+   "alias": "R0118",
+   "timestamp": "2026-04-04T15:42:43",
+   "text": "Someone charged my card $9.99 monthly for a subscription I cancelled in august. Disputed it in app but the dispute form kept crashing at the last step."
+  },
+  {
+   "id": 119,
+   "alias": "R0119",
+   "timestamp": "2026-04-04T16:31:43",
+   "text": "login screen is clean and fast. no complaints, just wanted to say thanks."
+  },
+  {
+   "id": 120,
+   "alias": "R0120",
+   "timestamp": "2026-04-04T16:54:43",
+   "text": "charged twice for my electric bill through bill pay. same amount, same day. been 5 days and neither has been refunded. support chat just keeps saying 'we're looking into it'"
+  },
+  {
+   "id": 121,
+   "alias": "R0121",
+   "timestamp": "2026-04-04T17:31:43",
+   "text": "Using VoiceOver and the card freeze toggle just reads 'switch' with no label. I can't tell if my card is frozen or not. Please add proper labels."
+  },
+  {
+   "id": 122,
+   "alias": "R0122",
+   "timestamp": "2026-04-04T18:03:43",
+   "text": "Sent money to a friend using her phone number and it said successful but she never got it. 3 days later nothing. No transaction ID shown anywhere in the app either."
+  },
+  {
+   "id": 123,
+   "alias": "R0123",
+   "timestamp": "2026-04-04T18:56:43",
+   "text": "Please let me cancel a pending transfer. Typed an extra zero and had no option except call, and the phone line closes at 5."
+  },
+  {
+   "id": 124,
+   "alias": "R0124",
+   "timestamp": "2026-04-04T19:32:43",
+   "text": "ok app"
+  },
+  {
+   "id": 125,
+   "alias": "R0125",
+   "timestamp": "2026-04-04T20:09:43",
+   "text": "Dark mode statements please. Reading white PDFs at 1am when I reconcile is rough. Minor thing, I know."
+  },
+  {
+   "id": 126,
+   "alias": "R0126",
+   "timestamp": "2026-04-04T20:31:43",
+   "text": "My password rules are weird, max 16 characters and no spaces, so I can't use my password manager's passphrase. Pls fix this, it's 2026."
+  },
+  {
+   "id": 127,
+   "alias": "R0127",
+   "timestamp": "2026-04-04T21:01:43",
+   "text": "The app keeps logging me out randomly and then crashes when I try to log back in. Third time today. Android 12, version 5.12.1 I think?"
+  },
+  {
+   "id": 128,
+   "alias": "R0128",
+   "timestamp": "2026-04-04T21:50:43",
+   "text": "Budget alerts at 80% would be so helpful. I only find out I overspent after the fact when I check the app on sunday."
+  },
+  {
+   "id": 129,
+   "alias": "R0129",
+   "timestamp": "2026-04-04T22:15:43",
+   "text": "Set up savings goals for a trip and the progress bar is motivating, lol. Small thing: can't pick an emoji or photo for the goal."
+  },
+  {
+   "id": 130,
+   "alias": "R0130",
+   "timestamp": "2026-04-04T23:11:43",
+   "text": "Got a text saying my account was locked with a link to 'verify'. Didn't click but it had my first name. How did they get that?? Does the app have a way to report these?"
+  },
+  {
+   "id": 131,
+   "alias": "R0131",
+   "timestamp": "2026-04-04T23:41:43",
+   "text": "Sign up flow asked me to upload my ID and then the camera screen was stuck in landscape?? Had to restart the whole thing and lost my progress."
+  },
+  {
+   "id": 132,
+   "alias": "R0132",
+   "timestamp": "2026-04-05T00:16:43",
+   "text": "Need shared budgets for joint accounts. My wife can see the account but we can't both edit the grocery limit, only whoever created it. Kind of defeats the point."
+  },
+  {
+   "id": 133,
+   "alias": "R0133",
+   "timestamp": "2026-04-05T00:41:43",
+   "text": "Support chat took 40 min to get a reply and then the agent just pasted a help link. Not helpful at all."
+  },
+  {
+   "id": 134,
+   "alias": "R0134",
+   "timestamp": "2026-04-05T01:26:43",
+   "text": "Agent told me my transfer would arrive in 1 business day, then second agent said 3-5. Which is it?? Nobody seems to have the same info. Also the transfer is still pending."
+  },
+  {
+   "id": 135,
+   "alias": "R0135",
+   "timestamp": "2026-04-05T02:04:43",
+   "text": "For joint accounts, can each holder get their own card with separate notifications? Right now I get pinged for every purchase my husband makes and its kinda overwhelming lol"
+  },
+  {
+   "id": 136,
+   "alias": "R0136",
+   "timestamp": "2026-04-05T02:54:43",
+   "text": "Can't add my card to Google Pay, it says 'couldn't verify card' and tells me to call the bank. Called, they said everything's fine on their end. Round and round."
+  },
+  {
+   "id": 137,
+   "alias": "R0137",
+   "timestamp": "2026-04-05T03:29:43",
+   "text": "I scheduled a transfer for the 1st and it went out on the 3rd. Caused an overdraft fee on my other account. Want that fee reversed please."
+  },
+  {
+   "id": 138,
+   "alias": "R0138",
+   "timestamp": "2026-04-05T04:13:43",
+   "text": "Ticket status page just says 'In progress' forever. Give us real updates, even a 'we're waiting on the merchant' would be better than nothing."
+  },
+  {
+   "id": 139,
+   "alias": "R0139",
+   "timestamp": "2026-04-05T04:26:43",
+   "text": "Lost my card at the airport, froze it from the app in like 5 seconds while still at the gate. Best feature honestly. Ordering a new one was smooth too."
+  },
+  {
+   "id": 140,
+   "alias": "R0140",
+   "timestamp": "2026-04-05T05:28:43",
+   "text": "Tap targets for the little 'x' on notifications are tiny. I keep opening the notification by accident. Also the swipe to dismiss doesnt work half the time."
+  },
+  {
+   "id": 141,
+   "alias": "R0141",
+   "timestamp": "2026-04-05T05:41:43",
+   "text": "Used to work fine on my Pixel 6a. Latest update made the card freeze/unfreeze toggle spin indefinitely, and ironically the whole app freezes too. Had to restart my phone to get back in."
+  },
+  {
+   "id": 142,
+   "alias": "R0142",
+   "timestamp": "2026-04-05T06:33:43",
+   "text": "Can't log in on my new phone. It says to verify with a code sent to my old number which I no longer have. Support chat just keeps sending me the same FAQ article. Really frustrating."
+  },
+  {
+   "id": 143,
+   "alias": "R0143",
+   "timestamp": "2026-04-05T07:08:43",
+   "text": "Dark mode is great on the home screen but the transfer confirmation page flashes bright white for a second every time. Kills my eyes at night. Please fix."
+  },
+  {
+   "id": 144,
+   "alias": "R0144",
+   "timestamp": "2026-04-05T07:39:43",
+   "text": "Why does the app log me out every time I go to the card details page after updating?? Had to reenter password 3x just to change my PIN."
+  },
+  {
+   "id": 145,
+   "alias": "R0145",
+   "timestamp": "2026-04-05T08:29:43",
+   "text": "I returned shoes, merchant refunded, but app shows refund as a separate pending deposit that disappeared after two days and never came back. Where did my $86 go?"
+  },
+  {
+   "id": 146,
+   "alias": "R0146",
+   "timestamp": "2026-04-05T09:01:43",
+   "text": "I like the welcome tour actually, short and useful. Would be cool if it could be replayed from settings, I skipped it by mistake and now can't find it."
+  },
+  {
+   "id": 147,
+   "alias": "R0147",
+   "timestamp": "2026-04-05T09:20:43",
+   "text": "I reported a scam text through the help page and never heard back. No ticket number, nothing. Did anyone even see it?"
+  },
+  {
+   "id": 148,
+   "alias": "R0148",
+   "timestamp": "2026-04-05T09:57:43",
+   "text": "Update 5.12 broke my fingerprint login. Now it asks for password every time and then crashes about half the time after entering it. Please fix!!"
+  },
+  {
+   "id": 149,
+   "alias": "R0149",
+   "timestamp": "2026-04-05T10:57:43",
+   "text": "Setup wizard asked for my phone number twice and the 'next' button was greyed out with no explanation of why. Took me 4 tries. Terrible first impression."
+  },
+  {
+   "id": 150,
+   "alias": "R0150",
+   "timestamp": "2026-04-05T11:11:43",
+   "text": "Zelle-style quick send to contacts is smooth but it sent to the wrong John because two contacts had the same name. Please show phone/email before confirming. Got the money back after a week of stress."
+  },
+  {
+   "id": 151,
+   "alias": "R0151",
+   "timestamp": "2026-04-05T11:52:43",
+   "text": "The spending chart is pretty but I can't export it. I'd like CSV export of budget data for my spreadsheet, monthly if possible."
+  },
+  {
+   "id": 152,
+   "alias": "R0152",
+   "timestamp": "2026-04-05T12:46:43",
+   "text": "Why do I get logged out every time I open the app after using another app for a few mins? Security is good but this is too much."
+  },
+  {
+   "id": 153,
+   "alias": "R0153",
+   "timestamp": "2026-04-05T13:07:43",
+   "text": "Everything fine except the verification code field doesn't autofill from the SMS on my iPhone. Small thing but other apps do it."
+  },
+  {
+   "id": 154,
+   "alias": "R0154",
+   "timestamp": "2026-04-05T13:38:43",
+   "text": "Tried linking to my accounting tool and it just spins forever then says 'something went wrong'. No error code, nothing. Tried 3 times on wifi and data."
+  },
+  {
+   "id": 155,
+   "alias": "R0155",
+   "timestamp": "2026-04-05T14:26:43",
+   "text": "After I export my transactions the category column is blank for anything I recategorized in the budgeting tab. The app shows them right but the file doesn't."
+  },
+  {
+   "id": 156,
+   "alias": "R0156",
+   "timestamp": "2026-04-05T14:51:43",
+   "text": "Locked my account after 3 wrong passwords, fine, but the unlock process needed me to upload my ID AND wait 2 days. Way too long for a typo."
+  },
+  {
+   "id": 157,
+   "alias": "R0157",
+   "timestamp": "2026-04-05T15:31:43",
+   "text": "Got a new-payee alert only AFTER the transfer finished. Shouldn't there be a hold or confirm step for new payees over a certain amount?"
+  },
+  {
+   "id": 158,
+   "alias": "R0158",
+   "timestamp": "2026-04-05T16:17:43",
+   "text": "請求書の支払いをスケジュールしたのに、期日を過ぎても引き落とされていませんでした。延滞料が発生したので困っています。対応をお願いします。"
+  },
+  {
+   "id": 159,
+   "alias": "R0159",
+   "timestamp": "2026-04-05T16:59:43",
+   "text": "App crashes every time I tap on Statements since the last update. Pixel 7, Android 14. Have to force close and then it just opens to a white screen for a few secs."
+  },
+  {
+   "id": 160,
+   "alias": "R0160",
+   "timestamp": "2026-04-05T17:35:43",
+   "text": "Dark mode login page has the 'forgot password' link in dark gray on black, I literally can't see it."
+  },
+  {
+   "id": 161,
+   "alias": "R0161",
+   "timestamp": "2026-04-05T18:05:43",
+   "text": "Would be great if support chat kept a transcript I could email to myself. I had a dispute going and had to screenshot everything."
+  },
+  {
+   "id": 162,
+   "alias": "R0162",
+   "timestamp": "2026-04-05T18:47:43",
+   "text": "notifications are late. I get the alert for a purchase like 20 min after it happens, useless for fraud checking"
+  },
+  {
+   "id": 163,
+   "alias": "R0163",
+   "timestamp": "2026-04-05T19:39:43",
+   "text": "Statement PDF download hangs at 90% every time. Tried on mobile data and wifi. iPad too."
+  },
+  {
+   "id": 164,
+   "alias": "R0164",
+   "timestamp": "2026-04-05T20:02:43",
+   "text": "monthly statement lists a $5 paper statement fee. I never asked for paper!! I'm paperless, check my settings. Please remove it."
+  },
+  {
+   "id": 165,
+   "alias": "R0165",
+   "timestamp": "2026-04-05T20:49:43",
+   "text": "Cant edit a recurring transfer, I have to delete and recreate it. Annoying. Just let me change the amount!"
+  },
+  {
+   "id": 166,
+   "alias": "R0166",
+   "timestamp": "2026-04-05T21:19:43",
+   "text": "the app detects my rooted phone and refuses to open. i get the security reason but its a dev phone with nothing important... maybe limited mode?"
+  },
+  {
+   "id": 167,
+   "alias": "R0167",
+   "timestamp": "2026-04-05T22:00:43",
+   "text": "Two transfers to the same account, same amount, same day and the app flagged the second as possible duplicate and blocked it. They were actually two separate things! Let me confirm and continue."
+  },
+  {
+   "id": 168,
+   "alias": "R0168",
+   "timestamp": "2026-04-05T22:36:43",
+   "text": "got a verification code but by the time I typed it, it said expired. the timer is too short imo. 30 seconds?? come on"
+  },
+  {
+   "id": 169,
+   "alias": "R0169",
+   "timestamp": "2026-04-05T22:58:43",
+   "text": "app logged me out right in the middle of a wire transfer and now I dont know if it was submitted. checked history, nothing. checked again an hour later, money gone from balance but no record. ???"
+  },
+  {
+   "id": 170,
+   "alias": "R0170",
+   "timestamp": "2026-04-05T23:42:43",
+   "text": "Biometric login prompt appears, I authenticate, then it asks again on the next screen. Annoying double prompt. Otherwise app is fine."
+  },
+  {
+   "id": 171,
+   "alias": "R0171",
+   "timestamp": "2026-04-06T00:08:43",
+   "text": "Multi-currency wallet please!! I freelance for clients paid in euros and having to convert to dollars at a bad rate immediately is costing me real money."
+  },
+  {
+   "id": 172,
+   "alias": "R0172",
+   "timestamp": "2026-04-06T00:54:43",
+   "text": "Die App ist insgesamt schön gestaltet, aber das Einfrieren meiner Karte dauert ewig. Manchmal muss ich es dreimal antippen."
+  },
+  {
+   "id": 173,
+   "alias": "R0173",
+   "timestamp": "2026-04-06T01:27:43",
+   "text": "Privacy policy is 40 pages and I couldn't find whether you sell my spending data to advertisers. A plain-language summary would go a long way."
+  },
+  {
+   "id": 174,
+   "alias": "R0174",
+   "timestamp": "2026-04-06T02:05:43",
+   "text": "Froze my card from the app when I lost my wallet, took two taps. Saved me a lot of stress. New card arrived in 4 days too."
+  },
+  {
+   "id": 175,
+   "alias": "R0175",
+   "timestamp": "2026-04-06T02:52:43",
+   "text": "Love the new budgeting charts but they make the app lag badly on my older phone (iPhone 8). Scrolling stutters and sometimes it just hangs."
+  },
+  {
+   "id": 176,
+   "alias": "R0176",
+   "timestamp": "2026-04-06T03:35:43",
+   "text": "The account switcher at the top is hidden unless you scroll to the very top. I have 3 accounts and spent ages finding how to change between them."
+  },
+  {
+   "id": 177,
+   "alias": "R0177",
+   "timestamp": "2026-04-06T03:53:43",
+   "text": "The wire transfer fee was $30 and I only found out after confirming. Show the fee BEFORE the final confirm button!"
+  },
+  {
+   "id": 178,
+   "alias": "R0178",
+   "timestamp": "2026-04-06T04:38:43",
+   "text": "Why does it ask me for a code every single login even on my own trusted phone? A 'remember this device' option for 30 days would be great."
+  },
+  {
+   "id": 179,
+   "alias": "R0179",
+   "timestamp": "2026-04-06T05:08:43",
+   "text": "Paid my rent via transfer and was charged a 'service fee' of $15 that I've never seen before. Is this new? No email, no notice."
+  },
+  {
+   "id": 180,
+   "alias": "R0180",
+   "timestamp": "2026-04-06T05:50:43",
+   "text": "pin reset flow only needs my card number and DOB which are both findable if someone steals my mail. Add another step plz, like a code to my phone."
+  },
+  {
+   "id": 181,
+   "alias": "R0181",
+   "timestamp": "2026-04-06T06:19:43",
+   "text": "Foreign transaction fee was charged on a purchase from a UK web shop that was in USD. Doesn't make sense, and the app doesn't explain fees clearly on the card screen."
+  },
+  {
+   "id": 182,
+   "alias": "R0182",
+   "timestamp": "2026-04-06T06:55:43",
+   "text": "Love the budgeting tab, the category charts are really clear. Would be great if I could set separate limits for groceries and eating out tho."
+  },
+  {
+   "id": 183,
+   "alias": "R0183",
+   "timestamp": "2026-04-06T07:56:43",
+   "text": "Can't export my statements as CSV, only PDF. I need to import into my bookkeeping software every month and retyping 60 transactions is painful. Please add CSV or OFX."
+  },
+  {
+   "id": 184,
+   "alias": "R0184",
+   "timestamp": "2026-04-06T08:34:43",
+   "text": "Chat hours only till 6pm? I work until 6. Weekend hours would help a lot, otherwise I can't reach anyone."
+  },
+  {
+   "id": 185,
+   "alias": "R0185",
+   "timestamp": "2026-04-06T09:11:43",
+   "text": "Is it safe to use the app on public wifi at the airport? Nothing in the app tells me. A little banner when the network is unsecured would be nice."
+  },
+  {
+   "id": 186,
+   "alias": "R0186",
+   "timestamp": "2026-04-06T09:43:43",
+   "text": "Statement shows a merchant name as 'POS 4482 XK' with no real name. Couldn't tell what it was for ages. Can you show the cleaned-up merchant name like the app does in the transaction list?"
+  },
+  {
+   "id": 187,
+   "alias": "R0187",
+   "timestamp": "2026-04-06T09:58:43",
+   "text": "support was ok. slow but polite."
+  },
+  {
+   "id": 188,
+   "alias": "R0188",
+   "timestamp": "2026-04-06T11:03:43",
+   "text": "Search for old transactions never finds anything unless I type the exact merchant name. Tried 'coffee' and got nothing."
+  },
+  {
+   "id": 189,
+   "alias": "R0189",
+   "timestamp": "2026-04-06T11:28:43",
+   "text": "Animations when switching tabs feel laggy on my older phone, like half a second delay. Maybe offer a reduce motion option?"
+  },
+  {
+   "id": 190,
+   "alias": "R0190",
+   "timestamp": "2026-04-06T12:03:43",
+   "text": "Bill pay worked fine for my water bill but the confirmation screen froze and I wasn't sure if it went through, so I paid twice. Now I have a duplicate payment. Support chat took 40 min to answer."
+  },
+  {
+   "id": 191,
+   "alias": "R0191",
+   "timestamp": "2026-04-06T12:50:43",
+   "text": "The scheduled payment calendar is confusing. I can't see all upcoming payments in one list, have to click into each payee. Please add a single view."
+  },
+  {
+   "id": 192,
+   "alias": "R0192",
+   "timestamp": "2026-04-06T13:24:43",
+   "text": "Customer support agent Marcus was patient and fixed my wrong payee issue in 10 minutes. Wish more places were like this."
+  },
+  {
+   "id": 193,
+   "alias": "R0193",
+   "timestamp": "2026-04-06T13:46:43",
+   "text": "Refund from an online store has been 'pending' for 12 days. Not sure if its the merchant or you guys. Can you tell me anywhere in the app who is holding it up?"
+  },
+  {
+   "id": 194,
+   "alias": "R0194",
+   "timestamp": "2026-04-06T14:20:43",
+   "text": "Export to Excel cuts off at 100 transactions. Had to do it in 5 date ranges for my tax prep. Also the dates come out as text so sorting is broken."
+  },
+  {
+   "id": 195,
+   "alias": "R0195",
+   "timestamp": "2026-04-06T15:09:43",
+   "text": "Please let me set a recurring transfer to savings on payday, not a fixed date. My pay lands on different days and the 1st rarely works."
+  },
+  {
+   "id": 196,
+   "alias": "R0196",
+   "timestamp": "2026-04-06T15:43:43",
+   "text": "Chat support took 45 minutes to answer and then the agent just pasted a help article I'd already read. Please let me actually talk to someone."
+  },
+  {
+   "id": 197,
+   "alias": "R0197",
+   "timestamp": "2026-04-06T16:16:43",
+   "text": "Subscription charges keep hitting my old card number after reissue. Would be great if the app showed which merchants have saved the old card, or auto-updated them somehow."
+  },
+  {
+   "id": 198,
+   "alias": "R0198",
+   "timestamp": "2026-04-06T16:51:43",
+   "text": "Can you add a lock screen widget for recent transactions? Even just the last 3 would do. Also dark mode on the statements page is blinding at night."
+  },
+  {
+   "id": 199,
+   "alias": "R0199",
+   "timestamp": "2026-04-06T17:42:43",
+   "text": "Someone called pretending to be your fraud team and knew my last 4 digits. I hung up and called the number on my card. The app should warn people that you never ask for codes over the phone."
+  },
+  {
+   "id": 200,
+   "alias": "R0200",
+   "timestamp": "2026-04-06T18:00:43",
+   "text": "split bills feature inside the app for joint account owners? like mark a purchase as 'mine' vs 'ours' and see the totals at month end"
+  },
+  {
+   "id": 201,
+   "alias": "R0201",
+   "timestamp": "2026-04-06T19:06:43",
+   "text": "App crashes right after I enter the 6 digit code. Android 14, Pixel. Restarted twice, reinstalled once, same thing."
+  },
+  {
+   "id": 202,
+   "alias": "R0202",
+   "timestamp": "2026-04-06T19:38:43",
+   "text": "Takes over a minute to load my transaction history for the past 3 months. Used to be instant. Pls optimize"
+  },
+  {
+   "id": 203,
+   "alias": "R0203",
+   "timestamp": "2026-04-06T19:56:43",
+   "text": "Honestly the previous version was way faster. Now every screen has a loading skeleton for ages. Can you roll it back or something?"
+  },
+  {
+   "id": 204,
+   "alias": "R0204",
+   "timestamp": "2026-04-06T20:46:43",
+   "text": "Can't turn off the 'remember me' on login, it keeps my username filled in. My partner shares my tablet and I don't love that."
+  },
+  {
+   "id": 205,
+   "alias": "R0205",
+   "timestamp": "2026-04-06T21:08:43",
+   "text": "Dark mode makes the card image unreadable, the last four digits are grey on dark grey. Small thing but I check it a lot."
+  },
+  {
+   "id": 206,
+   "alias": "R0206",
+   "timestamp": "2026-04-06T21:44:43",
+   "text": "my wife and I share a phone sometimes and logging out of one account then into another is so clunky, it takes like 6 taps"
+  },
+  {
+   "id": 207,
+   "alias": "R0207",
+   "timestamp": "2026-04-06T22:24:43",
+   "text": "Fingerprint stopped working after I added a second finger to my phone settings. Had to disable and re-enable in the app. Maybe tell people that?"
+  },
+  {
+   "id": 208,
+   "alias": "R0208",
+   "timestamp": "2026-04-06T23:09:43",
+   "text": "I got a callback like they promised, which honestly never happens with banks. But it came at 9:40pm. Maybe ask for a preferred time?"
+  },
+  {
+   "id": 209,
+   "alias": "R0209",
+   "timestamp": "2026-04-06T23:44:43",
+   "text": "Setting up a new payee requires too many steps, and then it makes me wait 24 hrs before I can pay them. I get the security reason but at least tell me upfront."
+  },
+  {
+   "id": 210,
+   "alias": "R0210",
+   "timestamp": "2026-04-07T00:20:43",
+   "text": "the virtual card feature is hidden. took me forever to find it under 'More' > 'Manage'. Put it on the cards tab please"
+  },
+  {
+   "id": 211,
+   "alias": "R0211",
+   "timestamp": "2026-04-07T01:03:43",
+   "text": "Great app overall. One wish: let me see the full card number and CVV without having to contact support. Other apps do this with biometric confirmation."
+  },
+  {
+   "id": 212,
+   "alias": "R0212",
+   "timestamp": "2026-04-07T01:49:43",
+   "text": "Reset password email took 40 minutes to arrive and the link was already invalid when I clicked it. Third time I've had to do this this month."
+  },
+  {
+   "id": 213,
+   "alias": "R0213",
+   "timestamp": "2026-04-07T02:04:43",
+   "text": "Pagué un recibo de luz y la confirmación nunca llegó, pero el dinero sí salió. Necesito un comprobante para reclamar."
+  },
+  {
+   "id": 214,
+   "alias": "R0214",
+   "timestamp": "2026-04-07T02:40:43",
+   "text": "Honestly the app is pretty smooth now. Would be nice to rearrange the home screen widgets, I never use the credit score thing and it takes up half the screen."
+  },
+  {
+   "id": 215,
+   "alias": "R0215",
+   "timestamp": "2026-04-07T03:33:43",
+   "text": "明細書のPDFをダウンロードしようとすると真っ白な画面になります。確定申告で必要なので早めに修正してほしい。あと、ログインも時々遅いです。"
+  },
+  {
+   "id": 216,
+   "alias": "R0216",
+   "timestamp": "2026-04-07T04:06:43",
+   "text": "Mobile deposit rejected my check three times saying image blurry. Camera was fine, I took it in good light on a dark table. Finally worked on the 4th try."
+  },
+  {
+   "id": 217,
+   "alias": "R0217",
+   "timestamp": "2026-04-07T04:32:43",
+   "text": "Why can't I add my teenager to a joint account with limited permissions? A kids view with spending caps and no transfers out would sell me instantly."
+  },
+  {
+   "id": 218,
+   "alias": "R0218",
+   "timestamp": "2026-04-07T05:23:43",
+   "text": "support chat bot just keeps sending me the same FAQ link. I asked about a double charge on my card and nobody human ever replied. Been 4 days. Also the chat window closes when I switch apps so I lose the whole thing"
+  },
+  {
+   "id": 219,
+   "alias": "R0219",
+   "timestamp": "2026-04-07T05:54:43",
+   "text": "Notification badge on the app icon says 3 but there's nothing unread inside. Been like that for two weeks."
+  },
+  {
+   "id": 220,
+   "alias": "R0220",
+   "timestamp": "2026-04-07T06:39:43",
+   "text": "It would help to see my balances in a second currency as a display option, without actually converting. I think in pounds but my account is in dollars."
+  },
+  {
+   "id": 221,
+   "alias": "R0221",
+   "timestamp": "2026-04-07T07:17:43",
+   "text": "Card replacement fee of $10 even though my card was damaged in the mail when it arrived. Waive that? Also, the new card took 12 days."
+  },
+  {
+   "id": 222,
+   "alias": "R0222",
+   "timestamp": "2026-04-07T07:46:43",
+   "text": "Savings goals are nice, but can we have automatic round-ups? Every coffee rounding to the next dollar into a vacation pot would be perfect."
+  },
+  {
+   "id": 223,
+   "alias": "R0223",
+   "timestamp": "2026-04-07T08:38:43",
+   "text": "Love the virtual cards!! Made one just for my streaming subscriptions and it's so easy to delete when I cancel. Would love if I could set a monthly limit on each one tho."
+  },
+  {
+   "id": 224,
+   "alias": "R0224",
+   "timestamp": "2026-04-07T09:03:43",
+   "text": "Notifications for incoming deposits arrive like 10 minutes late, sometimes hours. Kinda defeats the point."
+  },
+  {
+   "id": 225,
+   "alias": "R0225",
+   "timestamp": "2026-04-07T09:39:43",
+   "text": "Bill pay is easy, set up my electric bill in like a minute and the recurring reminder is handy."
+  },
+  {
+   "id": 226,
+   "alias": "R0226",
+   "timestamp": "2026-04-07T10:22:43",
+   "text": "International transfer fee wasn't shown until the last step. Would've picked another option if I'd known. Show the fee and the exchange rate first pls."
+  },
+  {
+   "id": 227,
+   "alias": "R0227",
+   "timestamp": "2026-04-07T11:07:43",
+   "text": "Tried to activate my new debit card three times and the app just spins after I enter the last 4 digits. Ended up calling support which took 25 min. Please fix this."
+  },
+  {
+   "id": 228,
+   "alias": "R0228",
+   "timestamp": "2026-04-07T11:43:43",
+   "text": "Savings: it'd be awesome to have multiple named pots with separate interest tracking. One 'savings' balance is too vague for me."
+  },
+  {
+   "id": 229,
+   "alias": "R0229",
+   "timestamp": "2026-04-07T12:02:43",
+   "text": "Apple Pay keeps asking me to re-verify my card every couple weeks. Annoying. Android wallet works fine with the same card so idk whats going on."
+  },
+  {
+   "id": 230,
+   "alias": "R0230",
+   "timestamp": "2026-04-07T12:55:43",
+   "text": "Would love to split bills with friends inside the app, or at least export transactions to CSV."
+  },
+  {
+   "id": 231,
+   "alias": "R0231",
+   "timestamp": "2026-04-07T13:21:43",
+   "text": "why does every transfer to my savings take 2 business days?? my other account moves it instantly. fix this"
+  },
+  {
+   "id": 232,
+   "alias": "R0232",
+   "timestamp": "2026-04-07T13:58:43",
+   "text": "Why do I get security alerts for logging in from my own phone? Every morning 'new sign-in detected'. Either it's a bug or I'm very confused."
+  },
+  {
+   "id": 233,
+   "alias": "R0233",
+   "timestamp": "2026-04-07T14:40:43",
+   "text": "Dark mode please for the support chat window. Everything else follows the system theme but chat is blinding white."
+  },
+  {
+   "id": 234,
+   "alias": "R0234",
+   "timestamp": "2026-04-07T15:18:43",
+   "text": "Got a late fee on my credit card even though I scheduled autopay. Autopay said 'scheduled' but then nothing was taken. Need that reversed asap."
+  },
+  {
+   "id": 235,
+   "alias": "R0235",
+   "timestamp": "2026-04-07T16:01:43",
+   "text": "Notification sounds are the default beep and cant be changed, and it wakes me up at night for promos. Let me turn off marketing but keep transaction alerts!"
+  },
+  {
+   "id": 236,
+   "alias": "R0236",
+   "timestamp": "2026-04-07T16:17:43",
+   "text": "I can't find where to change my phone number. Searched settings for ages. Had to call."
+  },
+  {
+   "id": 237,
+   "alias": "R0237",
+   "timestamp": "2026-04-07T17:05:43",
+   "text": "app is fine but I noticed it shows my full account number on the home screen when anyone glances over my shoulder. can u mask it by default"
+  },
+  {
+   "id": 238,
+   "alias": "R0238",
+   "timestamp": "2026-04-07T17:44:43",
+   "text": "Great app overall but transfers history only goes back 90 days. I need older ones for taxes and had to dig through statements."
+  },
+  {
+   "id": 239,
+   "alias": "R0239",
+   "timestamp": "2026-04-07T18:31:43",
+   "text": "The tax summary export is really handy, thanks. But it lumps all my interest into one line and I need it by account for my accountant."
+  },
+  {
+   "id": 240,
+   "alias": "R0240",
+   "timestamp": "2026-04-07T18:46:43",
+   "text": "Why is there a 3% foreign transaction fee?? I didn't see that anywhere before my trip. Would be nice to get a heads-up notification when you tap your card abroad."
+  },
+  {
+   "id": 241,
+   "alias": "R0241",
+   "timestamp": "2026-04-07T19:16:43",
+   "text": "Slow. So slow. Takes like 15 seconds just to show my balance on wifi."
+  },
+  {
+   "id": 242,
+   "alias": "R0242",
+   "timestamp": "2026-04-07T20:03:43",
+   "text": "Push notifications for card purchases show up like 10 minutes late. By then I already know I bought the coffee lol. Would be useful if they were instant, especially for fraud."
+  },
+  {
+   "id": 243,
+   "alias": "R0243",
+   "timestamp": "2026-04-07T20:52:43",
+   "text": "Small thing: widget for quick transfer to my usual contacts. Tap, pick amount, done. Currently it's like 5 taps through menus."
+  },
+  {
+   "id": 244,
+   "alias": "R0244",
+   "timestamp": "2026-04-07T21:37:43",
+   "text": "Does the app connect to QuickBooks? I run a small landscaping business and would pay extra for auto-syncing transactions. Right now I download and upload by hand every week."
+  },
+  {
+   "id": 245,
+   "alias": "R0245",
+   "timestamp": "2026-04-07T22:07:43",
+   "text": "Pinch to zoom doesnt work on statement PDFs inside the app and the text is tiny. Have to export it to read anything. Please fix, and the loading spinner takes forever too."
+  },
+  {
+   "id": 246,
+   "alias": "R0246",
+   "timestamp": "2026-04-07T22:49:43",
+   "text": "ATM fee charged $3 at a machine that the app map said was 'fee-free'. Map needs updating. Also the app logged me out twice while I was checking."
+  },
+  {
+   "id": 247,
+   "alias": "R0247",
+   "timestamp": "2026-04-07T23:08:43",
+   "text": "Can you add split-bill option for sending money to friends? Right now I do math in my head and its a mess."
+  },
+  {
+   "id": 248,
+   "alias": "R0248",
+   "timestamp": "2026-04-08T00:01:43",
+   "text": "PIN pad numbers are in the same spot every time so someone could see my taps. Randomise it? Otherwise good app."
+  },
+  {
+   "id": 249,
+   "alias": "R0249",
+   "timestamp": "2026-04-08T00:22:43",
+   "text": "Agent was rude, kept sighing when I asked her to repeat the steps. I'm 68 and not great with apps, a little patience goes a long way."
+  },
+  {
+   "id": 250,
+   "alias": "R0250",
+   "timestamp": "2026-04-08T00:50:43",
+   "text": "Statements go back only 12 months. I needed 2 years for a mortgage application and had to go to a branch. Please extend the archive."
+  },
+  {
+   "id": 251,
+   "alias": "R0251",
+   "timestamp": "2026-04-08T01:42:43",
+   "text": "Face ID works perfectly, login is fast. Thanks!"
+  },
+  {
+   "id": 252,
+   "alias": "R0252",
+   "timestamp": "2026-04-08T02:07:43",
+   "text": "Push notifications for card purchases now open the app to a blank page instead of the transaction. Then it hangs until I swipe it away. Regression from the last update for sure."
+  },
+  {
+   "id": 253,
+   "alias": "R0253",
+   "timestamp": "2026-04-08T03:07:43",
+   "text": "Budget planning could use a yearly view. I know my insurance and annual subscriptions hit once a year and the monthly view makes me look broke in march."
+  },
+  {
+   "id": 254,
+   "alias": "R0254",
+   "timestamp": "2026-04-08T03:25:43",
+   "text": "text size set to large in my phone settings and the budgeting screen cuts off the category names. Amounts overlap too. Looks broken"
+  },
+  {
+   "id": 255,
+   "alias": "R0255",
+   "timestamp": "2026-04-08T04:13:43",
+   "text": "My paycheck deposit shows pending but my employer says it was sent Thursday. Its Saturday night and I need groceries. Could you show when funds will be available?"
+  },
+  {
+   "id": 256,
+   "alias": "R0256",
+   "timestamp": "2026-04-08T04:56:43",
+   "text": "Got a closed-ticket notification but my problem was NOT solved. Nobody asked me. Had to open a new one and repeat the whole story."
+  },
+  {
+   "id": 257,
+   "alias": "R0257",
+   "timestamp": "2026-04-08T05:12:43",
+   "text": "Charged a returned payment fee after a bill pay bounced, but the bounce was because your system sent it to the wrong account number format. Not my fault."
+  },
+  {
+   "id": 258,
+   "alias": "R0258",
+   "timestamp": "2026-04-08T06:11:43",
+   "text": "The support chat never loads for me. Just a grey box with the dots. Also the card tab takes forever to open. Android 13."
+  },
+  {
+   "id": 259,
+   "alias": "R0259",
+   "timestamp": "2026-04-08T06:34:43",
+   "text": "PIN change worked fine but the new PIN was rejected at a gas pump. Then it worked inside the store. Weird."
+  },
+  {
+   "id": 260,
+   "alias": "R0260",
+   "timestamp": "2026-04-08T07:17:43",
+   "text": "The support chat doesnt let me attach photos so I couldnt show the damaged card. Had to describe it in words and they asked for a pic anyway lol"
+  },
+  {
+   "id": 261,
+   "alias": "R0261",
+   "timestamp": "2026-04-08T07:45:43",
+   "text": "Declined online for a $40 order and no reason given. Support chat bot just kept sending me help articles. Need a human to tell me if its a fraud hold or what."
+  },
+  {
+   "id": 262,
+   "alias": "R0262",
+   "timestamp": "2026-04-08T08:35:43",
+   "text": "Transfer to my savings took 3 days?? It said instant. Not happy."
+  },
+  {
+   "id": 263,
+   "alias": "R0263",
+   "timestamp": "2026-04-08T09:12:43",
+   "text": "Face ID worked fine for months and after the last update it just says 'authentication failed' every single time. Have to type my password now which is annoying cause it's 18 characters."
+  },
+  {
+   "id": 264,
+   "alias": "R0264",
+   "timestamp": "2026-04-08T09:52:43",
+   "text": "Love the new look, cleaner and faster. Only thing is the font is a bit small in the transactions list, wish I could bump it up."
+  },
+  {
+   "id": 265,
+   "alias": "R0265",
+   "timestamp": "2026-04-08T10:19:43",
+   "text": "Widget for balance shows 'loading' forever on my home screen after updating, and when I tap it the app opens then closes right away. iPhone 15 Pro."
+  },
+  {
+   "id": 266,
+   "alias": "R0266",
+   "timestamp": "2026-04-08T10:43:43",
+   "text": "Biometric prompt pops up twice before I can do anything. Tap, scan, then again. Minor bug but annoying."
+  },
+  {
+   "id": 267,
+   "alias": "R0267",
+   "timestamp": "2026-04-08T11:43:43",
+   "text": "app freezes when i try to transfer money between my savings and checking. i press confirm and nothing happens, then it kicks me out. did it 3 times, not sure if the money went thru??"
+  },
+  {
+   "id": 268,
+   "alias": "R0268",
+   "timestamp": "2026-04-08T11:57:43",
+   "text": "I get a text AND an email AND a push for every single transfer. Let me pick one channel. My inbox is full of this stuff."
+  },
+  {
+   "id": 269,
+   "alias": "R0269",
+   "timestamp": "2026-04-08T12:48:43",
+   "text": "Great update! The spending graph is much easier to read now. But the transfer screen got slower, there's a weird lag after I type the amount."
+  },
+  {
+   "id": 270,
+   "alias": "R0270",
+   "timestamp": "2026-04-08T13:36:43",
+   "text": "Love the budgeting tab but I can't create custom categories. 'Pet stuff' ends up under Shopping and ruins my numbers. Pls let us make our own."
+  },
+  {
+   "id": 271,
+   "alias": "R0271",
+   "timestamp": "2026-04-08T14:15:43",
+   "text": "The new spending insights are cool but they categorized my daughter's tuition as 'entertainment' lol. Can I edit categories manually?"
+  },
+  {
+   "id": 272,
+   "alias": "R0272",
+   "timestamp": "2026-04-08T14:24:43",
+   "text": "Opened a ticket 6 days ago and still nothing. Not even an auto reply with a ticket number. Is anyone looking at these?"
+  },
+  {
+   "id": 273,
+   "alias": "R0273",
+   "timestamp": "2026-04-08T15:02:43",
+   "text": "I unfroze my card and tried to pay for groceries immediately, declined. Waited 5 minutes and it worked. Maybe add a message saying it may take a moment?"
+  },
+  {
+   "id": 274,
+   "alias": "R0274",
+   "timestamp": "2026-04-08T15:44:43",
+   "text": "Everything is so cramped on my small screen. Buttons on the card details page overlap the CVV reveal and I cant tap either one properly."
+  },
+  {
+   "id": 275,
+   "alias": "R0275",
+   "timestamp": "2026-04-08T16:18:43",
+   "text": "Got a push notif for a login from a city I've never been to. Denied it, changed password, but there's no 'was this you' history in the app to check anything. Very uneasy."
+  },
+  {
+   "id": 276,
+   "alias": "R0276",
+   "timestamp": "2026-04-08T16:52:43",
+   "text": "Scheduled payments are great, set up my electric bill once and haven't thought about it since. Would love a reminder a day before it goes out though."
+  },
+  {
+   "id": 277,
+   "alias": "R0277",
+   "timestamp": "2026-04-08T17:37:43",
+   "text": "Love the new look. Only wish: tags on transactions, like #holiday or #work, so I can budget across categories without hacks."
+  },
+  {
+   "id": 278,
+   "alias": "R0278",
+   "timestamp": "2026-04-08T18:05:43",
+   "text": "Used the card in Mexico for a week with no issues, thank you! Only complaint is the exchange rate shown in-app didn't quite match the final charge."
+  },
+  {
+   "id": 279,
+   "alias": "R0279",
+   "timestamp": "2026-04-08T19:06:43",
+   "text": "Everything works ok except the mobile check deposit camera, it freezes right when I try to snap the back of the check. Had to deposit at an ATM instead. iPhone 12."
+  },
+  {
+   "id": 280,
+   "alias": "R0280",
+   "timestamp": "2026-04-08T19:46:43",
+   "text": "Sent $450 to my landlord Friday morning and it's STILL pending on Monday. Rent is due and he's asking me where it is. App just says 'processing' with no estimate. Pretty stressful."
+  },
+  {
+   "id": 281,
+   "alias": "R0281",
+   "timestamp": "2026-04-08T20:10:43",
+   "text": "virtual card number changed on its own and now my gym membership payment failed twice. Didn't get any warning it was rotating. Charged a late fee because of it."
+  },
+  {
+   "id": 282,
+   "alias": "R0282",
+   "timestamp": "2026-04-08T20:43:43",
+   "text": "Got hit with a $35 overdraft fee even though my balance showed positive when I bought coffee. The pending transaction from two days earlier wasn't shown anywhere in the app. Please fix how pending items display."
+  },
+  {
+   "id": 283,
+   "alias": "R0283",
+   "timestamp": "2026-04-08T21:37:43",
+   "text": "Keeps logging me out after like 1 minute if I switch to another app to copy an account number. Super frustrating when paying someone."
+  },
+  {
+   "id": 284,
+   "alias": "R0284",
+   "timestamp": "2026-04-08T21:52:43",
+   "text": "Got the same 'payment due' alert 4 times today for my electric bill. Already paid it on Friday. Annoying."
+  },
+  {
+   "id": 285,
+   "alias": "R0285",
+   "timestamp": "2026-04-08T22:49:43",
+   "text": "Search in transactions crashes if I type more than a few letters quickly. Would be great if it also searched by amount, but first please stop the crashing."
+  },
+  {
+   "id": 286,
+   "alias": "R0286",
+   "timestamp": "2026-04-08T23:05:43",
+   "text": "ウィジェットで残高を見られるようにしてほしいです。いちいちログインするのが手間で…"
+  },
+  {
+   "id": 287,
+   "alias": "R0287",
+   "timestamp": "2026-04-09T00:05:43",
+   "text": "Alert for large transactions is set to $500 but I got pinged for a $12 charge. Also didn't get one for an actual $800 transfer. Something is off with the logic."
+  },
+  {
+   "id": 288,
+   "alias": "R0288",
+   "timestamp": "2026-04-09T00:35:43",
+   "text": "Why is the amount in my available balance different from my current balance and neither matches what I expect after the transfers? Needs a simple explanation in the app."
+  },
+  {
+   "id": 289,
+   "alias": "R0289",
+   "timestamp": "2026-04-09T01:06:43",
+   "text": "Honestly the best banking app I've used. Clean, quick, no ads."
+  },
+  {
+   "id": 290,
+   "alias": "R0290",
+   "timestamp": "2026-04-09T01:59:43",
+   "text": "The bot actually resolved my statement request in under a minute. Pleasantly surprised! Wish it could handle disputes too."
+  },
+  {
+   "id": 291,
+   "alias": "R0291",
+   "timestamp": "2026-04-09T02:17:43",
+   "text": "I don't understand why the app wants access to my contacts and location just to pay a bill. Declined both and it still works but it feels invasive. What do you do with that data?"
+  },
+  {
+   "id": 292,
+   "alias": "R0292",
+   "timestamp": "2026-04-09T02:59:43",
+   "text": "Android widget for budget remaining this month, just one number. That's it. That's all I want from life."
+  },
+  {
+   "id": 293,
+   "alias": "R0293",
+   "timestamp": "2026-04-09T03:32:43",
+   "text": "The card arrived but the activation code in the letter doesn't work. Tried scanning the QR thing too, says invalid. Been 4 days without a usable card."
+  },
+  {
+   "id": 294,
+   "alias": "R0294",
+   "timestamp": "2026-04-09T04:25:43",
+   "text": "the back button behaves weirdly. I go from statements to a PDF and hitting back sends me to the home screen instead of the statements list"
+  },
+  {
+   "id": 295,
+   "alias": "R0295",
+   "timestamp": "2026-04-09T04:50:43",
+   "text": "Interest rate on my savings isn't shown anywhere obvious, had to dig through statements. A simple projection chart of 'what you'll have in 12 months' would be great."
+  },
+  {
+   "id": 296,
+   "alias": "R0296",
+   "timestamp": "2026-04-09T05:27:43",
+   "text": "The statement PDF downloads but the text is tiny and cut off on the right side. Can't read the balance column on my phone."
+  },
+  {
+   "id": 297,
+   "alias": "R0297",
+   "timestamp": "2026-04-09T05:49:43",
+   "text": "Great app overall. One thing: statement PDFs have the filename 'statement.pdf' every time so my downloads folder is a mess. Put the month and last 4 digits in the name please."
+  },
+  {
+   "id": 298,
+   "alias": "R0298",
+   "timestamp": "2026-04-09T06:43:43",
+   "text": "Password rules are weird. It rejected my new password for 'too similar to old' but wouldnt tell me what was wrong. Wasted 15 min."
+  },
+  {
+   "id": 299,
+   "alias": "R0299",
+   "timestamp": "2026-04-09T07:04:43",
+   "text": "Is there a way to make the app use a high contrast theme? My dad is low vision and relies on me to do his banking because the colors are too faint for him."
+  },
+  {
+   "id": 300,
+   "alias": "R0300",
+   "timestamp": "2026-04-09T08:00:43",
+   "text": "Love the new spending insights but a little worried since it reads my transaction descriptions. is that processed on device or sent to your servers? would like to opt out."
+  }
+ ]
+}
