@@ -56,6 +56,9 @@ Welcome to Claude Code v2.1.310
   │               │ (2026-10-22)                        │                   │        │
   └───────────────┴─────────────────────────────────────┴───────────────────┴────────┘
 
+● SBBAA26: the experiment ran; the effect is absent in Claude Code 2.1.310, whose
+  compaction prompt changed after the paper's data was collected. See its README.
+
 ● Each directory's README covers the paper's claims, the setup, what was prepared,
   the procedure, the results and a discussion.
 
