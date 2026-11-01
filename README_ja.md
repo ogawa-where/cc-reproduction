@@ -1,6 +1,6 @@
 # cc-reproduction: 論文で報告された Claude Code の挙動を 1 件ずつ再現する
 
-[![reproductions](https://img.shields.io/badge/reproductions-3-blue)](#再現の一覧)
+[![reproductions](https://img.shields.io/badge/reproductions-4-blue)](#再現の一覧)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-v2.1.310-black?logo=anthropic)](https://code.claude.com)
 [![papers](https://img.shields.io/badge/papers-arXiv-b31b1b?logo=arxiv)](https://arxiv.org)
 
@@ -40,7 +40,7 @@ Welcome to Claude Code v2.1.310
 > 再現の一覧を見せて
 
 ● Glob(**/README.md)
-  ⎿  Found 3 reproductions
+  ⎿  Found 4 reproductions
 
 ● これまでの再現は次のとおりです。
 
@@ -60,6 +60,12 @@ Welcome to Claude Code v2.1.310
   │            │ <a href="https://arxiv.org/abs/2610.36449">Exploring Visual Meaning and</a>        │                    │        │
   │            │ <a href="https://arxiv.org/abs/2610.36449">Communication in VLMs</a>               │                    │        │
   │            │ (2026-10-27)                        │                    │        │
+  ├────────────┼─────────────────────────────────────┼────────────────────┼────────┤
+  │ 2026-11-01 │ [BGC26] <a href="https://arxiv.org/abs/2610.08036">Same Feedback, Different</a>    │ <a href="./20261101_BGC26/">20261101_BGC26/</a>    │ OK     │
+  │            │ <a href="https://arxiv.org/abs/2610.08036">Answer: Measuring Run-to-Run</a>        │                    │        │
+  │            │ <a href="https://arxiv.org/abs/2610.08036">Instability in Frontier-Model</a>       │                    │        │
+  │            │ <a href="https://arxiv.org/abs/2610.08036">Customer Feedback Analysis</a>          │                    │        │
+  │            │ (2026-10-06)                        │                    │        │
   └────────────┴─────────────────────────────────────┴────────────────────┴────────┘
 
 ● SBBAA26: 実験は完了。現象は Claude Code 2.1.310 では出ず、原因は圧縮プロンプトの
