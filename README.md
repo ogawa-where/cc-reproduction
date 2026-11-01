@@ -1,6 +1,6 @@
 # cc-reproduction: Reproducing reported Claude Code behaviors, one paper at a time
 
-[![reproductions](https://img.shields.io/badge/reproductions-3-blue)](#reproductions)
+[![reproductions](https://img.shields.io/badge/reproductions-4-blue)](#reproductions)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-v2.1.310-black?logo=anthropic)](https://code.claude.com)
 [![papers](https://img.shields.io/badge/papers-arXiv-b31b1b?logo=arxiv)](https://arxiv.org)
 
@@ -40,7 +40,7 @@ Welcome to Claude Code v2.1.310
 > Show me the reproductions
 
 ● Glob(**/README.md)
-  ⎿  Found 3 reproductions
+  ⎿  Found 4 reproductions
 
 ● Here are the reproductions so far:
 
@@ -60,6 +60,12 @@ Welcome to Claude Code v2.1.310
   │            │ <a href="https://arxiv.org/abs/2610.36449">Exploring Visual Meaning and</a>        │                    │        │
   │            │ <a href="https://arxiv.org/abs/2610.36449">Communication in VLMs</a>               │                    │        │
   │            │ (2026-10-27)                        │                    │        │
+  ├────────────┼─────────────────────────────────────┼────────────────────┼────────┤
+  │ 2026-11-01 │ [BGC26] <a href="https://arxiv.org/abs/2610.08036">Same Feedback, Different</a>    │ <a href="./20261101_BGC26/">20261101_BGC26/</a>    │ OK     │
+  │            │ <a href="https://arxiv.org/abs/2610.08036">Answer: Measuring Run-to-Run</a>        │                    │        │
+  │            │ <a href="https://arxiv.org/abs/2610.08036">Instability in Frontier-Model</a>       │                    │        │
+  │            │ <a href="https://arxiv.org/abs/2610.08036">Customer Feedback Analysis</a>          │                    │        │
+  │            │ (2026-10-06)                        │                    │        │
   └────────────┴─────────────────────────────────────┴────────────────────┴────────┘
 
 ● SBBAA26: the experiment ran; the effect is absent in Claude Code 2.1.310, whose
