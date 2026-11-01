@@ -66,7 +66,7 @@ def claude_call(model, system_prompt, user_text, schema, env, cwd, timeout=900):
 
 
 def format_records(records):
-    return "\n".join(f"{r['alias']}\t{r['text']}" for r in records)
+    return "\n".join(f"{r['alias']}\t{r.get('timestamp', '')}\t{r['text']}" for r in records)
 
 
 def normalize_answer(obj, valid_ids):
@@ -189,6 +189,8 @@ def run_tga(args, records, question, store, env, cwd):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--model", default="sonnet")
+    ap.add_argument("--corpus", default=os.path.join(HERE, "corpus", "feedback-300.json"),
+                    help="frozen corpus JSON from make_corpus.py ('' to use the templated synthetic corpus)")
     ap.add_argument("--n-records", type=int, default=300)
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--runs", type=int, default=10, help="independent runs per cell (paper: 10)")
@@ -203,9 +205,13 @@ def main():
                     help="additionally rebuild the TGA taxonomy this many times (construction-time instability)")
     args = ap.parse_args()
     os.makedirs(args.out, exist_ok=True)
-    records = corpus_mod.generate(args.n_records, args.seed)
-    for r in records:
-        r["alias"] = f"R{r['id']:04d}"
+    if args.corpus:
+        data = json.load(open(args.corpus, encoding="utf-8"))
+        records = data["records"][:args.n_records]
+    else:
+        records = corpus_mod.generate(args.n_records, args.seed)
+        for r in records:
+            r["alias"] = f"R{r['id']:04d}"
     valid_ids = {r["alias"] for r in records}
     json.dump([{k: v for k, v in r.items()} for r in records], open(os.path.join(args.out, "corpus.json"), "w"), ensure_ascii=False, indent=0)
     parent = tempfile.mkdtemp(prefix="sfda_")
