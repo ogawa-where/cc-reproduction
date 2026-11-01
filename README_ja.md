@@ -1,4 +1,4 @@
-# cc-reproduction: 論文で報告された Claude Code の挙動を 1 件ずつ再現する
+# cc-reproduction: 論文で報告された Claude Code の挙動を再現し、その先を調べる
 
 [![reproductions](https://img.shields.io/badge/reproductions-4-blue)](#再現の一覧)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-v2.1.310-black?logo=anthropic)](https://code.claude.com)
@@ -8,9 +8,11 @@
 README: <a href="./README.md">English</a> | <a href="./README_ja.md">日本語</a>
 </sub></div>
 
-## 論文の報告を、実物の Claude Code で確かめる
+## 論文の報告を実物の Claude Code で確かめ、論文が残した問いを調べる
 
-再現は論文ごとに 1 ディレクトリで、名前は `YYYYMMDD_<引用キー>`（再現日と、著者の頭文字 + 年。Xu & Wu, 2026 → `XW26`）。各ディレクトリに再現ハーネスとタスクを置き、README に論文の主張・実験環境・準備したもの・手順・結果・考察をまとめている。
+研究は 1 件 1 ディレクトリで、名前は `YYYYMMDD_<引用キー>`（実施日と、著者の頭文字 + 年。Xu & Wu, 2026 → `XW26`）。再現は論文の実験を Claude Code で追試するもの、拡張（`-ext`）は再現した結果を起点に論文が残した問いを調べるもの。各ディレクトリにハーネスとタスクを置き、README に主張・実験環境・準備したもの・手順・結果・考察をまとめている。
+
+結果欄: `OK` は報告された現象が再現、`Done` は実験は完了したが現行の Claude Code では現象が出ない（理由は README）、`Ext` は拡張研究（独自の発見は README）。
 
 <pre>
 Welcome to Claude Code v2.1.310

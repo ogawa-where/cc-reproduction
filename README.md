@@ -1,4 +1,4 @@
-# cc-reproduction: Reproducing reported Claude Code behaviors, one paper at a time
+# cc-reproduction: Reproducing reported Claude Code behaviors, then digging deeper
 
 [![reproductions](https://img.shields.io/badge/reproductions-4-blue)](#reproductions)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-v2.1.310-black?logo=anthropic)](https://code.claude.com)
@@ -8,9 +8,11 @@
 README: <a href="./README.md">English</a> | <a href="./README_ja.md">日本語</a>
 </sub></div>
 
-## Check what the papers say against the real Claude Code
+## Check what the papers say against the real Claude Code, then look for what they missed
 
-Each reproduction lives in its own directory, named `YYYYMMDD_<citation key>` (the reproduction date, then the authors' initials and year; Xu & Wu, 2026 → `XW26`). Every directory ships a harness, the tasks, and a README that covers the paper's claims, the setup, what was prepared, the procedure, the results and a discussion.
+Each study lives in its own directory, named `YYYYMMDD_<citation key>` (the date, then the authors' initials and year; Xu & Wu, 2026 → `XW26`). A reproduction re-runs a paper's experiment on Claude Code. An extension (`-ext`) starts from a reproduced result and asks a question the paper left open. Every directory ships a harness, the tasks, and a README that covers the claims, the setup, what was prepared, the procedure, the results and a discussion.
+
+Result column: `OK` the reported effect reproduced; `Done` the experiment ran but the effect is absent in current Claude Code (the README says why); `Ext` an extension study with its own findings.
 
 <pre>
 Welcome to Claude Code v2.1.310
@@ -34,8 +36,8 @@ Welcome to Claude Code v2.1.310
 ▝▜██████▀  Sonnet 5.5 · Claude API
  ▝▝   ▝▝   ~/cc-reproduction
 
-▎ This repository reproduces behaviors of Claude Code reported in papers,
-▎ one paper per directory: the harness, the tasks and the write-up of the result.
+▎ This repository reproduces behaviors of Claude Code reported in papers and then
+▎ extends them: one study per directory, with the harness, the tasks and the write-up.
 
 > Show me the reproductions
 
