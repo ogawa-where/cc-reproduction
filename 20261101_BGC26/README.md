@@ -5,7 +5,7 @@
 - 再現日: 2026-11-01
 
 > [!IMPORTANT]
-> RESULT_PLACEHOLDER
+> **再現できた。** 同じ 300 件のフィードバックに同じ質問を 10 回ずつ投げると、Claude Code の raw 呼び出しではテーマ集合が実行ごとに入れ替わった（theme churn: Sonnet 5.5 で 0.18〜0.24、Opus 5.5 で 0.24、階層化すると 0.33）。「一貫性を最優先」のプロンプトでも直らず、小分け（階層）にするとかえって悪化した。分類体系と記録単位の予測を先に固定する TGA では churn が Sonnet 0.004、Opus 0.014（raw 比 94〜98% 減、論文は 86〜88% 減）で、対応したテーマの件数の不一致は論文と同じく 0 だった。一方、分類体系の構築を 6 回繰り返すと体系どうしの churn は 0.19（厳しいしきい値では 0.67）で、構築時の不安定さも論文の指摘どおり残る。
 
 ## 論文の主張
 
@@ -24,7 +24,7 @@
 **観察した現象.**
 - 8 つのフロンティアモデルを 100 件のコーパスで 10 回ずつ走らせると、<mark>最も安定した raw モデル（Claude Fable 5）でも theme churn は 0.616</mark>、他は 0.657〜0.877。TGA は 135 ペアすべてで churn、順位、birth/death、件数の距離が 0。
 - 100、1,000、5,000 件と増やすと raw の churn は 0.552、0.623、0.726 と上がる。TGA は 0.013、0.148、0.033。
-- Claude Opus 4.8 と 1,000 件に固定した対照実験では、プロンプトを minimal、bottom-up、consistency-first の 3 種で比べ、<mark>consistency-first が最も安定したが churn は 0.803</mark> で、TGA には遠く及ばない。<mark>raw 0.765、階層 0.841 に対し TGA は 0.104（86〜88% 減）</mark>で、対応したテーマの件数の不一致は 0。階層化（小分け）だけでは安定しない。
+- Claude Opus 4.8 と 1,000 件に固定した対照実験では、プロンプトを minimal、bottom-up、consistency-first の 3 種で比べた。<mark>consistency-first が最も安定したが、raw と階層を合わせた churn は 0.803</mark> で、TGA に遠く及ばない。<mark>raw 0.765、階層 0.841 に対し TGA は 0.104（86〜88% 減）</mark>で、対応したテーマの件数の不一致は 0。階層化（小分け）だけでは安定しない。
 - 順位の指標は対応したテーマの間でしか定義できず、raw では 135 ペア中 47 ペアしか定義されない。小さな数値は「残った少数のテーマの順序は保たれた」ことしか意味しない。
 - 安定性は正しさではない。同じ誤りを繰り返すこともありうる。また TGA の安定性は分類体系を固定した条件つきで、作り直せば不安定さは取り込み時に移る。
 
@@ -56,17 +56,57 @@
 ## 手順
 
 1. `python make_corpus.py` で 300 件のコーパスを一度だけ生成して固定する。
-2. `python run.py --model sonnet --runs 10 --systems "raw:consistency_first,raw:minimal,raw:bottom_up,hierarchy:consistency_first,tga" --taxonomy-rebuilds 5` で、3 質問 × 5 システム × 10 回の答えを `runs/answers-sonnet.jsonl` に記録する。TGA は最初に分類体系の構築と全記録の分類を行い `runs/tga_store-sonnet.json` に保存する。Opus 5.5 は raw（consistency-first）と TGA のみ。
+2. `python run.py --model sonnet --runs 10 --systems "raw:consistency_first,raw:minimal,raw:bottom_up,hierarchy:consistency_first,tga" --taxonomy-rebuilds 5` で、3 質問 × 5 システム × 10 回の答えを `runs/answers-sonnet.jsonl` に記録する。TGA は最初に分類体系を構築して全記録を分類し、`runs/tga_store-sonnet.json` に保存する。Opus 5.5 は raw（consistency-first）と TGA のみ。
 3. `python align.py runs/answers-sonnet.jsonl` で、同じセルの全実行ペアについてテーマ名の類似度を判定し、キャッシュに保存する。
 4. `python summarize.py runs/answers-sonnet.jsonl --sweep` で 5 指標とマクロ平均を出す。
 
 ## 結果
 
-RESULTS_PLACEHOLDER
+答えは 210（Sonnet 150、Opus 60）、すべてスキーマに適合（有効率 100%）。セルごとに 45 実行ペア。対応づけのしきい値は 0.85（主）。
+
+### マクロ平均（3 質問の単純平均、小さいほど安定）
+
+| モデル | システム | プロンプト | theme churn | rank | birth/death | volume | evidence | 論文（Opus 4.8、1,000 件） |
+|---|---|---|---|---|---|---|---|---|
+| Sonnet 5.5 | raw | minimal | 0.184 | 0.119 | 0.182 | 0.095 | 0.275 | — |
+| Sonnet 5.5 | raw | bottom-up | 0.211 | 0.169 | 0.210 | 0.093 | 0.339 | — |
+| Sonnet 5.5 | raw | consistency-first | <mark>0.235</mark> | 0.283 | 0.233 | 0.129 | 0.352 | 0.765 |
+| Sonnet 5.5 | 階層（小分け） | consistency-first | <mark>0.332</mark> | 0.236 | 0.330 | 0.144 | 0.463 | 0.841 |
+| Sonnet 5.5 | TGA | — | <mark>0.004</mark> | 0.076 | 0.003 | <mark>0.000</mark> | 0.000 | 0.104 / 0.000 |
+| Opus 5.5 | raw | consistency-first | 0.242 | 0.127 | 0.239 | 0.065 | 0.433 | 0.765 |
+| Opus 5.5 | TGA | — | <mark>0.014</mark> | 0.005 | 0.013 | <mark>0.000</mark> | 0.000 | 0.104 / 0.000 |
+
+- 質問別では「顧客の不満と影響を受ける業務」が最も不安定で（Sonnet raw consistency-first 0.400、階層 0.489）、「フィードバックの理由トップ 5」が最も安定（0.053〜0.156）。順位の指標は raw では 45 ペア中 32〜39 ペアでしか定義されず、論文と同じく対応が残った少数のテーマの順序しか表さない。
+- しきい値の掃引（0.70 / 0.85 / 0.95）: raw の churn は 0.06〜0.10 / 0.18〜0.24 / 0.57〜0.66、階層は 0.15 / 0.33 / 0.58 と動くが、TGA は Sonnet 0.004、Opus 0.014 のまま。システムの順序はどのしきい値でも変わらない（論文と同じ）。
+- 分類体系を 6 回独立に構築すると、いずれも 14 テーマだったが、体系どうしの churn は 0.086 / 0.186 / 0.667（しきい値 0.70 / 0.85 / 0.95）。「認証コードと 2FA」を独立したテーマにするか「ログイン」に含めるか、「返金と残高」を分けるかなどが毎回変わる。
+- 費用: raw は 1 答あたり約 0.02〜0.06 USD、階層は worker 込みで約 0.13〜0.23 USD、TGA は構築後 1 答あたり約 0.01〜0.02 USD（論文も TGA が最も安い）。
+
+### 実行例（Sonnet 5.5、「顧客の不満と影響を受ける業務」、raw consistency-first）
+
+同じ入力に対する raw の最初の 4 回と TGA の 2 回（テーマ名と件数）。
+
+| 実行 | 返ってきた 3 テーマ |
+|---|---|
+| raw 1 | Customer Support Access (33) / App Crashes and Slowness (32) / Unexpected Fees and Charges (31) |
+| raw 2 | Unexpected Fees and Charges (32) / Login Verification and Session Failures (29) / Support Access and Responsiveness (26) |
+| raw 3 | Fee Transparency (29) / Support Access and Resolution (28) / App Crashes and Freezes (25) |
+| raw 4 | Unexpected Fees and Charges (33) / App Crashes and Freezes (28) / Support Access and Resolution Delays (24) |
+| TGA 1 | Customer Support Experience (42) / App Crashes, Freezes & Performance (41) / Login, Biometrics & Session Management (41) |
+| TGA 2 | Customer Support Experience (42) / App Crashes, Freezes & Performance (41) / Login, Biometrics & Session Management (41) |
+
+raw では「ログイン」が入る回と入らない回があり、同じテーマでも件数が 24〜33 の間で動く。TGA は 10 回とも同じ 3 テーマ、同じ件数、同じ代表 ID を返した。
 
 ## 考察
 
-DISCUSSION_PLACEHOLDER
+**論文と一致した点.** 論文の主要な主張は 4 つとも同じ向きで再現した。(1) raw 呼び出しは同じ入力でもテーマ集合を入れ替える。(2) 分類体系の固定（TGA）で churn は 1 桁以上下がり、対応したテーマの件数は動かない。論文の 86〜88% 減に対し本再現は 94〜98% 減。(3) 小分けの階層化は raw より悪い（論文 0.841 対 0.765、本再現 0.332 対 0.235）。(4) 「一貫性を最優先」のプロンプトは不安定さを解消しない。論文では 3 プロンプト中で最良だが churn 0.803、本再現では minimal（0.184）より悪い 0.235 だった。しきい値を変えてもシステムの順序が変わらない点も同じ。
+
+**論文より小さい絶対値.** raw と階層の churn は論文の 0.55〜0.84 に対し本再現は 0.18〜0.33 で、半分以下である。理由は 3 つ考えられる。コーパスが小さい（300 件対 1,000 件。論文でも 100 → 5,000 件で 0.55 → 0.73 と増える）。コーパスが Sonnet 5.5 の生成した英語中心の整った文で、論文の多言語の実データより分類の曖昧さが少ない。対応づけを埋め込みのコサイン類似度ではなく Sonnet の判定に置き換えたため、言い換えに寛容な可能性がある（厳しいしきい値 0.95 では raw が 0.57〜0.66 と論文に近づく）。向きと順序の再現は確かだが、数値の直接比較はできない。
+
+**記事の主張との対応.** AIDB の記事が挙げた 3 点、「頼むたびに結論が入れ替わる」「一貫性を最優先と指示してもほとんど直らない」「小分けにするとかえって悪化する」は、いずれも本再現で確認できた。記事の処方である「毎回同じ基準でまとめさせる設計」は論文の TGA に当たる。先月分と今月分を同じ物差しで比べるには、分類体系と記録単位の予測を保存して質問のたびに参照する必要がある。ただし論文と同様、体系の構築自体は不安定（churn 0.19）なので、一度だけ構築して固定し、作り直すときは新旧の対応表を残す運用が要る。
+
+**Claude Code の利用者にとっての意味.** `claude -p` でログや問い合わせ一覧を「まとめて」と頼む定型作業は、そのままでは回ごとに分類が変わる。先に分類基準を作ってファイルに保存し、以後はその基準で分類させる 2 段階にすれば、本再現の条件では Claude Code でも安定した集計になった。
+
+**本再現の限界.** コーパスは合成で 300 件のみ、1,000 件と 5,000 件の規模は未実施。モデルは Claude の 2 つのみで、論文の 8 モデル比較は行っていない。TGA は論文の本番エージェント（supervisor/worker とストアへの問い合わせ）を簡略化し、ストアの要約を 1 回の呼び出しに渡している。対応づけの判定器と論文の埋め込みは同一ではない。安定性だけを測り、正しさは評価していない。
 
 ## 参考資料
 
