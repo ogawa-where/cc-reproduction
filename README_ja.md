@@ -51,6 +51,7 @@ Welcome to Claude Code v2.1.310
   │               │ <a href="https://arxiv.org/abs/2610.30571">Override the Code in Coding Agents:</a> │                   │        │
   │               │ <a href="https://arxiv.org/abs/2610.30571">A One-Sentence Fix</a>                  │                   │        │
   │               │ (2026-10-22)                        │                   │        │
+  ├───────────────┼─────────────────────────────────────┼───────────────────┼────────┤
   │ 2026-10-29    │ [SBBAA26] <a href="https://arxiv.org/abs/2610.31778">Benchmarks Are</a>            │ <a href="./20261029_SBBAA26/">20261029_SBBAA26/</a> │ NG     │
   │               │ <a href="https://arxiv.org/abs/2610.31778">Surprisingly Compaction-Friendly</a>    │                   │        │
   │               │ (2026-10-22)                        │                   │        │
