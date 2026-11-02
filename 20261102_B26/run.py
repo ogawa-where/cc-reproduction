@@ -411,14 +411,21 @@ def run_target(args, task, req, methods, emit):
                 else:
                     extra = ["--resume", sid, "--fork-session"]
                 log(f"{tag}: turn 2 [{method}]")
-                t0 = time.time()
-                s = Session(agent_cmd(args.model, extra), ws, env,
-                            os.path.join(args.out, "streams", f"{stem}__{method}.jsonl"))
-                try:
-                    evs = s.turn(msg, args.timeout)
-                finally:
-                    err = s.close()
-                st2 = turn_stats(evs)
+                for attempt in range(1, 4):  # transient API safeguard flags: retry from the same snapshot
+                    git(ws, "reset", "-q", "--hard", turn1)
+                    git(ws, "clean", "-q", "-fd")
+                    t0 = time.time()
+                    s = Session(agent_cmd(args.model, extra), ws, env,
+                                os.path.join(args.out, "streams", f"{stem}__{method}.jsonl"))
+                    try:
+                        evs = s.turn(msg, args.timeout)
+                    finally:
+                        err = s.close()
+                    st2 = turn_stats(evs)
+                    if not (st2["is_error"] and "safeguards flagged" in st2["final"]) or attempt == 3:
+                        break
+                    log(f"{tag}: [{method}] safeguard flag, retry {attempt}")
+                    time.sleep(5)
                 secs2 = round(time.time() - t0, 1)
                 files = changed_files(ws, turn1)
                 diff2 = diff_vs(ws, turn1)
