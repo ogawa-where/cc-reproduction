@@ -1,0 +1,50 @@
+diff --git a/stock/inventory.py b/stock/inventory.py
+index edfc52c..c1c521d 100644
+--- a/stock/inventory.py
++++ b/stock/inventory.py
+@@ -5,14 +5,20 @@ class InsufficientStock(ValueError):
+     """Raised when removing more units than are in stock."""
+ 
+ 
++def _norm(sku: str) -> str:
++    return sku.strip().upper()
++
++
+ class Inventory:
+     def __init__(self) -> None:
+         self._stock: dict[str, int] = {}
+ 
+     def add(self, sku: str, qty: int) -> None:
++        sku = _norm(sku)
+         self._stock[sku] = self._stock.get(sku, 0) + qty
+ 
+     def remove(self, sku: str, qty: int) -> None:
++        sku = _norm(sku)
+         have = self._stock.get(sku, 0)
+         if qty > have:
+             raise InsufficientStock(
+@@ -21,6 +27,7 @@ class Inventory:
+         self._stock[sku] = have - qty
+ 
+     def quantity(self, sku: str) -> int:
++        sku = _norm(sku)
+         return self._stock.get(sku, 0)
+ 
+     def report(self) -> list[tuple[str, int]]:
+diff --git a/tests/test_inventory.py b/tests/test_inventory.py
+index cbd74e2..77776bc 100644
+--- a/tests/test_inventory.py
++++ b/tests/test_inventory.py
+@@ -12,3 +12,12 @@ def test_remove_reduces_quantity():
+     inv.add("PEAR", 10)
+     inv.remove("PEAR", 4)
+     assert inv.quantity("PEAR") == 6
++
++
++def test_sku_matching_ignores_case_and_whitespace():
++    inv = Inventory()
++    inv.add("apple", 2)
++    inv.add(" Apple ", 3)
++    assert inv.quantity("APPLE") == 5
++    inv.remove("apple", 1)
++    assert inv.report() == [("APPLE", 4)]

@@ -1,0 +1,74 @@
+diff --git a/calclex/lexer.py b/calclex/lexer.py
+index ea29aee..cc93c8c 100644
+--- a/calclex/lexer.py
++++ b/calclex/lexer.py
+@@ -38,8 +38,9 @@ def tokenize(expr: str) -> list[tuple[str, str]]:
+ 
+     Kinds are ``NUM``, ``OP`` (``+ - * /``), ``LPAREN`` and ``RPAREN``.
+     A ``-`` at the start of the expression or directly after an operator or
+-    ``(`` is unary, and is folded into the number immediately following it.
+-    Raises ``LexError`` with the 0-based ``pos`` of any other character.
++    ``(`` is unary, and is folded into the number following it (whitespace
++    in between is ignored).  Raises ``LexError`` with the 0-based ``pos`` of
++    any other character, or of a unary ``-`` that is not followed by a number.
+     """
+     tokens: list[tuple[str, str]] = []
+     i = 0
+@@ -51,13 +52,24 @@ def tokenize(expr: str) -> list[tuple[str, str]]:
+             continue
+ 
+         if ch == "-" and (not tokens or tokens[-1][0] in ("OP", "LPAREN")):
+-            end = _scan_number(expr, i + 1)
+-            if end > i + 1:
+-                tokens.append(("NUM", expr[i:end]))
+-                i = end
+-                continue
+-            # Unary minus not directly followed by a number (e.g. "-(2)"):
+-            # leave it as an operator for the parser to handle.
++            # Unary minus: it belongs to the number that follows, with any
++            # intervening whitespace ignored ("- 3" lexes the same as "-3").
++            start = i + 1
++            while start < n and expr[start].isspace():
++                start += 1
++            end = _scan_number(expr, start)
++            if end == start:
++                if start < n and expr[start] not in _OPS and expr[start] not in _PARENS:
++                    bad = expr[start]
++                    raise LexError(
++                        f"unexpected character {bad!r} at position {start}", start
++                    )
++                raise LexError(
++                    f"unary '-' at position {i} is not followed by a number", i
++                )
++            tokens.append(("NUM", "-" + expr[start:end]))
++            i = end
++            continue
+ 
+         if ch in _OPS:
+             tokens.append(("OP", ch))
+diff --git a/tests/test_lexer.py b/tests/test_lexer.py
+index 970971e..f78e45b 100644
+--- a/tests/test_lexer.py
++++ b/tests/test_lexer.py
+@@ -52,3 +52,21 @@ def test_lex_error_pos(expr, pos):
+     with pytest.raises(LexError) as exc:
+         tokenize(expr)
+     assert exc.value.pos == pos
++
++
++@pytest.mark.parametrize("spaced,tight", [
++    ("- 3", "-3"), ("1 * - 2", "1*-2"), ("( - .5)", "(-.5)"), ("1 - - 3", "1--3"),
++])
++def test_whitespace_does_not_change_unary_minus(spaced, tight):
++    assert tokenize(spaced) == tokenize(tight)
++
++
++def test_unary_minus_with_space_is_single_num():
++    assert tokenize("2 * - 3") == [("NUM", "2"), ("OP", "*"), ("NUM", "-3")]
++
++
++@pytest.mark.parametrize("expr,pos", [("-(2)", 0), ("--3", 0), ("1 * -", 4), ("(- x)", 3), ("(- .)", 3)])
++def test_unary_minus_without_number_is_error(expr, pos):
++    with pytest.raises(LexError) as exc:
++        tokenize(expr)
++    assert exc.value.pos == pos

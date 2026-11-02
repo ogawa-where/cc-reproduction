@@ -1,0 +1,30 @@
+diff --git a/money/rounding.py b/money/rounding.py
+index e1d285e..ad835c0 100644
+--- a/money/rounding.py
++++ b/money/rounding.py
+@@ -1,5 +1,5 @@
+ """Rounding and splitting of currency amounts."""
+-from decimal import ROUND_HALF_UP, Context, Decimal, InvalidOperation
++from decimal import ROUND_HALF_EVEN, Context, Decimal, InvalidOperation
+ 
+ 
+ def _to_decimal(value: Decimal | str | int, name: str) -> Decimal:
+@@ -24,7 +24,8 @@ def _to_decimal(value: Decimal | str | int, name: str) -> Decimal:
+ def round_amount(amount: Decimal | str | int, places: int = 2) -> Decimal:
+     """Return ``amount`` as a Decimal rounded to ``places`` decimal places.
+ 
+-    Halves are rounded away from zero (ROUND_HALF_UP), and the result always
++    Halves are rounded to the nearest even digit (ROUND_HALF_EVEN, "banker's
++    rounding"), e.g. "2.345" -> 2.34 and "2.355" -> 2.36. The result always
+     carries exactly ``places`` digits after the decimal point, e.g.
+     ``round_amount("5") == Decimal("5.00")``.
+     """
+@@ -36,7 +37,7 @@ def round_amount(amount: Decimal | str | int, places: int = 2) -> Decimal:
+     # Use a private context with enough precision that quantize never fails
+     # for large amounts, independent of the caller's thread-local context.
+     digits = max(value.adjusted() + 1, 1) + places + 1
+-    ctx = Context(prec=max(digits, 28), rounding=ROUND_HALF_UP)
++    ctx = Context(prec=max(digits, 28), rounding=ROUND_HALF_EVEN)
+     return value.quantize(Decimal(1).scaleb(-places), context=ctx)
+ 
+ 

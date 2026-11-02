@@ -1,0 +1,30 @@
+diff --git a/slugkit/slug.py b/slugkit/slug.py
+index c66a109..b290340 100644
+--- a/slugkit/slug.py
++++ b/slugkit/slug.py
+@@ -1,6 +1,7 @@
+ """Turn titles into URL slugs."""
+ 
+ import re
++import unicodedata
+ 
+ _NON_ALNUM = re.compile(r"[^A-Za-z0-9]+")
+ 
+@@ -8,11 +9,17 @@ _NON_ALNUM = re.compile(r"[^A-Za-z0-9]+")
+ def slugify(text: str, max_length: int | None = None) -> str:
+     """Return a URL slug for ``text``.
+ 
++    Accented letters are reduced to their base letter (``é`` -> ``e``); other
++    non-ASCII characters are treated like punctuation.
++
+     The slug is lowercase ASCII letters and digits separated by single
+     hyphens, with no leading or trailing hyphen. If ``max_length`` is given
+     the slug is cut to at most that many characters (trailing hyphen removed).
+     Returns ``"n-a"`` if nothing is left.
+     """
++    # Decompose accented letters (é -> e + combining accent) and drop the marks.
++    decomposed = unicodedata.normalize("NFKD", text)
++    text = "".join(c for c in decomposed if not unicodedata.combining(c))
+     slug = _NON_ALNUM.sub("-", text).strip("-").lower()
+     if max_length is not None:
+         slug = slug[: max(max_length, 0)].rstrip("-")

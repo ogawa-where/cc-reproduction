@@ -1,0 +1,130 @@
+diff --git a/confmerge/merge.py b/confmerge/merge.py
+index 02337e4..718ae3f 100644
+--- a/confmerge/merge.py
++++ b/confmerge/merge.py
+@@ -1,31 +1,49 @@
+ """Deep merge of configuration dictionaries."""
+ 
+-import copy
++from collections.abc import Mapping
+ 
+ 
+-def _strip_none(value):
+-    """Deep-copy an override value, dropping ``None`` entries from nested dicts."""
+-    if isinstance(value, dict):
+-        return {k: _strip_none(v) for k, v in value.items() if v is not None}
+-    return copy.deepcopy(value)
++def _copy(value, *, drop_none: bool):
++    """Copy the container structure of a config value.
++
++    Mappings become new plain dicts and lists become new lists, so the result
++    never shares a mutable container with the inputs. Other leaf values are
++    kept as-is (they are not deep-copied, so uncopyable objects are fine).
++    With ``drop_none``, ``None`` entries are removed from nested mappings.
++    """
++    if isinstance(value, Mapping):
++        return {
++            k: _copy(v, drop_none=drop_none)
++            for k, v in value.items()
++            if not (drop_none and v is None)
++        }
++    if isinstance(value, list):
++        # Lists are plain values: copy them, but don't apply None-removal inside.
++        return [_copy(v, drop_none=False) for v in value]
++    return value
+ 
+ 
+ def deep_merge(base: dict, override: dict) -> dict:
+     """Return ``base`` with ``override`` merged on top of it.
+ 
+-    - Keys from both dicts appear in the result.
+-    - When both values are dicts, they are merged recursively.
++    - Keys from both mappings appear in the result.
++    - When both values are mappings, they are merged recursively.
+     - Otherwise the override value wins (lists replace, not concatenate).
+     - An override value of ``None`` removes the key, at any nesting level.
+ 
+-    Neither input is mutated; the result shares no mutable state with them.
++    Any ``collections.abc.Mapping`` is accepted as a dict. Neither input is
++    mutated, and the result is built from new plain dicts and lists.
+     """
+-    result = copy.deepcopy(base)
++    for name, arg in (("base", base), ("override", override)):
++        if not isinstance(arg, Mapping):
++            raise TypeError(f"{name} must be a mapping, got {type(arg).__name__}")
++
++    result = _copy(base, drop_none=False)
+     for key, value in override.items():
+         if value is None:
+             result.pop(key, None)
+-        elif isinstance(value, dict) and isinstance(result.get(key), dict):
+-            result[key] = deep_merge(result[key], value)
++        elif isinstance(value, Mapping) and isinstance(base.get(key), Mapping):
++            result[key] = deep_merge(base[key], value)
+         else:
+-            result[key] = _strip_none(value)
++            result[key] = _copy(value, drop_none=True)
+     return result
+diff --git a/tests/test_merge.py b/tests/test_merge.py
+index 17c6cbc..bd02077 100644
+--- a/tests/test_merge.py
++++ b/tests/test_merge.py
+@@ -1,6 +1,58 @@
++import threading
++from types import MappingProxyType
++
++import pytest
++
+ from confmerge.merge import deep_merge
+ 
+ 
++def test_none_removes_key_at_any_level():
++    base = {"a": {"x": 1, "y": 2}, "b": 1}
++    override = {"a": {"x": None}, "b": None, "c": None}
++    assert deep_merge(base, override) == {"a": {"y": 2}}
++
++
++def test_none_dropped_inside_replacing_dict():
++    assert deep_merge({"k": 1}, {"k": {"z": None, "w": 2}}) == {"k": {"w": 2}}
++
++
++def test_lists_replace():
++    assert deep_merge({"l": [1, 2]}, {"l": [3]}) == {"l": [3]}
++
++
++def test_inputs_not_mutated_and_not_shared():
++    base = {"d": {"l": [1]}, "e": {"x": 1}}
++    override = {"d": {"m": [2]}, "f": {"y": [3]}}
++    result = deep_merge(base, override)
++    result["d"]["l"].append(9)
++    result["d"]["m"].append(9)
++    result["e"]["x"] = 0
++    result["f"]["y"].append(9)
++    assert base == {"d": {"l": [1]}, "e": {"x": 1}}
++    assert override == {"d": {"m": [2]}, "f": {"y": [3]}}
++
++
++def test_non_dict_mappings_are_merged():
++    base = MappingProxyType({"d": MappingProxyType({"x": 1, "y": 2})})
++    override = MappingProxyType({"d": MappingProxyType({"y": None, "z": 3})})
++    result = deep_merge(base, override)
++    assert result == {"d": {"x": 1, "z": 3}}
++    assert type(result) is dict and type(result["d"]) is dict
++
++
++def test_uncopyable_leaf_values():
++    lock = threading.Lock()
++    result = deep_merge({"lock": lock}, {"other": 1})
++    assert result["lock"] is lock
++
++
++def test_rejects_non_mapping_inputs():
++    with pytest.raises(TypeError):
++        deep_merge(None, {})
++    with pytest.raises(TypeError):
++        deep_merge({}, [("a", 1)])
++
++
+ def test_flat_override_wins():
+     assert deep_merge({"a": 1, "b": 2}, {"b": 3}) == {"a": 1, "b": 3}
+ 

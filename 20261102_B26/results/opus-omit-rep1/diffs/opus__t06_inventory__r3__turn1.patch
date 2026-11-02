@@ -1,0 +1,32 @@
+diff --git a/stock/inventory.py b/stock/inventory.py
+index 5e77188..fb3e697 100644
+--- a/stock/inventory.py
++++ b/stock/inventory.py
+@@ -7,16 +7,22 @@ class InsufficientStock(ValueError):
+ 
+ class Inventory:
+     def __init__(self) -> None:
+-        raise NotImplementedError
++        self._stock: dict[str, int] = {}
+ 
+     def add(self, sku: str, qty: int) -> None:
+-        raise NotImplementedError
++        self._stock[sku] = self._stock.get(sku, 0) + qty
+ 
+     def remove(self, sku: str, qty: int) -> None:
+-        raise NotImplementedError
++        available = self._stock.get(sku, 0)
++        if qty > available:
++            raise InsufficientStock(
++                f"cannot remove {qty} of {sku!r}: only {available} in stock"
++            )
++        self._stock[sku] = available - qty
+ 
+     def quantity(self, sku: str) -> int:
+-        raise NotImplementedError
++        return self._stock.get(sku, 0)
+ 
+     def report(self) -> list[tuple[str, int]]:
+-        raise NotImplementedError
++        items = [(sku, qty) for sku, qty in self._stock.items() if qty > 0]
++        return sorted(items, key=lambda item: (-item[1], item[0]))

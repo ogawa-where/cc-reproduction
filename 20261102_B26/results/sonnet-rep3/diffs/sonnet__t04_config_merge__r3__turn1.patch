@@ -1,0 +1,66 @@
+diff --git a/confmerge/merge.py b/confmerge/merge.py
+index 6d1c592..ec95f4d 100644
+--- a/confmerge/merge.py
++++ b/confmerge/merge.py
+@@ -1,6 +1,23 @@
+ """Deep merge of configuration dictionaries."""
++from copy import deepcopy
+ 
+ 
+ def deep_merge(base: dict, override: dict) -> dict:
+-    """Return ``base`` with ``override`` merged on top of it."""
+-    raise NotImplementedError
++    """Return ``base`` with ``override`` merged on top of it.
++
++    - Keys from both dicts are kept; if both values are dicts they are merged
++      recursively, otherwise the override value wins (lists are plain values).
++    - An override value of ``None`` removes the key, at any nesting level
++      (including inside dicts that only exist in ``override``).
++    - Inputs are never modified and the result shares no mutable state with them.
++    """
++    result = {k: deepcopy(v) for k, v in base.items()}
++    for key, value in override.items():
++        if value is None:
++            result.pop(key, None)
++        elif isinstance(value, dict):
++            current = result.get(key)
++            result[key] = deep_merge(current if isinstance(current, dict) else {}, value)
++        else:
++            result[key] = deepcopy(value)
++    return result
+diff --git a/tests/test_merge.py b/tests/test_merge.py
+index 17c6cbc..a1f5507 100644
+--- a/tests/test_merge.py
++++ b/tests/test_merge.py
+@@ -9,3 +9,31 @@ def test_nested_merge():
+     base = {"db": {"host": "localhost", "port": 5432}}
+     override = {"db": {"port": 6543}}
+     assert deep_merge(base, override) == {"db": {"host": "localhost", "port": 6543}}
++
++
++def test_none_removes_key_at_any_level():
++    base = {"a": 1, "n": {"x": 1, "y": 2}}
++    assert deep_merge(base, {"a": None, "n": {"x": None}, "z": None}) == {"n": {"y": 2}}
++
++
++def test_none_inside_new_dict_is_dropped():
++    assert deep_merge({}, {"n": {"x": None, "y": 1}}) == {"n": {"y": 1}}
++    assert deep_merge({"n": 5}, {"n": {"x": None}}) == {"n": {}}
++
++
++def test_lists_replace_and_dict_replaces_scalar():
++    result = deep_merge({"l": [1, 2], "s": 1}, {"l": [3], "s": {"a": 1}})
++    assert result == {"l": [3], "s": {"a": 1}}
++
++
++def test_inputs_unmodified_and_result_independent():
++    base = {"d": {"l": [1]}, "k": {"a": 1}}
++    override = {"o": {"l": [2]}, "k": {"b": [3]}}
++    b0, o0 = repr(base), repr(override)
++    r = deep_merge(base, override)
++    assert repr(base) == b0 and repr(override) == o0
++    r["d"]["l"].append(9)
++    r["o"]["l"].append(9)
++    r["k"]["b"].append(9)
++    r["k"]["a"] = 0
++    assert repr(base) == b0 and repr(override) == o0

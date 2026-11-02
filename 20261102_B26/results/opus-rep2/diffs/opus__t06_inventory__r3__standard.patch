@@ -1,0 +1,77 @@
+diff --git a/stock/inventory.py b/stock/inventory.py
+index f5b86f8..1d122a8 100644
+--- a/stock/inventory.py
++++ b/stock/inventory.py
+@@ -6,8 +6,14 @@ class InsufficientStock(ValueError):
+ 
+ 
+ def _normalize(sku: str) -> str:
+-    """Canonical form of a SKU: surrounding whitespace stripped, uppercase."""
+-    return sku.strip().upper()
++    """Matching key for a SKU: surrounding whitespace stripped, case folded.
++
++    ``casefold`` (not ``upper``/``lower``) is needed for full caseless
++    matching, e.g. "ẞ"/"ß"/"ss" or the Kelvin sign "K" vs "k". Uppercasing
++    first also folds the dotless "ı" together with "I"/"i", so that no two
++    keys share the same uppercase form in ``report``.
++    """
++    return sku.strip().upper().casefold()
+ 
+ 
+ class Inventory:
+@@ -31,5 +37,5 @@ class Inventory:
+         return self._stock.get(_normalize(sku), 0)
+ 
+     def report(self) -> list[tuple[str, int]]:
+-        items = [(sku, qty) for sku, qty in self._stock.items() if qty > 0]
++        items = [(key.upper(), qty) for key, qty in self._stock.items() if qty > 0]
+         return sorted(items, key=lambda item: (-item[1], item[0]))
+diff --git a/tests/test_inventory.py b/tests/test_inventory.py
+index cbd74e2..6f6c5b2 100644
+--- a/tests/test_inventory.py
++++ b/tests/test_inventory.py
+@@ -1,4 +1,43 @@
+-from stock.inventory import Inventory
++import pytest
++
++from stock.inventory import InsufficientStock, Inventory
++
++
++@pytest.mark.parametrize(
++    "a, b",
++    [
++        (" ab-1 ", "AB-1"),
++        ("STRAẞE", "straße"),
++        ("K-1", "k-1"),  # Kelvin sign
++        ("Ω-2", "ω-2"),  # Ohm sign
++        ("ı", "I"),
++    ],
++)
++def test_sku_matching_is_case_insensitive_and_strips(a, b):
++    inv = Inventory()
++    inv.add(a, 2)
++    inv.add(b, 3)
++    assert inv.quantity(a) == inv.quantity(b) == 5
++    assert len(inv.report()) == 1
++
++
++def test_report_uppercase_sorted_and_positive_only():
++    inv = Inventory()
++    inv.add(" b ", 5)
++    inv.add("a", 5)
++    inv.add("c", 7)
++    inv.add("z", 1)
++    inv.remove("Z", 1)
++    assert inv.report() == [("C", 7), ("A", 5), ("B", 5)]
++
++
++def test_remove_too_many_raises_and_keeps_stock():
++    inv = Inventory()
++    inv.add("x", 2)
++    with pytest.raises(InsufficientStock):
++        inv.remove("X", 3)
++    assert inv.quantity("x") == 2
++    assert inv.quantity("never") == 0
+ 
+ 
+ def test_add_and_quantity():

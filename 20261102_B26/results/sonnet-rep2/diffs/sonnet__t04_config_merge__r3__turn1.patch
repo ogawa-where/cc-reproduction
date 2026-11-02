@@ -1,0 +1,72 @@
+diff --git a/confmerge/merge.py b/confmerge/merge.py
+index 6d1c592..bf7551a 100644
+--- a/confmerge/merge.py
++++ b/confmerge/merge.py
+@@ -1,6 +1,33 @@
+ """Deep merge of configuration dictionaries."""
+ 
++import copy
++
++
++def _strip_none(d: dict) -> dict:
++    """Deep-copy ``d``, dropping keys whose value is None at any dict level."""
++    return {
++        k: _strip_none(v) if isinstance(v, dict) else copy.deepcopy(v)
++        for k, v in d.items()
++        if v is not None
++    }
++
+ 
+ def deep_merge(base: dict, override: dict) -> dict:
+-    """Return ``base`` with ``override`` merged on top of it."""
+-    raise NotImplementedError
++    """Return ``base`` with ``override`` merged on top of it.
++
++    Dicts merge recursively; any other value (lists included) is replaced by
++    the override. An override value of ``None`` removes the key. Inputs are
++    not modified and the result shares no mutable objects with them.
++    """
++    result = {k: copy.deepcopy(v) for k, v in base.items()}
++    for key, value in override.items():
++        if value is None:
++            result.pop(key, None)
++        elif isinstance(value, dict):
++            if isinstance(base.get(key), dict):
++                result[key] = deep_merge(base[key], value)
++            else:
++                result[key] = _strip_none(value)
++        else:
++            result[key] = copy.deepcopy(value)
++    return result
+diff --git a/tests/test_merge.py b/tests/test_merge.py
+index 17c6cbc..c493ce2 100644
+--- a/tests/test_merge.py
++++ b/tests/test_merge.py
+@@ -9,3 +9,27 @@ def test_nested_merge():
+     base = {"db": {"host": "localhost", "port": 5432}}
+     override = {"db": {"port": 6543}}
+     assert deep_merge(base, override) == {"db": {"host": "localhost", "port": 6543}}
++
++
++def test_none_removes_at_any_level():
++    base = {"a": 1, "n": {"x": 1, "y": 2}}
++    assert deep_merge(base, {"a": None, "n": {"x": None}, "z": None}) == {"n": {"y": 2}}
++    assert deep_merge({}, {"n": {"x": None, "y": 1}}) == {"n": {"y": 1}}
++
++
++def test_lists_replace():
++    assert deep_merge({"l": [1, 2]}, {"l": [3]}) == {"l": [3]}
++
++
++def test_independent_and_unmodified():
++    import copy
++
++    base = {"n": {"l": [1]}, "k": {"a": 1}}
++    override = {"n": {"m": {"q": [2]}}, "k": 5, "o": {"p": [3]}}
++    bc, oc = copy.deepcopy(base), copy.deepcopy(override)
++    r = deep_merge(base, override)
++    assert base == bc and override == oc
++    r["n"]["l"].append(9)
++    r["n"]["m"]["q"].append(9)
++    r["o"]["p"].append(9)
++    assert base == bc and override == oc

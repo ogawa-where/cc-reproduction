@@ -1,0 +1,54 @@
+diff --git a/mdtoc/headings.py b/mdtoc/headings.py
+index 8251bb6..ac60ea8 100644
+--- a/mdtoc/headings.py
++++ b/mdtoc/headings.py
+@@ -3,18 +3,24 @@
+ import re
+ 
+ _HEADING = re.compile(r"(#{1,6}) +(.*)")
++_OPEN_FENCE = re.compile(r"(`{3,})[^`]*")
++_CLOSE_FENCE = re.compile(r"(`{3,})[ \t]*")
+ _CLOSING = re.compile(r"(?:^| )#+$")
+ 
+ 
+ def extract_headings(markdown: str) -> list[tuple[int, str]]:
+     """Return ``(level, text)`` for each ATX heading in ``markdown``."""
+     headings: list[tuple[int, str]] = []
+-    in_fence = False
++    fence = 0  # length of the currently open fence, 0 if not in one
+     for line in markdown.splitlines():
+-        if line.startswith("```"):
+-            in_fence = not in_fence
++        if fence:
++            m = _CLOSE_FENCE.fullmatch(line)
++            if m and len(m.group(1)) >= fence:
++                fence = 0
+             continue
+-        if in_fence:
++        m = _OPEN_FENCE.fullmatch(line)
++        if m:
++            fence = len(m.group(1))
+             continue
+         m = _HEADING.fullmatch(line)
+         if not m:
+diff --git a/tests/test_headings.py b/tests/test_headings.py
+index 7c0309f..662673b 100644
+--- a/tests/test_headings.py
++++ b/tests/test_headings.py
+@@ -21,3 +21,16 @@ def test_not_headings():
+ def test_fenced_code_ignored():
+     doc = "# A\n```\n# not\n```\n## B\n"
+     assert extract_headings(doc) == [(1, "A"), (2, "B")]
++
++
++def test_longer_fence_not_closed_by_shorter():
++    doc = "````\n```\n# in\n```\n````\n# out\n"
++    assert extract_headings(doc) == [(1, "out")]
++
++
++def test_inline_triple_backticks_do_not_open_fence():
++    assert extract_headings("```code``` here\n# A\n") == [(1, "A")]
++
++
++def test_fence_with_info_string():
++    assert extract_headings("```python\n# c\n```\n# A\n") == [(1, "A")]

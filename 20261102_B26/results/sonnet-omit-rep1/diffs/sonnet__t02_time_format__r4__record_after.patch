@@ -1,0 +1,37 @@
+diff --git a/tests/test_formatting.py b/tests/test_formatting.py
+index cd6aaa0..514a9af 100644
+--- a/tests/test_formatting.py
++++ b/tests/test_formatting.py
+@@ -7,3 +7,12 @@ def test_timestamp_epoch():
+ 
+ def test_duration_all_units():
+     assert format_duration(3725) == "1h 2m 5s"
++
++
++def test_negative_durations():
++    from timefmt.formatting import format_duration
++
++    assert format_duration(-61) == "-1m 1s"
++    assert format_duration(-3600) == "-1h"
++    assert format_duration(-5) == "-5s"
++    assert format_duration(0) == "0s"
+diff --git a/timefmt/formatting.py b/timefmt/formatting.py
+index 2a024ea..91b0ecc 100644
+--- a/timefmt/formatting.py
++++ b/timefmt/formatting.py
+@@ -14,7 +14,8 @@ def format_timestamp(ts: float) -> str:
+ def format_duration(seconds: int) -> str:
+     """Format a number of seconds such as ``1h 2m 5s``."""
+     seconds = int(seconds)
+-    hours, rem = divmod(seconds, 3600)
++    sign = "-" if seconds < 0 else ""
++    hours, rem = divmod(abs(seconds), 3600)
+     minutes, secs = divmod(rem, 60)
+     parts = []
+     if hours:
+@@ -23,4 +24,4 @@ def format_duration(seconds: int) -> str:
+         parts.append(f"{minutes}m")
+     if secs:
+         parts.append(f"{secs}s")
+-    return " ".join(parts) if parts else "0s"
++    return sign + " ".join(parts) if parts else "0s"

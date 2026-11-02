@@ -1,0 +1,23 @@
+diff --git a/timefmt/formatting.py b/timefmt/formatting.py
+index 600b56f..46867c3 100644
+--- a/timefmt/formatting.py
++++ b/timefmt/formatting.py
+@@ -1,8 +1,6 @@
+ """Human-readable timestamps and durations."""
+ import math
+-from datetime import datetime, timedelta, timezone
+-
+-_EPOCH = datetime(1970, 1, 1, tzinfo=timezone.utc)
++from datetime import datetime, timezone
+ 
+ 
+ def format_timestamp(ts: float) -> str:
+@@ -10,7 +8,7 @@ def format_timestamp(ts: float) -> str:
+ 
+     Fractional seconds are dropped (floored), never rounded up.
+     """
+-    dt = _EPOCH + timedelta(seconds=math.floor(ts))
++    dt = datetime.fromtimestamp(math.floor(ts), tz=timezone.utc)
+     return dt.strftime("%Y-%m-%d %H:%M:%S UTC")
+ 
+ 

@@ -1,0 +1,44 @@
+diff --git a/slugkit/slug.py b/slugkit/slug.py
+index 658bf55..c6885c1 100644
+--- a/slugkit/slug.py
++++ b/slugkit/slug.py
+@@ -16,7 +16,12 @@ def slugify(text: str, max_length: int | None = None) -> str:
+     nothing is left.
+     """
+     decomposed = unicodedata.normalize("NFKD", text)
+-    stripped = "".join(c for c in decomposed if not unicodedata.combining(c))
++    # Drop every combining mark (general category Mn, Mc, Me). Note that
++    # unicodedata.combining() is not a substitute: it returns the canonical
++    # combining class, which is 0 for many marks (e.g. U+20E3, U+FE0F).
++    stripped = "".join(
++        c for c in decomposed if not unicodedata.category(c).startswith("M")
++    )
+     slug = _NON_ALNUM.sub("-", stripped.lower()).strip("-")
+     if max_length is not None:
+         slug = slug[:max(max_length, 0)].rstrip("-")
+diff --git a/tests/test_slug.py b/tests/test_slug.py
+index f54b92e..776e9bb 100644
+--- a/tests/test_slug.py
++++ b/tests/test_slug.py
+@@ -7,3 +7,21 @@ def test_simple_title():
+ 
+ def test_punctuation_becomes_hyphen():
+     assert slugify("Hello, World!") == "hello-world"
++
++
++def test_accents_transliterated():
++    assert slugify("Crème Brûlée") == "creme-brulee"
++
++
++def test_marks_with_zero_combining_class_are_dropped():
++    assert slugify("Top 1️⃣0️⃣") == "top-10"
++    assert slugify("a͏b") == "ab"
++
++
++def test_untransliterable_chars_are_separators():
++    assert slugify("Smørrebrød") == "sm-rrebr-d"
++    assert slugify("日本") == "n-a"
++
++
++def test_max_length_strips_trailing_hyphen():
++    assert slugify("hello world", 6) == "hello"

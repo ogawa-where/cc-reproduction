@@ -1,0 +1,25 @@
+diff --git a/csvlite/parser.py b/csvlite/parser.py
+index 048dfd3..2221213 100644
+--- a/csvlite/parser.py
++++ b/csvlite/parser.py
+@@ -50,13 +50,18 @@ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+     if _QUOTE in delimiter:
+         raise ValueError("delimiter must not contain a double quote")
+ 
++    # A single trailing newline terminates the last row; it does not start a new one.
++    if text.endswith("\n"):
++        text = text[:-1]
++    if text == "":
++        return []
++
+     header: list[str] | None = None
+     rows: list[dict[str, str]] = []
+     for lineno, line in enumerate(text.split("\n"), start=1):
+         if line.endswith("\r"):
+             line = line[:-1]
+-        if line == "":
+-            continue  # skip blank lines, including the one after a trailing newline
++        # A blank line is a row with one empty field, like any other line.
+         fields = _split_line(line, delimiter, lineno)
+         if header is None:
+             header = fields

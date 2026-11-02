@@ -1,0 +1,6 @@
+runs/
+runs-*/
+*.log
+__pycache__/
+results/*/streams/
+results/*/workspaces/

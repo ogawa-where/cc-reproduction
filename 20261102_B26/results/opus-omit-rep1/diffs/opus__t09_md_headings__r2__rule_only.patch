@@ -1,0 +1,74 @@
+diff --git a/mdtoc/headings.py b/mdtoc/headings.py
+index 6b0680e..1d0da99 100644
+--- a/mdtoc/headings.py
++++ b/mdtoc/headings.py
+@@ -6,12 +6,33 @@ import re
+ # that must be preceded by a space (so "C#" keeps its '#').
+ _ATX_HEADING = re.compile(r"^(#{1,6}) +(.*?)(?: +#+)?\s*$")
+ 
++# A code fence: up to 3 spaces of indentation, then 3+ backticks or tildes.
++_FENCE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
++
+ 
+ def extract_headings(markdown: str) -> list[tuple[int, str]]:
+-    """Return ``(level, text)`` for each ATX heading in ``markdown``."""
++    """Return ``(level, text)`` for each ATX heading in ``markdown``.
++
++    Lines inside fenced code blocks (``` or ~~~) are ignored.
++    """
+     headings = []
++    open_fence = None  # the fence run that opened the current code block
+     for line in markdown.splitlines():
+-        match = _ATX_HEADING.match(line)
+-        if match:
+-            headings.append((len(match.group(1)), match.group(2).strip()))
++        fence = _FENCE.match(line)
++        if open_fence is None:
++            # A backtick fence's info string may not contain backticks.
++            if fence and not (fence.group(1)[0] == "`" and "`" in fence.group(2)):
++                open_fence = fence.group(1)
++                continue
++            match = _ATX_HEADING.match(line)
++            if match:
++                headings.append((len(match.group(1)), match.group(2).strip()))
++        elif (
++            fence
++            and fence.group(1)[0] == open_fence[0]
++            and len(fence.group(1)) >= len(open_fence)
++            and not fence.group(2).strip()
++        ):
++            # Closing fence: same character, at least as long, nothing after it.
++            open_fence = None
+     return headings
+diff --git a/tests/test_headings.py b/tests/test_headings.py
+index f3cefa8..ad3c105 100644
+--- a/tests/test_headings.py
++++ b/tests/test_headings.py
+@@ -8,3 +8,27 @@ def test_two_levels():
+ 
+ def test_no_headings():
+     assert extract_headings("just a paragraph\nand another line\n") == []
++
++
++def test_closing_hashes_and_non_headings():
++    doc = "## Setup ##\n####### seven\n#hashtag\n# C#\n"
++    assert extract_headings(doc) == [(2, "Setup"), (1, "C#")]
++
++
++def test_backtick_fence_skipped():
++    doc = "# Real\n```python\n# a comment\n```\n## After\n"
++    assert extract_headings(doc) == [(1, "Real"), (2, "After")]
++
++
++def test_tilde_fence_and_mismatched_closer():
++    doc = "~~~\n# hidden\n```\n# still hidden\n~~~\n# Shown\n"
++    assert extract_headings(doc) == [(1, "Shown")]
++
++
++def test_closing_fence_must_be_at_least_as_long():
++    doc = "````\n```\n# hidden\n````\n# Shown\n"
++    assert extract_headings(doc) == [(1, "Shown")]
++
++
++def test_unclosed_fence_hides_rest():
++    assert extract_headings("# Top\n```\n# hidden\n") == [(1, "Top")]

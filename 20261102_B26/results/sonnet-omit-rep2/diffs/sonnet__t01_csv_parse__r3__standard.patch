@@ -1,0 +1,15 @@
+diff --git a/csvlite/parser.py b/csvlite/parser.py
+index b62a238..5ef8e0e 100644
+--- a/csvlite/parser.py
++++ b/csvlite/parser.py
+@@ -41,7 +41,9 @@ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+     """Parse ``text`` and return one dict per data row, keyed by the header names."""
+     if not delimiter or delimiter == '"' or "\n" in delimiter or "\r" in delimiter:
+         raise ValueError("invalid delimiter")
+-    lines = [ln for ln in text.replace("\r\n", "\n").split("\n") if ln != ""]
++    lines = text.replace("\r\n", "\n").split("\n")
++    if lines[-1] == "":  # final line terminator, not an extra row
++        lines.pop()
+     if not lines:
+         return []
+     header = _split_line(lines[0], delimiter)

@@ -1,0 +1,36 @@
+diff --git a/confmerge/merge.py b/confmerge/merge.py
+index 6f236a4..9124e32 100644
+--- a/confmerge/merge.py
++++ b/confmerge/merge.py
+@@ -1,6 +1,14 @@
+ """Deep merge of configuration dictionaries."""
+ 
+-import copy
++
++
++def _copy(value):
++    """Copy dict/list containers recursively; other values are passed through."""
++    if isinstance(value, dict):
++        return {k: _copy(v) for k, v in value.items()}
++    if isinstance(value, list):
++        return [_copy(v) for v in value]
++    return value
+ 
+ 
+ def deep_merge(base: dict, override: dict) -> dict:
+@@ -13,7 +21,7 @@ def deep_merge(base: dict, override: dict) -> dict:
+ 
+     Neither input is modified.
+     """
+-    result = {k: copy.deepcopy(v) for k, v in base.items()}
++    result = _copy(base)
+     for key, value in override.items():
+         if value is None:
+             result.pop(key, None)
+@@ -23,5 +31,5 @@ def deep_merge(base: dict, override: dict) -> dict:
+             # nested Nones are dropped from brand-new subtrees as well.
+             result[key] = deep_merge(existing if isinstance(existing, dict) else {}, value)
+         else:
+-            result[key] = copy.deepcopy(value)
++            result[key] = _copy(value)
+     return result

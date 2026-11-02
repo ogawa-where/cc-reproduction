@@ -1,0 +1,44 @@
+diff --git a/tests/test_cache.py b/tests/test_cache.py
+index 2f293ef..a6c0dd5 100644
+--- a/tests/test_cache.py
++++ b/tests/test_cache.py
+@@ -11,3 +11,39 @@ def test_missing_key_returns_default():
+     cache = LRUCache(2)
+     assert cache.get("nope") is None
+     assert cache.get("nope", 0) == 0
++
++
++def _filled():
++    cache = LRUCache(2)
++    cache.put("a", 1)
++    cache.put("b", 2)
++    return cache
++
++
++def test_get_marks_recent():
++    cache = _filled()
++    cache.get("a")
++    cache.put("c", 3)
++    assert "a" in cache and "b" not in cache
++
++
++def test_put_existing_marks_recent_without_evicting():
++    cache = _filled()
++    cache.put("a", 9)
++    assert len(cache) == 2 and cache.get("b") == 2
++    cache.put("a", 10)
++    cache.put("c", 3)
++    assert cache.get("a") == 10 and "b" not in cache
++
++
++def test_contains_is_not_a_use():
++    cache = _filled()
++    assert "a" in cache
++    cache.put("c", 3)
++    assert "a" not in cache and "b" in cache
++
++
++def test_invalid_capacity():
++    import pytest
++    with pytest.raises(ValueError):
++        LRUCache(0)

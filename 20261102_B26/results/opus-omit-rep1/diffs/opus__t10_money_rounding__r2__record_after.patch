@@ -1,0 +1,29 @@
+diff --git a/money/rounding.py b/money/rounding.py
+index 1baad60..53daac4 100644
+--- a/money/rounding.py
++++ b/money/rounding.py
+@@ -1,5 +1,5 @@
+ """Rounding and splitting of currency amounts."""
+-from decimal import ROUND_HALF_UP, Decimal
++from decimal import ROUND_HALF_EVEN, Decimal
+ 
+ 
+ def _reject_float(value: object, name: str) -> None:
+@@ -14,13 +14,14 @@ def round_amount(amount: Decimal | str | int, places: int = 2) -> Decimal:
+     """Return ``amount`` as a Decimal rounded to ``places`` decimal places.
+ 
+     The result always has exactly ``places`` digits after the decimal point,
+-    e.g. ``round_amount("5") == Decimal("5.00")``. Halves round away from
+-    zero (``ROUND_HALF_UP``), as is conventional for currency.
++    e.g. ``round_amount("5") == Decimal("5.00")``. Halves round to the
++    nearest even digit (``ROUND_HALF_EVEN``, banker's rounding), so
++    ``"2.345"`` becomes ``2.34`` and ``"2.355"`` becomes ``2.36``.
+     """
+     _reject_float(amount, "amount")
+     _reject_float(places, "places")
+     exponent = Decimal(1).scaleb(-places)
+-    return Decimal(amount).quantize(exponent, rounding=ROUND_HALF_UP)
++    return Decimal(amount).quantize(exponent, rounding=ROUND_HALF_EVEN)
+ 
+ 
+ def split_amount(total: Decimal | str | int, parts: int) -> list[Decimal]:

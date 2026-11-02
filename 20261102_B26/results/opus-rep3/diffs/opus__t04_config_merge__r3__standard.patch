@@ -1,0 +1,72 @@
+diff --git a/confmerge/merge.py b/confmerge/merge.py
+index 8d4bd58..5fa1b22 100644
+--- a/confmerge/merge.py
++++ b/confmerge/merge.py
+@@ -1,5 +1,18 @@
+ """Deep merge of configuration dictionaries."""
+ import copy
++from collections.abc import Mapping
++
++
++def _copy(value):
++    """Return an independent copy of ``value``.
++
++    Mappings of any kind (dict, OrderedDict, MappingProxyType, ...) are
++    rebuilt as plain dicts so the result is uniform and never shares a
++    mapping with the inputs; anything else is deep-copied.
++    """
++    if isinstance(value, Mapping):
++        return {k: _copy(v) for k, v in value.items()}
++    return copy.deepcopy(value)
+ 
+ 
+ def deep_merge(base: dict, override: dict) -> dict:
+@@ -7,7 +20,7 @@ def deep_merge(base: dict, override: dict) -> dict:
+ 
+     Rules:
+       * Keys from both dicts appear in the result.
+-      * If a key is in both and both values are dicts, they are merged
++      * If a key is in both and both values are mappings, they are merged
+         recursively by these same rules.
+       * Otherwise the override value wins (lists are plain values and
+         replace each other; they are not concatenated).
+@@ -15,24 +28,30 @@ def deep_merge(base: dict, override: dict) -> dict:
+         any nesting level -- including inside override sub-dicts that have
+         no counterpart in ``base``.
+ 
+-    Neither input is modified, and the result shares no mutable objects
+-    with the inputs (everything is deep-copied).
++    Any ``collections.abc.Mapping`` is treated as a dict. Neither input is
++    modified, and the result shares no mutable objects with the inputs;
++    every mapping in the result is a fresh plain ``dict``.
+     """
++    if not isinstance(base, Mapping) or not isinstance(override, Mapping):
++        raise TypeError(
++            "deep_merge() arguments must be mappings, got "
++            f"{type(base).__name__} and {type(override).__name__}"
++        )
++
+     result = {}
+     # Base keys first (preserving their order), then keys new in override.
+     for key in list(base) + [k for k in override if k not in base]:
+         if key not in override:
+-            result[key] = copy.deepcopy(base[key])
++            result[key] = _copy(base[key])
+             continue
+         value = override[key]
+         if value is None:
+             continue  # deletion marker: key is dropped from the result
+-        base_value = base.get(key)
+-        if isinstance(value, dict):
+-            # Recurse even when base has no dict here, so that None
+-            # markers nested in the override are honoured and the
+-            # result is a fresh copy.
+-            nested_base = base_value if isinstance(base_value, dict) else {}
++        if isinstance(value, Mapping):
++            # Recurse even when base has no mapping here, so that None
++            # markers nested in the override are honoured.
++            base_value = base[key] if key in base else None
++            nested_base = base_value if isinstance(base_value, Mapping) else {}
+             result[key] = deep_merge(nested_base, value)
+         else:
+             result[key] = copy.deepcopy(value)

@@ -1,0 +1,102 @@
+diff --git a/mdtoc/headings.py b/mdtoc/headings.py
+index 46cedd8..353efab 100644
+--- a/mdtoc/headings.py
++++ b/mdtoc/headings.py
+@@ -6,17 +6,50 @@ import re
+ _HEADING_RE = re.compile(r"^(#{1,6}) +(.*)$")
+ # Optional closing run of '#' preceded by a space.
+ _CLOSING_RE = re.compile(r" +#+$")
++# Opening code fence: up to 3 spaces of indent, then 3+ backticks or tildes,
++# then an optional info string.
++_FENCE_OPEN_RE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
++
++
++def _opening_fence(line: str) -> str | None:
++    """Return the fence marker if ``line`` opens a fenced code block."""
++    match = _FENCE_OPEN_RE.match(line)
++    if not match:
++        return None
++    fence, info = match.groups()
++    # A backtick fence's info string may not contain backticks
++    # (otherwise the line is inline code, e.g. "```code```").
++    if fence[0] == "`" and "`" in info:
++        return None
++    return fence
++
++
++def _closes_fence(line: str, fence: str) -> bool:
++    """Return True if ``line`` closes the block opened by ``fence``.
++
++    The closing fence uses the same character, is at least as long as the
++    opening fence, and has nothing but whitespace after it.
++    """
++    stripped = line.strip()
++    if len(line) - len(line.lstrip(" ")) > 3:
++        return False
++    return (
++        len(stripped) >= len(fence)
++        and set(stripped) == {fence[0]}
++    )
+ 
+ 
+ def extract_headings(markdown: str) -> list[tuple[int, str]]:
+     """Return ``(level, text)`` for each ATX heading in ``markdown``."""
+     headings: list[tuple[int, str]] = []
+-    in_fence = False
++    fence: str | None = None  # marker of the open code block, if any
+     for line in markdown.splitlines():
+-        if line.startswith("```"):
+-            in_fence = not in_fence
++        if fence is not None:
++            if _closes_fence(line, fence):
++                fence = None
+             continue
+-        if in_fence:
++        fence = _opening_fence(line)
++        if fence is not None:
+             continue
+         match = _HEADING_RE.match(line)
+         if not match:
+diff --git a/tests/test_headings.py b/tests/test_headings.py
+index f3cefa8..c4ac5a4 100644
+--- a/tests/test_headings.py
++++ b/tests/test_headings.py
+@@ -8,3 +8,38 @@ def test_two_levels():
+ 
+ def test_no_headings():
+     assert extract_headings("just a paragraph\nand another line\n") == []
++
++
++def test_heading_inside_fence_ignored():
++    doc = "# A\n```\n# not\n```\n# B\n"
++    assert extract_headings(doc) == [(1, "A"), (1, "B")]
++
++
++def test_info_string_line_does_not_close_fence():
++    doc = "```\n```python\n# not\n```\n# B\n"
++    assert extract_headings(doc) == [(1, "B")]
++
++
++def test_longer_fence_contains_shorter():
++    doc = "````\n```\n# not\n```\n````\n# B\n"
++    assert extract_headings(doc) == [(1, "B")]
++
++
++def test_tilde_fence():
++    doc = "~~~\n# not\n```\n# still not\n~~~\n# B\n"
++    assert extract_headings(doc) == [(1, "B")]
++
++
++def test_inline_code_line_is_not_fence():
++    doc = "```code```\n# A\n"
++    assert extract_headings(doc) == [(1, "A")]
++
++
++def test_indented_fence():
++    doc = "  ```\n# not\n  ```\n# B\n"
++    assert extract_headings(doc) == [(1, "B")]
++
++
++def test_closing_hashes_and_non_headings():
++    doc = "## Setup ##\n#hashtag\n####### seven\n# C#\n"
++    assert extract_headings(doc) == [(2, "Setup"), (1, "C#")]

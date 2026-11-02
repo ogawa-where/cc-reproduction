@@ -1,0 +1,28 @@
+diff --git a/calclex/lexer.py b/calclex/lexer.py
+index 4a67890..85ce8c3 100644
+--- a/calclex/lexer.py
++++ b/calclex/lexer.py
+@@ -30,6 +30,8 @@ def tokenize(expr: str) -> list[tuple[str, str]]:
+         if m:
+             tokens.append(("NUM", expr[i:m.end()]))
+             i = m.end()
++        elif unary:
++            raise LexError(f"'-' at position {i} is not followed by a number", i)
+         elif ch in "+-*/":
+             tokens.append(("OP", ch))
+             i += 1
+diff --git a/tests/test_lexer.py b/tests/test_lexer.py
+index 423aac7..495dd58 100644
+--- a/tests/test_lexer.py
++++ b/tests/test_lexer.py
+@@ -38,3 +38,10 @@ def test_error_pos():
+     with pytest.raises(LexError) as e:
+         tokenize("2 . 3")
+     assert e.value.pos == 2
++
++
++@pytest.mark.parametrize("expr,pos", [("-(3)", 0), ("- 3", 0), ("2*-", 2), ("--3", 0)])
++def test_unary_minus_needs_number(expr, pos):
++    with pytest.raises(LexError) as e:
++        tokenize(expr)
++    assert e.value.pos == pos

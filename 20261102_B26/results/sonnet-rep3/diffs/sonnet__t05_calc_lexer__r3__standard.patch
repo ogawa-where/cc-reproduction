@@ -1,0 +1,17 @@
+diff --git a/calclex/lexer.py b/calclex/lexer.py
+index 45fa38c..d7ef1c8 100644
+--- a/calclex/lexer.py
++++ b/calclex/lexer.py
+@@ -28,11 +28,9 @@ def tokenize(expr: str) -> list[tuple[str, str]]:
+                                or tokens[-1][0] == "LPAREN")
+         start = i + 1 if unary else i
+         if ch in _DIGITS or (unary and start < n and expr[start] in _DIGITS + "."):
+-            if not unary and ch == "." and not (start + 1 < n and expr[start + 1] in _DIGITS):
+-                raise LexError(f"unexpected character {ch!r} at {i}", i)
+             m = _NUM.match(expr, start)
+             if m is None:
+-                raise LexError(f"unexpected character {ch!r} at {i}", i)
++                raise LexError(f"unexpected character {expr[start]!r} at {start}", start)
+             tokens.append(("NUM", expr[i:m.end()]))
+             i = m.end()
+         elif ch == ".":

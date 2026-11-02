@@ -1,0 +1,80 @@
+diff --git a/lrucache/cache.py b/lrucache/cache.py
+index 2a5f276..7031f0e 100644
+--- a/lrucache/cache.py
++++ b/lrucache/cache.py
+@@ -1,19 +1,33 @@
+ """Fixed-capacity cache with least-recently-used eviction."""
++from collections import OrderedDict
+ from typing import Any, Hashable
+ 
+ 
+ class LRUCache:
+     def __init__(self, capacity: int) -> None:
+-        raise NotImplementedError
++        if capacity < 1:
++            raise ValueError("capacity must be at least 1")
++        self._capacity = capacity
++        self._data: "OrderedDict[Hashable, Any]" = OrderedDict()
+ 
+     def get(self, key: Hashable, default: Any = None) -> Any:
+-        raise NotImplementedError
++        if key not in self._data:
++            return default
++        self._data.move_to_end(key)
++        return self._data[key]
+ 
+     def put(self, key: Hashable, value: Any) -> None:
+-        raise NotImplementedError
++        if key in self._data:
++            self._data[key] = value
++            self._data.move_to_end(key)
++            return
++        if len(self._data) >= self._capacity:
++            self._data.popitem(last=False)
++        self._data[key] = value
+ 
+     def __len__(self) -> int:
+-        raise NotImplementedError
++        return len(self._data)
+ 
+     def __contains__(self, key: object) -> bool:
+-        raise NotImplementedError
++        # Membership checks do not affect recency.
++        return key in self._data
+diff --git a/tests/test_cache.py b/tests/test_cache.py
+index 2f293ef..68a3a67 100644
+--- a/tests/test_cache.py
++++ b/tests/test_cache.py
+@@ -11,3 +11,32 @@ def test_missing_key_returns_default():
+     cache = LRUCache(2)
+     assert cache.get("nope") is None
+     assert cache.get("nope", 0) == 0
++
++
++def test_evicts_least_recently_used():
++    cache = LRUCache(2)
++    cache.put("a", 1)
++    cache.put("b", 2)
++    cache.get("a")
++    cache.put("c", 3)
++    assert "b" not in cache
++    assert "a" in cache and "c" in cache
++    assert len(cache) == 2
++
++
++def test_update_existing_does_not_evict():
++    cache = LRUCache(2)
++    cache.put("a", 1)
++    cache.put("b", 2)
++    cache.put("a", 10)
++    assert len(cache) == 2
++    assert cache.get("a") == 10
++    cache.put("c", 3)
++    assert "b" not in cache
++
++
++def test_invalid_capacity():
++    import pytest
++    for bad in (0, -1):
++        with pytest.raises(ValueError):
++            LRUCache(bad)

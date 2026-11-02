@@ -1,0 +1,29 @@
+diff --git a/confmerge/merge.py b/confmerge/merge.py
+index 406abff..d34998a 100644
+--- a/confmerge/merge.py
++++ b/confmerge/merge.py
+@@ -17,7 +17,7 @@ def deep_merge(base: dict, override: dict) -> dict:
+     replaces the one in ``base``. An override value of ``None`` removes the key.
+     Neither input is modified.
+     """
+-    result = {k: _strip_none(v) for k, v in base.items()}
++    result = copy.deepcopy(base)
+     for key, value in override.items():
+         if value is None:
+             result.pop(key, None)
+diff --git a/tests/test_merge.py b/tests/test_merge.py
+index e4f1e54..650c30d 100644
+--- a/tests/test_merge.py
++++ b/tests/test_merge.py
+@@ -17,6 +17,11 @@ def test_none_removes_key_at_any_level():
+     assert deep_merge({}, {"n": {"x": None, "z": 1}}) == {"n": {"z": 1}}
+ 
+ 
++def test_none_in_base_is_preserved():
++    base = {"a": None, "n": {"x": None, "y": 1}}
++    assert deep_merge(base, {"n": {"y": 2}}) == {"a": None, "n": {"x": None, "y": 2}}
++
++
+ def test_lists_replace_and_inputs_unmodified():
+     base = {"l": [1, 2], "d": {"k": [1]}}
+     override = {"l": [3], "d": {"k": None}}

@@ -1,0 +1,17 @@
+diff --git a/slugkit/slug.py b/slugkit/slug.py
+index 5cfb236..7c46fa9 100644
+--- a/slugkit/slug.py
++++ b/slugkit/slug.py
+@@ -1,6 +1,11 @@
+ """Turn titles into URL slugs."""
+ 
++import re
++
+ 
+ def slugify(text: str, max_length: int | None = None) -> str:
+     """Return a URL slug for ``text``."""
+-    raise NotImplementedError
++    slug = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
++    if max_length is not None:
++        slug = slug[: max(max_length, 0)].rstrip("-")
++    return slug or "n-a"

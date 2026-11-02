@@ -1,0 +1,28 @@
+{
+  "requirements": [
+    {
+      "id": "r1",
+      "name": "header row maps to values of each data row",
+      "subtle": false,
+      "complaint": "The way rows are mapped to the header columns is wrong. Fix it."
+    },
+    {
+      "id": "r2",
+      "name": "quoted fields may contain the delimiter and doubled quotes",
+      "subtle": false,
+      "complaint": "Quoted fields aren't handled correctly. Redo it."
+    },
+    {
+      "id": "r3",
+      "name": "blank lines, including whitespace-only lines, are skipped",
+      "subtle": true,
+      "complaint": "The handling of blank lines doesn't seem right. Redo it."
+    },
+    {
+      "id": "r4",
+      "name": "rows with a wrong field count raise ValueError",
+      "subtle": false,
+      "complaint": "Rows with the wrong number of fields aren't handled properly. Fix it."
+    }
+  ]
+}

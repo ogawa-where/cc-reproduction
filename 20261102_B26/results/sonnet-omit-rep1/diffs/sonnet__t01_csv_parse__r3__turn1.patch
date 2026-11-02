@@ -1,0 +1,95 @@
+diff --git a/csvlite/parser.py b/csvlite/parser.py
+index 04abfdd..0545013 100644
+--- a/csvlite/parser.py
++++ b/csvlite/parser.py
+@@ -1,6 +1,61 @@
+ """Parse CSV text into a list of row dicts."""
+ 
+ 
++def _split_line(line: str, delimiter: str) -> list[str]:
++    fields = []
++    i, n = 0, len(line)
++    while True:
++        if i < n and line[i] == '"':
++            i += 1
++            buf = []
++            while True:
++                if i >= n:
++                    raise ValueError("unterminated quoted field")
++                c = line[i]
++                if c == '"':
++                    if line[i + 1:i + 2] == '"':
++                        buf.append('"')
++                        i += 2
++                        continue
++                    i += 1
++                    break
++                buf.append(c)
++                i += 1
++            fields.append("".join(buf))
++            if i < n and not line.startswith(delimiter, i):
++                raise ValueError("unexpected text after closing quote")
++        else:
++            j = line.find(delimiter, i)
++            if j == -1:
++                j = n
++            fields.append(line[i:j])
++            i = j
++        if i >= n:
++            return fields
++        i += len(delimiter)
++        if i >= n:  # trailing delimiter -> final empty field
++            fields.append("")
++            return fields
++
++
+ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+-    """Parse ``text`` and return one dict per data row, keyed by the header names."""
+-    raise NotImplementedError
++    """Parse ``text`` and return one dict per data row, keyed by the header names.
++
++    Blank lines are skipped. Raises ValueError on a row whose field count
++    differs from the header, or on malformed quoting.
++    """
++    if not delimiter or delimiter == '"' or "\n" in delimiter or "\r" in delimiter:
++        raise ValueError("invalid delimiter")
++    lines = [ln for ln in text.splitlines() if ln != ""]
++    if not lines:
++        return []
++    header = _split_line(lines[0], delimiter)
++    rows = []
++    for ln in lines[1:]:
++        fields = _split_line(ln, delimiter)
++        if len(fields) != len(header):
++            raise ValueError(
++                f"expected {len(header)} fields, got {len(fields)}: {ln!r}"
++            )
++        rows.append(dict(zip(header, fields)))
++    return rows
+diff --git a/tests/test_parser.py b/tests/test_parser.py
+index e06f09f..3eba5d6 100644
+--- a/tests/test_parser.py
++++ b/tests/test_parser.py
+@@ -9,5 +9,22 @@ def test_basic_rows():
+     ]
+ 
+ 
++def test_quotes():
++    text = 'a,b\n"x,y","he said ""hi"""\n'
++    assert parse_csv(text) == [{"a": "x,y", "b": 'he said "hi"'}]
++
++
++def test_empty_fields_and_spaces():
++    assert parse_csv("a,b,c\n, x ,\n") == [{"a": "", "b": " x ", "c": ""}]
++
++
++def test_mismatch_raises():
++    import pytest
++
++    for bad in ("a,b\n1\n", "a,b\n1,2,3\n"):
++        with pytest.raises(ValueError):
++            parse_csv(bad)
++
++
+ def test_custom_delimiter():
+     assert parse_csv("a;b\n1;2", delimiter=";") == [{"a": "1", "b": "2"}]

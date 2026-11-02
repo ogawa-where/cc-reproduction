@@ -1,0 +1,24 @@
+diff --git a/mdtoc/headings.py b/mdtoc/headings.py
+index 17fa6d6..afd86ff 100644
+--- a/mdtoc/headings.py
++++ b/mdtoc/headings.py
+@@ -1,6 +1,18 @@
+ """Find the headings in a Markdown document."""
+ 
++import re
++
++_HEADING = re.compile(r"(#{1,6}) +(.*)")
++_CLOSING = re.compile(r"(?:^|\s+)#+\s*$")
++
+ 
+ def extract_headings(markdown: str) -> list[tuple[int, str]]:
+     """Return ``(level, text)`` for each ATX heading in ``markdown``."""
+-    raise NotImplementedError
++    headings = []
++    for line in markdown.splitlines():
++        m = _HEADING.fullmatch(line)
++        if not m:
++            continue
++        text = _CLOSING.sub("", m.group(2).strip()).strip()
++        headings.append((len(m.group(1)), text))
++    return headings

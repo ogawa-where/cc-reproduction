@@ -1,0 +1,21 @@
+diff --git a/timefmt/formatting.py b/timefmt/formatting.py
+index e5df46e..f99111c 100644
+--- a/timefmt/formatting.py
++++ b/timefmt/formatting.py
+@@ -12,7 +12,9 @@ def format_timestamp(ts: float) -> str:
+ 
+ def format_duration(seconds: int) -> str:
+     """Format a number of seconds such as ``1h 2m 5s``."""
+-    hours, rem = divmod(int(seconds), 3600)
++    seconds = int(seconds)
++    sign = "-" if seconds < 0 else ""
++    hours, rem = divmod(abs(seconds), 3600)
+     minutes, secs = divmod(rem, 60)
+     parts = []
+     if hours:
+@@ -21,4 +23,4 @@ def format_duration(seconds: int) -> str:
+         parts.append(f"{minutes}m")
+     if secs:
+         parts.append(f"{secs}s")
+-    return " ".join(parts) or "0s"
++    return sign + " ".join(parts) if parts else "0s"

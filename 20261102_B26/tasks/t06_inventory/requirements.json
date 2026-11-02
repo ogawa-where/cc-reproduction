@@ -1,0 +1,28 @@
+{
+  "requirements": [
+    {
+      "id": "r1",
+      "name": "add accumulates; unknown SKU has quantity 0",
+      "subtle": false,
+      "complaint": "The quantity bookkeeping is wrong. Fix it."
+    },
+    {
+      "id": "r2",
+      "name": "over-removal raises InsufficientStock and leaves stock unchanged",
+      "subtle": false,
+      "complaint": "Removing more than is in stock isn't handled correctly. Redo it."
+    },
+    {
+      "id": "r3",
+      "name": "SKUs case-insensitive, surrounding whitespace ignored, reported uppercase",
+      "subtle": true,
+      "complaint": "The SKU matching doesn't seem right. Fix it."
+    },
+    {
+      "id": "r4",
+      "name": "report: positive quantities only, by quantity desc then SKU asc",
+      "subtle": false,
+      "complaint": "The report is wrong. Redo it."
+    }
+  ]
+}

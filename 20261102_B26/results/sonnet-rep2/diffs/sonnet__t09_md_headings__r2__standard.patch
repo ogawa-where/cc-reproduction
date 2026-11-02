@@ -1,0 +1,56 @@
+diff --git a/mdtoc/headings.py b/mdtoc/headings.py
+index 4504c01..2586c51 100644
+--- a/mdtoc/headings.py
++++ b/mdtoc/headings.py
+@@ -2,18 +2,25 @@
+ import re
+ 
+ _HEADING = re.compile(r"(#{1,6}) +(.*)")
++_FENCE = re.compile(r"(`{3,})(.*)")
+ _CLOSING = re.compile(r"(?:^|\s)#+$")
+ 
+ 
+ def extract_headings(markdown: str) -> list[tuple[int, str]]:
+     """Return ``(level, text)`` for each ATX heading in ``markdown``."""
+     headings: list[tuple[int, str]] = []
+-    in_fence = False
+-    for line in markdown.splitlines():
+-        if line.startswith("```"):
+-            in_fence = not in_fence
++    fence_len = 0  # length of the currently open fence; 0 when outside a block
++    for line in markdown.replace("\r\n", "\n").replace("\r", "\n").split("\n"):
++        fence = _FENCE.match(line)
++        if fence_len:
++            # Closes on a line of at least as many backticks and nothing else.
++            if fence and len(fence.group(1)) >= fence_len and not fence.group(2).strip():
++                fence_len = 0
+             continue
+-        if in_fence:
++        # An opening fence's info string may not contain backticks
++        # (otherwise it is inline code such as "```x``` text").
++        if fence and "`" not in fence.group(2):
++            fence_len = len(fence.group(1))
+             continue
+         m = _HEADING.fullmatch(line)
+         if not m:
+diff --git a/tests/test_headings.py b/tests/test_headings.py
+index 68dd2ee..ad32cec 100644
+--- a/tests/test_headings.py
++++ b/tests/test_headings.py
+@@ -21,3 +21,16 @@ def test_not_headings():
+ def test_fenced_code_ignored():
+     doc = "# A\n```python\n# comment\n```\n## B\n"
+     assert extract_headings(doc) == [(1, "A"), (2, "B")]
++
++
++def test_longer_fence_and_info_string_inside_block():
++    doc = "````\n```js\n# x\n```\n# y\n````\n# z\n"
++    assert extract_headings(doc) == [(1, "z")]
++
++
++def test_inline_triple_backticks_do_not_open_block():
++    assert extract_headings("```x``` text\n# A\n") == [(1, "A")]
++
++
++def test_unclosed_fence_swallows_rest():
++    assert extract_headings("# A\n```\n# B\n") == [(1, "A")]

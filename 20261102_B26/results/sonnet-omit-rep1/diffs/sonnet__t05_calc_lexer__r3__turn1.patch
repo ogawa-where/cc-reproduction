@@ -1,0 +1,40 @@
+diff --git a/calclex/lexer.py b/calclex/lexer.py
+index 3497e9b..fe61407 100644
+--- a/calclex/lexer.py
++++ b/calclex/lexer.py
+@@ -1,4 +1,9 @@
+ """Split an arithmetic expression into tokens."""
++import re
++
++_OPS = "+-*/"
++# digits with optional fraction ("3.14", "10."), or a leading-dot fraction (".5")
++_NUM = re.compile(r"[0-9]+\.?[0-9]*|\.[0-9]+")
+ 
+ 
+ class LexError(ValueError):
+@@ -11,4 +16,24 @@ class LexError(ValueError):
+ 
+ def tokenize(expr: str) -> list[tuple[str, str]]:
+     """Return the tokens of ``expr`` as ``(kind, text)`` pairs."""
+-    raise NotImplementedError
++    tokens: list[tuple[str, str]] = []
++    i, n = 0, len(expr)
++    while i < n:
++        ch = expr[i]
++        if ch.isspace():
++            i += 1
++        elif ch in _OPS:
++            tokens.append(("OP", ch))
++            i += 1
++        elif ch == "(":
++            tokens.append(("LPAREN", ch))
++            i += 1
++        elif ch == ")":
++            tokens.append(("RPAREN", ch))
++            i += 1
++        elif (m := _NUM.match(expr, i)):
++            tokens.append(("NUM", m.group()))
++            i = m.end()
++        else:
++            raise LexError(f"unexpected character {ch!r} at position {i}", i)
++    return tokens

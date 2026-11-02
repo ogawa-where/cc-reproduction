@@ -1,0 +1,20 @@
+diff --git a/calclex/lexer.py b/calclex/lexer.py
+index bcff589..4382c60 100644
+--- a/calclex/lexer.py
++++ b/calclex/lexer.py
+@@ -26,9 +26,13 @@ def tokenize(expr: str) -> list[tuple[str, str]]:
+             continue
+ 
+         # A minus is unary at the start or right after an operator or "(";
+-        # it then joins the number immediately following it.
++        # it then joins the number that follows it (whitespace in between is
++        # ignored, so "- 3" yields NUM "-3").
+         if ch == "-" and (not tokens or tokens[-1][0] in ("OP", "LPAREN")):
+-            m = _NUMBER.match(expr, i + 1)
++            j = i + 1
++            while j < n and expr[j].isspace():
++                j += 1
++            m = _NUMBER.match(expr, j)
+             if m:
+                 tokens.append(("NUM", "-" + m.group()))
+                 i = m.end()

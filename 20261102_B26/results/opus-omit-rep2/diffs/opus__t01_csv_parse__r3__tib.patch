@@ -1,0 +1,31 @@
+diff --git a/csvlite/parser.py b/csvlite/parser.py
+index 90fc514..221077e 100644
+--- a/csvlite/parser.py
++++ b/csvlite/parser.py
+@@ -44,9 +44,11 @@ def _split_line(line: str, delimiter: str) -> list[str]:
+ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+     """Parse ``text`` and return one dict per data row, keyed by the header names.
+ 
+-    The first non-blank line is the header. Fields may be wrapped in double
+-    quotes, in which case they may contain the delimiter, and ``""`` inside a
+-    quoted field stands for a single literal quote. Blank lines are skipped.
++    The first line is the header. Fields may be wrapped in double quotes, in
++    which case they may contain the delimiter, and ``""`` inside a quoted field
++    stands for a single literal quote. A blank line is a row with one empty
++    field (so it only fits a one-column header); a single trailing newline at
++    the end of the text does not create an extra row.
+     Raises ``ValueError`` if a data row's field count differs from the header's,
+     or if a quoted field is malformed.
+     """
+@@ -55,7 +57,10 @@ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+     if delimiter == '"':
+         raise ValueError("delimiter cannot be the quote character")
+ 
+-    lines = [line for line in text.splitlines() if line != ""]
++    # Every line is a row, blank ones included: a blank line is a row with a
++    # single empty field. splitlines() already omits the empty "line" after a
++    # final trailing newline, so that one is not treated as a row.
++    lines = text.splitlines()
+     if not lines:
+         return []
+ 

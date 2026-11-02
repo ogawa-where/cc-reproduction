@@ -1,0 +1,35 @@
+diff --git a/csvlite/parser.py b/csvlite/parser.py
+index b11e0ca..061ba30 100644
+--- a/csvlite/parser.py
++++ b/csvlite/parser.py
+@@ -47,22 +47,24 @@ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+     if len(delimiter) != 1 or delimiter in (_QUOTE, "\n", "\r"):
+         raise ValueError(f"invalid delimiter: {delimiter!r}")
+ 
+-    rows: list[list[str]] = []
+-    for raw in text.split("\n"):
++    # Keep each row's physical line number so errors point at the right line
++    # even after blank lines have been skipped.
++    rows: list[tuple[int, list[str]]] = []
++    for lineno, raw in enumerate(text.split("\n"), start=1):
+         line = raw[:-1] if raw.endswith("\r") else raw
+         if not line.strip():
+             continue
+-        rows.append(_split_line(line, delimiter))
++        rows.append((lineno, _split_line(line, delimiter)))
+ 
+     if not rows:
+         return []
+ 
+-    header, *data = rows
++    (_, header), *data = rows
+     result: list[dict[str, str]] = []
+-    for lineno, fields in enumerate(data, start=2):
++    for lineno, fields in data:
+         if len(fields) != len(header):
+             raise ValueError(
+-                f"data row {lineno - 1} has {len(fields)} fields, expected {len(header)}"
++                f"line {lineno} has {len(fields)} fields, expected {len(header)}"
+             )
+         result.append(dict(zip(header, fields)))
+     return result

@@ -1,0 +1,39 @@
+diff --git a/csvlite/parser.py b/csvlite/parser.py
+index 90fc514..86c7e6f 100644
+--- a/csvlite/parser.py
++++ b/csvlite/parser.py
+@@ -44,20 +44,27 @@ def _split_line(line: str, delimiter: str) -> list[str]:
+ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+     """Parse ``text`` and return one dict per data row, keyed by the header names.
+ 
+-    The first non-blank line is the header. Fields may be wrapped in double
+-    quotes, in which case they may contain the delimiter, and ``""`` inside a
+-    quoted field stands for a single literal quote. Blank lines are skipped.
+-    Raises ``ValueError`` if a data row's field count differs from the header's,
+-    or if a quoted field is malformed.
++    The first line is the header. Fields may be wrapped in double quotes, in
++    which case they may contain the delimiter, and ``""`` inside a quoted field
++    stands for a single literal quote. A blank line is a row with one empty
++    field, so it is only valid when the header has a single column. Raises
++    ``ValueError`` if a data row's field count differs from the header's, or if
++    a quoted field is malformed.
+     """
+     if not delimiter:
+         raise ValueError("delimiter must be a non-empty string")
+     if delimiter == '"':
+         raise ValueError("delimiter cannot be the quote character")
+ 
+-    lines = [line for line in text.splitlines() if line != ""]
+-    if not lines:
++    if text == "":
+         return []
++    # Split only on real line breaks (\n, \r\n, \r); str.splitlines() would
++    # also split on characters like \x0c or   that belong to field values.
++    lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
++    # A newline terminates the line before it rather than starting a new
++    # one, so a single trailing newline does not produce an extra row.
++    if lines[-1] == "":
++        lines.pop()
+ 
+     header = _split_line(lines[0], delimiter)
+     rows: list[dict[str, str]] = []

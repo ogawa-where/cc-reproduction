@@ -1,0 +1,36 @@
+diff --git a/confmerge/merge.py b/confmerge/merge.py
+index 6d1c592..8fa5daf 100644
+--- a/confmerge/merge.py
++++ b/confmerge/merge.py
+@@ -1,6 +1,29 @@
+ """Deep merge of configuration dictionaries."""
+ 
++import copy
++
+ 
+ def deep_merge(base: dict, override: dict) -> dict:
+-    """Return ``base`` with ``override`` merged on top of it."""
+-    raise NotImplementedError
++    """Return ``base`` with ``override`` merged on top of it.
++
++    Rules:
++    - Keys from both dicts appear in the result.
++    - If a key is in both and both values are dicts, they are merged recursively.
++    - Otherwise the override value wins (lists replace lists; no concatenation).
++    - An override value of ``None`` removes the key from the result, at any
++      nesting level (including inside dicts that only exist in ``override``).
++
++    Neither input is mutated; the result shares no mutable state with them.
++    """
++    result = copy.deepcopy(base)
++    for key, value in override.items():
++        if value is None:
++            result.pop(key, None)
++        elif isinstance(value, dict):
++            existing = result.get(key)
++            # A dict replacing a non-dict is merged onto {} so that any None
++            # markers inside it are still stripped.
++            result[key] = deep_merge(existing if isinstance(existing, dict) else {}, value)
++        else:
++            result[key] = copy.deepcopy(value)
++    return result

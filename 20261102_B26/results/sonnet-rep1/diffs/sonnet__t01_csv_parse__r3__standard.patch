@@ -1,0 +1,35 @@
+diff --git a/csvlite/parser.py b/csvlite/parser.py
+index bcf643c..8301596 100644
+--- a/csvlite/parser.py
++++ b/csvlite/parser.py
+@@ -1,4 +1,5 @@
+ """Parse CSV text into a list of row dicts."""
++import re
+ 
+ 
+ def _split_line(line: str, delimiter: str) -> list[str]:
+@@ -44,8 +45,7 @@ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+     """Parse ``text`` and return one dict per data row, keyed by the header names."""
+     if not delimiter:
+         raise ValueError("delimiter must be non-empty")
+-    lines = [ln[:-1] if ln.endswith("\r") else ln for ln in text.split("\n")]
+-    lines = [ln for ln in lines if ln.strip()]
++    lines = [ln for ln in re.split(r"\r\n|\r|\n", text) if ln.strip()]
+     if not lines:
+         return []
+     header = _split_line(lines[0], delimiter)
+diff --git a/tests/test_parser.py b/tests/test_parser.py
+index 28df940..c62e2be 100644
+--- a/tests/test_parser.py
++++ b/tests/test_parser.py
+@@ -28,3 +28,10 @@ def test_field_count_mismatch():
+         parse_csv("a,b\n1\n")
+     with pytest.raises(ValueError):
+         parse_csv("a,b\n1,2,3\n")
++
++
++def test_blank_lines_any_line_ending():
++    assert parse_csv("a,b\r\r1,2\r\n \t\r\n\n3,4\r") == [
++        {"a": "1", "b": "2"},
++        {"a": "3", "b": "4"},
++    ]

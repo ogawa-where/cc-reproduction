@@ -1,0 +1,16 @@
+diff --git a/tests/test_formatting.py b/tests/test_formatting.py
+index cd6aaa0..2c13614 100644
+--- a/tests/test_formatting.py
++++ b/tests/test_formatting.py
+@@ -7,3 +7,11 @@ def test_timestamp_epoch():
+ 
+ def test_duration_all_units():
+     assert format_duration(3725) == "1h 2m 5s"
++
++
++def test_duration_negative_raises():
++    import pytest
++
++    for value in (-1, -60, -3600, -3725):
++        with pytest.raises(ValueError):
++            format_duration(value)

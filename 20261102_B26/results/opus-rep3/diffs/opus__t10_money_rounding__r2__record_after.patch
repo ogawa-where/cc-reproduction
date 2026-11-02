@@ -1,0 +1,70 @@
+diff --git a/money/rounding.py b/money/rounding.py
+index 83bdd6c..812c4d4 100644
+--- a/money/rounding.py
++++ b/money/rounding.py
+@@ -34,7 +34,12 @@ def round_amount(amount: Decimal | str | int, places: int = 2) -> Decimal:
+     with localcontext() as ctx:
+         # Make sure quantize never fails for lack of precision on large amounts.
+         ctx.prec = max(ctx.prec, value.adjusted() + places + 2)
+-        return value.quantize(exponent, rounding=ROUND_HALF_EVEN)
++        result = value.quantize(exponent, rounding=ROUND_HALF_EVEN)
++    # Negative amounts that round to zero (e.g. "-0.005") would otherwise
++    # come out as Decimal("-0.00"); money has no negative zero.
++    if result.is_zero():
++        result = result.copy_abs()
++    return result
+ 
+ 
+ def split_amount(total: Decimal | str | int, parts: int) -> list[Decimal]:
+diff --git a/tests/test_rounding.py b/tests/test_rounding.py
+index dfea7f9..b27a8e4 100644
+--- a/tests/test_rounding.py
++++ b/tests/test_rounding.py
+@@ -9,3 +9,47 @@ def test_round_simple():
+ 
+ def test_split_even():
+     assert split_amount("9.00", 3) == [Decimal("3.00")] * 3
++
++
++import pytest
++
++
++@pytest.mark.parametrize(
++    "amount, expected",
++    [
++        ("0.005", "0.00"),
++        ("0.015", "0.02"),
++        ("0.025", "0.02"),
++        ("0.035", "0.04"),
++        ("2.345", "2.34"),
++        ("2.355", "2.36"),
++        ("-0.015", "-0.02"),
++        ("-0.025", "-0.02"),
++        ("-2.345", "-2.34"),
++        ("-2.355", "-2.36"),
++    ],
++)
++def test_round_half_even(amount, expected):
++    result = round_amount(amount)
++    assert result == Decimal(expected)
++    assert str(result) == expected
++
++
++@pytest.mark.parametrize("amount", ["-0.005", "-0.004", "-0", Decimal("-0.00")])
++def test_round_no_negative_zero(amount):
++    result = round_amount(amount)
++    assert str(result) == "0.00"
++    assert not result.is_signed()
++
++
++def test_round_half_even_zero_places():
++    assert str(round_amount("0.5", 0)) == "0"
++    assert str(round_amount("-0.5", 0)) == "0"
++    assert str(round_amount("1.5", 0)) == "2"
++    assert str(round_amount("2.5", 0)) == "2"
++
++
++def test_split_rounds_halfway_total_half_even():
++    assert split_amount("10.005", 2) == [Decimal("5.00"), Decimal("5.00")]
++    assert split_amount("10.015", 2) == [Decimal("5.01"), Decimal("5.01")]
++    assert split_amount("-0.005", 2) == [Decimal("0.00"), Decimal("0.00")]

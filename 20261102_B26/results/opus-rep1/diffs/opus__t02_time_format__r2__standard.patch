@@ -1,0 +1,56 @@
+diff --git a/tests/test_formatting.py b/tests/test_formatting.py
+index cd6aaa0..2dc1d41 100644
+--- a/tests/test_formatting.py
++++ b/tests/test_formatting.py
+@@ -7,3 +7,23 @@ def test_timestamp_epoch():
+ 
+ def test_duration_all_units():
+     assert format_duration(3725) == "1h 2m 5s"
++
++
++import os
++import time
++
++import pytest
++
++
++@pytest.mark.parametrize(
++    "tz", ["UTC", "America/Los_Angeles", "Asia/Kolkata", "Pacific/Chatham", "America/St_Johns"]
++)
++def test_timestamp_ignores_local_time_zone(tz, monkeypatch):
++    monkeypatch.setenv("TZ", tz)
++    time.tzset()
++    try:
++        assert format_timestamp(1709647629.987) == "2024-03-05 14:07:09 UTC"
++        assert format_timestamp(1720000000) == "2024-07-03 09:46:40 UTC"  # DST period
++    finally:
++        monkeypatch.undo()
++        time.tzset()
+diff --git a/timefmt/formatting.py b/timefmt/formatting.py
+index d517401..8917958 100644
+--- a/timefmt/formatting.py
++++ b/timefmt/formatting.py
+@@ -1,8 +1,6 @@
+ """Human-readable timestamps and durations."""
+ import math
+-from datetime import datetime, timedelta, timezone
+-
+-_EPOCH = datetime(1970, 1, 1, tzinfo=timezone.utc)
++from datetime import datetime, timezone
+ 
+ 
+ def format_timestamp(ts: float) -> str:
+@@ -13,8 +11,11 @@ def format_timestamp(ts: float) -> str:
+     """
+     # Floor to whole seconds before converting, so e.g. 0.9999999 isn't
+     # rounded up to the next second by microsecond rounding.
+-    dt = _EPOCH + timedelta(seconds=math.floor(ts))
+-    return dt.strftime("%Y-%m-%d %H:%M:%S") + " UTC"
++    # Passing tz=timezone.utc yields an aware UTC datetime; the machine's
++    # local zone is never consulted (unlike fromtimestamp() without tz, or
++    # the deprecated utcfromtimestamp()).
++    dt = datetime.fromtimestamp(math.floor(ts), tz=timezone.utc)
++    return dt.strftime("%Y-%m-%d %H:%M:%S UTC")
+ 
+ 
+ def format_duration(seconds: int) -> str:
