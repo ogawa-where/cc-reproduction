@@ -1,0 +1,28 @@
+{
+  "requirements": [
+    {
+      "id": "r1",
+      "name": "integers, + - * /, parentheses; whitespace ignored",
+      "subtle": false,
+      "complaint": "The basic tokenization of integers, operators and parentheses is wrong. Fix it."
+    },
+    {
+      "id": "r2",
+      "name": "decimal numbers (3.14, 10., .5) are single NUM tokens",
+      "subtle": false,
+      "complaint": "Decimal numbers aren't tokenized correctly. Redo it."
+    },
+    {
+      "id": "r3",
+      "name": "unary minus at start or after operator/( is part of the number",
+      "subtle": true,
+      "complaint": "The handling of minus signs is wrong. Fix it."
+    },
+    {
+      "id": "r4",
+      "name": "unknown characters raise LexError with the 0-based position",
+      "subtle": false,
+      "complaint": "Invalid characters aren't reported properly. Fix it."
+    }
+  ]
+}

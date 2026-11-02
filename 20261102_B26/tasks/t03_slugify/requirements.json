@@ -1,0 +1,28 @@
+{
+  "requirements": [
+    {
+      "id": "r1",
+      "name": "lowercase, runs of non-alphanumerics collapse to one hyphen, no edge hyphens",
+      "subtle": false,
+      "complaint": "The basic slug format is wrong. Fix it."
+    },
+    {
+      "id": "r2",
+      "name": "accented letters transliterated via NFKD, combining marks dropped",
+      "subtle": true,
+      "complaint": "The handling of accented and non-ASCII characters doesn't seem right. Redo it."
+    },
+    {
+      "id": "r3",
+      "name": "max_length truncation without a trailing hyphen",
+      "subtle": false,
+      "complaint": "The max_length truncation is wrong. Fix it."
+    },
+    {
+      "id": "r4",
+      "name": "empty result becomes n-a",
+      "subtle": false,
+      "complaint": "The empty-slug case isn't handled properly. Redo it."
+    }
+  ]
+}

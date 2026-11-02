@@ -1,0 +1,28 @@
+{
+  "requirements": [
+    {
+      "id": "r1",
+      "name": "numeric left-to-right comparison (1.10 > 1.9), -1/0/1, sort_versions ascending",
+      "subtle": false,
+      "complaint": "The version ordering is wrong. Fix it."
+    },
+    {
+      "id": "r2",
+      "name": "missing trailing components count as zero (1.2 == 1.2.0)",
+      "subtle": true,
+      "complaint": "Versions with different numbers of components aren't compared correctly. Redo it."
+    },
+    {
+      "id": "r3",
+      "name": "pre-release label sorts before the release; labels compared as strings",
+      "subtle": false,
+      "complaint": "Pre-release versions aren't handled correctly. Fix it."
+    },
+    {
+      "id": "r4",
+      "name": "malformed versions raise ValueError",
+      "subtle": false,
+      "complaint": "The validation of version strings is wrong. Fix it."
+    }
+  ]
+}

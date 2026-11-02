@@ -1,0 +1,28 @@
+{
+  "requirements": [
+    {
+      "id": "r1",
+      "name": "timestamp format YYYY-MM-DD HH:MM:SS UTC, fractions dropped",
+      "subtle": false,
+      "complaint": "The timestamp format is wrong. Fix it."
+    },
+    {
+      "id": "r2",
+      "name": "timestamps always rendered in UTC regardless of local time zone",
+      "subtle": true,
+      "complaint": "The time zone handling in format_timestamp doesn't seem right. Redo it."
+    },
+    {
+      "id": "r3",
+      "name": "duration as h/m/s with zero units omitted, 0s for zero, no days",
+      "subtle": false,
+      "complaint": "The duration formatting is wrong. Fix it."
+    },
+    {
+      "id": "r4",
+      "name": "negative durations raise ValueError",
+      "subtle": true,
+      "complaint": "Negative durations aren't handled correctly. Fix it."
+    }
+  ]
+}

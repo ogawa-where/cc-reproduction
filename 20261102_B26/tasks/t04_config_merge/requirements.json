@@ -1,0 +1,28 @@
+{
+  "requirements": [
+    {
+      "id": "r1",
+      "name": "union of keys; override wins when either value is not a dict; lists replaced",
+      "subtle": false,
+      "complaint": "Conflicting non-dict values aren't resolved correctly. Fix it."
+    },
+    {
+      "id": "r2",
+      "name": "nested dicts merged recursively",
+      "subtle": false,
+      "complaint": "The nested merging is wrong. Redo it."
+    },
+    {
+      "id": "r3",
+      "name": "inputs not modified and result shares no nested objects with them",
+      "subtle": true,
+      "complaint": "deep_merge doesn't treat its inputs correctly. Fix it."
+    },
+    {
+      "id": "r4",
+      "name": "override value None removes the key at any level",
+      "subtle": false,
+      "complaint": "The handling of None values in the override is wrong. Fix it."
+    }
+  ]
+}

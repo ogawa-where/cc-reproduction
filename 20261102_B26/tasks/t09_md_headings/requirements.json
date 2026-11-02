@@ -1,0 +1,28 @@
+{
+  "requirements": [
+    {
+      "id": "r1",
+      "name": "levels 1-6 with stripped text, in document order",
+      "subtle": false,
+      "complaint": "The heading levels and text aren't extracted correctly. Fix it."
+    },
+    {
+      "id": "r2",
+      "name": "lines inside fenced code blocks are ignored",
+      "subtle": true,
+      "complaint": "The handling of code blocks doesn't seem right. Redo it."
+    },
+    {
+      "id": "r3",
+      "name": "closing # run (after a space) removed from the text",
+      "subtle": false,
+      "complaint": "Closing hash marks aren't handled correctly. Fix it."
+    },
+    {
+      "id": "r4",
+      "name": "7+ hashes or no space after hashes is not a heading",
+      "subtle": false,
+      "complaint": "Some lines are wrongly treated as headings. Fix it."
+    }
+  ]
+}

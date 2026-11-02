@@ -1,0 +1,28 @@
+{
+  "requirements": [
+    {
+      "id": "r1",
+      "name": "round_amount returns Decimal with exactly `places` digits; accepts str/int/Decimal",
+      "subtle": false,
+      "complaint": "round_amount doesn't return the right values. Fix it."
+    },
+    {
+      "id": "r2",
+      "name": "ties round half to even (banker's rounding)",
+      "subtle": true,
+      "complaint": "The rounding of halfway values is wrong. Redo it."
+    },
+    {
+      "id": "r3",
+      "name": "split_amount: near-equal cent parts summing exactly, leftover cents to earliest parts",
+      "subtle": false,
+      "complaint": "split_amount doesn't split amounts correctly. Fix it."
+    },
+    {
+      "id": "r4",
+      "name": "float arguments raise TypeError in both functions",
+      "subtle": false,
+      "complaint": "The handling of float inputs is wrong. Fix it."
+    }
+  ]
+}

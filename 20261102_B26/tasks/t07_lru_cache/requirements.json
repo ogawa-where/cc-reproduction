@@ -1,0 +1,28 @@
+{
+  "requirements": [
+    {
+      "id": "r1",
+      "name": "get/put basics, default for missing, len and in",
+      "subtle": false,
+      "complaint": "The basic get/put behaviour is wrong. Fix it."
+    },
+    {
+      "id": "r2",
+      "name": "adding a new key at capacity evicts the least recently used entry",
+      "subtle": false,
+      "complaint": "The eviction is wrong. Redo it."
+    },
+    {
+      "id": "r3",
+      "name": "get/put on existing key refresh recency; put on existing key never evicts; `in` does not refresh",
+      "subtle": true,
+      "complaint": "The tracking of which entries were recently used doesn't seem right. Fix it."
+    },
+    {
+      "id": "r4",
+      "name": "capacity below 1 raises ValueError",
+      "subtle": false,
+      "complaint": "Invalid capacities aren't handled correctly. Fix it."
+    }
+  ]
+}
