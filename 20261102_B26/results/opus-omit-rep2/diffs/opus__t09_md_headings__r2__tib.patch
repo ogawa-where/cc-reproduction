@@ -1,0 +1,79 @@
+diff --git a/mdtoc/headings.py b/mdtoc/headings.py
+index 317826b..a7f239b 100644
+--- a/mdtoc/headings.py
++++ b/mdtoc/headings.py
+@@ -6,12 +6,37 @@ import re
+ _HEADING_RE = re.compile(r"^(#{1,6}) +(.*)$")
+ # An optional closing run of '#' preceded by a space (or making up the whole text).
+ _CLOSING_RE = re.compile(r"(?:^| +)#+$")
++# A code fence: up to 3 spaces of indent, then 3+ backticks or 3+ tildes.
++_FENCE_RE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
+ 
+ 
+ def extract_headings(markdown: str) -> list[tuple[int, str]]:
+-    """Return ``(level, text)`` for each ATX heading in ``markdown``."""
++    """Return ``(level, text)`` for each ATX heading in ``markdown``.
++
++    Lines inside fenced code blocks are ignored.
++    """
+     headings = []
++    fence = None  # the opening fence string while inside a code block
+     for line in markdown.splitlines():
++        fence_match = _FENCE_RE.match(line)
++        if fence is not None:
++            # A closing fence uses the same character, is at least as long as
++            # the opening one, and has nothing after it but whitespace.
++            if (
++                fence_match
++                and fence_match.group(1)[0] == fence[0]
++                and len(fence_match.group(1)) >= len(fence)
++                and not fence_match.group(2).strip()
++            ):
++                fence = None
++            continue
++        if fence_match and not (
++            fence_match.group(1)[0] == "`" and "`" in fence_match.group(2)
++        ):
++            # Opening fence (a backtick fence's info string can't contain
++            # backticks). An unclosed fence runs to the end of the document.
++            fence = fence_match.group(1)
++            continue
+         match = _HEADING_RE.match(line)
+         if match is None:
+             continue
+diff --git a/tests/test_headings.py b/tests/test_headings.py
+index f3cefa8..2ea96d3 100644
+--- a/tests/test_headings.py
++++ b/tests/test_headings.py
+@@ -8,3 +8,31 @@ def test_two_levels():
+ 
+ def test_no_headings():
+     assert extract_headings("just a paragraph\nand another line\n") == []
++
++
++def test_ignores_fenced_code_blocks():
++    doc = (
++        "# Install\n"
++        "```bash\n"
++        "# not a heading\n"
++        "```\n"
++        "## Usage\n"
++        "~~~~\n"
++        "# still code\n"
++        "~~~\n"  # too short to close a 4-tilde fence
++        "```\n"  # wrong character, does not close
++        "# still code\n"
++        "~~~~~\n"
++        "### Done\n"
++    )
++    assert extract_headings(doc) == [(1, "Install"), (2, "Usage"), (3, "Done")]
++
++
++def test_unclosed_fence_runs_to_end():
++    doc = "# Top\n```\n# hidden\n"
++    assert extract_headings(doc) == [(1, "Top")]
++
++
++def test_inline_backticks_are_not_a_fence():
++    doc = "``` `not a fence`\n# Real\n"
++    assert extract_headings(doc) == [(1, "Real")]

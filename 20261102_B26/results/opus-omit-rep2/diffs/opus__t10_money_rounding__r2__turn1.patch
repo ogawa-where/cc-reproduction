@@ -1,0 +1,52 @@
+diff --git a/money/rounding.py b/money/rounding.py
+index 209351a..f308049 100644
+--- a/money/rounding.py
++++ b/money/rounding.py
+@@ -1,12 +1,42 @@
+ """Rounding and splitting of currency amounts."""
+-from decimal import Decimal
++from decimal import ROUND_HALF_UP, Decimal
+ 
+ 
+ def round_amount(amount: Decimal | str | int, places: int = 2) -> Decimal:
+-    """Return ``amount`` as a Decimal rounded to ``places`` decimal places."""
+-    raise NotImplementedError
++    """Return ``amount`` as a Decimal rounded to ``places`` decimal places.
++
++    The result always has exactly ``places`` digits after the decimal point
++    (e.g. ``"5"`` -> ``Decimal("5.00")``). Halves are rounded away from zero.
++    Floats are rejected because they cannot represent cents exactly.
++    """
++    if isinstance(amount, float):
++        raise TypeError("float amounts are not allowed; pass a Decimal, str or int")
++    if isinstance(places, float):
++        raise TypeError("places must be an int, not float")
++    quantum = Decimal(1).scaleb(-places)
++    return Decimal(amount).quantize(quantum, rounding=ROUND_HALF_UP)
+ 
+ 
+ def split_amount(total: Decimal | str | int, parts: int) -> list[Decimal]:
+-    """Split ``total`` into ``parts`` amounts that add up to it exactly."""
+-    raise NotImplementedError
++    """Split ``total`` into ``parts`` amounts that add up to it exactly.
++
++    The total is first rounded to 2 places with :func:`round_amount`. The
++    parts are as equal as possible; leftover cents go one each to the
++    earliest parts, e.g. ``"10.00"`` in 3 parts -> 3.34, 3.33, 3.33.
++    """
++    if isinstance(total, float):
++        raise TypeError("float totals are not allowed; pass a Decimal, str or int")
++    if isinstance(parts, float):
++        raise TypeError("parts must be an int, not float")
++    if parts < 1:
++        raise ValueError("parts must be at least 1")
++
++    rounded = round_amount(total, 2)
++    sign = -1 if rounded < 0 else 1
++    cents = int(abs(rounded) * 100)
++    base, leftover = divmod(cents, parts)
++    cent = Decimal("0.01")
++    return [
++        sign * (base + (1 if i < leftover else 0)) * cent
++        for i in range(parts)
++    ]

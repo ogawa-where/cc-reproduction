@@ -1,0 +1,45 @@
+diff --git a/csvlite/parser.py b/csvlite/parser.py
+index 3060543..bea92e4 100644
+--- a/csvlite/parser.py
++++ b/csvlite/parser.py
+@@ -41,12 +41,22 @@ def _split_line(line: str, delimiter: str) -> list[str]:
+             return fields
+ 
+ 
++def _is_blank(line: str, delimiter: str) -> bool:
++    """True if the line is empty or whitespace only, ignoring delimiter characters."""
++    return all(c.isspace() and c not in delimiter for c in line)
++
++
+ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+     """Parse ``text`` and return one dict per data row, keyed by the header names."""
+     if not delimiter or delimiter == QUOTE or "\n" in delimiter or "\r" in delimiter:
+         raise ValueError("invalid delimiter")
+     lines = [ln[:-1] if ln.endswith("\r") else ln for ln in text.split("\n")]
+-    rows = [_split_line(ln, delimiter) for ln in lines if ln.strip()]
++    # A delimiter that is itself whitespace (e.g. tab) is data, not blank space.
++    rows = [
++        _split_line(ln, delimiter)
++        for ln in lines
++        if not _is_blank(ln, delimiter)
++    ]
+     if not rows:
+         return []
+     header, *data = rows
+diff --git a/tests/test_parser.py b/tests/test_parser.py
+index 6d49b6d..0ec4074 100644
+--- a/tests/test_parser.py
++++ b/tests/test_parser.py
+@@ -36,3 +36,12 @@ def test_field_count_mismatch():
+ 
+ def test_empty():
+     assert parse_csv("") == []
++
++
++def test_whitespace_delimiter_rows_are_not_blank():
++    assert parse_csv("a\tb\n\t\n \n1\t2\n", delimiter="\t") == [
++        {"a": "", "b": ""},
++        {"a": "1", "b": "2"},
++    ]
++    with pytest.raises(ValueError):
++        parse_csv("a\tb\tc\n\t\n", delimiter="\t")

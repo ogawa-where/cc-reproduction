@@ -1,44 +1,5 @@
-diff --git a/tests/test_version.py b/tests/test_version.py
-index b1647b6..f7a7eb6 100644
---- a/tests/test_version.py
-+++ b/tests/test_version.py
-@@ -9,3 +9,34 @@ def test_compare_basic():
- 
- def test_sort_basic():
-     assert sort_versions(["1.3.0", "1.1.0", "1.2.0"]) == ["1.1.0", "1.2.0", "1.3.0"]
-+
-+
-+import pytest
-+
-+
-+def test_numeric_not_lexical():
-+    assert compare_versions("1.10", "1.9") == 1
-+
-+
-+def test_prerelease():
-+    assert compare_versions("2.0.0-rc1", "2.0.0") == -1
-+    assert compare_versions("2.0.0", "2.0.0-rc1") == 1
-+    assert compare_versions("1.0-alpha", "1.0-beta") == -1
-+    assert compare_versions("1.0-rc1", "1.0-rc1") == 0
-+    assert compare_versions("1.0-zzz", "1.1") == -1
-+
-+
-+@pytest.mark.parametrize("bad", ["", "1..2", "1.", ".1", "a", "1.a", "1.0-", "-rc1", "1.-1", "1 .0", "1.0\n"])
-+def test_invalid(bad):
-+    with pytest.raises(ValueError):
-+        compare_versions(bad, "1.0")
-+    with pytest.raises(ValueError):
-+        compare_versions("1.0", bad)
-+    with pytest.raises(ValueError):
-+        sort_versions([bad])
-+
-+
-+def test_sort_prerelease_stable_and_new_list():
-+    src = ["1.10", "1.0", "1.0-rc1", "1.0.0", "1.9"]
-+    assert sort_versions(src) == ["1.0-rc1", "1.0", "1.0.0", "1.9", "1.10"]
-+    assert src[0] == "1.10"
 diff --git a/verkit/version.py b/verkit/version.py
-index ab3ed70..338e08c 100644
+index ab3ed70..2389e82 100644
 --- a/verkit/version.py
 +++ b/verkit/version.py
 @@ -1,11 +1,47 @@
@@ -47,20 +8,16 @@ index ab3ed70..338e08c 100644
 +import re
 +from functools import cmp_to_key
 +
-+_NUMBER = re.compile(r"[0-9]+")
++_VERSION_RE = re.compile(r"([0-9]+(?:\.[0-9]+)*)(?:-(.+))?", re.DOTALL)
 +
 +
-+def _parse(version: str) -> tuple[tuple[int, ...], str | None]:
-+    """Split ``version`` into its numeric components and optional pre-release label."""
++def _parse(version: str) -> tuple[list[int], str | None]:
 +    if not isinstance(version, str):
 +        raise ValueError(f"invalid version: {version!r}")
-+    numbers, sep, label = version.partition("-")
-+    if sep and not label:
++    m = _VERSION_RE.fullmatch(version)
++    if m is None:
 +        raise ValueError(f"invalid version: {version!r}")
-+    parts = numbers.split(".")
-+    if not all(_NUMBER.fullmatch(p) for p in parts):
-+        raise ValueError(f"invalid version: {version!r}")
-+    return tuple(int(p) for p in parts), (label if sep else None)
++    return [int(p) for p in m.group(1).split(".")], m.group(2)
 +
  
  def compare_versions(a: str, b: str) -> int:
@@ -68,27 +25,32 @@ index ab3ed70..338e08c 100644
 -    raise NotImplementedError
 +    """Return -1 if ``a`` < ``b``, 0 if they are equal, 1 if ``a`` > ``b``.
 +
-+    Missing trailing components count as zero, so "1.0" equals "1.0.0".
++    Numeric components are compared left to right; missing trailing
++    components count as zero ("1.0" == "1.0.0"). A pre-release label
++    ("-rc1") sorts below the same version without one; two labels are
++    compared as plain strings. Invalid input raises ``ValueError``.
 +    """
-+    nums_a, label_a = _parse(a)
-+    nums_b, label_b = _parse(b)
++    nums_a, pre_a = _parse(a)
++    nums_b, pre_b = _parse(b)
 +    width = max(len(nums_a), len(nums_b))
-+    nums_a += (0,) * (width - len(nums_a))
-+    nums_b += (0,) * (width - len(nums_b))
++    nums_a += [0] * (width - len(nums_a))
++    nums_b += [0] * (width - len(nums_b))
 +    if nums_a != nums_b:
 +        return -1 if nums_a < nums_b else 1
-+    if label_a == label_b:
++    if pre_a == pre_b:
 +        return 0
-+    if label_a is None:
++    if pre_a is None:
 +        return 1
-+    if label_b is None:
++    if pre_b is None:
 +        return -1
-+    return -1 if label_a < label_b else 1
++    return -1 if pre_a < pre_b else 1
  
  
  def sort_versions(versions: list[str]) -> list[str]:
-     """Return a new list of ``versions`` sorted from lowest to highest."""
+-    """Return a new list of ``versions`` sorted from lowest to highest."""
 -    raise NotImplementedError
-+    for v in versions:
-+        _parse(v)  # validate every item, even when no comparison happens
++    """Return a new list of ``versions`` sorted from lowest to highest.
++
++    The sort is stable, so versions that compare equal keep their order.
++    """
 +    return sorted(versions, key=cmp_to_key(compare_versions))

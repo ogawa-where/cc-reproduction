@@ -1,8 +1,8 @@
 diff --git a/lrucache/cache.py b/lrucache/cache.py
-index 2a5f276..6bcfd2f 100644
+index 2a5f276..1f9a142 100644
 --- a/lrucache/cache.py
 +++ b/lrucache/cache.py
-@@ -1,19 +1,35 @@
+@@ -1,19 +1,33 @@
  """Fixed-capacity cache with least-recently-used eviction."""
 +from collections import OrderedDict
  from typing import Any, Hashable
@@ -19,7 +19,6 @@ index 2a5f276..6bcfd2f 100644
  
      def get(self, key: Hashable, default: Any = None) -> Any:
 -        raise NotImplementedError
-+        """Return the value for ``key`` (marking it most recently used), else ``default``."""
 +        try:
 +            self._data.move_to_end(key)
 +        except KeyError:
@@ -28,7 +27,6 @@ index 2a5f276..6bcfd2f 100644
  
      def put(self, key: Hashable, value: Any) -> None:
 -        raise NotImplementedError
-+        """Insert or update ``key``, evicting the least recently used entry if full."""
 +        if key in self._data:
 +            self._data.move_to_end(key)
 +        elif len(self._data) >= self._capacity:

@@ -1,0 +1,41 @@
+diff --git a/calclex/lexer.py b/calclex/lexer.py
+index 3497e9b..5a0e8ed 100644
+--- a/calclex/lexer.py
++++ b/calclex/lexer.py
+@@ -11,4 +11,35 @@ class LexError(ValueError):
+ 
+ def tokenize(expr: str) -> list[tuple[str, str]]:
+     """Return the tokens of ``expr`` as ``(kind, text)`` pairs."""
+-    raise NotImplementedError
++    tokens: list[tuple[str, str]] = []
++    i, n = 0, len(expr)
++    while i < n:
++        ch = expr[i]
++        if ch.isspace():
++            i += 1
++        elif ch in _SINGLE:
++            tokens.append((_SINGLE[ch], ch))
++            i += 1
++        elif ch in _DIGITS or ch == ".":
++            start = i
++            while i < n and expr[i] in _DIGITS:
++                i += 1
++            if i < n and expr[i] == ".":
++                i += 1
++                while i < n and expr[i] in _DIGITS:
++                    i += 1
++            if i - start == 1 and ch == ".":
++                # A lone "." has no digits, so it is not a number.
++                raise LexError(f"unexpected character {ch!r} at position {start}", start)
++            tokens.append(("NUM", expr[start:i]))
++        else:
++            raise LexError(f"unexpected character {ch!r} at position {i}", i)
++    return tokens
++
++
++# ASCII digits only: str.isdigit() would also accept characters such as "²".
++_DIGITS = frozenset("0123456789")
++_SINGLE = {
++    "+": "OP", "-": "OP", "*": "OP", "/": "OP",
++    "(": "LPAREN", ")": "RPAREN",
++}

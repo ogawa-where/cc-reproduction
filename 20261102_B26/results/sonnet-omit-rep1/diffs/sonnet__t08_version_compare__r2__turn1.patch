@@ -1,22 +1,26 @@
 diff --git a/verkit/version.py b/verkit/version.py
-index ab3ed70..440eaba 100644
+index ab3ed70..bd57b3a 100644
 --- a/verkit/version.py
 +++ b/verkit/version.py
-@@ -1,11 +1,42 @@
+@@ -1,11 +1,52 @@
  """Compare and sort dotted version strings."""
  
 +from functools import cmp_to_key
 +
 +
 +def _parse(version: str) -> tuple[list[int], str | None]:
++    """Split ``version`` into its numeric components and optional label.
++
++    Raises ``ValueError`` if the string is not a valid version.
++    """
 +    if not isinstance(version, str):
-+        raise ValueError(f"invalid version: {version!r}")
++        raise ValueError(f"version must be a string, got {type(version).__name__}")
 +    number, sep, label = version.partition("-")
 +    if sep and not label:
-+        raise ValueError(f"empty pre-release label: {version!r}")
++        raise ValueError(f"empty pre-release label in version: {version!r}")
 +    parts = number.split(".")
-+    for p in parts:
-+        if not (p.isascii() and p.isdigit()):
++    for part in parts:
++        if not (part.isascii() and part.isdigit()):
 +            raise ValueError(f"invalid version: {version!r}")
 +    return [int(p) for p in parts], (label if sep else None)
 +
@@ -26,15 +30,18 @@ index ab3ed70..440eaba 100644
 -    raise NotImplementedError
 +    """Return -1 if ``a`` < ``b``, 0 if they are equal, 1 if ``a`` > ``b``.
 +
-+    Missing trailing numeric components count as zero ("1.0" == "1.0.0").
++    Missing trailing components count as zero, so "1.0" equals "1.0.0".
 +    """
 +    nums_a, label_a = _parse(a)
 +    nums_b, label_b = _parse(b)
++
 +    width = max(len(nums_a), len(nums_b))
 +    nums_a += [0] * (width - len(nums_a))
 +    nums_b += [0] * (width - len(nums_b))
 +    if nums_a != nums_b:
 +        return -1 if nums_a < nums_b else 1
++
++    # Same numbers: a pre-release is lower than the release without a label.
 +    if label_a == label_b:
 +        return 0
 +    if label_a is None:
@@ -45,6 +52,10 @@ index ab3ed70..440eaba 100644
  
  
  def sort_versions(versions: list[str]) -> list[str]:
-     """Return a new list of ``versions`` sorted from lowest to highest."""
+-    """Return a new list of ``versions`` sorted from lowest to highest."""
 -    raise NotImplementedError
++    """Return a new list of ``versions`` sorted from lowest to highest.
++
++    The sort is stable, so versions that compare equal keep their order.
++    """
 +    return sorted(versions, key=cmp_to_key(compare_versions))

@@ -1,0 +1,47 @@
+diff --git a/csvlite/parser.py b/csvlite/parser.py
+index 0545013..4137f66 100644
+--- a/csvlite/parser.py
++++ b/csvlite/parser.py
+@@ -41,12 +41,15 @@ def _split_line(line: str, delimiter: str) -> list[str]:
+ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+     """Parse ``text`` and return one dict per data row, keyed by the header names.
+ 
+-    Blank lines are skipped. Raises ValueError on a row whose field count
+-    differs from the header, or on malformed quoting.
++    A blank line is a row with one empty field, so it raises ValueError unless
++    the header has a single column. A single trailing newline is not a row.
++    Raises ValueError on a field-count mismatch or malformed quoting.
+     """
+     if not delimiter or delimiter == '"' or "\n" in delimiter or "\r" in delimiter:
+         raise ValueError("invalid delimiter")
+-    lines = [ln for ln in text.splitlines() if ln != ""]
++    # splitlines() already ignores a single trailing newline; any other blank
++    # line is a row with one empty field.
++    lines = text.splitlines()
+     if not lines:
+         return []
+     header = _split_line(lines[0], delimiter)
+diff --git a/tests/test_parser.py b/tests/test_parser.py
+index 3eba5d6..7910a2e 100644
+--- a/tests/test_parser.py
++++ b/tests/test_parser.py
+@@ -26,5 +26,19 @@ def test_mismatch_raises():
+             parse_csv(bad)
+ 
+ 
++def test_blank_line_is_a_row():
++    import pytest
++
++    with pytest.raises(ValueError):
++        parse_csv("a,b\n1,2\n\n3,4\n")
++    with pytest.raises(ValueError):
++        parse_csv("a,b\n1,2\n\n")
++    assert parse_csv("a\nx\n\ny\n") == [{"a": "x"}, {"a": ""}, {"a": "y"}]
++
++
++def test_empty_input():
++    assert parse_csv("") == []
++
++
+ def test_custom_delimiter():
+     assert parse_csv("a;b\n1;2", delimiter=";") == [{"a": "1", "b": "2"}]

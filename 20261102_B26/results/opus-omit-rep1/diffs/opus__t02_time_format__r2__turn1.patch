@@ -1,5 +1,5 @@
 diff --git a/timefmt/formatting.py b/timefmt/formatting.py
-index 9962d16..5d1c0b7 100644
+index 9962d16..aeb9089 100644
 --- a/timefmt/formatting.py
 +++ b/timefmt/formatting.py
 @@ -1,11 +1,38 @@
@@ -13,9 +13,11 @@ index 9962d16..5d1c0b7 100644
 -    raise NotImplementedError
 +    """Format a Unix timestamp as ``YYYY-MM-DD HH:MM:SS UTC``.
 +
-+    Fractional seconds are dropped (floored to the whole second, so the
-+    result is never rounded up into the next second).
++    Fractional seconds are dropped (truncated toward the earlier second),
++    never rounded up.
 +    """
++    # Floor first: datetime.fromtimestamp rounds to the nearest microsecond,
++    # which could otherwise push e.g. 9.9999999 up to the next second.
 +    whole = math.floor(ts)
 +    dt = datetime.fromtimestamp(whole, tz=timezone.utc)
 +    return dt.strftime("%Y-%m-%d %H:%M:%S UTC")
@@ -27,16 +29,14 @@ index 9962d16..5d1c0b7 100644
 +    """Format a number of seconds such as ``1h 2m 5s``.
 +
 +    Zero-valued units are omitted, hours never roll over into days, and
-+    ``0`` is rendered as ``0s``. Negative durations raise ``ValueError``.
++    zero is rendered as ``0s``. Negative durations raise ``ValueError``.
 +    """
 +    if seconds < 0:
 +        raise ValueError(f"duration must be non-negative, got {seconds!r}")
 +    if seconds == 0:
 +        return "0s"
-+
-+    hours, rest = divmod(seconds, 3600)
-+    minutes, secs = divmod(rest, 60)
-+
++    hours, rem = divmod(seconds, 3600)
++    minutes, secs = divmod(rem, 60)
 +    parts = []
 +    if hours:
 +        parts.append(f"{hours}h")

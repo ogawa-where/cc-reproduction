@@ -1,24 +1,28 @@
 diff --git a/timefmt/formatting.py b/timefmt/formatting.py
-index 9962d16..b4086c0 100644
+index 9962d16..9647332 100644
 --- a/timefmt/formatting.py
 +++ b/timefmt/formatting.py
-@@ -1,11 +1,34 @@
+@@ -1,11 +1,32 @@
  """Human-readable timestamps and durations."""
-+import math
-+from datetime import datetime, timezone
  
++import math
++from datetime import datetime, timedelta, timezone
++
++_EPOCH = datetime(1970, 1, 1, tzinfo=timezone.utc)
++
  
  def format_timestamp(ts: float) -> str:
 -    """Format a Unix timestamp as ``YYYY-MM-DD HH:MM:SS UTC``."""
 -    raise NotImplementedError
 +    """Format a Unix timestamp as ``YYYY-MM-DD HH:MM:SS UTC``.
 +
-+    Always rendered in UTC regardless of the local time zone. Fractional
-+    seconds are dropped (floored, so the result never rounds up to the
-+    next second).
++    Fractional seconds are dropped (floored), and the result is always in UTC
++    regardless of the machine's local time zone.
 +    """
-+    dt = datetime.fromtimestamp(math.floor(ts), tz=timezone.utc)
-+    return dt.strftime("%Y-%m-%d %H:%M:%S UTC")
++    # Floor to whole seconds first so that values like 59.9999999 are not
++    # rounded up into the next second by datetime's microsecond rounding.
++    dt = _EPOCH + timedelta(seconds=math.floor(ts))
++    return dt.strftime("%Y-%m-%d %H:%M:%S") + " UTC"
  
  
  def format_duration(seconds: int) -> str:
@@ -26,18 +30,12 @@ index 9962d16..b4086c0 100644
 -    raise NotImplementedError
 +    """Format a number of seconds such as ``1h 2m 5s``.
 +
-+    Zero-valued units are omitted, hours never roll over into days, and
-+    ``0`` gives ``"0s"``.
++    Zero-valued units are omitted, hours never roll over into days, and a
++    duration of zero is rendered as ``0s``.
 +    """
 +    if seconds < 0:
-+        raise ValueError(f"duration must be non-negative, got {seconds}")
++        raise ValueError("duration must be non-negative")
 +    hours, rem = divmod(seconds, 3600)
 +    minutes, secs = divmod(rem, 60)
-+    parts = []
-+    if hours:
-+        parts.append(f"{hours}h")
-+    if minutes:
-+        parts.append(f"{minutes}m")
-+    if secs:
-+        parts.append(f"{secs}s")
++    parts = [f"{v}{u}" for v, u in ((hours, "h"), (minutes, "m"), (secs, "s")) if v]
 +    return " ".join(parts) or "0s"

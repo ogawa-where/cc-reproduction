@@ -1,8 +1,8 @@
 diff --git a/confmerge/merge.py b/confmerge/merge.py
-index 6d1c592..a972a76 100644
+index 6d1c592..2a6374b 100644
 --- a/confmerge/merge.py
 +++ b/confmerge/merge.py
-@@ -1,6 +1,27 @@
+@@ -1,6 +1,39 @@
  """Deep merge of configuration dictionaries."""
  
 +import copy
@@ -13,22 +13,34 @@ index 6d1c592..a972a76 100644
 -    raise NotImplementedError
 +    """Return ``base`` with ``override`` merged on top of it.
 +
-+    - Keys from both dicts appear in the result.
-+    - When both values are dicts, they are merged recursively.
-+    - Otherwise the override value wins (lists replace, not concatenate).
-+    - An override value of ``None`` removes the key, at any nesting level
-+      (including inside override sub-dicts whose key is absent from base).
-+    - Neither input is modified, and the result shares no mutable
-+      objects with either input.
++    Rules:
++    * Keys from both dicts appear in the result.
++    * If a key is in both and both values are dicts, they are merged
++      recursively; otherwise the override value wins. Lists are plain
++      values and replace each other wholesale.
++    * An override value of ``None`` removes the key from the result, at any
++      nesting level (including inside override sub-dicts that have no
++      counterpart in ``base``).
++    * Neither input is modified, and the result shares no mutable objects
++      with the inputs.
 +    """
-+    result = copy.deepcopy(base)
-+    for key, value in override.items():
++    # Preserve base key order, then append keys that only exist in override.
++    keys = list(base) + [k for k in override if k not in base]
++
++    result = {}
++    for key in keys:
++        if key not in override:
++            result[key] = copy.deepcopy(base[key])
++            continue
++        value = override[key]
 +        if value is None:
-+            result.pop(key, None)
-+        elif isinstance(value, dict):
-+            existing = result.get(key)
-+            # Merging into {} still strips None-valued keys from the override.
-+            result[key] = deep_merge(existing if isinstance(existing, dict) else {}, value)
++            continue  # deletion marker: key is dropped
++        if isinstance(value, dict):
++            base_value = base.get(key)
++            nested_base = base_value if isinstance(base_value, dict) else {}
++            # Merging against {} still strips nested None markers and copies.
++            result[key] = deep_merge(nested_base, value)
 +        else:
 +            result[key] = copy.deepcopy(value)
++
 +    return result

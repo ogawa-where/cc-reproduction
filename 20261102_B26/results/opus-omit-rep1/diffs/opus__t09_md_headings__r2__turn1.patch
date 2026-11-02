@@ -1,15 +1,16 @@
 diff --git a/mdtoc/headings.py b/mdtoc/headings.py
-index 17fa6d6..6b0680e 100644
+index 17fa6d6..6cdfba8 100644
 --- a/mdtoc/headings.py
 +++ b/mdtoc/headings.py
-@@ -1,6 +1,17 @@
+@@ -1,6 +1,22 @@
  """Find the headings in a Markdown document."""
  
 +import re
 +
-+# 1-6 '#', at least one space, the text, then an optional closing run of '#'
-+# that must be preceded by a space (so "C#" keeps its '#').
-+_ATX_HEADING = re.compile(r"^(#{1,6}) +(.*?)(?: +#+)?\s*$")
++# 1-6 '#' at the start of the line, then at least one space, then the rest.
++_HEADING = re.compile(r"^(#{1,6}) +(.*)$")
++# Optional closing run of '#' preceded by a space, plus trailing whitespace.
++_CLOSING = re.compile(r" +#+[ \t]*$")
 +
  
  def extract_headings(markdown: str) -> list[tuple[int, str]]:
@@ -17,7 +18,11 @@ index 17fa6d6..6b0680e 100644
 -    raise NotImplementedError
 +    headings = []
 +    for line in markdown.splitlines():
-+        match = _ATX_HEADING.match(line)
-+        if match:
-+            headings.append((len(match.group(1)), match.group(2).strip()))
++        match = _HEADING.match(line)
++        if not match:
++            continue
++        hashes, content = match.groups()
++        text = _CLOSING.sub("", " " + content).strip()
++        if text:
++            headings.append((len(hashes), text))
 +    return headings

@@ -1,5 +1,5 @@
 diff --git a/lrucache/cache.py b/lrucache/cache.py
-index 2a5f276..aae9040 100644
+index 2a5f276..0e2168f 100644
 --- a/lrucache/cache.py
 +++ b/lrucache/cache.py
 @@ -1,19 +1,33 @@
@@ -14,7 +14,7 @@ index 2a5f276..aae9040 100644
 +        if capacity < 1:
 +            raise ValueError(f"capacity must be at least 1, got {capacity!r}")
 +        self._capacity = capacity
-+        # Ordered from least recently used (front) to most recently used (end).
++        # Ordered from least recently used (first) to most recently used (last).
 +        self._data: "OrderedDict[Hashable, Any]" = OrderedDict()
  
      def get(self, key: Hashable, default: Any = None) -> Any:
