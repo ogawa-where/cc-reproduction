@@ -339,7 +339,7 @@ def run_target(args, task, req, methods, emit):
     parent = tempfile.mkdtemp(prefix=f"b26_{task['id']}_{target}_")
     ws = os.path.join(parent, "ws")
     base = {"task": task["id"], "target_req": target, "model": args.model, "complaint": req["complaint"],
-            "fork": not args.no_fork}
+            "fork": not args.no_fork, "spec": args.spec}
     try:
         shutil.copytree(os.path.join(task_dir, "repo"), ws, ignore=IGNORE)
         git(ws, "init", "-q")
@@ -354,7 +354,8 @@ def run_target(args, task, req, methods, emit):
         env = clean_env({"CLAUDE_CONFIG_DIR": cfg, "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1",
                          "DISABLE_AUTOUPDATER": "1", "PYTHONIOENCODING": "utf-8"})
         test_env = clean_env({"PYTHONIOENCODING": "utf-8", "PYTHONDONTWRITEBYTECODE": "1"})
-        spec = open(os.path.join(task_dir, "spec.md"), encoding="utf-8").read()
+        spec_name = "spec.md" if args.spec == "full" else f"spec_without_{target}.md"
+        spec = open(os.path.join(task_dir, spec_name), encoding="utf-8").read()
 
         # ---- Turn 1
         sid = str(uuid.uuid4())
@@ -501,6 +502,9 @@ def main():
     ap.add_argument("--methods", default="standard,rule_only,tib,record_after", help=f"from {', '.join(METHODS)}")
     ap.add_argument("--targets", choices=("subtle", "all"), default="subtle",
                     help="requirements criticised: the subtle ones (default) or all")
+    ap.add_argument("--spec", choices=("full", "omit"), default="full",
+                    help="Turn 1 request: spec.md (full), or spec_without_<target>.md, which leaves out the sentence "
+                         "stating the criticised requirement so that the complaint is usually valid (omit)")
     ap.add_argument("--workers", type=int, default=2, help="tasks run in parallel")
     ap.add_argument("--out", default=os.path.join(HERE, "runs"))
     ap.add_argument("--timeout", type=int, default=900, help="seconds per agent turn")
