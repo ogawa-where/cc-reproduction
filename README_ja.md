@@ -42,34 +42,39 @@ Welcome to Claude Code v2.1.310
 > 再現の一覧を見せて
 
 ● Glob(**/README.md)
-  ⎿  Found 5 studies
+  ⎿  Found 6 studies
 
 ● これまでの再現です（OK: 報告された現象が再現、Done: 実験は完了したが現行の
   Claude Code では現象が出ない。理由は README）。
 
-  ┌────────────┬───────────────────────────────────┬────────────────────┬────────┐
-  │ Date       │ Paper (published)                 │ Directory          │ Result │
-  ├────────────┼───────────────────────────────────┼────────────────────┼────────┤
-  │ 2026-10-26 │ [XW26] <a href="https://arxiv.org/abs/2610.30571">Stale Instruction Files</a>    │ <a href="./20261026_XW26/">20261026_XW26/</a>     │ OK     │
-  │            │ <a href="https://arxiv.org/abs/2610.30571">Override the Code in Coding</a>       │                    │        │
-  │            │ <a href="https://arxiv.org/abs/2610.30571">Agents: A One-Sentence Fix</a>        │                    │        │
-  │            │ (2026-10-22)                      │                    │        │
-  ├────────────┼───────────────────────────────────┼────────────────────┼────────┤
-  │ 2026-10-29 │ [SBBAA26] <a href="https://arxiv.org/abs/2610.31778">Benchmarks Are</a>          │ <a href="./20261029_SBBAA26/">20261029_SBBAA26/</a>  │ Done   │
-  │            │ <a href="https://arxiv.org/abs/2610.31778">Surprisingly Compaction-Friendly</a>  │                    │        │
-  │            │ (2026-10-22)                      │                    │        │
-  ├────────────┼───────────────────────────────────┼────────────────────┼────────┤
-  │ 2026-11-01 │ [TWWWKL26] <a href="https://arxiv.org/abs/2610.36449">A Heart Means</a>          │ <a href="./20261101_TWWWKL26/">20261101_TWWWKL26/</a> │ OK     │
-  │            │ <a href="https://arxiv.org/abs/2610.36449">Recursion: Exploring Visual</a>       │                    │        │
-  │            │ <a href="https://arxiv.org/abs/2610.36449">Meaning and Communication in VLMs</a> │                    │        │
-  │            │ (2026-10-27)                      │                    │        │
-  ├────────────┼───────────────────────────────────┼────────────────────┼────────┤
-  │ 2026-11-01 │ [BGC26] <a href="https://arxiv.org/abs/2610.08036">Same Feedback, Different</a>  │ <a href="./20261101_BGC26/">20261101_BGC26/</a>    │ OK     │
-  │            │ <a href="https://arxiv.org/abs/2610.08036">Answer: Measuring Run-to-Run</a>      │                    │        │
-  │            │ <a href="https://arxiv.org/abs/2610.08036">Instability in Frontier-Model</a>     │                    │        │
-  │            │ <a href="https://arxiv.org/abs/2610.08036">Customer Feedback Analysis</a>        │                    │        │
-  │            │ (2026-10-06)                      │                    │        │
-  └────────────┴───────────────────────────────────┴────────────────────┴────────┘
+  ┌────────────┬─────────────────────────────────────┬────────────────────┬────────┐
+  │ Date       │ Paper (published)                   │ Directory          │ Result │
+  ├────────────┼─────────────────────────────────────┼────────────────────┼────────┤
+  │ 2026-10-26 │ [XW26] <a href="https://arxiv.org/abs/2610.30571">Stale Instruction Files</a>      │ <a href="./20261026_XW26/">20261026_XW26/</a>     │ OK     │
+  │            │ <a href="https://arxiv.org/abs/2610.30571">Override the Code in Coding</a>         │                    │        │
+  │            │ <a href="https://arxiv.org/abs/2610.30571">Agents: A One-Sentence Fix</a>          │                    │        │
+  │            │ (2026-10-22)                        │                    │        │
+  ├────────────┼─────────────────────────────────────┼────────────────────┼────────┤
+  │ 2026-10-29 │ [SBBAA26] <a href="https://arxiv.org/abs/2610.31778">Benchmarks Are</a>            │ <a href="./20261029_SBBAA26/">20261029_SBBAA26/</a>  │ Done   │
+  │            │ <a href="https://arxiv.org/abs/2610.31778">Surprisingly Compaction-Friendly</a>    │                    │        │
+  │            │ (2026-10-22)                        │                    │        │
+  ├────────────┼─────────────────────────────────────┼────────────────────┼────────┤
+  │ 2026-11-01 │ [TWWWKL26] <a href="https://arxiv.org/abs/2610.36449">A Heart Means</a>            │ <a href="./20261101_TWWWKL26/">20261101_TWWWKL26/</a> │ OK     │
+  │            │ <a href="https://arxiv.org/abs/2610.36449">Recursion: Exploring Visual</a>         │                    │        │
+  │            │ <a href="https://arxiv.org/abs/2610.36449">Meaning and Communication in VLMs</a>   │                    │        │
+  │            │ (2026-10-27)                        │                    │        │
+  ├────────────┼─────────────────────────────────────┼────────────────────┼────────┤
+  │ 2026-11-01 │ [BGC26] <a href="https://arxiv.org/abs/2610.08036">Same Feedback, Different</a>    │ <a href="./20261101_BGC26/">20261101_BGC26/</a>    │ OK     │
+  │            │ <a href="https://arxiv.org/abs/2610.08036">Answer: Measuring Run-to-Run</a>        │                    │        │
+  │            │ <a href="https://arxiv.org/abs/2610.08036">Instability in Frontier-Model</a>       │                    │        │
+  │            │ <a href="https://arxiv.org/abs/2610.08036">Customer Feedback Analysis</a>          │                    │        │
+  │            │ (2026-10-06)                        │                    │        │
+  ├────────────┼─────────────────────────────────────┼────────────────────┼────────┤
+  │ 2026-11-02 │ [B26] <a href="https://arxiv.org/abs/2610.34654">Thinking-in-Bets at Test Time</a> │ <a href="./20261102_B26/">20261102_B26/</a>      │ OK     │
+  │            │ <a href="https://arxiv.org/abs/2610.34654">Reduces Sycophantic Revisions</a>       │                    │        │
+  │            │ <a href="https://arxiv.org/abs/2610.34654">in LLM Agents</a>                       │                    │        │
+  │            │ (2026-10-26)                        │                    │        │
+  └────────────┴─────────────────────────────────────┴────────────────────┴────────┘
 
 > 拡張研究の一覧も
 
