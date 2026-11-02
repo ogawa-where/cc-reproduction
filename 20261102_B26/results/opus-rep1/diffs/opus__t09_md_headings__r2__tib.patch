@@ -1,0 +1,40 @@
+diff --git a/mdtoc/headings.py b/mdtoc/headings.py
+index 95886c3..da93ee0 100644
+--- a/mdtoc/headings.py
++++ b/mdtoc/headings.py
+@@ -6,18 +6,30 @@ import re
+ _HEADING_RE = re.compile(r"^(#{1,6}) +(.*)$")
+ # An optional closing run of '#' characters preceded by a space.
+ _CLOSING_RE = re.compile(r" +#+$")
+-_FENCE = "```"
++# An opening fence: three or more backticks, optionally followed by an
++# info string such as a language name.
++_FENCE_OPEN_RE = re.compile(r"^(`{3,})")
++# A closing fence: only backticks (plus trailing whitespace), no info string.
++_FENCE_CLOSE_RE = re.compile(r"^(`{3,})\s*$")
+ 
+ 
+ def extract_headings(markdown: str) -> list[tuple[int, str]]:
+     """Return ``(level, text)`` for each ATX heading in ``markdown``."""
+     headings: list[tuple[int, str]] = []
+-    in_fence = False
++    # Length of the backtick run that opened the current fence, or 0 when
++    # not inside a fenced code block.
++    fence_len = 0
+     for line in markdown.splitlines():
+-        if line.startswith(_FENCE):
+-            in_fence = not in_fence
++        if fence_len:
++            # A fence closes only on a bare run of at least as many backticks
++            # as opened it; anything else (e.g. "```python") is code.
++            close = _FENCE_CLOSE_RE.match(line)
++            if close and len(close.group(1)) >= fence_len:
++                fence_len = 0
+             continue
+-        if in_fence:
++        opening = _FENCE_OPEN_RE.match(line)
++        if opening:
++            fence_len = len(opening.group(1))
+             continue
+         match = _HEADING_RE.match(line)
+         if match is None:

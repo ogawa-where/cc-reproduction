@@ -1,0 +1,75 @@
+diff --git a/money/rounding.py b/money/rounding.py
+index 209351a..d10ce91 100644
+--- a/money/rounding.py
++++ b/money/rounding.py
+@@ -1,12 +1,65 @@
+ """Rounding and splitting of currency amounts."""
+-from decimal import Decimal
++from decimal import ROUND_HALF_EVEN, Decimal, localcontext
++
++
++def _to_decimal(value: Decimal | str | int, name: str) -> Decimal:
++    if isinstance(value, float):
++        raise TypeError(
++            f"{name} must be a Decimal, str or int, not float "
++            "(floats cannot represent cents exactly)"
++        )
++    if not isinstance(value, (Decimal, str, int)):
++        raise TypeError(
++            f"{name} must be a Decimal, str or int, not {type(value).__name__}"
++        )
++    result = Decimal(value)
++    if not result.is_finite():
++        raise ValueError(f"{name} must be a finite amount, got {value!r}")
++    return result
+ 
+ 
+ def round_amount(amount: Decimal | str | int, places: int = 2) -> Decimal:
+-    """Return ``amount`` as a Decimal rounded to ``places`` decimal places."""
+-    raise NotImplementedError
++    """Return ``amount`` as a Decimal rounded to ``places`` decimal places.
++
++    Ties are rounded half to even, and the result always has exactly
++    ``places`` digits after the decimal point (``"5"`` -> ``Decimal("5.00")``).
++    """
++    value = _to_decimal(amount, "amount")
++    if isinstance(places, bool) or not isinstance(places, int):
++        raise TypeError("places must be an int")
++    if places < 0:
++        raise ValueError("places must be non-negative")
++    exponent = Decimal(1).scaleb(-places)
++    with localcontext() as ctx:
++        # Make sure quantize never fails for lack of precision.
++        ctx.prec = max(ctx.prec, value.adjusted() + places + 2)
++        return value.quantize(exponent, rounding=ROUND_HALF_EVEN)
+ 
+ 
+ def split_amount(total: Decimal | str | int, parts: int) -> list[Decimal]:
+-    """Split ``total`` into ``parts`` amounts that add up to it exactly."""
+-    raise NotImplementedError
++    """Split ``total`` into ``parts`` amounts that add up to it exactly.
++
++    The total is first rounded to 2 places with :func:`round_amount`. The
++    parts differ by at most one cent, with any leftover cents going one each
++    to the earliest parts (``"10.00"`` in 3 -> 3.34, 3.33, 3.33).
++    """
++    if isinstance(total, float):
++        raise TypeError(
++            "total must be a Decimal, str or int, not float "
++            "(floats cannot represent cents exactly)"
++        )
++    if isinstance(parts, bool) or not isinstance(parts, int):
++        raise TypeError("parts must be an int")
++    if parts < 1:
++        raise ValueError("parts must be at least 1")
++
++    rounded = round_amount(total, 2)
++    # Work in integer cents so the parts sum exactly to the rounded total.
++    sign, digits, _ = rounded.as_tuple()  # exponent is -2 after rounding
++    cents = int("".join(map(str, digits)))
++    base, leftover = divmod(cents, parts)
++    # Building from a string is exact, independent of context precision.
++    return [
++        Decimal(f"{'-' if sign else ''}{base + (1 if i < leftover else 0)}E-2")
++        for i in range(parts)
++    ]

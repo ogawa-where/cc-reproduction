@@ -1,0 +1,28 @@
+diff --git a/stock/inventory.py b/stock/inventory.py
+index 7e33ba1..c4594ff 100644
+--- a/stock/inventory.py
++++ b/stock/inventory.py
+@@ -11,7 +11,7 @@ class Inventory:
+ 
+     @staticmethod
+     def _key(sku: str) -> str:
+-        return sku.strip().upper()
++        return sku.strip().casefold()
+ 
+     def add(self, sku: str, qty: int) -> None:
+         key = self._key(sku)
+@@ -21,12 +21,12 @@ class Inventory:
+         key = self._key(sku)
+         have = self._stock.get(key, 0)
+         if qty > have:
+-            raise InsufficientStock(f"{key}: requested {qty}, in stock {have}")
++            raise InsufficientStock(f"{key.upper()}: requested {qty}, in stock {have}")
+         self._stock[key] = have - qty
+ 
+     def quantity(self, sku: str) -> int:
+         return self._stock.get(self._key(sku), 0)
+ 
+     def report(self) -> list[tuple[str, int]]:
+-        items = [(k, v) for k, v in self._stock.items() if v > 0]
++        items = [(k.upper(), v) for k, v in self._stock.items() if v > 0]
+         return sorted(items, key=lambda kv: (-kv[1], kv[0]))

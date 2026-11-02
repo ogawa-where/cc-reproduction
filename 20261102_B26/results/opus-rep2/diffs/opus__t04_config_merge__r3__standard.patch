@@ -1,0 +1,103 @@
+diff --git a/confmerge/merge.py b/confmerge/merge.py
+index d4ed62e..24d873f 100644
+--- a/confmerge/merge.py
++++ b/confmerge/merge.py
+@@ -1,5 +1,20 @@
+ """Deep merge of configuration dictionaries."""
+-import copy
++
++
++def _copy_containers(value):
++    """Copy dicts, lists and tuples recursively; return other values as-is.
++
++    Only containers need copying for the result to be independent of the
++    inputs. Leaf values are shared rather than deep-copied, so values that
++    cannot be copied (locks, file handles, clients, ...) are still accepted.
++    """
++    if isinstance(value, dict):
++        return {k: _copy_containers(v) for k, v in value.items()}
++    if isinstance(value, list):
++        return [_copy_containers(v) for v in value]
++    if isinstance(value, tuple):
++        return tuple(_copy_containers(v) for v in value)
++    return value
+ 
+ 
+ def deep_merge(base: dict, override: dict) -> dict:
+@@ -9,18 +24,22 @@ def deep_merge(base: dict, override: dict) -> dict:
+     - When both values for a key are dicts, they are merged recursively.
+     - Otherwise the override value wins (lists replace lists wholesale).
+     - An override value of ``None`` removes the key, at any nesting level.
+-    - Neither input is modified, and the result shares no mutable
+-      objects with either input.
++    - Neither input is modified, and the result shares no dicts or lists
++      with either input.
+     """
+-    result = copy.deepcopy(base)
++    return _merge_into(_copy_containers(base), override)
++
++
++def _merge_into(target: dict, override: dict) -> dict:
++    """Merge ``override`` into ``target``, which is already a private copy."""
+     for key, value in override.items():
+         if value is None:
+-            result.pop(key, None)
++            target.pop(key, None)
+         elif isinstance(value, dict):
+-            existing = result.get(key)
+-            # Merging onto an empty dict when the base value isn't a dict still
+-            # strips nested None markers and produces an independent copy.
+-            result[key] = deep_merge(existing if isinstance(existing, dict) else {}, value)
++            existing = target.get(key)
++            # Merging onto an empty dict when the target value isn't a dict
++            # still strips nested None markers and produces an independent copy.
++            target[key] = _merge_into(existing if isinstance(existing, dict) else {}, value)
+         else:
+-            result[key] = copy.deepcopy(value)
+-    return result
++            target[key] = _copy_containers(value)
++    return target
+diff --git a/tests/test_merge.py b/tests/test_merge.py
+index 17c6cbc..8531e40 100644
+--- a/tests/test_merge.py
++++ b/tests/test_merge.py
+@@ -9,3 +9,39 @@ def test_nested_merge():
+     base = {"db": {"host": "localhost", "port": 5432}}
+     override = {"db": {"port": 6543}}
+     assert deep_merge(base, override) == {"db": {"host": "localhost", "port": 6543}}
++
++
++import copy
++import threading
++
++
++def test_inputs_not_modified_and_result_independent():
++    base = {"a": {"x": [1, {"deep": 1}], "y": 1}, "l": [1, 2], "k": 1}
++    override = {"a": {"y": None, "z": {"q": None, "r": [2]}}, "k": None, "m": {"p": [{"s": 1}]}}
++    base_before, override_before = copy.deepcopy(base), copy.deepcopy(override)
++
++    result = deep_merge(base, override)
++    assert result == {"a": {"x": [1, {"deep": 1}], "z": {"r": [2]}}, "l": [1, 2], "m": {"p": [{"s": 1}]}}
++    assert base == base_before and override == override_before
++
++    result["a"]["x"].append(9)
++    result["a"]["x"][1]["deep"] = 2
++    result["a"]["z"]["r"].append(3)
++    result["l"].append(3)
++    result["m"]["p"][0]["s"] = 5
++    assert base == base_before and override == override_before
++
++
++def test_none_removes_keys_at_any_level():
++    assert deep_merge({"a": 1, "b": {"c": 1, "d": 2}}, {"a": None, "b": {"c": None}, "e": None}) == {"b": {"d": 2}}
++    assert deep_merge({"a": 1}, {"a": {"b": None, "c": 2}}) == {"a": {"c": 2}}
++
++
++def test_lists_replace():
++    assert deep_merge({"a": [1, 2]}, {"a": [3]}) == {"a": [3]}
++
++
++def test_uncopyable_leaf_values_accepted():
++    lock = threading.Lock()
++    assert deep_merge({"lock": lock}, {"a": 1})["lock"] is lock
++    assert deep_merge({}, {"h": {"lock": lock}})["h"]["lock"] is lock

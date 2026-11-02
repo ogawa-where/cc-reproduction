@@ -1,0 +1,54 @@
+diff --git a/calclex/lexer.py b/calclex/lexer.py
+index 3497e9b..7f42e60 100644
+--- a/calclex/lexer.py
++++ b/calclex/lexer.py
+@@ -11,4 +11,48 @@ class LexError(ValueError):
+ 
+ def tokenize(expr: str) -> list[tuple[str, str]]:
+     """Return the tokens of ``expr`` as ``(kind, text)`` pairs."""
+-    raise NotImplementedError
++    tokens: list[tuple[str, str]] = []
++    i, n = 0, len(expr)
++    while i < n:
++        ch = expr[i]
++        if ch.isspace():
++            i += 1
++            continue
++        unary = ch == "-" and (not tokens or tokens[-1][0] in ("OP", "LPAREN"))
++        start = i
++        j = i + 1 if unary else i
++        end = _scan_number(expr, j)
++        if end is not None:
++            tokens.append(("NUM", expr[start:end]))
++            i = end
++        elif ch in "+-*/":
++            tokens.append(("OP", ch))
++            i += 1
++        elif ch == "(":
++            tokens.append(("LPAREN", ch))
++            i += 1
++        elif ch == ")":
++            tokens.append(("RPAREN", ch))
++            i += 1
++        else:
++            raise LexError(f"unexpected character {ch!r} at position {i}", i)
++    return tokens
++
++
++def _scan_number(expr: str, i: int) -> int | None:
++    """Return the end index of a number starting at ``i``, or None if none."""
++    n = len(expr)
++    j = i
++    while j < n and expr[j] in _DIGITS:
++        j += 1
++    int_digits = j - i
++    if j < n and expr[j] == ".":
++        k = j + 1
++        while k < n and expr[k] in _DIGITS:
++            k += 1
++        if int_digits or k > j + 1:
++            return k
++    return j if int_digits else None
++
++
++_DIGITS = "0123456789"

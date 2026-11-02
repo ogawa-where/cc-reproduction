@@ -1,0 +1,66 @@
+diff --git a/slugkit/slug.py b/slugkit/slug.py
+index d7f2bec..76111a5 100644
+--- a/slugkit/slug.py
++++ b/slugkit/slug.py
+@@ -1,24 +1,51 @@
+ """Turn titles into URL slugs."""
+ 
+ import re
++import unicodedata
+ 
+-# Explicit ASCII ranges: anything else (including non-ASCII letters and digits
+-# such as "é" or "²") counts as a separator.
++# Explicit ASCII ranges: anything else counts as a separator.
+ _SEPARATORS = re.compile(r"[^A-Za-z0-9]+")
+ 
++# Latin letters that NFKD does not decompose into ASCII.
++_EXTRA_LATIN = str.maketrans({
++    "ß": "ss", "ẞ": "SS",
++    "Æ": "AE", "æ": "ae",
++    "Œ": "OE", "œ": "oe",
++    "Ø": "O", "ø": "o",
++    "Ł": "L", "ł": "l",
++    "Đ": "D", "đ": "d",
++    "Ð": "D", "ð": "d",
++    "Þ": "TH", "þ": "th",
++    "Ħ": "H", "ħ": "h",
++    "ı": "i",
++})
++
++
++def _to_ascii(text: str) -> str:
++    """Transliterate ``text`` towards ASCII where Unicode allows it.
++
++    NFKD splits accented letters into a base letter plus combining marks
++    ("é" -> "e" + U+0301) and expands compatibility characters ("ﬁ" -> "fi",
++    "²" -> "2"). The combining marks are then dropped, and a few Latin
++    letters without a decomposition ("ß", "Œ", "Ł", ...) are mapped by hand.
++    Characters with no ASCII equivalent (e.g. "日") are kept and later act
++    as separators.
++    """
++    decomposed = unicodedata.normalize("NFKD", text).translate(_EXTRA_LATIN)
++    return "".join(ch for ch in decomposed if not unicodedata.combining(ch))
++
+ 
+ def slugify(text: str, max_length: int | None = None) -> str:
+     """Return a URL slug for ``text``.
+ 
+-    The slug is lowercase and contains only ASCII letters, digits and single
+-    hyphens; it never starts or ends with a hyphen. If ``max_length`` is given,
+-    the slug is cut to at most that many characters and any trailing hyphen is
+-    removed. If nothing is left, ``"n-a"`` is returned.
++    Accented letters are reduced to their ASCII base letter ("Café" ->
++    "cafe"). The slug is lowercase and contains only ASCII letters, digits
++    and single hyphens; it never starts or ends with a hyphen. If
++    ``max_length`` is given, the slug is cut to at most that many characters
++    and any trailing hyphen is removed. If nothing is left, ``"n-a"`` is
++    returned.
+     """
+-    # Replace separators before lowercasing, so non-ASCII characters that
+-    # lowercase to ASCII (e.g. the Kelvin sign "K") are still treated as
+-    # separators.
+-    slug = _SEPARATORS.sub("-", text).strip("-").lower()
++    slug = _SEPARATORS.sub("-", _to_ascii(text)).strip("-").lower()
+     if max_length is not None:
+         slug = slug[: max(max_length, 0)].rstrip("-")
+     return slug or "n-a"

@@ -1,0 +1,55 @@
+diff --git a/mdtoc/headings.py b/mdtoc/headings.py
+index 17fa6d6..0a87e26 100644
+--- a/mdtoc/headings.py
++++ b/mdtoc/headings.py
+@@ -1,6 +1,24 @@
+ """Find the headings in a Markdown document."""
+ 
++import re
++
++_HEADING = re.compile(r"(#{1,6}) +(.*)")
++_CLOSING = re.compile(r"(?:^| )#+$")
++
+ 
+ def extract_headings(markdown: str) -> list[tuple[int, str]]:
+     """Return ``(level, text)`` for each ATX heading in ``markdown``."""
+-    raise NotImplementedError
++    headings = []
++    in_fence = False
++    for line in markdown.splitlines():
++        if line.startswith("```"):
++            in_fence = not in_fence
++            continue
++        if in_fence:
++            continue
++        m = _HEADING.fullmatch(line)
++        if not m:
++            continue
++        text = _CLOSING.sub("", m.group(2).strip()).strip()
++        headings.append((len(m.group(1)), text))
++    return headings
+diff --git a/tests/test_headings.py b/tests/test_headings.py
+index f3cefa8..71d4f59 100644
+--- a/tests/test_headings.py
++++ b/tests/test_headings.py
+@@ -8,3 +8,20 @@ def test_two_levels():
+ 
+ def test_no_headings():
+     assert extract_headings("just a paragraph\nand another line\n") == []
++
++
++def test_closing_hashes():
++    assert extract_headings("## Setup ##\n# C#\n") == [(2, "Setup"), (1, "C#")]
++
++
++def test_non_headings():
++    assert extract_headings("#hashtag\n####### seven\n") == []
++
++
++def test_levels_and_whitespace():
++    assert extract_headings("###   Spaced   \n###### Six\n") == [(3, "Spaced"), (6, "Six")]
++
++
++def test_fenced_code_ignored():
++    doc = "# A\n```python\n# comment\n```\n## B\n"
++    assert extract_headings(doc) == [(1, "A"), (2, "B")]

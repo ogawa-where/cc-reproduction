@@ -1,0 +1,36 @@
+diff --git a/mdtoc/headings.py b/mdtoc/headings.py
+index 17fa6d6..093c63d 100644
+--- a/mdtoc/headings.py
++++ b/mdtoc/headings.py
+@@ -1,6 +1,30 @@
+ """Find the headings in a Markdown document."""
+ 
++import re
++
++# 1-6 '#' at the start of the line, at least one space, then the rest.
++_HEADING_RE = re.compile(r"^(#{1,6}) +(.*)$")
++# An optional closing run of '#' preceded by a space, at the end of the text.
++_CLOSING_RE = re.compile(r" +#+$")
++
+ 
+ def extract_headings(markdown: str) -> list[tuple[int, str]]:
+     """Return ``(level, text)`` for each ATX heading in ``markdown``."""
+-    raise NotImplementedError
++    headings: list[tuple[int, str]] = []
++    in_fence = False
++    for line in markdown.splitlines():
++        if line.startswith("```"):
++            in_fence = not in_fence
++            continue
++        if in_fence:
++            continue
++        match = _HEADING_RE.match(line)
++        if not match:
++            continue
++        hashes, rest = match.groups()
++        # Pad with a leading space so a text consisting only of '#'
++        # characters (e.g. "# ##") is treated as a closing run.
++        text = _CLOSING_RE.sub("", " " + rest.rstrip()).strip()
++        if text:
++            headings.append((len(hashes), text))
++    return headings

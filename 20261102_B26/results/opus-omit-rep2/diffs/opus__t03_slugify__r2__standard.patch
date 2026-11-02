@@ -1,0 +1,59 @@
+diff --git a/slugkit/slug.py b/slugkit/slug.py
+index b5c65bc..add193e 100644
+--- a/slugkit/slug.py
++++ b/slugkit/slug.py
+@@ -1,20 +1,48 @@
+ """Turn titles into URL slugs."""
+ 
+ import re
++import unicodedata
+ 
+ _NON_SLUG_RUN = re.compile(r"[^a-z0-9]+")
+ 
++# Letters that Unicode decomposition does not reduce to ASCII.
++_SPECIAL_LETTERS = str.maketrans(
++    {
++        "ß": "ss",
++        "æ": "ae",
++        "œ": "oe",
++        "ø": "o",
++        "đ": "d",
++        "ð": "d",
++        "þ": "th",
++        "ł": "l",
++        "ı": "i",
++    }
++)
++
++
++def _to_ascii(text: str) -> str:
++    """Lowercase ``text`` and turn accented Latin letters into plain ASCII.
++
++    Characters with no ASCII equivalent are kept as-is, so the caller
++    treats them as separators.
++    """
++    text = text.lower().translate(_SPECIAL_LETTERS)
++    decomposed = unicodedata.normalize("NFKD", text)
++    return "".join(ch for ch in decomposed if not unicodedata.combining(ch))
++
+ 
+ def slugify(text: str, max_length: int | None = None) -> str:
+     """Return a URL slug for ``text``.
+ 
+-    The slug is lowercase and contains only ASCII letters, digits and single
+-    hyphens; every run of other characters becomes one hyphen, and the slug
+-    never starts or ends with a hyphen. If ``max_length`` is given, the slug
+-    is cut to at most that many characters and any trailing hyphen is
+-    removed. If nothing is left, ``"n-a"`` is returned.
++    Accented letters are converted to their plain ASCII form ("Café" ->
++    "cafe"). The slug is lowercase and contains only ASCII letters, digits
++    and single hyphens; every run of other characters becomes one hyphen,
++    and the slug never starts or ends with a hyphen. If ``max_length`` is
++    given, the slug is cut to at most that many characters and any trailing
++    hyphen is removed. If nothing is left, ``"n-a"`` is returned.
+     """
+-    slug = _NON_SLUG_RUN.sub("-", text.lower()).strip("-")
++    slug = _NON_SLUG_RUN.sub("-", _to_ascii(text)).strip("-")
+     if max_length is not None:
+         slug = slug[:max_length].rstrip("-")
+     return slug or "n-a"

@@ -1,0 +1,41 @@
+diff --git a/stock/inventory.py b/stock/inventory.py
+index 5e77188..f5b86f8 100644
+--- a/stock/inventory.py
++++ b/stock/inventory.py
+@@ -5,18 +5,31 @@ class InsufficientStock(ValueError):
+     """Raised when removing more units than are in stock."""
+ 
+ 
++def _normalize(sku: str) -> str:
++    """Canonical form of a SKU: surrounding whitespace stripped, uppercase."""
++    return sku.strip().upper()
++
++
+ class Inventory:
+     def __init__(self) -> None:
+-        raise NotImplementedError
++        self._stock: dict[str, int] = {}
+ 
+     def add(self, sku: str, qty: int) -> None:
+-        raise NotImplementedError
++        key = _normalize(sku)
++        self._stock[key] = self._stock.get(key, 0) + qty
+ 
+     def remove(self, sku: str, qty: int) -> None:
+-        raise NotImplementedError
++        key = _normalize(sku)
++        available = self._stock.get(key, 0)
++        if qty > available:
++            raise InsufficientStock(
++                f"cannot remove {qty} of {key!r}: only {available} in stock"
++            )
++        self._stock[key] = available - qty
+ 
+     def quantity(self, sku: str) -> int:
+-        raise NotImplementedError
++        return self._stock.get(_normalize(sku), 0)
+ 
+     def report(self) -> list[tuple[str, int]]:
+-        raise NotImplementedError
++        items = [(sku, qty) for sku, qty in self._stock.items() if qty > 0]
++        return sorted(items, key=lambda item: (-item[1], item[0]))

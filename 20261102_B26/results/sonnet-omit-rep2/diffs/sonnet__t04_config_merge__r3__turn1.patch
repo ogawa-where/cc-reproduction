@@ -1,0 +1,56 @@
+diff --git a/confmerge/merge.py b/confmerge/merge.py
+index 6d1c592..406abff 100644
+--- a/confmerge/merge.py
++++ b/confmerge/merge.py
+@@ -1,6 +1,28 @@
+ """Deep merge of configuration dictionaries."""
+ 
++import copy
++
++
++def _strip_none(value):
++    """Copy ``value``, dropping ``None``-valued keys from nested dicts."""
++    if isinstance(value, dict):
++        return {k: _strip_none(v) for k, v in value.items() if v is not None}
++    return copy.deepcopy(value)
++
+ 
+ def deep_merge(base: dict, override: dict) -> dict:
+-    """Return ``base`` with ``override`` merged on top of it."""
+-    raise NotImplementedError
++    """Return ``base`` with ``override`` merged on top of it.
++
++    Dicts merge recursively; any other value (lists included) in ``override``
++    replaces the one in ``base``. An override value of ``None`` removes the key.
++    Neither input is modified.
++    """
++    result = {k: _strip_none(v) for k, v in base.items()}
++    for key, value in override.items():
++        if value is None:
++            result.pop(key, None)
++        elif isinstance(value, dict) and isinstance(result.get(key), dict):
++            result[key] = deep_merge(result[key], value)
++        else:
++            result[key] = _strip_none(value)
++    return result
+diff --git a/tests/test_merge.py b/tests/test_merge.py
+index 17c6cbc..e4f1e54 100644
+--- a/tests/test_merge.py
++++ b/tests/test_merge.py
+@@ -9,3 +9,16 @@ def test_nested_merge():
+     base = {"db": {"host": "localhost", "port": 5432}}
+     override = {"db": {"port": 6543}}
+     assert deep_merge(base, override) == {"db": {"host": "localhost", "port": 6543}}
++
++
++def test_none_removes_key_at_any_level():
++    base = {"a": 1, "n": {"x": 1, "y": 2}}
++    assert deep_merge(base, {"a": None, "n": {"x": None}}) == {"n": {"y": 2}}
++    assert deep_merge({}, {"n": {"x": None, "z": 1}}) == {"n": {"z": 1}}
++
++
++def test_lists_replace_and_inputs_unmodified():
++    base = {"l": [1, 2], "d": {"k": [1]}}
++    override = {"l": [3], "d": {"k": None}}
++    assert deep_merge(base, override) == {"l": [3], "d": {}}
++    assert base == {"l": [1, 2], "d": {"k": [1]}}

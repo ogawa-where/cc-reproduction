@@ -1,0 +1,78 @@
+diff --git a/csvlite/parser.py b/csvlite/parser.py
+index 04abfdd..90fc514 100644
+--- a/csvlite/parser.py
++++ b/csvlite/parser.py
+@@ -1,6 +1,71 @@
+ """Parse CSV text into a list of row dicts."""
+ 
+ 
++def _split_line(line: str, delimiter: str) -> list[str]:
++    """Split one line into fields, honouring double-quoted fields."""
++    fields: list[str] = []
++    i = 0
++    n = len(line)
++    while True:
++        if i < n and line[i] == '"':
++            # Quoted field: read until the closing quote; "" is a literal quote.
++            i += 1
++            buf: list[str] = []
++            while True:
++                if i >= n:
++                    raise ValueError(f"unterminated quoted field in line: {line!r}")
++                ch = line[i]
++                if ch == '"':
++                    if i + 1 < n and line[i + 1] == '"':
++                        buf.append('"')
++                        i += 2
++                        continue
++                    i += 1
++                    break
++                buf.append(ch)
++                i += 1
++            fields.append("".join(buf))
++            if i == n:
++                return fields
++            if not line.startswith(delimiter, i):
++                raise ValueError(
++                    f"unexpected character after closing quote in line: {line!r}"
++                )
++            i += len(delimiter)
++        else:
++            end = line.find(delimiter, i)
++            if end == -1:
++                fields.append(line[i:])
++                return fields
++            fields.append(line[i:end])
++            i = end + len(delimiter)
++
++
+ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+-    """Parse ``text`` and return one dict per data row, keyed by the header names."""
+-    raise NotImplementedError
++    """Parse ``text`` and return one dict per data row, keyed by the header names.
++
++    The first non-blank line is the header. Fields may be wrapped in double
++    quotes, in which case they may contain the delimiter, and ``""`` inside a
++    quoted field stands for a single literal quote. Blank lines are skipped.
++    Raises ``ValueError`` if a data row's field count differs from the header's,
++    or if a quoted field is malformed.
++    """
++    if not delimiter:
++        raise ValueError("delimiter must be a non-empty string")
++    if delimiter == '"':
++        raise ValueError("delimiter cannot be the quote character")
++
++    lines = [line for line in text.splitlines() if line != ""]
++    if not lines:
++        return []
++
++    header = _split_line(lines[0], delimiter)
++    rows: list[dict[str, str]] = []
++    for lineno, line in enumerate(lines[1:], start=2):
++        values = _split_line(line, delimiter)
++        if len(values) != len(header):
++            raise ValueError(
++                f"row {lineno} has {len(values)} fields, expected {len(header)}"
++            )
++        rows.append(dict(zip(header, values)))
++    return rows

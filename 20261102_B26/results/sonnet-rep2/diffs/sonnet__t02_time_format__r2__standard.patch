@@ -1,0 +1,19 @@
+diff --git a/tests/test_formatting.py b/tests/test_formatting.py
+index cd6aaa0..4b46695 100644
+--- a/tests/test_formatting.py
++++ b/tests/test_formatting.py
+@@ -7,3 +7,14 @@ def test_timestamp_epoch():
+ 
+ def test_duration_all_units():
+     assert format_duration(3725) == "1h 2m 5s"
++
++
++def test_timestamp_ignores_local_timezone(monkeypatch):
++    import time
++
++    for tz in ("UTC", "America/New_York", "Asia/Kolkata", "Pacific/Auckland"):
++        monkeypatch.setenv("TZ", tz)
++        time.tzset()
++        assert format_timestamp(1709647629.9) == "2024-03-05 14:07:09 UTC"
++    monkeypatch.undo()
++    time.tzset()

@@ -1,0 +1,63 @@
+diff --git a/slugkit/slug.py b/slugkit/slug.py
+index 7c46fa9..bf12228 100644
+--- a/slugkit/slug.py
++++ b/slugkit/slug.py
+@@ -1,11 +1,27 @@
+ """Turn titles into URL slugs."""
+ 
+ import re
++import unicodedata
++
++# Letters with no Unicode decomposition but a conventional ASCII spelling.
++_TRANSLITERATE = str.maketrans(
++    {
++        "ß": "ss", "ẞ": "ss", "æ": "ae", "Æ": "ae", "œ": "oe", "Œ": "oe",
++        "ø": "o", "Ø": "o", "đ": "d", "Đ": "d", "ð": "d", "Ð": "d",
++        "ł": "l", "Ł": "l", "þ": "th", "Þ": "th", "ı": "i",
++    }
++)
++
++
++def _to_ascii(text: str) -> str:
++    """Fold accented letters to their base letters (``é`` -> ``e``)."""
++    text = unicodedata.normalize("NFKD", text.translate(_TRANSLITERATE))
++    return "".join(c for c in text if not unicodedata.combining(c))
+ 
+ 
+ def slugify(text: str, max_length: int | None = None) -> str:
+     """Return a URL slug for ``text``."""
+-    slug = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
++    slug = re.sub(r"[^a-z0-9]+", "-", _to_ascii(text).lower()).strip("-")
+     if max_length is not None:
+         slug = slug[: max(max_length, 0)].rstrip("-")
+     return slug or "n-a"
+diff --git a/tests/test_slug.py b/tests/test_slug.py
+index f54b92e..6c0ce4b 100644
+--- a/tests/test_slug.py
++++ b/tests/test_slug.py
+@@ -7,3 +7,25 @@ def test_simple_title():
+ 
+ def test_punctuation_becomes_hyphen():
+     assert slugify("Hello, World!") == "hello-world"
++
++
++def test_accents_are_folded():
++    assert slugify("Café Crème") == "cafe-creme"
++    assert slugify("Zoë — naïve") == "zoe-naive"
++
++
++def test_decomposed_accents_are_folded():
++    assert slugify("Café") == "cafe"
++
++
++def test_special_letters_are_transliterated():
++    assert slugify("Straße") == "strasse"
++    assert slugify("Ørsted Łódź") == "orsted-lodz"
++
++
++def test_non_latin_falls_back():
++    assert slugify("日本語") == "n-a"
++
++
++def test_max_length_strips_trailing_hyphen():
++    assert slugify("hello world", 6) == "hello"

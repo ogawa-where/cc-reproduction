@@ -1,0 +1,86 @@
+diff --git a/money/rounding.py b/money/rounding.py
+index 209351a..b909dec 100644
+--- a/money/rounding.py
++++ b/money/rounding.py
+@@ -1,12 +1,48 @@
+ """Rounding and splitting of currency amounts."""
+-from decimal import Decimal
++from decimal import ROUND_HALF_UP, Decimal, localcontext
++
++
++def _to_decimal(value) -> Decimal:
++    if isinstance(value, float):
++        raise TypeError("float is not supported; use Decimal, str or int")
++    if isinstance(value, Decimal):
++        return value
++    if isinstance(value, (str, int)):
++        return Decimal(value)
++    raise TypeError(f"unsupported type: {type(value).__name__}")
+ 
+ 
+ def round_amount(amount: Decimal | str | int, places: int = 2) -> Decimal:
+-    """Return ``amount`` as a Decimal rounded to ``places`` decimal places."""
+-    raise NotImplementedError
++    """Return ``amount`` as a Decimal rounded to ``places`` decimal places.
++
++    Rounds half up (away from zero on ties). The result always has exactly
++    ``places`` digits after the decimal point. Floats raise ``TypeError``.
++    """
++    if isinstance(places, bool) or not isinstance(places, int):
++        raise TypeError("places must be an int")
++    if places < 0:
++        raise ValueError("places must be non-negative")
++    value = _to_decimal(amount)
++    if not value.is_finite():
++        raise ValueError("amount must be finite")
++    with localcontext() as ctx:
++        # Enough precision that quantize never overflows the context.
++        ctx.prec = max(ctx.prec, len(value.as_tuple().digits) + abs(value.as_tuple().exponent) + places + 2)
++        return value.quantize(Decimal(1).scaleb(-places), rounding=ROUND_HALF_UP)
+ 
+ 
+ def split_amount(total: Decimal | str | int, parts: int) -> list[Decimal]:
+-    """Split ``total`` into ``parts`` amounts that add up to it exactly."""
+-    raise NotImplementedError
++    """Split ``total`` into ``parts`` amounts that add up to it exactly.
++
++    ``total`` is first rounded to 2 places; leftover cents go one each to the
++    earliest parts.
++    """
++    if isinstance(parts, bool) or not isinstance(parts, int):
++        raise TypeError("parts must be an int")
++    if parts < 1:
++        raise ValueError("parts must be at least 1")
++    rounded = round_amount(total, 2)
++    cents = int(rounded.scaleb(2))
++    base, extra = divmod(cents, parts)  # extra is in [0, parts) even if negative
++    return [Decimal(base + (1 if i < extra else 0)).scaleb(-2).quantize(Decimal("0.01"))
++            for i in range(parts)]
+diff --git a/tests/test_rounding.py b/tests/test_rounding.py
+index dfea7f9..3d8579e 100644
+--- a/tests/test_rounding.py
++++ b/tests/test_rounding.py
+@@ -9,3 +9,23 @@ def test_round_simple():
+ 
+ def test_split_even():
+     assert split_amount("9.00", 3) == [Decimal("3.00")] * 3
++
++
++def test_round_pads_places():
++    assert str(round_amount("5")) == "5.00"
++    assert str(round_amount(5, 3)) == "5.000"
++    assert str(round_amount("2.345")) == "2.35"
++
++
++def test_float_rejected():
++    import pytest
++    with pytest.raises(TypeError):
++        round_amount(1.5)
++    with pytest.raises(TypeError):
++        split_amount(1.5, 2)
++
++
++def test_split_remainder():
++    assert split_amount("10.00", 3) == [Decimal("3.34"), Decimal("3.33"), Decimal("3.33")]
++    assert sum(split_amount("0.05", 3)) == Decimal("0.05")
++    assert sum(split_amount("-10.00", 3)) == Decimal("-10.00")

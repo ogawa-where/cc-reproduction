@@ -1,0 +1,20 @@
+diff --git a/verkit/version.py b/verkit/version.py
+index 440eaba..00ec925 100644
+--- a/verkit/version.py
++++ b/verkit/version.py
+@@ -19,13 +19,11 @@ def _parse(version: str) -> tuple[list[int], str | None]:
+ def compare_versions(a: str, b: str) -> int:
+     """Return -1 if ``a`` < ``b``, 0 if they are equal, 1 if ``a`` > ``b``.
+ 
+-    Missing trailing numeric components count as zero ("1.0" == "1.0.0").
++    Numeric components are compared left to right; if one version is a prefix
++    of the other, the shorter one is lower ("1.0" < "1.0.0").
+     """
+     nums_a, label_a = _parse(a)
+     nums_b, label_b = _parse(b)
+-    width = max(len(nums_a), len(nums_b))
+-    nums_a += [0] * (width - len(nums_a))
+-    nums_b += [0] * (width - len(nums_b))
+     if nums_a != nums_b:
+         return -1 if nums_a < nums_b else 1
+     if label_a == label_b:

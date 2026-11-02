@@ -1,0 +1,62 @@
+diff --git a/csvlite/parser.py b/csvlite/parser.py
+index 04abfdd..b62a238 100644
+--- a/csvlite/parser.py
++++ b/csvlite/parser.py
+@@ -1,6 +1,56 @@
+ """Parse CSV text into a list of row dicts."""
+ 
+ 
++def _split_line(line: str, delimiter: str) -> list[str]:
++    fields = []
++    i, n, dlen = 0, len(line), len(delimiter)
++    while True:
++        if line.startswith('"', i):
++            i += 1
++            buf = []
++            while True:
++                j = line.find('"', i)
++                if j == -1:
++                    raise ValueError("unterminated quoted field")
++                buf.append(line[i:j])
++                if line.startswith('"', j + 1):
++                    buf.append('"')
++                    i = j + 2
++                else:
++                    i = j + 1
++                    break
++            if i < n and not line.startswith(delimiter, i):
++                raise ValueError("unexpected text after closing quote")
++            fields.append("".join(buf))
++        else:
++            j = line.find(delimiter, i)
++            if j == -1:
++                fields.append(line[i:])
++                return fields
++            fields.append(line[i:j])
++            i = j
++        if i >= n:
++            return fields
++        i += dlen  # skip delimiter; a trailing delimiter yields a final empty field
++        if i == n:
++            fields.append("")
++            return fields
++
++
+ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+     """Parse ``text`` and return one dict per data row, keyed by the header names."""
+-    raise NotImplementedError
++    if not delimiter or delimiter == '"' or "\n" in delimiter or "\r" in delimiter:
++        raise ValueError("invalid delimiter")
++    lines = [ln for ln in text.replace("\r\n", "\n").split("\n") if ln != ""]
++    if not lines:
++        return []
++    header = _split_line(lines[0], delimiter)
++    rows = []
++    for ln in lines[1:]:
++        fields = _split_line(ln, delimiter)
++        if len(fields) != len(header):
++            raise ValueError(
++                f"expected {len(header)} fields, got {len(fields)}: {ln!r}"
++            )
++        rows.append(dict(zip(header, fields)))
++    return rows

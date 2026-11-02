@@ -1,0 +1,56 @@
+diff --git a/slugkit/slug.py b/slugkit/slug.py
+index 702cd1f..4766f53 100644
+--- a/slugkit/slug.py
++++ b/slugkit/slug.py
+@@ -16,7 +16,11 @@ def slugify(text: str, max_length: int | None = None) -> str:
+     hyphen is removed. Returns ``"n-a"`` if nothing is left.
+     """
+     decomposed = unicodedata.normalize("NFKD", text)
+-    stripped = "".join(ch for ch in decomposed if not unicodedata.combining(ch))
++    # Drop every combining mark (categories Mn, Mc, Me). unicodedata.combining()
++    # is not enough: many marks have canonical combining class 0.
++    stripped = "".join(
++        ch for ch in decomposed if not unicodedata.category(ch).startswith("M")
++    )
+     slug = _SEPARATORS.sub("-", stripped.lower()).strip("-")
+     if max_length is not None:
+         slug = slug[: max(max_length, 0)].rstrip("-")
+diff --git a/tests/test_slug.py b/tests/test_slug.py
+index f54b92e..9d07514 100644
+--- a/tests/test_slug.py
++++ b/tests/test_slug.py
+@@ -7,3 +7,34 @@ def test_simple_title():
+ 
+ def test_punctuation_becomes_hyphen():
+     assert slugify("Hello, World!") == "hello-world"
++
++
++def test_accents_are_transliterated():
++    assert slugify("Crème Brûlée") == "creme-brulee"
++
++
++def test_decomposed_accents_are_dropped():
++    assert slugify("café") == "cafe"
++
++
++def test_marks_with_combining_class_zero_are_dropped():
++    # U+20DD (enclosing circle) and U+034F (grapheme joiner) have ccc 0.
++    assert slugify("a⃝b") == "ab"
++    assert slugify("a͏b") == "ab"
++
++
++def test_compatibility_forms_are_folded():
++    assert slugify("Ｆｕｌｌ ﬁne") == "full-fine"
++
++
++def test_untransliterable_characters_are_separators():
++    assert slugify("Straße") == "stra-e"
++    assert slugify("東京") == "n-a"
++
++
++def test_max_length_strips_trailing_hyphen():
++    assert slugify("hello world", 6) == "hello"
++
++
++def test_empty_is_n_a():
++    assert slugify("!!!") == "n-a"

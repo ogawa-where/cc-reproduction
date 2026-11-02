@@ -1,0 +1,63 @@
+diff --git a/confmerge/merge.py b/confmerge/merge.py
+index 6d1c592..6f236a4 100644
+--- a/confmerge/merge.py
++++ b/confmerge/merge.py
+@@ -1,6 +1,27 @@
+ """Deep merge of configuration dictionaries."""
+ 
++import copy
++
+ 
+ def deep_merge(base: dict, override: dict) -> dict:
+-    """Return ``base`` with ``override`` merged on top of it."""
+-    raise NotImplementedError
++    """Return ``base`` with ``override`` merged on top of it.
++
++    - Keys from both dicts are kept.
++    - If both values are dicts they are merged recursively.
++    - Otherwise the override value wins (lists are plain values and replace).
++    - An override value of ``None`` removes the key, at any nesting level.
++
++    Neither input is modified.
++    """
++    result = {k: copy.deepcopy(v) for k, v in base.items()}
++    for key, value in override.items():
++        if value is None:
++            result.pop(key, None)
++        elif isinstance(value, dict):
++            existing = result.get(key)
++            # Merge against an empty dict when base has no dict there, so
++            # nested Nones are dropped from brand-new subtrees as well.
++            result[key] = deep_merge(existing if isinstance(existing, dict) else {}, value)
++        else:
++            result[key] = copy.deepcopy(value)
++    return result
+diff --git a/tests/test_merge.py b/tests/test_merge.py
+index 17c6cbc..224a011 100644
+--- a/tests/test_merge.py
++++ b/tests/test_merge.py
+@@ -9,3 +9,24 @@ def test_nested_merge():
+     base = {"db": {"host": "localhost", "port": 5432}}
+     override = {"db": {"port": 6543}}
+     assert deep_merge(base, override) == {"db": {"host": "localhost", "port": 6543}}
++
++
++def test_none_removes_key_at_any_level():
++    base = {"a": 1, "b": {"c": 1, "d": 2}}
++    assert deep_merge(base, {"a": None, "b": {"c": None}}) == {"b": {"d": 2}}
++
++
++def test_none_inside_new_subtree_is_dropped():
++    assert deep_merge({}, {"a": {"b": None, "c": 1}}) == {"a": {"c": 1}}
++
++
++def test_lists_replace():
++    assert deep_merge({"a": [1, 2]}, {"a": [3]}) == {"a": [3]}
++
++
++def test_dict_replaces_scalar_and_inputs_unmodified():
++    base = {"a": 1, "b": {"x": [1]}}
++    out = deep_merge(base, {"a": {"y": 2}})
++    assert out == {"a": {"y": 2}, "b": {"x": [1]}}
++    out["b"]["x"].append(2)
++    assert base == {"a": 1, "b": {"x": [1]}}

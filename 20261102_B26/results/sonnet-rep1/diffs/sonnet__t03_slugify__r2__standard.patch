@@ -1,0 +1,39 @@
+diff --git a/slugkit/slug.py b/slugkit/slug.py
+index ebbba18..f6f0d49 100644
+--- a/slugkit/slug.py
++++ b/slugkit/slug.py
+@@ -9,7 +9,7 @@ _NON_ALNUM = re.compile(r"[^a-z0-9]+")
+ def slugify(text: str, max_length: int | None = None) -> str:
+     """Return a URL slug for ``text``."""
+     decomposed = unicodedata.normalize("NFKD", text)
+-    stripped = "".join(c for c in decomposed if not unicodedata.combining(c))
++    stripped = "".join(c for c in decomposed if not unicodedata.category(c).startswith("M"))
+     slug = _NON_ALNUM.sub("-", stripped.lower()).strip("-")
+     if max_length is not None:
+         slug = slug[: max(max_length, 0)].rstrip("-")
+diff --git a/tests/test_slug.py b/tests/test_slug.py
+index f54b92e..fdaa125 100644
+--- a/tests/test_slug.py
++++ b/tests/test_slug.py
+@@ -7,3 +7,21 @@ def test_simple_title():
+ 
+ def test_punctuation_becomes_hyphen():
+     assert slugify("Hello, World!") == "hello-world"
++
++
++def test_accents_are_transliterated():
++    assert slugify("Crème Brûlée") == "creme-brulee"
++
++
++def test_all_combining_marks_are_dropped():
++    assert slugify("a⃝b") == "ab"
++    assert slugify("naïve") == "naive"
++
++
++def test_unmapped_non_ascii_is_separator():
++    assert slugify("Straße Ørsted") == "stra-e-rsted"
++
++
++def test_max_length_and_empty():
++    assert slugify("hello world", 6) == "hello"
++    assert slugify("日本語") == "n-a"

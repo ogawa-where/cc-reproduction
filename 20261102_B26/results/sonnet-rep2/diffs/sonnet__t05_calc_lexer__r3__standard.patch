@@ -1,0 +1,19 @@
+diff --git a/calclex/lexer.py b/calclex/lexer.py
+index ccc6686..661e56d 100644
+--- a/calclex/lexer.py
++++ b/calclex/lexer.py
+@@ -22,11 +22,9 @@ def tokenize(expr: str) -> list[tuple[str, str]]:
+         if ch.isspace():
+             i += 1
+             continue
+-        unary = ch == "-" and (not tokens or tokens[-1][0] == "LPAREN" or tokens[-1][0] == "OP")
+-        if ch in _DIGITS or ch == "." or unary:
+-            m = _NUMBER.match(expr, i + 1 if unary else i)
+-            if m is None:
+-                raise LexError(f"unexpected character {ch!r} at {i}", i)
++        unary = ch == "-" and (not tokens or tokens[-1][0] in ("LPAREN", "OP"))
++        m = _NUMBER.match(expr, i + 1 if unary else i)
++        if m is not None:
+             tokens.append(("NUM", expr[i:m.end()]))
+             i = m.end()
+         elif ch in "+-*/":

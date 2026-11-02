@@ -1,0 +1,18 @@
+diff --git a/timefmt/formatting.py b/timefmt/formatting.py
+index a4dd37a..ef17a9c 100644
+--- a/timefmt/formatting.py
++++ b/timefmt/formatting.py
+@@ -18,10 +18,11 @@ def format_duration(seconds: int) -> str:
+     """Format a number of seconds such as ``1h 2m 5s``.
+ 
+     Zero-valued units are omitted, hours never roll over into days, and
+-    ``0`` is rendered as ``0s``.
++    ``0`` is rendered as ``0s``. Negative durations get a single leading
++    minus sign on the formatted absolute value (``-65`` gives ``-1m 5s``).
+     """
+     if seconds < 0:
+-        raise ValueError("duration must be non-negative")
++        return "-" + format_duration(-seconds)
+     hours, rem = divmod(seconds, 3600)
+     minutes, secs = divmod(rem, 60)
+     parts = [

@@ -1,0 +1,76 @@
+diff --git a/stock/inventory.py b/stock/inventory.py
+index 41afbf5..c59d1be 100644
+--- a/stock/inventory.py
++++ b/stock/inventory.py
+@@ -1,13 +1,24 @@
+ """In-memory inventory of SKUs and their quantities."""
+ 
++import unicodedata
++
+ 
+ class InsufficientStock(ValueError):
+     """Raised when removing more units than are in stock."""
+ 
+ 
+ def _normalize(sku: str) -> str:
+-    """Canonical form of a SKU: surrounding whitespace stripped, uppercased."""
+-    return sku.strip().upper()
++    """Matching key for a SKU: surrounding whitespace stripped, case-folded.
++
++    Unicode normalisation runs before and after case folding so that
++    composed and decomposed spellings of the same character (e.g. "\\u00e9"
++    vs "e\\u0301") match. ``casefold`` is used instead of ``upper`` because
++    it's the proper case-insensitive comparison and doesn't merge letters
++    that differ, such as dotless "\\u0131" and "i". The key is uppercased
++    only for display, in ``report``.
++    """
++    text = unicodedata.normalize("NFKC", sku).strip()
++    return unicodedata.normalize("NFKC", text.casefold())
+ 
+ 
+ class Inventory:
+@@ -31,5 +42,5 @@ class Inventory:
+         return self._stock.get(_normalize(sku), 0)
+ 
+     def report(self) -> list[tuple[str, int]]:
+-        items = [(sku, qty) for sku, qty in self._stock.items() if qty > 0]
++        items = [(sku.upper(), qty) for sku, qty in self._stock.items() if qty > 0]
+         return sorted(items, key=lambda item: (-item[1], item[0]))
+diff --git a/tests/test_inventory.py b/tests/test_inventory.py
+index cbd74e2..2eab013 100644
+--- a/tests/test_inventory.py
++++ b/tests/test_inventory.py
+@@ -12,3 +12,33 @@ def test_remove_reduces_quantity():
+     inv.add("PEAR", 10)
+     inv.remove("PEAR", 4)
+     assert inv.quantity("PEAR") == 6
++
++
++def test_sku_ignores_case_and_surrounding_whitespace():
++    inv = Inventory()
++    inv.add(" ab-1 ", 3)
++    inv.add("AB-1", 2)
++    inv.add("\tAb-1\n", 1)
++    assert inv.quantity("ab-1") == 6
++    inv.remove("  aB-1", 4)
++    assert inv.quantity("AB-1") == 2
++    assert inv.report() == [("AB-1", 2)]
++
++
++def test_sku_matches_composed_and_decomposed_unicode():
++    inv = Inventory()
++    inv.add("café", 2)
++    inv.add("CAFÉ", 3)
++    assert inv.quantity("CafÉ") == 5
++    assert inv.report() == [("CAFÉ", 5)]
++
++
++def test_sku_case_folding_handles_special_letters():
++    inv = Inventory()
++    inv.add("straße", 1)
++    inv.add("STRASSE", 1)
++    assert inv.quantity("Strasse") == 2
++
++
++def test_never_added_sku_is_zero():
++    assert Inventory().quantity("nope") == 0

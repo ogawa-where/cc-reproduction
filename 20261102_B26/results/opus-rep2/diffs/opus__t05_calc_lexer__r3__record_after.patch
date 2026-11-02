@@ -1,0 +1,24 @@
+diff --git a/calclex/lexer.py b/calclex/lexer.py
+index 7f42e60..9c69d4b 100644
+--- a/calclex/lexer.py
++++ b/calclex/lexer.py
+@@ -19,11 +19,16 @@ def tokenize(expr: str) -> list[tuple[str, str]]:
+             i += 1
+             continue
+         unary = ch == "-" and (not tokens or tokens[-1][0] in ("OP", "LPAREN"))
+-        start = i
+-        j = i + 1 if unary else i
++        j = i
++        if unary:
++            # A unary minus binds to the number that follows it, even across
++            # whitespace; the whitespace is dropped from the token text.
++            j = i + 1
++            while j < n and expr[j].isspace():
++                j += 1
+         end = _scan_number(expr, j)
+         if end is not None:
+-            tokens.append(("NUM", expr[start:end]))
++            tokens.append(("NUM", ("-" if unary else "") + expr[j:end]))
+             i = end
+         elif ch in "+-*/":
+             tokens.append(("OP", ch))

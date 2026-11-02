@@ -1,0 +1,27 @@
+diff --git a/slugkit/slug.py b/slugkit/slug.py
+index 5cfb236..b5c65bc 100644
+--- a/slugkit/slug.py
++++ b/slugkit/slug.py
+@@ -1,6 +1,20 @@
+ """Turn titles into URL slugs."""
+ 
++import re
++
++_NON_SLUG_RUN = re.compile(r"[^a-z0-9]+")
++
+ 
+ def slugify(text: str, max_length: int | None = None) -> str:
+-    """Return a URL slug for ``text``."""
+-    raise NotImplementedError
++    """Return a URL slug for ``text``.
++
++    The slug is lowercase and contains only ASCII letters, digits and single
++    hyphens; every run of other characters becomes one hyphen, and the slug
++    never starts or ends with a hyphen. If ``max_length`` is given, the slug
++    is cut to at most that many characters and any trailing hyphen is
++    removed. If nothing is left, ``"n-a"`` is returned.
++    """
++    slug = _NON_SLUG_RUN.sub("-", text.lower()).strip("-")
++    if max_length is not None:
++        slug = slug[:max_length].rstrip("-")
++    return slug or "n-a"

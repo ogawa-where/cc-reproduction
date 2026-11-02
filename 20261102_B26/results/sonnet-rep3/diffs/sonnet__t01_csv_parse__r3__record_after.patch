@@ -1,0 +1,36 @@
+diff --git a/csvlite/parser.py b/csvlite/parser.py
+index ebf6adf..20c036f 100644
+--- a/csvlite/parser.py
++++ b/csvlite/parser.py
+@@ -44,7 +44,11 @@ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+     """Parse ``text`` and return one dict per data row, keyed by the header names."""
+     if not delimiter or delimiter == '"':
+         raise ValueError("invalid delimiter")
+-    lines = [ln for ln in _NEWLINE.split(text) if ln.strip()]
++    # A line is blank if it is whitespace-only, unless it contains the delimiter
++    # (with a whitespace delimiter such as tab, a lone tab is a row of empty fields).
++    lines = [
++        ln for ln in _NEWLINE.split(text) if ln.strip() or delimiter in ln
++    ]
+     if not lines:
+         return []
+     header = _split_line(lines[0], delimiter)
+diff --git a/tests/test_parser.py b/tests/test_parser.py
+index 03c2805..fa789e8 100644
+--- a/tests/test_parser.py
++++ b/tests/test_parser.py
+@@ -17,6 +17,14 @@ def test_quotes_and_blank_lines():
+     ]
+ 
+ 
++def test_whitespace_delimiter_row_is_not_blank():
++    text = "a\tb\n  \n\t\n1\t2\n"
++    assert parse_csv(text, delimiter="\t") == [
++        {"a": "", "b": ""},
++        {"a": "1", "b": "2"},
++    ]
++
++
+ def test_field_count_mismatch():
+     import pytest
+ 

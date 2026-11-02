@@ -1,0 +1,55 @@
+diff --git a/verkit/version.py b/verkit/version.py
+index ab3ed70..f8ee05b 100644
+--- a/verkit/version.py
++++ b/verkit/version.py
+@@ -1,11 +1,48 @@
+ """Compare and sort dotted version strings."""
+ 
++from functools import cmp_to_key
++
++
++def _parse(version: str) -> tuple[list[int], str | None]:
++    """Split ``version`` into its numeric components and optional pre-release label."""
++    if not isinstance(version, str):
++        raise ValueError(f"version must be a string, got {type(version).__name__}")
++    core, sep, label = version.partition("-")
++    if sep and not label:
++        raise ValueError(f"empty pre-release label in version {version!r}")
++    parts = core.split(".")
++    for part in parts:
++        # Only plain ASCII digits: reject "", " 1", "+1", "1_0", "²", etc.
++        if not (part.isascii() and part.isdigit()):
++            raise ValueError(f"invalid version {version!r}")
++    return [int(p) for p in parts], (label if sep else None)
++
++
++def _cmp(x, y) -> int:
++    return (x > y) - (x < y)
++
+ 
+ def compare_versions(a: str, b: str) -> int:
+     """Return -1 if ``a`` < ``b``, 0 if they are equal, 1 if ``a`` > ``b``."""
+-    raise NotImplementedError
++    nums_a, label_a = _parse(a)
++    nums_b, label_b = _parse(b)
++    # Missing trailing components count as zero.
++    length = max(len(nums_a), len(nums_b))
++    nums_a += [0] * (length - len(nums_a))
++    nums_b += [0] * (length - len(nums_b))
++    result = _cmp(nums_a, nums_b)
++    if result:
++        return result
++    if label_a is None and label_b is None:
++        return 0
++    if label_a is None:
++        return 1
++    if label_b is None:
++        return -1
++    return _cmp(label_a, label_b)
+ 
+ 
+ def sort_versions(versions: list[str]) -> list[str]:
+     """Return a new list of ``versions`` sorted from lowest to highest."""
+-    raise NotImplementedError
++    # sorted() is stable, so versions that compare equal keep their order.
++    return sorted(versions, key=cmp_to_key(compare_versions))

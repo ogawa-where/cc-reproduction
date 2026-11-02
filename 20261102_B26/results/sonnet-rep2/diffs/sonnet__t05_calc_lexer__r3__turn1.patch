@@ -1,0 +1,81 @@
+diff --git a/calclex/lexer.py b/calclex/lexer.py
+index 3497e9b..2598103 100644
+--- a/calclex/lexer.py
++++ b/calclex/lexer.py
+@@ -1,4 +1,8 @@
+ """Split an arithmetic expression into tokens."""
++import re
++
++_DIGITS = "0123456789"
++_NUMBER = re.compile(r"[0-9]+\.?[0-9]*|\.[0-9]+")
+ 
+ 
+ class LexError(ValueError):
+@@ -11,4 +15,33 @@ class LexError(ValueError):
+ 
+ def tokenize(expr: str) -> list[tuple[str, str]]:
+     """Return the tokens of ``expr`` as ``(kind, text)`` pairs."""
+-    raise NotImplementedError
++    tokens: list[tuple[str, str]] = []
++    i, n = 0, len(expr)
++    while i < n:
++        ch = expr[i]
++        if ch.isspace():
++            i += 1
++            continue
++        unary = ch == "-" and (not tokens or tokens[-1][0] in ("OP", "LPAREN"))
++        start = i + 1 if unary else i
++        if (ch in _DIGITS) or (unary and start < n and expr[start] in _DIGITS + "."
++                               ) or ch == ".":
++            m = _NUMBER.match(expr, start)
++            if m:
++                if m.end() < n and expr[m.end()] == ".":
++                    raise LexError(f"unexpected character '.' at {m.end()}", m.end())
++                tokens.append(("NUM", expr[i:m.end()]))
++                i = m.end()
++                continue
++            if not unary:
++                raise LexError(f"unexpected character {ch!r} at {i}", i)
++        if ch in "+-*/":
++            tokens.append(("OP", ch))
++        elif ch == "(":
++            tokens.append(("LPAREN", ch))
++        elif ch == ")":
++            tokens.append(("RPAREN", ch))
++        else:
++            raise LexError(f"unexpected character {ch!r} at {i}", i)
++        i += 1
++    return tokens
+diff --git a/tests/test_lexer.py b/tests/test_lexer.py
+index e34c1ee..c49cd6c 100644
+--- a/tests/test_lexer.py
++++ b/tests/test_lexer.py
+@@ -10,3 +10,28 @@ def test_parentheses():
+         ("LPAREN", "("), ("NUM", "3"), ("OP", "*"), ("NUM", "4"),
+         ("RPAREN", ")"), ("OP", "/"), ("NUM", "5"),
+     ]
++
++
++import pytest
++from calclex.lexer import LexError
++
++
++def test_unary_minus():
++    assert tokenize("-3*(-2)") == [
++        ("NUM", "-3"), ("OP", "*"), ("LPAREN", "("), ("NUM", "-2"), ("RPAREN", ")"),
++    ]
++
++
++def test_binary_minus():
++    assert tokenize("5-3") == [("NUM", "5"), ("OP", "-"), ("NUM", "3")]
++
++
++def test_decimals():
++    assert tokenize("3.14 10. .5") == [("NUM", "3.14"), ("NUM", "10."), ("NUM", ".5")]
++
++
++@pytest.mark.parametrize("expr,pos", [("1 $ 2", 2), (".", 0), ("1.2.3", 3), ("(a)", 1)])
++def test_errors(expr, pos):
++    with pytest.raises(LexError) as e:
++        tokenize(expr)
++    assert e.value.pos == pos

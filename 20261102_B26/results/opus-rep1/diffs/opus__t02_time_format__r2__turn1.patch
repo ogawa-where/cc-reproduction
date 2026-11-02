@@ -1,0 +1,40 @@
+diff --git a/timefmt/formatting.py b/timefmt/formatting.py
+index 9962d16..d517401 100644
+--- a/timefmt/formatting.py
++++ b/timefmt/formatting.py
+@@ -1,11 +1,31 @@
+ """Human-readable timestamps and durations."""
++import math
++from datetime import datetime, timedelta, timezone
++
++_EPOCH = datetime(1970, 1, 1, tzinfo=timezone.utc)
+ 
+ 
+ def format_timestamp(ts: float) -> str:
+-    """Format a Unix timestamp as ``YYYY-MM-DD HH:MM:SS UTC``."""
+-    raise NotImplementedError
++    """Format a Unix timestamp as ``YYYY-MM-DD HH:MM:SS UTC``.
++
++    Always rendered in UTC regardless of the local time zone. Fractional
++    seconds are dropped (the time shown is the second the instant falls in).
++    """
++    # Floor to whole seconds before converting, so e.g. 0.9999999 isn't
++    # rounded up to the next second by microsecond rounding.
++    dt = _EPOCH + timedelta(seconds=math.floor(ts))
++    return dt.strftime("%Y-%m-%d %H:%M:%S") + " UTC"
+ 
+ 
+ def format_duration(seconds: int) -> str:
+-    """Format a number of seconds such as ``1h 2m 5s``."""
+-    raise NotImplementedError
++    """Format a number of seconds such as ``1h 2m 5s``.
++
++    Zero-valued units are omitted, hours never roll over into days, and
++    zero yields ``0s``. Negative durations raise ``ValueError``.
++    """
++    if seconds < 0:
++        raise ValueError(f"duration must be non-negative, got {seconds!r}")
++    hours, rem = divmod(seconds, 3600)
++    minutes, secs = divmod(rem, 60)
++    parts = [f"{v}{u}" for v, u in ((hours, "h"), (minutes, "m"), (secs, "s")) if v]
++    return " ".join(parts) or "0s"

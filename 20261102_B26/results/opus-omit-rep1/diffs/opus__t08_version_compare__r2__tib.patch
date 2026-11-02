@@ -1,0 +1,33 @@
+diff --git a/tests/test_version.py b/tests/test_version.py
+index b1647b6..148e363 100644
+--- a/tests/test_version.py
++++ b/tests/test_version.py
+@@ -9,3 +9,11 @@ def test_compare_basic():
+ 
+ def test_sort_basic():
+     assert sort_versions(["1.3.0", "1.1.0", "1.2.0"]) == ["1.1.0", "1.2.0", "1.3.0"]
++
++
++def test_compare_different_lengths():
++    assert compare_versions("1.0", "1.0.0") == -1
++    assert compare_versions("1.0.0", "1.0") == 1
++    assert compare_versions("1.2", "1.1.9") == 1
++    assert compare_versions("1", "1.0.0-rc1") == -1
++    assert sort_versions(["1.0.0", "1", "1.0"]) == ["1", "1.0", "1.0.0"]
+diff --git a/verkit/version.py b/verkit/version.py
+index 50d503b..695bb39 100644
+--- a/verkit/version.py
++++ b/verkit/version.py
+@@ -27,10 +27,8 @@ def compare_versions(a: str, b: str) -> int:
+     nums_a, label_a = _parse(a)
+     nums_b, label_b = _parse(b)
+ 
+-    # Missing trailing components count as zero, so "1.0" == "1.0.0".
+-    width = max(len(nums_a), len(nums_b))
+-    nums_a += [0] * (width - len(nums_a))
+-    nums_b += [0] * (width - len(nums_b))
++    # Compare component by component; if one is a prefix of the other, the
++    # version with more components is higher, so "1.0" < "1.0.0".
+     result = _cmp(nums_a, nums_b)
+     if result:
+         return result

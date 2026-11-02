@@ -1,0 +1,29 @@
+diff --git a/timefmt/formatting.py b/timefmt/formatting.py
+index b389cc2..6706814 100644
+--- a/timefmt/formatting.py
++++ b/timefmt/formatting.py
+@@ -1,18 +1,17 @@
+ """Human-readable timestamps and durations."""
+ import math
+-from datetime import datetime, timedelta, timezone
+-
+-_EPOCH = datetime(1970, 1, 1, tzinfo=timezone.utc)
++from datetime import datetime, timezone
+ 
+ 
+ def format_timestamp(ts: float) -> str:
+     """Format a Unix timestamp as ``YYYY-MM-DD HH:MM:SS UTC``.
+ 
+-    Fractional seconds are dropped (the time shown is the whole second the
+-    timestamp falls in), never rounded up into the next second.
++    The timestamp is converted to an explicitly UTC-aware datetime, so the
++    result never depends on the machine's local time zone. Fractional
++    seconds are dropped (floored), never rounded up into the next second.
+     """
+-    dt = _EPOCH + timedelta(seconds=math.floor(ts))
+-    return dt.strftime("%Y-%m-%d %H:%M:%S") + " UTC"
++    dt = datetime.fromtimestamp(math.floor(ts), tz=timezone.utc)
++    return dt.strftime("%Y-%m-%d %H:%M:%S %Z")
+ 
+ 
+ def format_duration(seconds: int) -> str:

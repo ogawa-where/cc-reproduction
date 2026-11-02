@@ -1,0 +1,73 @@
+diff --git a/calclex/lexer.py b/calclex/lexer.py
+index 7f42e60..abfed97 100644
+--- a/calclex/lexer.py
++++ b/calclex/lexer.py
+@@ -19,11 +19,17 @@ def tokenize(expr: str) -> list[tuple[str, str]]:
+             i += 1
+             continue
+         unary = ch == "-" and (not tokens or tokens[-1][0] in ("OP", "LPAREN"))
+-        start = i
+-        j = i + 1 if unary else i
++        j = i
++        if unary:
++            # The unary minus binds to the following number; whitespace
++            # in between is ignored like anywhere else.
++            j += 1
++            while j < n and expr[j].isspace():
++                j += 1
+         end = _scan_number(expr, j)
+         if end is not None:
+-            tokens.append(("NUM", expr[start:end]))
++            sign = "-" if unary else ""
++            tokens.append(("NUM", sign + expr[j:end]))
+             i = end
+         elif ch in "+-*/":
+             tokens.append(("OP", ch))
+diff --git a/tests/test_lexer.py b/tests/test_lexer.py
+index e34c1ee..8dc855b 100644
+--- a/tests/test_lexer.py
++++ b/tests/test_lexer.py
+@@ -10,3 +10,43 @@ def test_parentheses():
+         ("LPAREN", "("), ("NUM", "3"), ("OP", "*"), ("NUM", "4"),
+         ("RPAREN", ")"), ("OP", "/"), ("NUM", "5"),
+     ]
++
++
++def test_unary_minus_at_start_and_after_lparen():
++    assert tokenize("-3*(-2)") == [
++        ("NUM", "-3"), ("OP", "*"), ("LPAREN", "("), ("NUM", "-2"),
++        ("RPAREN", ")"),
++    ]
++
++
++def test_binary_minus():
++    assert tokenize("5-3") == [("NUM", "5"), ("OP", "-"), ("NUM", "3")]
++    assert tokenize("(1)-2") == [
++        ("LPAREN", "("), ("NUM", "1"), ("RPAREN", ")"), ("OP", "-"),
++        ("NUM", "2"),
++    ]
++
++
++def test_unary_minus_after_operator():
++    assert tokenize("5--3") == [("NUM", "5"), ("OP", "-"), ("NUM", "-3")]
++    assert tokenize("2*-.5") == [("NUM", "2"), ("OP", "*"), ("NUM", "-.5")]
++
++
++def test_unary_minus_with_whitespace():
++    assert tokenize("- 3") == [("NUM", "-3")]
++    assert tokenize("1 - - 2") == [("NUM", "1"), ("OP", "-"), ("NUM", "-2")]
++
++
++def test_decimals():
++    assert tokenize("3.14 10. .5") == [
++        ("NUM", "3.14"), ("NUM", "10."), ("NUM", ".5"),
++    ]
++
++
++def test_lex_error_position():
++    import pytest
++    from calclex.lexer import LexError
++
++    with pytest.raises(LexError) as info:
++        tokenize("1 + x")
++    assert info.value.pos == 4

@@ -1,0 +1,43 @@
+diff --git a/timefmt/formatting.py b/timefmt/formatting.py
+index 9962d16..b4086c0 100644
+--- a/timefmt/formatting.py
++++ b/timefmt/formatting.py
+@@ -1,11 +1,34 @@
+ """Human-readable timestamps and durations."""
++import math
++from datetime import datetime, timezone
+ 
+ 
+ def format_timestamp(ts: float) -> str:
+-    """Format a Unix timestamp as ``YYYY-MM-DD HH:MM:SS UTC``."""
+-    raise NotImplementedError
++    """Format a Unix timestamp as ``YYYY-MM-DD HH:MM:SS UTC``.
++
++    Always rendered in UTC regardless of the local time zone. Fractional
++    seconds are dropped (floored, so the result never rounds up to the
++    next second).
++    """
++    dt = datetime.fromtimestamp(math.floor(ts), tz=timezone.utc)
++    return dt.strftime("%Y-%m-%d %H:%M:%S UTC")
+ 
+ 
+ def format_duration(seconds: int) -> str:
+-    """Format a number of seconds such as ``1h 2m 5s``."""
+-    raise NotImplementedError
++    """Format a number of seconds such as ``1h 2m 5s``.
++
++    Zero-valued units are omitted, hours never roll over into days, and
++    ``0`` gives ``"0s"``.
++    """
++    if seconds < 0:
++        raise ValueError(f"duration must be non-negative, got {seconds}")
++    hours, rem = divmod(seconds, 3600)
++    minutes, secs = divmod(rem, 60)
++    parts = []
++    if hours:
++        parts.append(f"{hours}h")
++    if minutes:
++        parts.append(f"{minutes}m")
++    if secs:
++        parts.append(f"{secs}s")
++    return " ".join(parts) or "0s"

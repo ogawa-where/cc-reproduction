@@ -1,0 +1,34 @@
+diff --git a/calclex/lexer.py b/calclex/lexer.py
+index 3497e9b..c956b4c 100644
+--- a/calclex/lexer.py
++++ b/calclex/lexer.py
+@@ -1,4 +1,14 @@
+ """Split an arithmetic expression into tokens."""
++import re
++
++
++_TOKEN = re.compile(
++    r"(?P<WS>\s+)"
++    r"|(?P<NUM>[0-9]+\.?[0-9]*|\.[0-9]+)"
++    r"|(?P<OP>[-+*/])"
++    r"|(?P<LPAREN>\()"
++    r"|(?P<RPAREN>\))"
++)
+ 
+ 
+ class LexError(ValueError):
+@@ -11,4 +21,13 @@ class LexError(ValueError):
+ 
+ def tokenize(expr: str) -> list[tuple[str, str]]:
+     """Return the tokens of ``expr`` as ``(kind, text)`` pairs."""
+-    raise NotImplementedError
++    tokens: list[tuple[str, str]] = []
++    i, n = 0, len(expr)
++    while i < n:
++        m = _TOKEN.match(expr, i)
++        if m is None:
++            raise LexError(f"unexpected character {expr[i]!r} at {i}", i)
++        if m.lastgroup != "WS":
++            tokens.append((m.lastgroup, m.group()))
++        i = m.end()
++    return tokens

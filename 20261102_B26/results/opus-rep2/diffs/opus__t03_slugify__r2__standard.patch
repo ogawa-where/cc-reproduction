@@ -1,0 +1,55 @@
+diff --git a/slugkit/slug.py b/slugkit/slug.py
+index cbb7a1a..bd43a5d 100644
+--- a/slugkit/slug.py
++++ b/slugkit/slug.py
+@@ -14,8 +14,15 @@ def slugify(text: str, max_length: int | None = None) -> str:
+     is given, the slug is cut to at most that many characters (without a
+     trailing hyphen). Returns ``"n-a"`` if nothing is left.
+     """
++    # Drop every combining mark (General Category Mn/Mc/Me), not just those
++    # with a nonzero canonical combining class: unicodedata.combining()
++    # returns 0 for many marks, which would otherwise become separators.
++    # Lowercase only after decomposing, since NFKD can produce uppercase
++    # ASCII (e.g. "ᴬ" -> "A").
+     decomposed = unicodedata.normalize("NFKD", text)
+-    stripped = "".join(ch for ch in decomposed if not unicodedata.combining(ch))
++    stripped = "".join(
++        ch for ch in decomposed if not unicodedata.category(ch).startswith("M")
++    )
+     slug = _SEPARATORS.sub("-", stripped.lower()).strip("-")
+     if max_length is not None:
+         slug = slug[: max(max_length, 0)].rstrip("-")
+diff --git a/tests/test_slug.py b/tests/test_slug.py
+index f54b92e..59a5b58 100644
+--- a/tests/test_slug.py
++++ b/tests/test_slug.py
+@@ -5,5 +5,29 @@ def test_simple_title():
+     assert slugify("Hello World") == "hello-world"
+ 
+ 
++def test_accents_transliterated():
++    assert slugify("Crème Brûlée") == "creme-brulee"
++
++
++def test_combining_marks_with_zero_class_are_dropped():
++    # U+034F and U+20DD are combining marks with canonical class 0.
++    assert slugify("a͏b") == "ab"
++    assert slugify("a⃝b") == "ab"
++
++
++def test_compatibility_uppercase_is_lowercased():
++    assert slugify("ᴬb") == "ab"  # MODIFIER LETTER CAPITAL A
++    assert slugify("ﬁle Ⅸ") == "file-ix"
++
++
++def test_untransliterable_chars_are_separators():
++    assert slugify("Straße") == "stra-e"
++    assert slugify("日本") == "n-a"
++
++
++def test_max_length_strips_trailing_hyphen():
++    assert slugify("hello world", 6) == "hello"
++
++
+ def test_punctuation_becomes_hyphen():
+     assert slugify("Hello, World!") == "hello-world"

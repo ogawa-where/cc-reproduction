@@ -1,0 +1,20 @@
+diff --git a/slugkit/slug.py b/slugkit/slug.py
+index 5cfb236..ea61039 100644
+--- a/slugkit/slug.py
++++ b/slugkit/slug.py
+@@ -1,6 +1,14 @@
+ """Turn titles into URL slugs."""
+ 
++import re
++import unicodedata
++
+ 
+ def slugify(text: str, max_length: int | None = None) -> str:
+     """Return a URL slug for ``text``."""
+-    raise NotImplementedError
++    decomposed = unicodedata.normalize("NFKD", text)
++    stripped = "".join(c for c in decomposed if not unicodedata.combining(c))
++    slug = re.sub(r"[^a-z0-9]+", "-", stripped.lower()).strip("-")
++    if max_length is not None:
++        slug = slug[: max(max_length, 0)].rstrip("-")
++    return slug or "n-a"

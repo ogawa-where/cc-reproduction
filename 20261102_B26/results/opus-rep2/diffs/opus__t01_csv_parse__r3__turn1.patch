@@ -1,0 +1,74 @@
+diff --git a/csvlite/parser.py b/csvlite/parser.py
+index 04abfdd..b11e0ca 100644
+--- a/csvlite/parser.py
++++ b/csvlite/parser.py
+@@ -1,6 +1,68 @@
+ """Parse CSV text into a list of row dicts."""
+ 
++_QUOTE = '"'
++
++
++def _split_line(line: str, delimiter: str) -> list[str]:
++    """Split one line into fields, honouring double-quoted fields."""
++    fields: list[str] = []
++    i = 0
++    n = len(line)
++    while True:
++        if i < n and line[i] == _QUOTE:
++            # Quoted field: read until a lone closing quote; "" is a literal quote.
++            i += 1
++            buf: list[str] = []
++            while True:
++                if i >= n:
++                    raise ValueError(f"unterminated quoted field in line: {line!r}")
++                ch = line[i]
++                if ch == _QUOTE:
++                    if i + 1 < n and line[i + 1] == _QUOTE:
++                        buf.append(_QUOTE)
++                        i += 2
++                        continue
++                    i += 1
++                    break
++                buf.append(ch)
++                i += 1
++            fields.append("".join(buf))
++            if i < n and line[i] != delimiter:
++                raise ValueError(
++                    f"unexpected character {line[i]!r} after closing quote in line: {line!r}"
++                )
++        else:
++            end = line.find(delimiter, i)
++            if end == -1:
++                end = n
++            fields.append(line[i:end])
++            i = end
++        if i >= n:
++            return fields
++        i += 1  # skip the delimiter; a trailing delimiter yields a final empty field
++
+ 
+ def parse_csv(text: str, delimiter: str = ",") -> list[dict[str, str]]:
+     """Parse ``text`` and return one dict per data row, keyed by the header names."""
+-    raise NotImplementedError
++    if len(delimiter) != 1 or delimiter in (_QUOTE, "\n", "\r"):
++        raise ValueError(f"invalid delimiter: {delimiter!r}")
++
++    rows: list[list[str]] = []
++    for raw in text.split("\n"):
++        line = raw[:-1] if raw.endswith("\r") else raw
++        if not line.strip():
++            continue
++        rows.append(_split_line(line, delimiter))
++
++    if not rows:
++        return []
++
++    header, *data = rows
++    result: list[dict[str, str]] = []
++    for lineno, fields in enumerate(data, start=2):
++        if len(fields) != len(header):
++            raise ValueError(
++                f"data row {lineno - 1} has {len(fields)} fields, expected {len(header)}"
++            )
++        result.append(dict(zip(header, fields)))
++    return result

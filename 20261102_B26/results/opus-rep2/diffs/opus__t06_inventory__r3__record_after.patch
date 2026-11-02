@@ -1,0 +1,28 @@
+diff --git a/stock/inventory.py b/stock/inventory.py
+index f5b86f8..5a6bda0 100644
+--- a/stock/inventory.py
++++ b/stock/inventory.py
+@@ -1,13 +1,21 @@
+ """In-memory inventory of SKUs and their quantities."""
+ 
++import unicodedata
++
+ 
+ class InsufficientStock(ValueError):
+     """Raised when removing more units than are in stock."""
+ 
+ 
+ def _normalize(sku: str) -> str:
+-    """Canonical form of a SKU: surrounding whitespace stripped, uppercase."""
+-    return sku.strip().upper()
++    """Canonical form of a SKU: surrounding whitespace stripped, uppercase.
++
++    Unicode-normalized and case-folded before uppercasing so that every
++    case/composition variant of a SKU maps to the same key (plain upper()
++    misses e.g. composed vs. decomposed accents and the capital sharp S).
++    """
++    folded = unicodedata.normalize("NFC", sku.strip()).casefold()
++    return unicodedata.normalize("NFC", folded.upper())
+ 
+ 
+ class Inventory:

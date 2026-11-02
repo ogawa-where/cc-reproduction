@@ -1,0 +1,81 @@
+diff --git a/calclex/lexer.py b/calclex/lexer.py
+index 3497e9b..4a67890 100644
+--- a/calclex/lexer.py
++++ b/calclex/lexer.py
+@@ -1,4 +1,9 @@
+ """Split an arithmetic expression into tokens."""
++import re
++
++
++_NUMBER = re.compile(r"[0-9]+\.?[0-9]*|\.[0-9]+")
++_NUM_START = "0123456789."
+ 
+ 
+ class LexError(ValueError):
+@@ -11,4 +16,29 @@ class LexError(ValueError):
+ 
+ def tokenize(expr: str) -> list[tuple[str, str]]:
+     """Return the tokens of ``expr`` as ``(kind, text)`` pairs."""
+-    raise NotImplementedError
++    tokens: list[tuple[str, str]] = []
++    i, n = 0, len(expr)
++    while i < n:
++        ch = expr[i]
++        if ch.isspace():
++            i += 1
++            continue
++        # A minus is unary at the start or right after an operator or "(".
++        unary = ch == "-" and (not tokens or tokens[-1][0] in ("OP", "LPAREN"))
++        start = i + 1 if unary else i
++        m = _NUMBER.match(expr, start) if (unary or ch in _NUM_START) else None
++        if m:
++            tokens.append(("NUM", expr[i:m.end()]))
++            i = m.end()
++        elif ch in "+-*/":
++            tokens.append(("OP", ch))
++            i += 1
++        elif ch == "(":
++            tokens.append(("LPAREN", ch))
++            i += 1
++        elif ch == ")":
++            tokens.append(("RPAREN", ch))
++            i += 1
++        else:
++            raise LexError(f"unexpected character {ch!r} at position {i}", i)
++    return tokens
+diff --git a/tests/test_lexer.py b/tests/test_lexer.py
+index e34c1ee..423aac7 100644
+--- a/tests/test_lexer.py
++++ b/tests/test_lexer.py
+@@ -10,3 +10,31 @@ def test_parentheses():
+         ("LPAREN", "("), ("NUM", "3"), ("OP", "*"), ("NUM", "4"),
+         ("RPAREN", ")"), ("OP", "/"), ("NUM", "5"),
+     ]
++
++
++import pytest
++from calclex.lexer import LexError
++
++
++def test_unary_minus():
++    assert tokenize("-3*(-2)") == [
++        ("NUM", "-3"), ("OP", "*"), ("LPAREN", "("), ("NUM", "-2"), ("RPAREN", ")"),
++    ]
++
++
++def test_binary_minus():
++    assert tokenize("5-3") == [("NUM", "5"), ("OP", "-"), ("NUM", "3")]
++    assert tokenize("(1)-2")[2:] == [("RPAREN", ")"), ("OP", "-"), ("NUM", "2")]
++
++
++def test_decimals():
++    assert tokenize("3.14 10. .5") == [("NUM", "3.14"), ("NUM", "10."), ("NUM", ".5")]
++
++
++def test_error_pos():
++    with pytest.raises(LexError) as e:
++        tokenize("1 + a")
++    assert e.value.pos == 4
++    with pytest.raises(LexError) as e:
++        tokenize("2 . 3")
++    assert e.value.pos == 2

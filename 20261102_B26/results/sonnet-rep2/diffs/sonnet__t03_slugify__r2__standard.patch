@@ -1,0 +1,13 @@
+diff --git a/slugkit/slug.py b/slugkit/slug.py
+index 53b276b..cbd53cf 100644
+--- a/slugkit/slug.py
++++ b/slugkit/slug.py
+@@ -9,7 +9,7 @@ _SEPARATORS = re.compile(r"[^a-z0-9]+")
+ def slugify(text: str, max_length: int | None = None) -> str:
+     """Return a URL slug for ``text``."""
+     decomposed = unicodedata.normalize("NFKD", text)
+-    stripped = "".join(c for c in decomposed if not unicodedata.combining(c))
++    stripped = "".join(c for c in decomposed if not unicodedata.category(c).startswith("M"))
+     slug = _SEPARATORS.sub("-", stripped.lower()).strip("-")
+     if max_length is not None:
+         slug = slug[: max(max_length, 0)].rstrip("-")

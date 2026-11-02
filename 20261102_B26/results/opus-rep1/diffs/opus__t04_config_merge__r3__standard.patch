@@ -1,0 +1,21 @@
+diff --git a/confmerge/merge.py b/confmerge/merge.py
+index 9536a7d..4e1f29e 100644
+--- a/confmerge/merge.py
++++ b/confmerge/merge.py
+@@ -18,11 +18,12 @@ def deep_merge(base: dict, override: dict) -> dict:
+       with the inputs.
+     """
+     result = {}
+-    for key, value in base.items():
++    # Base keys keep their original order; keys new in override follow.
++    for key in [*base, *(k for k in override if k not in base)]:
+         if key not in override:
+-            result[key] = copy.deepcopy(value)
+-
+-    for key, value in override.items():
++            result[key] = copy.deepcopy(base[key])
++            continue
++        value = override[key]
+         if value is None:
+             continue  # deletion marker: drop the key
+         base_value = base.get(key)

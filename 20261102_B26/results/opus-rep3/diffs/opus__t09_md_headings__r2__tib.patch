@@ -1,0 +1,74 @@
+diff --git a/mdtoc/headings.py b/mdtoc/headings.py
+index 093c63d..88994ef 100644
+--- a/mdtoc/headings.py
++++ b/mdtoc/headings.py
+@@ -6,17 +6,27 @@ import re
+ _HEADING_RE = re.compile(r"^(#{1,6}) +(.*)$")
+ # An optional closing run of '#' preceded by a space, at the end of the text.
+ _CLOSING_RE = re.compile(r" +#+$")
++# A code fence: up to 3 spaces of indentation, a run of 3+ backticks,
++# then an optional info string (e.g. a language name).
++_FENCE_RE = re.compile(r"^ {0,3}(`{3,})(.*)$")
+ 
+ 
+ def extract_headings(markdown: str) -> list[tuple[int, str]]:
+     """Return ``(level, text)`` for each ATX heading in ``markdown``."""
+     headings: list[tuple[int, str]] = []
+-    in_fence = False
++    # Length of the backtick run that opened the current fence, or 0 if
++    # we are not inside a fenced code block.
++    fence_len = 0
+     for line in markdown.splitlines():
+-        if line.startswith("```"):
+-            in_fence = not in_fence
++        fence = _FENCE_RE.match(line)
++        if fence_len:
++            # Only a bare run of at least as many backticks closes the
++            # fence; "```python" or a shorter run is just code content.
++            if fence and len(fence.group(1)) >= fence_len and not fence.group(2).strip():
++                fence_len = 0
+             continue
+-        if in_fence:
++        if fence and "`" not in fence.group(2):
++            fence_len = len(fence.group(1))
+             continue
+         match = _HEADING_RE.match(line)
+         if not match:
+diff --git a/tests/test_headings.py b/tests/test_headings.py
+index f3cefa8..5768141 100644
+--- a/tests/test_headings.py
++++ b/tests/test_headings.py
+@@ -8,3 +8,33 @@ def test_two_levels():
+ 
+ def test_no_headings():
+     assert extract_headings("just a paragraph\nand another line\n") == []
++
++
++def test_heading_inside_fence_is_ignored():
++    doc = "# A\n```\n# not a heading\n```\n## B\n"
++    assert extract_headings(doc) == [(1, "A"), (2, "B")]
++
++
++def test_fence_with_info_string_closes_with_bare_fence():
++    doc = "```python\n# comment\n```\n# After\n"
++    assert extract_headings(doc) == [(1, "After")]
++
++
++def test_info_string_line_does_not_close_fence():
++    doc = "```\n```python\n# still code\n```\n# After\n"
++    assert extract_headings(doc) == [(1, "After")]
++
++
++def test_shorter_run_does_not_close_longer_fence():
++    doc = "````\n```\n# still code\n````\n# After\n"
++    assert extract_headings(doc) == [(1, "After")]
++
++
++def test_indented_fence():
++    doc = "  ```\n# code\n  ```\n# After\n"
++    assert extract_headings(doc) == [(1, "After")]
++
++
++def test_inline_backticks_are_not_a_fence():
++    doc = "```not a fence``` text\n# Real\n"
++    assert extract_headings(doc) == [(1, "Real")]

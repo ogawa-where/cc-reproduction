@@ -1,0 +1,45 @@
+diff --git a/lrucache/cache.py b/lrucache/cache.py
+index 2a5f276..6bcfd2f 100644
+--- a/lrucache/cache.py
++++ b/lrucache/cache.py
+@@ -1,19 +1,35 @@
+ """Fixed-capacity cache with least-recently-used eviction."""
++from collections import OrderedDict
+ from typing import Any, Hashable
+ 
+ 
+ class LRUCache:
+     def __init__(self, capacity: int) -> None:
+-        raise NotImplementedError
++        if capacity < 1:
++            raise ValueError(f"capacity must be at least 1, got {capacity!r}")
++        self._capacity = capacity
++        # Ordered from least recently used (front) to most recently used (end).
++        self._data: "OrderedDict[Hashable, Any]" = OrderedDict()
+ 
+     def get(self, key: Hashable, default: Any = None) -> Any:
+-        raise NotImplementedError
++        """Return the value for ``key`` (marking it most recently used), else ``default``."""
++        try:
++            self._data.move_to_end(key)
++        except KeyError:
++            return default
++        return self._data[key]
+ 
+     def put(self, key: Hashable, value: Any) -> None:
+-        raise NotImplementedError
++        """Insert or update ``key``, evicting the least recently used entry if full."""
++        if key in self._data:
++            self._data.move_to_end(key)
++        elif len(self._data) >= self._capacity:
++            self._data.popitem(last=False)
++        self._data[key] = value
+ 
+     def __len__(self) -> int:
+-        raise NotImplementedError
++        return len(self._data)
+ 
+     def __contains__(self, key: object) -> bool:
+-        raise NotImplementedError
++        # Membership checks do not count as a "use" and leave recency unchanged.
++        return key in self._data

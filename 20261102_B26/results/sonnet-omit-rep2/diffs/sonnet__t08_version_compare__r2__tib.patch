@@ -1,0 +1,36 @@
+diff --git a/tests/test_version.py b/tests/test_version.py
+index f7a7eb6..f9b5229 100644
+--- a/tests/test_version.py
++++ b/tests/test_version.py
+@@ -40,3 +40,11 @@ def test_sort_prerelease_stable_and_new_list():
+     src = ["1.10", "1.0", "1.0-rc1", "1.0.0", "1.9"]
+     assert sort_versions(src) == ["1.0-rc1", "1.0", "1.0.0", "1.9", "1.10"]
+     assert src[0] == "1.10"
++
++
++def test_different_lengths():
++    assert compare_versions("1.0", "1.0.0") == -1
++    assert compare_versions("1.0.0", "1.0") == 1
++    assert compare_versions("1.0.1", "1.0") == 1
++    assert compare_versions("1.1", "1.0.5") == 1
++    assert compare_versions("2", "1.9.9") == 1
+diff --git a/verkit/version.py b/verkit/version.py
+index 338e08c..ca85658 100644
+--- a/verkit/version.py
++++ b/verkit/version.py
+@@ -22,13 +22,11 @@ def _parse(version: str) -> tuple[tuple[int, ...], str | None]:
+ def compare_versions(a: str, b: str) -> int:
+     """Return -1 if ``a`` < ``b``, 0 if they are equal, 1 if ``a`` > ``b``.
+ 
+-    Missing trailing components count as zero, so "1.0" equals "1.0.0".
++    Components are compared left to right; if one version is a prefix of the
++    other, the shorter one is lower, so "1.0" < "1.0.0".
+     """
+     nums_a, label_a = _parse(a)
+     nums_b, label_b = _parse(b)
+-    width = max(len(nums_a), len(nums_b))
+-    nums_a += (0,) * (width - len(nums_a))
+-    nums_b += (0,) * (width - len(nums_b))
+     if nums_a != nums_b:
+         return -1 if nums_a < nums_b else 1
+     if label_a == label_b:
