@@ -53,6 +53,7 @@ _SCRUB_EXACT = {"DISABLE_TELEMETRY", "DISABLE_PROMPT_CACHING", "DISABLE_FEEDBACK
                 "DISABLE_AUTOUPDATER", "PYTHONPATH", "PYTHONSTARTUP", "PYTHONHOME", "VIRTUAL_ENV"}
 HIDDEN_DIR = "hidden_tests"
 TEST_TIMEOUT = 120
+MAX_ATTEMPTS = 5
 _write_lock = threading.Lock()
 
 
@@ -395,26 +396,28 @@ def run_target(args, task, req, methods, emit):
             try:
                 git(ws, "reset", "-q", "--hard", turn1)
                 git(ws, "clean", "-q", "-fd")
-                book = book_call = None
-                book_text = ""
-                if method in BOOK_METHODS:
-                    record_text = session_record(spec, st1, diff1, visible1,
-                                                 complaint if method == "record_after" else None)
-                    book, book_call = write_claim_book(record_text, args.model, env, parent, args.timeout)
-                    rec["claim_book"], rec["claim_book_call"] = book, book_call
-                    if book is None:
-                        raise RuntimeError("claim book failed: " + str(book_call["error"]))
-                    book_text = prompts.render_claim_book(book)
-                msg = turn2_message(method, complaint, book_text)
+                log(f"{tag}: turn 2 [{method}]")
                 if args.no_fork:
                     extra = ["--session-id", str(uuid.uuid4())]
-                    msg = transcript_text(spec, st1) + msg
                 else:
                     extra = ["--resume", sid, "--fork-session"]
-                log(f"{tag}: turn 2 [{method}]")
-                for attempt in range(1, 4):  # transient API safeguard flags: retry from the same snapshot
+                for attempt in range(1, MAX_ATTEMPTS + 1):
+                    # API safeguard flags depend on the message content, so a retry rewrites the Claim Book too
                     git(ws, "reset", "-q", "--hard", turn1)
                     git(ws, "clean", "-q", "-fd")
+                    book = book_call = None
+                    book_text = ""
+                    if method in BOOK_METHODS:
+                        record_text = session_record(spec, st1, diff1, visible1,
+                                                     complaint if method == "record_after" else None)
+                        book, book_call = write_claim_book(record_text, args.model, env, parent, args.timeout)
+                        rec["claim_book"], rec["claim_book_call"] = book, book_call
+                        if book is None:
+                            raise RuntimeError("claim book failed: " + str(book_call["error"]))
+                        book_text = prompts.render_claim_book(book)
+                    msg = turn2_message(method, complaint, book_text)
+                    if args.no_fork:
+                        msg = transcript_text(spec, st1) + msg
                     t0 = time.time()
                     s = Session(agent_cmd(args.model, extra), ws, env,
                                 os.path.join(args.out, "streams", f"{stem}__{method}.jsonl"))
@@ -423,7 +426,8 @@ def run_target(args, task, req, methods, emit):
                     finally:
                         err = s.close()
                     st2 = turn_stats(evs)
-                    if not (st2["is_error"] and "safeguards flagged" in st2["final"]) or attempt == 3:
+                    rec["attempts"] = attempt
+                    if not (st2["is_error"] and "safeguards flagged" in st2["final"]) or attempt == MAX_ATTEMPTS:
                         break
                     log(f"{tag}: [{method}] safeguard flag, retry {attempt}")
                     time.sleep(5)
