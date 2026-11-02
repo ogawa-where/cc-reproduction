@@ -12,7 +12,7 @@ README: <a href="./README.md">English</a> | <a href="./README_ja.md">日本語</
 
 Each study lives in its own directory, named `YYYYMMDD_<citation key>` (the date, then the authors' initials and year; Xu & Wu, 2026 → `XW26`). A reproduction re-runs a paper's experiment on Claude Code. An extension (`-ext`) starts from a reproduced result and asks a question the paper left open. Every directory ships a harness, the tasks, and a README that covers the claims, the setup, what was prepared, the procedure, the results and a discussion.
 
-Result column: `OK` the reported effect reproduced; `Done` the experiment ran but the effect is absent in current Claude Code (the README says why); `Ext` an extension study with its own findings.
+Two tables below: reproductions (Result: `OK` the reported effect reproduced; `Done` the experiment ran but the effect is absent in current Claude Code, the README says why) and extension studies (the question, the reproduction it builds on, and a one-line finding under the table).
 
 <pre>
 Welcome to Claude Code v2.1.310
