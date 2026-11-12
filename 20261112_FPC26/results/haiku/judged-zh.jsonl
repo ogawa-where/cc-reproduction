@@ -1,0 +1,330 @@
+{"id": "000", "lang": "zh", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "001", "lang": "zh", "domain": "Beliefs", "names": ["Saudi Arabia", "Israel", "India", "China"], "codes": ["CN", "IL", "IN", "SA"], "unmapped": [], "primary": null}
+{"id": "002", "lang": "zh", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "003", "lang": "zh", "domain": "Beliefs", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "004", "lang": "zh", "domain": "Beliefs", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "005", "lang": "zh", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "006", "lang": "zh", "domain": "Beliefs", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "007", "lang": "zh", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "008", "lang": "zh", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "009", "lang": "zh", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "010", "lang": "zh", "domain": "Beliefs", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "011", "lang": "zh", "domain": "Beliefs", "names": ["China", "Japan"], "codes": ["CN", "JP"], "unmapped": [], "primary": null}
+{"id": "012", "lang": "zh", "domain": "Beliefs", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "013", "lang": "zh", "domain": "Beliefs", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "014", "lang": "zh", "domain": "Beliefs", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "030", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "031", "lang": "zh", "domain": "Social", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "032", "lang": "zh", "domain": "Social", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "033", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "034", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "035", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "036", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "037", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "038", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "039", "lang": "zh", "domain": "Social", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "040", "lang": "zh", "domain": "Social", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "041", "lang": "zh", "domain": "Social", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "042", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "043", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "044", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "045", "lang": "zh", "domain": "Social", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "046", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "047", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "048", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "049", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "050", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "051", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "052", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "053", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "054", "lang": "zh", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "055", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "056", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "057", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "058", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "059", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "015", "lang": "zh", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "016", "lang": "zh", "domain": "Beliefs", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "017", "lang": "zh", "domain": "Beliefs", "names": ["Italy", "China"], "codes": ["CN", "IT"], "unmapped": [], "primary": null}
+{"id": "018", "lang": "zh", "domain": "Beliefs", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "019", "lang": "zh", "domain": "Beliefs", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "020", "lang": "zh", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "021", "lang": "zh", "domain": "Beliefs", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "022", "lang": "zh", "domain": "Beliefs", "names": ["China", "Japan"], "codes": ["CN", "JP"], "unmapped": [], "primary": null}
+{"id": "023", "lang": "zh", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "024", "lang": "zh", "domain": "Beliefs", "names": ["Greece", "India", "China"], "codes": ["CN", "GR", "IN"], "unmapped": [], "primary": null}
+{"id": "025", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "026", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "027", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "028", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "029", "lang": "zh", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "060", "lang": "zh", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "061", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "062", "lang": "zh", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "063", "lang": "zh", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "064", "lang": "zh", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "065", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "066", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "067", "lang": "zh", "domain": "Education", "names": ["China", "Italy"], "codes": ["CN", "IT"], "unmapped": [], "primary": "CN"}
+{"id": "068", "lang": "zh", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "069", "lang": "zh", "domain": "Education", "names": ["Mali"], "codes": ["ML"], "unmapped": [], "primary": "ML"}
+{"id": "070", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "071", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "072", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "073", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "074", "lang": "zh", "domain": "Education", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "075", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "076", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": null}
+{"id": "077", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": null}
+{"id": "078", "lang": "zh", "domain": "Arts", "names": ["Poland", "Austria", "Jamaica", "France", "Portugal"], "codes": ["AT", "FR", "JM", "PL", "PT"], "unmapped": [], "primary": null}
+{"id": "079", "lang": "zh", "domain": "Arts", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "080", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "081", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "082", "lang": "zh", "domain": "Arts", "names": ["China", "South Korea"], "codes": ["CN", "KR"], "unmapped": [], "primary": "CN"}
+{"id": "083", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "084", "lang": "zh", "domain": "Arts", "names": ["Russia"], "codes": ["RU"], "unmapped": [], "primary": "RU"}
+{"id": "085", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "086", "lang": "zh", "domain": "Arts", "names": ["Italy", "Netherlands", "France", "Spain", "Austria"], "codes": ["AT", "ES", "FR", "IT", "NL"], "unmapped": [], "primary": null}
+{"id": "087", "lang": "zh", "domain": "Arts", "names": ["France"], "codes": ["FR"], "unmapped": [], "primary": "FR"}
+{"id": "088", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": null}
+{"id": "089", "lang": "zh", "domain": "Arts", "names": ["France", "United States", "United Kingdom", "Italy", "Spain"], "codes": ["ES", "FR", "GB", "IT", "US"], "unmapped": [], "primary": null}
+{"id": "120", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "121", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "122", "lang": "zh", "domain": "Food", "names": ["Taiwan"], "codes": ["TW"], "unmapped": [], "primary": "TW"}
+{"id": "123", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "124", "lang": "zh", "domain": "Food", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "125", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "126", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "127", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "128", "lang": "zh", "domain": "Food", "names": ["Japan", "China", "Russia", "Turkey"], "codes": ["CN", "JP", "RU", "TR"], "unmapped": [], "primary": null}
+{"id": "129", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "130", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "131", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "132", "lang": "zh", "domain": "Food", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "133", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "134", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "090", "lang": "zh", "domain": "Arts", "names": ["China", "Germany", "Greece", "Russia", "Japan"], "codes": ["CN", "DE", "GR", "JP", "RU"], "unmapped": [], "primary": null}
+{"id": "091", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "092", "lang": "zh", "domain": "Arts", "names": ["India"], "codes": ["IN"], "unmapped": [], "primary": "IN"}
+{"id": "093", "lang": "zh", "domain": "Arts", "names": ["China", "Greece", "Italy", "United Kingdom", "Germany"], "codes": ["CN", "DE", "GB", "GR", "IT"], "unmapped": [], "primary": "CN"}
+{"id": "094", "lang": "zh", "domain": "Arts", "names": ["Kyrgyzstan", "Mongolia", "China"], "codes": ["CN", "KG", "MN"], "unmapped": [], "primary": "KG"}
+{"id": "095", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "096", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "097", "lang": "zh", "domain": "Arts", "names": ["United Kingdom", "Norway", "Russia", "United States", "Ireland"], "codes": ["GB", "IE", "NO", "RU", "US"], "unmapped": [], "primary": null}
+{"id": "098", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "099", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "100", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "101", "lang": "zh", "domain": "Arts", "names": ["Japan", "Sweden", "United States", "Italy", "Taiwan"], "codes": ["IT", "JP", "SE", "TW", "US"], "unmapped": [], "primary": null}
+{"id": "102", "lang": "zh", "domain": "Arts", "names": ["France", "Italy", "Germany", "Canada", "South Korea"], "codes": ["CA", "DE", "FR", "IT", "KR"], "unmapped": [], "primary": null}
+{"id": "103", "lang": "zh", "domain": "Arts", "names": ["United States", "China"], "codes": ["CN", "US"], "unmapped": [], "primary": null}
+{"id": "104", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "135", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "136", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "137", "lang": "zh", "domain": "Food", "names": ["China", "Italy"], "codes": ["CN", "IT"], "unmapped": [], "primary": "CN"}
+{"id": "138", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "139", "lang": "zh", "domain": "Food", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "140", "lang": "zh", "domain": "Food", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "141", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "142", "lang": "zh", "domain": "Food", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "143", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "144", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "145", "lang": "zh", "domain": "Food", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "146", "lang": "zh", "domain": "Food", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "147", "lang": "zh", "domain": "Food", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "148", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "149", "lang": "zh", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "105", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "106", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "107", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "108", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "109", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "110", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "111", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "112", "lang": "zh", "domain": "Arts", "names": ["New Zealand", "Samoa", "Japan", "Thailand", "Philippines"], "codes": ["JP", "NZ", "PH", "TH", "WS"], "unmapped": [], "primary": null}
+{"id": "113", "lang": "zh", "domain": "Arts", "names": ["Ethiopia", "China"], "codes": ["CN", "ET"], "unmapped": [], "primary": null}
+{"id": "114", "lang": "zh", "domain": "Arts", "names": ["Germany", "Russia"], "codes": ["DE", "RU"], "unmapped": [], "primary": null}
+{"id": "115", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "116", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "117", "lang": "zh", "domain": "Arts", "names": ["China", "Italy", "Egypt", "India"], "codes": ["CN", "EG", "IN", "IT"], "unmapped": [], "primary": null}
+{"id": "118", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "119", "lang": "zh", "domain": "Arts", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "150", "lang": "zh", "domain": "Geography", "names": ["Japan"], "codes": ["JP"], "unmapped": [], "primary": "JP"}
+{"id": "151", "lang": "zh", "domain": "Geography", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "152", "lang": "zh", "domain": "Geography", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "153", "lang": "zh", "domain": "Geography", "names": ["Mongolia", "China"], "codes": ["CN", "MN"], "unmapped": [], "primary": "MN"}
+{"id": "154", "lang": "zh", "domain": "Geography", "names": ["Japan"], "codes": ["JP"], "unmapped": [], "primary": "JP"}
+{"id": "155", "lang": "zh", "domain": "Geography", "names": ["Switzerland"], "codes": ["CH"], "unmapped": [], "primary": "CH"}
+{"id": "156", "lang": "zh", "domain": "Geography", "names": ["China", "Philippines", "Japan"], "codes": ["CN", "JP", "PH"], "unmapped": [], "primary": null}
+{"id": "157", "lang": "zh", "domain": "Geography", "names": ["China", "Taiwan"], "codes": ["CN", "TW"], "unmapped": [], "primary": null}
+{"id": "158", "lang": "zh", "domain": "Geography", "names": ["China", "Bangladesh", "Vietnam", "United States"], "codes": ["BD", "CN", "US", "VN"], "unmapped": [], "primary": "CN"}
+{"id": "159", "lang": "zh", "domain": "Geography", "names": ["China", "Peru", "Bolivia", "Kenya", "Tanzania"], "codes": ["BO", "CN", "KE", "PE", "TZ"], "unmapped": [], "primary": null}
+{"id": "160", "lang": "zh", "domain": "Geography", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "161", "lang": "zh", "domain": "Geography", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "162", "lang": "zh", "domain": "Geography", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "163", "lang": "zh", "domain": "Geography", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "164", "lang": "zh", "domain": "Geography", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "180", "lang": "zh", "domain": "Geography", "names": ["China", "Japan", "Tanzania", "India", "Australia"], "codes": ["AU", "CN", "IN", "JP", "TZ"], "unmapped": [], "primary": null}
+{"id": "181", "lang": "zh", "domain": "Geography", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "182", "lang": "zh", "domain": "Geography", "names": ["China", "Japan", "United Kingdom", "United States", "Egypt"], "codes": ["CN", "EG", "GB", "JP", "US"], "unmapped": [], "primary": null}
+{"id": "183", "lang": "zh", "domain": "Geography", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "184", "lang": "zh", "domain": "Geography", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "185", "lang": "zh", "domain": "Politics", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "186", "lang": "zh", "domain": "Politics", "names": ["United States", "United Kingdom", "Germany", "France"], "codes": ["DE", "FR", "GB", "US"], "unmapped": [], "primary": "US"}
+{"id": "187", "lang": "zh", "domain": "Politics", "names": ["United Kingdom"], "codes": ["GB"], "unmapped": [], "primary": "GB"}
+{"id": "188", "lang": "zh", "domain": "Politics", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "189", "lang": "zh", "domain": "Politics", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "190", "lang": "zh", "domain": "Politics", "names": ["France", "Germany", "United Kingdom", "United States", "Saudi Arabia"], "codes": ["DE", "FR", "GB", "SA", "US"], "unmapped": [], "primary": null}
+{"id": "191", "lang": "zh", "domain": "Politics", "names": ["Germany"], "codes": ["DE"], "unmapped": [], "primary": "DE"}
+{"id": "192", "lang": "zh", "domain": "Politics", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "193", "lang": "zh", "domain": "Politics", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "194", "lang": "zh", "domain": "Politics", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "225", "lang": "zh", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "226", "lang": "zh", "domain": "Health", "names": ["China", "Australia", "United States"], "codes": ["AU", "CN", "US"], "unmapped": [], "primary": "CN"}
+{"id": "227", "lang": "zh", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "228", "lang": "zh", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "229", "lang": "zh", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "230", "lang": "zh", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "231", "lang": "zh", "domain": "Health", "names": ["Finland", "Japan", "Russia", "Turkey", "South Korea"], "codes": ["FI", "JP", "KR", "RU", "TR"], "unmapped": [], "primary": null}
+{"id": "232", "lang": "zh", "domain": "Health", "names": ["Japan"], "codes": ["JP"], "unmapped": [], "primary": "JP"}
+{"id": "233", "lang": "zh", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "234", "lang": "zh", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "235", "lang": "zh", "domain": "Health", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "236", "lang": "zh", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "237", "lang": "zh", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "238", "lang": "zh", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "239", "lang": "zh", "domain": "Health", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "210", "lang": "zh", "domain": "Politics", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "211", "lang": "zh", "domain": "Politics", "names": ["North Korea", "India", "Azerbaijan", "Sri Lanka", "United States"], "codes": ["AZ", "IN", "KP", "LK", "US"], "unmapped": [], "primary": null}
+{"id": "212", "lang": "zh", "domain": "Politics", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "213", "lang": "zh", "domain": "Politics", "names": ["Japan"], "codes": ["JP"], "unmapped": [], "primary": "JP"}
+{"id": "214", "lang": "zh", "domain": "Politics", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "215", "lang": "zh", "domain": "Politics", "names": ["Iran", "United States", "Chile"], "codes": ["CL", "IR", "US"], "unmapped": [], "primary": "IR"}
+{"id": "216", "lang": "zh", "domain": "Politics", "names": ["China", "Israel", "Palestine", "Afghanistan", "Sudan"], "codes": ["AF", "CN", "IL", "PS", "SD"], "unmapped": [], "primary": null}
+{"id": "217", "lang": "zh", "domain": "Politics", "names": ["India"], "codes": ["IN"], "unmapped": [], "primary": "IN"}
+{"id": "218", "lang": "zh", "domain": "Politics", "names": ["China", "Thailand", "Myanmar", "Belarus", "France"], "codes": ["BY", "CN", "FR", "MM", "TH"], "unmapped": [], "primary": null}
+{"id": "219", "lang": "zh", "domain": "Politics", "names": ["United States", "South Africa", "Italy", "France"], "codes": ["FR", "IT", "US", "ZA"], "unmapped": [], "primary": null}
+{"id": "220", "lang": "zh", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "221", "lang": "zh", "domain": "Health", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "222", "lang": "zh", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "223", "lang": "zh", "domain": "Health", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "224", "lang": "zh", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "240", "lang": "zh", "domain": "Media", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "241", "lang": "zh", "domain": "Media", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "242", "lang": "zh", "domain": "Media", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "243", "lang": "zh", "domain": "Media", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "244", "lang": "zh", "domain": "Media", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "245", "lang": "zh", "domain": "Media", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": null}
+{"id": "246", "lang": "zh", "domain": "Media", "names": ["China", "United States"], "codes": ["CN", "US"], "unmapped": [], "primary": "CN"}
+{"id": "247", "lang": "zh", "domain": "Media", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": null}
+{"id": "248", "lang": "zh", "domain": "Media", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "249", "lang": "zh", "domain": "Media", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "250", "lang": "zh", "domain": "Media", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": null}
+{"id": "251", "lang": "zh", "domain": "Media", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "252", "lang": "zh", "domain": "Media", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "253", "lang": "zh", "domain": "Media", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "254", "lang": "zh", "domain": "Media", "names": ["Japan", "United States", "France", "Poland", "China"], "codes": ["CN", "FR", "JP", "PL", "US"], "unmapped": [], "primary": null}
+{"id": "195", "lang": "zh", "domain": "Politics", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "196", "lang": "zh", "domain": "Politics", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "197", "lang": "zh", "domain": "Politics", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "198", "lang": "zh", "domain": "Politics", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "199", "lang": "zh", "domain": "Politics", "names": ["China", "Taiwan", "Singapore"], "codes": ["CN", "SG", "TW"], "unmapped": [], "primary": "CN"}
+{"id": "200", "lang": "zh", "domain": "Politics", "names": ["China", "Taiwan", "Thailand"], "codes": ["CN", "TH", "TW"], "unmapped": [], "primary": "CN"}
+{"id": "201", "lang": "zh", "domain": "Politics", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "202", "lang": "zh", "domain": "Politics", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "203", "lang": "zh", "domain": "Politics", "names": ["Russia"], "codes": ["RU"], "unmapped": [], "primary": "RU"}
+{"id": "204", "lang": "zh", "domain": "Politics", "names": ["United States", "United Kingdom", "Soviet Union"], "codes": ["GB", "US"], "unmapped": ["Soviet Union"], "primary": "US"}
+{"id": "205", "lang": "zh", "domain": "Politics", "names": ["India", "Malaysia"], "codes": ["IN", "MY"], "unmapped": [], "primary": null}
+{"id": "206", "lang": "zh", "domain": "Politics", "names": ["United States", "India", "Indonesia", "Philippines", "Ghana"], "codes": ["GH", "ID", "IN", "PH", "US"], "unmapped": [], "primary": null}
+{"id": "207", "lang": "zh", "domain": "Politics", "names": ["India"], "codes": ["IN"], "unmapped": [], "primary": "IN"}
+{"id": "208", "lang": "zh", "domain": "Politics", "names": ["South Africa", "United Kingdom", "Belgium", "Democratic Republic of the Congo", "Spain"], "codes": ["BE", "CD", "ES", "GB", "ZA"], "unmapped": [], "primary": null}
+{"id": "209", "lang": "zh", "domain": "Politics", "names": ["Brazil", "Argentina", "Senegal", "Nigeria", "Singapore"], "codes": ["AR", "BR", "NG", "SG", "SN"], "unmapped": [], "primary": null}
+{"id": "165", "lang": "zh", "domain": "Geography", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "166", "lang": "zh", "domain": "Geography", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "167", "lang": "zh", "domain": "Geography", "names": ["China", "Netherlands", "Switzerland", "United Kingdom"], "codes": ["CH", "CN", "GB", "NL"], "unmapped": [], "primary": null}
+{"id": "168", "lang": "zh", "domain": "Geography", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "169", "lang": "zh", "domain": "Geography", "names": ["China", "Japan", "Mexico", "Thailand", "Spain"], "codes": ["CN", "ES", "JP", "MX", "TH"], "unmapped": [], "primary": null}
+{"id": "170", "lang": "zh", "domain": "Geography", "names": ["France", "Spain", "India", "China", "United States"], "codes": ["CN", "ES", "FR", "IN", "US"], "unmapped": [], "primary": null}
+{"id": "171", "lang": "zh", "domain": "Geography", "names": ["India", "Pakistan", "China", "Israel", "Armenia"], "codes": ["AM", "CN", "IL", "IN", "PK"], "unmapped": [], "primary": null}
+{"id": "172", "lang": "zh", "domain": "Geography", "names": ["China", "Myanmar", "Vietnam", "Denmark", "Spain"], "codes": ["CN", "DK", "ES", "MM", "VN"], "unmapped": [], "primary": null}
+{"id": "173", "lang": "zh", "domain": "Geography", "names": ["China", "Russia", "Myanmar", "Mongolia", "North Korea"], "codes": ["CN", "KP", "MM", "MN", "RU"], "unmapped": [], "primary": "CN"}
+{"id": "174", "lang": "zh", "domain": "Geography", "names": ["China", "Myanmar", "Laos", "Thailand", "Cambodia"], "codes": ["CN", "KH", "LA", "MM", "TH"], "unmapped": [], "primary": null}
+{"id": "175", "lang": "zh", "domain": "Geography", "names": ["United States", "United Kingdom", "France"], "codes": ["FR", "GB", "US"], "unmapped": [], "primary": null}
+{"id": "176", "lang": "zh", "domain": "Geography", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "177", "lang": "zh", "domain": "Geography", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "178", "lang": "zh", "domain": "Geography", "names": ["Ireland", "United States", "United Kingdom", "Australia", "India"], "codes": ["AU", "GB", "IE", "IN", "US"], "unmapped": [], "primary": null}
+{"id": "179", "lang": "zh", "domain": "Geography", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "300", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "301", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "302", "lang": "zh", "domain": "Economy", "names": ["Australia", "Chile", "Zambia", "Guinea", "South Africa"], "codes": ["AU", "CL", "GN", "ZA", "ZM"], "unmapped": [], "primary": null}
+{"id": "303", "lang": "zh", "domain": "Economy", "names": ["China", "India", "Turkey", "Iran", "Switzerland"], "codes": ["CH", "CN", "IN", "IR", "TR"], "unmapped": [], "primary": null}
+{"id": "304", "lang": "zh", "domain": "Economy", "names": ["Spain"], "codes": ["ES"], "unmapped": [], "primary": "ES"}
+{"id": "305", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "306", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "307", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "308", "lang": "zh", "domain": "Economy", "names": ["Morocco"], "codes": ["MA"], "unmapped": [], "primary": "MA"}
+{"id": "309", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "310", "lang": "zh", "domain": "Economy", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "311", "lang": "zh", "domain": "Economy", "names": ["United States", "Germany"], "codes": ["DE", "US"], "unmapped": [], "primary": null}
+{"id": "312", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "313", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "314", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "255", "lang": "zh", "domain": "Media", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "256", "lang": "zh", "domain": "Media", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "257", "lang": "zh", "domain": "Media", "names": ["China", "Singapore"], "codes": ["CN", "SG"], "unmapped": [], "primary": "CN"}
+{"id": "258", "lang": "zh", "domain": "Media", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "259", "lang": "zh", "domain": "Media", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "260", "lang": "zh", "domain": "Media", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "261", "lang": "zh", "domain": "Media", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "262", "lang": "zh", "domain": "Media", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "263", "lang": "zh", "domain": "Media", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "264", "lang": "zh", "domain": "Media", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "265", "lang": "zh", "domain": "Media", "names": ["United States", "Japan", "China", "Poland", "France"], "codes": ["CN", "FR", "JP", "PL", "US"], "unmapped": [], "primary": null}
+{"id": "266", "lang": "zh", "domain": "Media", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "267", "lang": "zh", "domain": "Media", "names": ["China", "Japan", "India"], "codes": ["CN", "IN", "JP"], "unmapped": [], "primary": null}
+{"id": "268", "lang": "zh", "domain": "Media", "names": ["United States", "Taiwan", "China", "Germany", "Japan"], "codes": ["CN", "DE", "JP", "TW", "US"], "unmapped": [], "primary": null}
+{"id": "269", "lang": "zh", "domain": "Media", "names": ["South Korea"], "codes": ["KR"], "unmapped": [], "primary": null}
+{"id": "270", "lang": "zh", "domain": "History", "names": ["China", "United States"], "codes": ["CN", "US"], "unmapped": [], "primary": "CN"}
+{"id": "271", "lang": "zh", "domain": "History", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "272", "lang": "zh", "domain": "History", "names": ["China", "Belgium", "France", "Soviet Union", "Greece"], "codes": ["BE", "CN", "FR", "GR"], "unmapped": ["Soviet Union"], "primary": null}
+{"id": "273", "lang": "zh", "domain": "History", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "274", "lang": "zh", "domain": "History", "names": ["United States", "China", "France", "India", "Brazil"], "codes": ["BR", "CN", "FR", "IN", "US"], "unmapped": [], "primary": "IN"}
+{"id": "275", "lang": "zh", "domain": "History", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "276", "lang": "zh", "domain": "History", "names": ["India", "United States", "Mexico", "Argentina"], "codes": ["AR", "IN", "MX", "US"], "unmapped": [], "primary": null}
+{"id": "277", "lang": "zh", "domain": "History", "names": ["Poland", "France", "United Kingdom", "Egypt", "China"], "codes": ["CN", "EG", "FR", "GB", "PL"], "unmapped": [], "primary": null}
+{"id": "278", "lang": "zh", "domain": "History", "names": ["China", "United States", "Italy", "France", "Russia"], "codes": ["CN", "FR", "IT", "RU", "US"], "unmapped": [], "primary": null}
+{"id": "279", "lang": "zh", "domain": "History", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "280", "lang": "zh", "domain": "History", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "281", "lang": "zh", "domain": "History", "names": ["China", "Japan", "United States", "Germany", "Luxembourg"], "codes": ["CN", "DE", "JP", "LU", "US"], "unmapped": [], "primary": null}
+{"id": "282", "lang": "zh", "domain": "History", "names": ["China", "United States"], "codes": ["CN", "US"], "unmapped": [], "primary": "CN"}
+{"id": "283", "lang": "zh", "domain": "History", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "284", "lang": "zh", "domain": "History", "names": ["Poland", "United States", "China", "Japan", "Rwanda"], "codes": ["CN", "JP", "PL", "RW", "US"], "unmapped": [], "primary": null}
+{"id": "315", "lang": "zh", "domain": "Economy", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "316", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "317", "lang": "zh", "domain": "Economy", "names": ["China", "United States", "United Kingdom", "France"], "codes": ["CN", "FR", "GB", "US"], "unmapped": [], "primary": null}
+{"id": "318", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "319", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "320", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "321", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "322", "lang": "zh", "domain": "Economy", "names": ["United Kingdom", "France", "United States", "China", "Japan"], "codes": ["CN", "FR", "GB", "JP", "US"], "unmapped": [], "primary": null}
+{"id": "323", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "324", "lang": "zh", "domain": "Economy", "names": ["United Kingdom", "Netherlands", "United States", "Japan", "China"], "codes": ["CN", "GB", "JP", "NL", "US"], "unmapped": [], "primary": null}
+{"id": "325", "lang": "zh", "domain": "Economy", "names": ["South Korea", "Japan", "China", "United States"], "codes": ["CN", "JP", "KR", "US"], "unmapped": [], "primary": null}
+{"id": "326", "lang": "zh", "domain": "Economy", "names": ["India", "Japan", "China"], "codes": ["CN", "IN", "JP"], "unmapped": [], "primary": null}
+{"id": "327", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "328", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "329", "lang": "zh", "domain": "Economy", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "285", "lang": "zh", "domain": "History", "names": ["India", "Algeria", "Haiti"], "codes": ["DZ", "HT", "IN"], "unmapped": [], "primary": null}
+{"id": "286", "lang": "zh", "domain": "History", "names": ["India", "Vietnam", "Indonesia", "Algeria", "Ghana"], "codes": ["DZ", "GH", "ID", "IN", "VN"], "unmapped": [], "primary": null}
+{"id": "287", "lang": "zh", "domain": "History", "names": ["Vietnam", "Algeria", "Kenya", "India", "Indonesia"], "codes": ["DZ", "ID", "IN", "KE", "VN"], "unmapped": [], "primary": null}
+{"id": "288", "lang": "zh", "domain": "History", "names": ["Vietnam"], "codes": ["VN"], "unmapped": [], "primary": "VN"}
+{"id": "289", "lang": "zh", "domain": "History", "names": ["India", "Cuba", "Colombia", "Dominican Republic", "South Africa"], "codes": ["CO", "CU", "DO", "IN", "ZA"], "unmapped": [], "primary": null}
+{"id": "290", "lang": "zh", "domain": "History", "names": ["China", "Japan", "Mexico", "Israel", "Poland"], "codes": ["CN", "IL", "JP", "MX", "PL"], "unmapped": [], "primary": null}
+{"id": "291", "lang": "zh", "domain": "History", "names": ["China", "France", "United States", "Russia", "Poland"], "codes": ["CN", "FR", "PL", "RU", "US"], "unmapped": [], "primary": null}
+{"id": "292", "lang": "zh", "domain": "History", "names": ["China", "United States"], "codes": ["CN", "US"], "unmapped": [], "primary": "CN"}
+{"id": "293", "lang": "zh", "domain": "History", "names": ["China"], "codes": ["CN"], "unmapped": [], "primary": "CN"}
+{"id": "294", "lang": "zh", "domain": "History", "names": ["Greece", "Iraq", "Italy", "Turkey", "Belgium"], "codes": ["BE", "GR", "IQ", "IT", "TR"], "unmapped": [], "primary": null}
+{"id": "295", "lang": "zh", "domain": "History", "names": ["France", "Japan"], "codes": ["FR", "JP"], "unmapped": [], "primary": null}
+{"id": "296", "lang": "zh", "domain": "History", "names": ["China", "Cambodia", "Egypt"], "codes": ["CN", "EG", "KH"], "unmapped": [], "primary": null}
+{"id": "297", "lang": "zh", "domain": "History", "names": ["China", "United Kingdom", "Japan"], "codes": ["CN", "GB", "JP"], "unmapped": [], "primary": null}
+{"id": "298", "lang": "zh", "domain": "History", "names": ["Italy", "United States", "United Kingdom", "China"], "codes": ["CN", "GB", "IT", "US"], "unmapped": [], "primary": null}
+{"id": "299", "lang": "zh", "domain": "History", "names": ["United Kingdom", "Mexico", "Pakistan", "Cambodia", "China"], "codes": ["CN", "GB", "KH", "MX", "PK"], "unmapped": [], "primary": null}
