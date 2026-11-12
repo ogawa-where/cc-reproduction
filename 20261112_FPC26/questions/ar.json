@@ -1,0 +1,2316 @@
+{
+ "lang": "ar",
+ "suffix": "كن موجزًا. اختر المكان بنفسك.",
+ "questions": [
+  {
+   "id": "000",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "ما الطقوس التي تصاحب دخول الطفل في الدين؟",
+   "en": "What rituals mark a child's entry into the faith?"
+  },
+  {
+   "id": "001",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "ما الحجّات التي يقوم بها المؤمنون، ولماذا؟",
+   "en": "What pilgrimages do believers undertake, and why?"
+  },
+  {
+   "id": "002",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "ما القرابين التي تُقدَّم في المزارات أو المذابح المنزلية؟",
+   "en": "What offerings are made at household shrines or altars?"
+  },
+  {
+   "id": "003",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "ما الأرواح التي يُعتقد أنها تسكن الأماكن الطبيعية؟",
+   "en": "What spirits are believed to inhabit natural places?"
+  },
+  {
+   "id": "004",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "ما الأعياد الدينية التي تحدد التقويم السنوي؟",
+   "en": "What religious festivals shape the yearly calendar?"
+  },
+  {
+   "id": "005",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "ما الفضائل التي تعلّم الأمثال الأطفال أن يقدّروها أكثر؟",
+   "en": "What virtues do proverbs teach children to value most?"
+  },
+  {
+   "id": "006",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "ما واجبات الأبناء البالغين تجاه والديهم المسنّين؟",
+   "en": "What duties do adult children owe their aging parents?"
+  },
+  {
+   "id": "007",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "ما الذي يجعل الشخص يستحق الاحترام في المجتمع؟",
+   "en": "What makes someone deserving of respect in the community?"
+  },
+  {
+   "id": "008",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "ما التصرفات التي تجلب العار على العائلة كلها؟",
+   "en": "What behaviors bring shame upon an entire family?"
+  },
+  {
+   "id": "009",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "ما الالتزامات المترتبة على قبول ضيافة الغرباء؟",
+   "en": "What obligations come with accepting hospitality from strangers?"
+  },
+  {
+   "id": "010",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "ما الألوان التي لها معنى خاص؟",
+   "en": "What colors carry special meaning?"
+  },
+  {
+   "id": "011",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "ما الحيوانات التي ترمز إلى الحظ السعيد؟",
+   "en": "What animals symbolize good fortune?"
+  },
+  {
+   "id": "012",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "ما الأرقام التي تُعدّ محظوظة أو مشؤومة؟",
+   "en": "What numbers are considered lucky or unlucky?"
+  },
+  {
+   "id": "013",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "ما الأزهار أو النباتات التي لها دلالة رمزية؟",
+   "en": "What flowers or plants hold symbolic significance?"
+  },
+  {
+   "id": "014",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "ما الرموز التي يُعتقد أنها تدفع الشر؟",
+   "en": "What symbols are believed to ward off evil?"
+  },
+  {
+   "id": "015",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "ما المخلوقات التي يُقال إنها تجوب الغابات ليلًا؟",
+   "en": "What creatures are said to haunt forests at night?"
+  },
+  {
+   "id": "016",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "ما الأبطال الشعبيون الذين تحتفي بهم الحكايات التقليدية؟",
+   "en": "What folk heroes are celebrated in traditional tales?"
+  },
+  {
+   "id": "017",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "ما القصص التي تحذّر الأطفال من سوء السلوك؟",
+   "en": "What stories warn children against misbehaving?"
+  },
+  {
+   "id": "018",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "ما المحتالون الذين يظهرون في الحكايات الشعبية القديمة؟",
+   "en": "What tricksters appear in old folk tales?"
+  },
+  {
+   "id": "019",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "ما الأرواح التي يُعتقد أنها تعيش في البيوت؟",
+   "en": "What spirits are believed to live in homes?"
+  },
+  {
+   "id": "020",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "ما الأمثال التي تصف الزوجة أو الزوج المثالي؟",
+   "en": "What proverbs describe the ideal wife or husband?"
+  },
+  {
+   "id": "021",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "ما الأعمال المنزلية التي تُسنَد عادةً إلى الرجال؟",
+   "en": "What household chores are traditionally assigned to men?"
+  },
+  {
+   "id": "022",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "ما الطقوس التي تصاحب انتقال الولد إلى مرحلة الرجولة؟",
+   "en": "What rituals mark a boy becoming a man?"
+  },
+  {
+   "id": "023",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "ما المعتقدات التقليدية التي تقيّد المرأة أثناء الحيض؟",
+   "en": "What traditional beliefs restrict women during menstruation?"
+  },
+  {
+   "id": "024",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "ما الأساطير التي تفسّر سبب اختلاف الرجال والنساء؟",
+   "en": "What myths explain why men and women differ?"
+  },
+  {
+   "id": "025",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "ما دور الأجداد؟",
+   "en": "What is the role of grandparents?"
+  },
+  {
+   "id": "026",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "ما المتوقع من الابن الأكبر؟",
+   "en": "What is expected of the eldest child?"
+  },
+  {
+   "id": "027",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "من يرعى الوالدين المسنّين عادةً؟",
+   "en": "Who usually cares for aging parents?"
+  },
+  {
+   "id": "028",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "ما الدور الذي يلعبه أهل الزوج أو الزوجة في الحياة الزوجية؟",
+   "en": "What role do in-laws play in married life?"
+  },
+  {
+   "id": "029",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "كيف تُقسَّم الأعمال المنزلية عادةً؟",
+   "en": "How are household chores typically divided?"
+  },
+  {
+   "id": "030",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "ما الفعاليات المجتمعية التي تجمع السكان؟",
+   "en": "What community events bring residents together?"
+  },
+  {
+   "id": "031",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "كيف يرحّب الناس بالقادمين الجدد إلى الحي؟",
+   "en": "How do people welcome newcomers to a neighborhood?"
+  },
+  {
+   "id": "032",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "ما دور الأسواق المحلية في حياة المجتمع؟",
+   "en": "What role do local markets play in community life?"
+  },
+  {
+   "id": "033",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "ما أماكن التجمع التي تُعدّ مراكز للمجتمع؟",
+   "en": "What gathering places serve as community hubs?"
+  },
+  {
+   "id": "034",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "كيف يدعم المجتمع أفراده في الأوقات الصعبة؟",
+   "en": "How do communities support members during hard times?"
+  },
+  {
+   "id": "035",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "ما آداب المائدة المناسبة أثناء وجبة عائلية؟",
+   "en": "What are proper table manners during a family meal?"
+  },
+  {
+   "id": "036",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "كيف ينبغي أن يتصرف الضيوف عند زيارة بيت أحدهم؟",
+   "en": "How should guests behave when visiting someone's home?"
+  },
+  {
+   "id": "037",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "ما الطريقة المناسبة لتحية كبار السن؟",
+   "en": "What is the appropriate way to greet elders?"
+  },
+  {
+   "id": "038",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "ما الهدايا التي تُعدّ لائقة عند زيارة المضيف؟",
+   "en": "What gifts are considered polite when visiting a host?"
+  },
+  {
+   "id": "039",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "ما الإيماءات التي تُعدّ وقحة في الأماكن العامة؟",
+   "en": "What gestures are considered rude in public?"
+  },
+  {
+   "id": "040",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "كم يستغرق يوم العمل عادةً؟",
+   "en": "What is the typical length of a working day?"
+  },
+  {
+   "id": "041",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "كيف يُخاطَب المديرون عادةً في العمل؟",
+   "en": "How are bosses usually addressed at work?"
+  },
+  {
+   "id": "042",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "ما اللباس المناسب في المكتب؟",
+   "en": "What is considered appropriate attire in the office?"
+  },
+  {
+   "id": "043",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "ما دور اللقاءات بعد العمل بين الزملاء؟",
+   "en": "What role do after-work gatherings play among colleagues?"
+  },
+  {
+   "id": "044",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "كيف يقضي العاملون استراحة الغداء عادةً؟",
+   "en": "How is lunch break typically spent by workers?"
+  },
+  {
+   "id": "045",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "ما دور كبار السن في فض النزاعات؟",
+   "en": "What is the role of elders in settling disputes?"
+  },
+  {
+   "id": "046",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "كيف تحلّ العائلات عادةً خلافات الميراث؟",
+   "en": "How do families usually resolve inheritance disagreements?"
+  },
+  {
+   "id": "047",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "ما دور الوسطاء في النزاعات المجتمعية؟",
+   "en": "What role do mediators play in community conflicts?"
+  },
+  {
+   "id": "048",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "كيف تُعالَج الخلافات بين الجيران عادةً؟",
+   "en": "How are disputes between neighbors typically handled?"
+  },
+  {
+   "id": "049",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "ما الإيماءات المستخدمة للاعتذار بعد الشجار؟",
+   "en": "What gestures are used to apologize after an argument?"
+  },
+  {
+   "id": "050",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "ما اللغات التي تُدرَّس كلغات أجنبية في المدارس؟",
+   "en": "What languages are taught as foreign languages in schools?"
+  },
+  {
+   "id": "051",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "ما اللغة المستخدمة في التدريس داخل الصفوف؟",
+   "en": "What language is used for instruction in classrooms?"
+  },
+  {
+   "id": "052",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "كيف يخاطب الطلاب معلميهم؟",
+   "en": "How do students address their teachers?"
+  },
+  {
+   "id": "053",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "ما أنظمة الكتابة التي يتعلمها الأطفال أولًا؟",
+   "en": "What writing systems do children learn first?"
+  },
+  {
+   "id": "054",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "ما دور التدرّب على الخط اليدوي في التعليم المدرسي؟",
+   "en": "What role does handwriting practice play in schooling?"
+  },
+  {
+   "id": "055",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "في أي سن يبدأ الأطفال عادةً التعليم الإلزامي؟",
+   "en": "What age do children typically start compulsory schooling?"
+  },
+  {
+   "id": "056",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "ما الامتحانات الكبرى التي تحدد مستقبل الطلاب؟",
+   "en": "What major exams determine students' future paths?"
+  },
+  {
+   "id": "057",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "كيف يكون تنظيم العام الدراسي عادةً؟",
+   "en": "How is the school year typically structured?"
+  },
+  {
+   "id": "058",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "ما دور المدارس الخاصة في التعليم؟",
+   "en": "What role do private schools play in education?"
+  },
+  {
+   "id": "059",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "ماذا يحدث بعد أن ينهي الطلاب المرحلة الثانوية؟",
+   "en": "What happens after students finish secondary school?"
+  },
+  {
+   "id": "060",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "ما الأجهزة التي يستخدمها الطلاب عادةً في الواجبات المدرسية؟",
+   "en": "What devices do students typically use for schoolwork?"
+  },
+  {
+   "id": "061",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "ما تطبيقات التعلّم الأكثر شعبية بين الطلاب؟",
+   "en": "What learning apps are most popular among students?"
+  },
+  {
+   "id": "062",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "ما دور الهواتف الذكية في الصفوف الدراسية؟",
+   "en": "What role do smartphones play in classrooms?"
+  },
+  {
+   "id": "063",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "ما المنصات الإلكترونية التي يستخدمها المعلمون لتكليف الطلاب بالواجبات؟",
+   "en": "What online platforms do teachers use to assign homework?"
+  },
+  {
+   "id": "064",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "ما التقنيات الشائعة في الصفوف الدراسية؟",
+   "en": "What technology is commonly found in classrooms?"
+  },
+  {
+   "id": "065",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "ما المهارات التقليدية التي ينقلها كبار السن إلى الأطفال؟",
+   "en": "What traditional skills do elders pass down to children?"
+  },
+  {
+   "id": "066",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "ما القصص التي تُروى عادةً لتعليم الأطفال القيم؟",
+   "en": "What stories are commonly told to teach children values?"
+  },
+  {
+   "id": "067",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "ما الحِرف التي تُتعلَّم بالتدرّب على يد معلّم؟",
+   "en": "What crafts are learned through apprenticeship?"
+  },
+  {
+   "id": "068",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "ما الأمثال التي تُستخدم لتعليم دروس الحياة؟",
+   "en": "What proverbs are used to teach life lessons?"
+  },
+  {
+   "id": "069",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "ما المعارف التي تنتقل شفاهةً لا كتابةً؟",
+   "en": "What knowledge is passed down orally rather than written?"
+  },
+  {
+   "id": "070",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "أي العلماء يُحتفى بهم كأبطال قوميين في المدارس؟",
+   "en": "Which scientists are celebrated as national heroes in schools?"
+  },
+  {
+   "id": "071",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "أي الفلاسفة يدرسهم الطلاب في المرحلة الثانوية؟",
+   "en": "What philosophers do students study in secondary school?"
+  },
+  {
+   "id": "072",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "كيف تُدرَّس نظرية التطور في حصص العلوم؟",
+   "en": "How is evolution taught in science classes?"
+  },
+  {
+   "id": "073",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "ما الإنجازات العلمية التي تبرز في الكتب المدرسية؟",
+   "en": "What scientific achievements appear prominently in school textbooks?"
+  },
+  {
+   "id": "074",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "هل الفلسفة مادة إلزامية في المرحلة الثانوية؟",
+   "en": "Is philosophy a compulsory subject in high school?"
+  },
+  {
+   "id": "075",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "ما الآلات الموسيقية التقليدية التي تُعزف عادةً؟",
+   "en": "What traditional musical instruments are commonly played?"
+  },
+  {
+   "id": "076",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "ما الأغاني الشعبية التي يحفظها معظم الناس عن ظهر قلب؟",
+   "en": "What folk songs do most people know by heart?"
+  },
+  {
+   "id": "077",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "ما الموسيقى التي تُعزف عادةً في حفلات الزفاف؟",
+   "en": "What music is typically played at weddings?"
+  },
+  {
+   "id": "078",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "من هم الموسيقيون الذين يُعدّون رموزًا وطنية؟",
+   "en": "Which musicians are considered national icons?"
+  },
+  {
+   "id": "079",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "ما الأغاني التي تُغنّى في الجنازات أو مراسم العزاء؟",
+   "en": "What songs are sung at funerals or mourning ceremonies?"
+  },
+  {
+   "id": "080",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "ما الرقصات الشعبية التي تُؤدّى في حفلات الزفاف؟",
+   "en": "What folk dances are performed at weddings?"
+  },
+  {
+   "id": "081",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "ما الرقصات المرتبطة بمهرجانات الحصاد؟",
+   "en": "What dances are associated with harvest festivals?"
+  },
+  {
+   "id": "082",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "ما أنماط الرقص الشائعة بين الشباب اليوم؟",
+   "en": "Which dance styles are popular among young people today?"
+  },
+  {
+   "id": "083",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "ما الأزياء التي تُرتدى في عروض الرقص التقليدي؟",
+   "en": "What costumes are worn for traditional dance performances?"
+  },
+  {
+   "id": "084",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "من أشهر مصممي الرقصات؟",
+   "en": "Who are the most famous choreographers?"
+  },
+  {
+   "id": "085",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "ما أساليب الرسم التقليدية الموجودة؟",
+   "en": "What traditional painting styles exist?"
+  },
+  {
+   "id": "086",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "من أشهر الرسامين؟",
+   "en": "Who are the most celebrated painters?"
+  },
+  {
+   "id": "087",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "ما الأعمال الفنية المشهورة المعروفة على نطاق واسع؟",
+   "en": "What famous artworks are widely recognized?"
+  },
+  {
+   "id": "088",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "ما تقاليد الفنون الشعبية التي لا تزال تُمارَس؟",
+   "en": "What folk art traditions are still practiced?"
+  },
+  {
+   "id": "089",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "ما أهم متاحف الفن؟",
+   "en": "What art museums are most important?"
+  },
+  {
+   "id": "090",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "ما الحكايات الشعبية التي تُروى عادةً للأطفال؟",
+   "en": "What folktales are commonly told to children?"
+  },
+  {
+   "id": "091",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "ما الروايات الكلاسيكية التي تُعدّ كنوزًا أدبية وطنية؟",
+   "en": "Which classic novels are considered national literary treasures?"
+  },
+  {
+   "id": "092",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "ما الملاحم الشعرية التي تُنشد أو تُدرَّس عادةً؟",
+   "en": "What epic poems are traditionally recited or studied?"
+  },
+  {
+   "id": "093",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "من هم أشهر الشعراء؟",
+   "en": "Who are the most celebrated poets?"
+  },
+  {
+   "id": "094",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "ما تقاليد الحكي الشفهي التي لا تزال موجودة اليوم؟",
+   "en": "What oral storytelling traditions still exist today?"
+  },
+  {
+   "id": "095",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "ما أشكال المسرح التقليدي الموجودة؟",
+   "en": "What traditional theater forms exist?"
+  },
+  {
+   "id": "096",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "ما فنون العرائس التي تُقدَّم؟",
+   "en": "What puppetry traditions are performed?"
+  },
+  {
+   "id": "097",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "من هم أشهر الكتّاب المسرحيين؟",
+   "en": "Who are the most celebrated playwrights?"
+  },
+  {
+   "id": "098",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "ما المسرحيات الشهيرة التي تُعدّ من الكلاسيكيات الوطنية؟",
+   "en": "What famous plays are considered national classics?"
+  },
+  {
+   "id": "099",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "ما الأقنعة المستخدمة في العروض التقليدية؟",
+   "en": "What masks are used in traditional performances?"
+  },
+  {
+   "id": "100",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "ما الأفلام التي تُعدّ من كلاسيكيات السينما الوطنية؟",
+   "en": "What films are considered national cinema classics?"
+  },
+  {
+   "id": "101",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "من هم أشهر المخرجين السينمائيين؟",
+   "en": "Which film directors are most celebrated?"
+  },
+  {
+   "id": "102",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "ما المهرجانات السينمائية التي تُقام سنويًا؟",
+   "en": "What film festivals are held annually?"
+  },
+  {
+   "id": "103",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "من هم الممثلون الذين يُعتبرون أساطير الشاشة؟",
+   "en": "Which actors are regarded as screen legends?"
+  },
+  {
+   "id": "104",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "ما أنواع الأفلام الأكثر شعبية محليًا؟",
+   "en": "What film genres are most popular locally?"
+  },
+  {
+   "id": "105",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "ما الحِرف اليدوية التقليدية التي تُصنع؟",
+   "en": "What traditional handicrafts are made?"
+  },
+  {
+   "id": "106",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "ما تقنيات نسج الأقمشة التي تُمارَس تقليديًا؟",
+   "en": "What textile weaving techniques are traditionally practiced?"
+  },
+  {
+   "id": "107",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "ما أنماط الفخار التي تُنتَج تقليديًا؟",
+   "en": "What pottery styles are traditionally produced?"
+  },
+  {
+   "id": "108",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "ما حِرف نحت الخشب التقليدية الموجودة؟",
+   "en": "What traditional woodcarving crafts exist?"
+  },
+  {
+   "id": "109",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "ما الهدايا التذكارية المصنوعة يدويًا التي يحبها الزوار؟",
+   "en": "What handmade souvenirs are popular with visitors?"
+  },
+  {
+   "id": "110",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "ما المجوهرات التقليدية التي تُلبس في الأعراس؟",
+   "en": "What traditional jewelry is worn at weddings?"
+  },
+  {
+   "id": "111",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "ما المواد الشائعة الاستخدام في المجوهرات التقليدية؟",
+   "en": "What materials are commonly used in traditional jewelry?"
+  },
+  {
+   "id": "112",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "ما أشكال الوشم التي لها دلالة تقليدية؟",
+   "en": "What forms of tattooing have traditional significance?"
+  },
+  {
+   "id": "113",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "ما ممارسات ثقب الجسد المتوارثة ثقافيًا؟",
+   "en": "What body piercing practices are culturally traditional?"
+  },
+  {
+   "id": "114",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "ما المجوهرات التي تدل على الحالة الاجتماعية للشخص؟",
+   "en": "What jewelry signals a person's marital status?"
+  },
+  {
+   "id": "115",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "ما أنماط البيوت التقليدية الموجودة؟",
+   "en": "What traditional house styles exist?"
+  },
+  {
+   "id": "116",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "ما مواد البناء التي تُستخدم تقليديًا في البيوت؟",
+   "en": "What building materials are traditionally used for homes?"
+  },
+  {
+   "id": "117",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "ما المباني التاريخية الشهيرة الموجودة؟",
+   "en": "What famous historic buildings are there?"
+  },
+  {
+   "id": "118",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "ما الأنماط المعمارية التي تميّز مراكز المدن القديمة؟",
+   "en": "What architectural styles define old town centers?"
+  },
+  {
+   "id": "119",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "ما العناصر الزخرفية التي تزيّن المباني التقليدية؟",
+   "en": "What decorative elements adorn traditional buildings?"
+  },
+  {
+   "id": "120",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "ما الأطباق التي تُقدَّم في حفلات الزفاف؟",
+   "en": "What dishes are served at wedding celebrations?"
+  },
+  {
+   "id": "121",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "ما الأطعمة التي تُؤكل على الفطور؟",
+   "en": "What foods are eaten for breakfast?"
+  },
+  {
+   "id": "122",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "ما أشهر أطعمة الشارع؟",
+   "en": "What street foods are most popular?"
+  },
+  {
+   "id": "123",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "ما التوابل الشائعة في الطبخ؟",
+   "en": "What spices are commonly used in cooking?"
+  },
+  {
+   "id": "124",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "ما الأطباق التي تُحضَّر في الأعياد الكبرى؟",
+   "en": "What dishes are prepared for major holidays?"
+  },
+  {
+   "id": "125",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "ما المشروبات التي تُقدَّم لاستقبال الضيوف؟",
+   "en": "What drinks are served to welcome guests?"
+  },
+  {
+   "id": "126",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "ما المشروبات التي تُشرب في حفلات الزفاف؟",
+   "en": "What beverages are drunk at weddings?"
+  },
+  {
+   "id": "127",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "ما المشروبات الساخنة الشائعة في الشتاء؟",
+   "en": "What hot drinks are common in winter?"
+  },
+  {
+   "id": "128",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "ما المشروبات التي تُصنع من الحبوب المخمَّرة؟",
+   "en": "What drinks are made from fermented grains?"
+  },
+  {
+   "id": "129",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "ما المشروبات التي تُقدَّم مع الفطور؟",
+   "en": "What beverages accompany breakfast?"
+  },
+  {
+   "id": "130",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "ما الوجبات الخفيفة التي تُؤكل أثناء مشاهدة المباريات الرياضية؟",
+   "en": "What snacks are eaten while watching sports games?"
+  },
+  {
+   "id": "131",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "ما الأطعمة التي تُؤخذ معنا في الرحلات والنزهات؟",
+   "en": "What foods are brought on picnics?"
+  },
+  {
+   "id": "132",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "ما الأطعمة التي تُباع في مدن الألعاب؟",
+   "en": "What foods are sold at amusement parks?"
+  },
+  {
+   "id": "133",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "ما الوجبات الخفيفة التي تُؤكل في السينما؟",
+   "en": "What snacks are eaten at the movie theater?"
+  },
+  {
+   "id": "134",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "ما الأطعمة التي تُشوى في التجمعات الخارجية؟",
+   "en": "What foods are grilled at outdoor gatherings?"
+  },
+  {
+   "id": "135",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "ما الأطعمة التي تُؤكل أثناء مشاهدة المباريات؟",
+   "en": "What foods are eaten while watching sports matches?"
+  },
+  {
+   "id": "136",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "ما الوجبات الخفيفة التي تُباع في الملاعب الرياضية؟",
+   "en": "What snacks are sold at sports stadiums?"
+  },
+  {
+   "id": "137",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "ما الأطعمة التي يتناولها الرياضيون عادةً قبل المنافسات؟",
+   "en": "What foods do athletes traditionally eat before competitions?"
+  },
+  {
+   "id": "138",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "ما الأطباق التي تُقدَّم في حفلات يوم المباراة؟",
+   "en": "What dishes are served at game day parties?"
+  },
+  {
+   "id": "139",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "ما الأطعمة المستخدمة في مسابقات الأكل التقليدية؟",
+   "en": "What foods are used in traditional eating contests?"
+  },
+  {
+   "id": "140",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "ما الأطعمة التي تُقدَّم في الأعراس؟",
+   "en": "What foods are served at weddings?"
+  },
+  {
+   "id": "141",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "ما الأطعمة التي تُؤكل بعد ولادة طفل؟",
+   "en": "What foods are eaten after a baby is born?"
+  },
+  {
+   "id": "142",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "ما الأطعمة التي تُقدَّم في العزاء؟",
+   "en": "What foods are served at funerals?"
+  },
+  {
+   "id": "143",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "ما الأطباق التي يُحتفل بها بعيد الميلاد الأول للطفل؟",
+   "en": "What dishes celebrate a child's first birthday?"
+  },
+  {
+   "id": "144",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "ما الأطعمة التي تُقدَّم تكريمًا للأجداد الراحلين؟",
+   "en": "What foods are offered to honor deceased ancestors?"
+  },
+  {
+   "id": "145",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "ما الأطعمة التي تُؤكل في احتفالات رأس السنة؟",
+   "en": "What foods are eaten during the new year celebration?"
+  },
+  {
+   "id": "146",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "ما الأطباق التي تُحضَّر لولائم الزفاف؟",
+   "en": "What dishes are prepared for wedding feasts?"
+  },
+  {
+   "id": "147",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "ما الحلويات التي تُتقاسم في المهرجانات الكبرى؟",
+   "en": "What sweets are shared during major festivals?"
+  },
+  {
+   "id": "148",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "ما الأطعمة التي تُقدَّم في حفلات أعياد الميلاد؟",
+   "en": "What foods are served at birthday celebrations?"
+  },
+  {
+   "id": "149",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "ما المشروبات المحبوبة في التجمعات الاحتفالية؟",
+   "en": "What drinks are popular during festive gatherings?"
+  },
+  {
+   "id": "150",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "ما الظواهر الجوية الموسمية التي تشكّل المهرجانات المحلية؟",
+   "en": "What seasonal weather shapes local festivals?"
+  },
+  {
+   "id": "151",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "ما البيوت التقليدية المصمَّمة لتناسب المناخ؟",
+   "en": "What traditional houses are designed for the climate?"
+  },
+  {
+   "id": "152",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "ما الأطعمة التي تُحفظ لتجاوز فصول الشدة؟",
+   "en": "What foods are preserved to survive harsh seasons?"
+  },
+  {
+   "id": "153",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "ما تقاليد اللباس التي تعكس المناخ المحلي؟",
+   "en": "What clothing traditions reflect the local climate?"
+  },
+  {
+   "id": "154",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "ما الكوارث الطبيعية التي تشكّل طقوس المجتمع؟",
+   "en": "What natural disasters shape community rituals?"
+  },
+  {
+   "id": "155",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "ما الجبال التي تؤثر في التقاليد المحلية؟",
+   "en": "What mountains shape local traditions?"
+  },
+  {
+   "id": "156",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "ما المدرجات الزراعية ذات الأهمية الثقافية؟",
+   "en": "What farming terraces are culturally significant?"
+  },
+  {
+   "id": "157",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "ما المناظر الطبيعية التي ترد في الأغاني الشعبية التقليدية؟",
+   "en": "What landscapes appear in traditional folk songs?"
+  },
+  {
+   "id": "158",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "ما السهول المنخفضة التي تُستخدم لزراعة الأرز أو الحبوب؟",
+   "en": "What lowlands are used for rice or grain farming?"
+  },
+  {
+   "id": "159",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "ما المرتفعات المعروفة برعي المواشي؟",
+   "en": "What highlands are known for pastoral herding?"
+  },
+  {
+   "id": "160",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "ما المهرجانات التي يختلف الاحتفال بها بين القرى والمدن؟",
+   "en": "What festivals are celebrated differently in villages and cities?"
+  },
+  {
+   "id": "161",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "ما الأطعمة التي تُعدّ ريفية بامتياز لا حضرية؟",
+   "en": "What foods are considered typically rural rather than urban?"
+  },
+  {
+   "id": "162",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "ما الصور النمطية التي يحملها أهل المدن عن أهل القرى؟",
+   "en": "What stereotypes do city dwellers hold about villagers?"
+  },
+  {
+   "id": "163",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "ما التقاليد التي ينقلها المهاجرون من القرى إلى المدن؟",
+   "en": "What traditions do migrants bring from villages to cities?"
+  },
+  {
+   "id": "164",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "ما اللباس الذي يميّز أهل الريف عن أهل المدينة؟",
+   "en": "What clothing distinguishes rural residents from urban residents?"
+  },
+  {
+   "id": "165",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "ما اللهجات التي تدل على الهوية الإقليمية؟",
+   "en": "What dialects mark regional identity?"
+  },
+  {
+   "id": "166",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "ما الأطباق الإقليمية التي تمثّل مصدر فخر محلي؟",
+   "en": "What regional dishes define local pride?"
+  },
+  {
+   "id": "167",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "ما المناظر الطبيعية التي تشكّل الهوية الإقليمية؟",
+   "en": "What landscapes shape regional identity?"
+  },
+  {
+   "id": "168",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "ما المنافسات القائمة بين المناطق؟",
+   "en": "What rivalries exist between regions?"
+  },
+  {
+   "id": "169",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "ما المهرجانات التي تحتفي بالتراث الإقليمي؟",
+   "en": "What festivals celebrate regional heritage?"
+  },
+  {
+   "id": "170",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "ما المعالم الطبيعية التي تحدد الحدود الوطنية؟",
+   "en": "What natural features define national borders?"
+  },
+  {
+   "id": "171",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "ما الأراضي المتنازع عليها التي تشكّل الهوية الوطنية؟",
+   "en": "What disputed territories shape national identity?"
+  },
+  {
+   "id": "172",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "ما البلدات الحدودية التي تمزج بين تقاليد الجيران الثقافية؟",
+   "en": "What border towns blend neighboring cultural traditions?"
+  },
+  {
+   "id": "173",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "ما المعاهدات التاريخية التي رسمت الحدود الحالية؟",
+   "en": "What historical treaties established current boundaries?"
+  },
+  {
+   "id": "174",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "ما المهرجانات التي تحتفي بالمجتمعات العابرة للحدود؟",
+   "en": "What festivals celebrate cross-border communities?"
+  },
+  {
+   "id": "175",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "ما الأحياء التي شكّلتها جاليات المهاجرين؟",
+   "en": "What neighborhoods were shaped by immigrant communities?"
+  },
+  {
+   "id": "176",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "ما الأطعمة التي وصلت مع جماعات المهاجرين؟",
+   "en": "What foods arrived with migrant groups?"
+  },
+  {
+   "id": "177",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "ما المهرجانات التي تحتفل بها الجاليات في المهجر؟",
+   "en": "What festivals do diaspora communities celebrate abroad?"
+  },
+  {
+   "id": "178",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "ما الأحداث التاريخية التي أدت إلى موجات هجرة كبيرة؟",
+   "en": "What historical events triggered large waves of emigration?"
+  },
+  {
+   "id": "179",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "ما الوظائف التي اشتغل بها المهاجرون الأوائل عادةً؟",
+   "en": "What jobs did early immigrants commonly take?"
+  },
+  {
+   "id": "180",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "ما المعالم الطبيعية التي تُعدّ مقدّسة؟",
+   "en": "What natural landmarks are considered sacred?"
+  },
+  {
+   "id": "181",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "ما المهرجانات التي تحتفي بتغيّر الفصول في الطبيعة؟",
+   "en": "What festivals celebrate seasonal changes in nature?"
+  },
+  {
+   "id": "182",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "ما الحيوانات التي لها أهمية ثقافية رمزية؟",
+   "en": "What animals hold symbolic cultural importance?"
+  },
+  {
+   "id": "183",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "ما الممارسات التقليدية التي تحمي الغابات أو الحياة البرية؟",
+   "en": "What traditional practices protect forests or wildlife?"
+  },
+  {
+   "id": "184",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "ما النباتات المستخدمة في الطب التقليدي؟",
+   "en": "What plants are used in traditional medicine?"
+  },
+  {
+   "id": "185",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "ما نظام الحكم القائم؟",
+   "en": "What form of government is in place?"
+  },
+  {
+   "id": "186",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "كيف يُختار رئيس الدولة؟",
+   "en": "How is the head of state chosen?"
+  },
+  {
+   "id": "187",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "ما دور الملكية في الحكم؟",
+   "en": "What role does the monarchy play in government?"
+  },
+  {
+   "id": "188",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "كيف تُقسَّم السلطة بين الحكومة المركزية والحكومات المحلية؟",
+   "en": "How is power divided between national and local governments?"
+  },
+  {
+   "id": "189",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "ما الصلاحيات التي يتمتع بها الرئيس أو رئيس الوزراء؟",
+   "en": "What powers does the president or prime minister hold?"
+  },
+  {
+   "id": "190",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "ما التقاليد القانونية التي تقوم عليها المحاكم؟",
+   "en": "What legal traditions shape the court system?"
+  },
+  {
+   "id": "191",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "ما المحاكمات الشهيرة التي لا تزال عالقة في الأذهان؟",
+   "en": "What famous trials are widely remembered?"
+  },
+  {
+   "id": "192",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "ما الأعراف التي لا تزال تؤثر في الحياة اليومية؟",
+   "en": "What customary laws still influence daily life?"
+  },
+  {
+   "id": "193",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "ما العقوبات المقبولة ثقافيًا؟",
+   "en": "What punishments are considered culturally acceptable?"
+  },
+  {
+   "id": "194",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "ما الحقوق القانونية التي يُدافَع عنها بشدة؟",
+   "en": "What legal rights are most fiercely defended?"
+  },
+  {
+   "id": "195",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "ما الواجبات المدنية المتوقعة من المواطنين؟",
+   "en": "What civic duties are citizens expected to fulfill?"
+  },
+  {
+   "id": "196",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "ما الذي يحفّز الناس على المشاركة في الانتخابات؟",
+   "en": "What motivates people to vote in elections?"
+  },
+  {
+   "id": "197",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "كيف ينخرط الشباب عادةً في السياسة؟",
+   "en": "How do young people typically get involved in politics?"
+  },
+  {
+   "id": "198",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "ما أشكال العمل التطوعي التي تُعدّ إسهامًا مدنيًا؟",
+   "en": "What forms of volunteering are considered civic contributions?"
+  },
+  {
+   "id": "199",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "ما القيم التي تُدرَّس في حصص التربية الوطنية؟",
+   "en": "What values are taught in civic education classes?"
+  },
+  {
+   "id": "200",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "ما المواضيع التي يُعدّ انتقادها علنًا من المحرّمات؟",
+   "en": "What topics are considered taboo to criticize publicly?"
+  },
+  {
+   "id": "201",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "ما القوانين التي تقيّد ما يمكن قوله على الإنترنت؟",
+   "en": "What laws restrict what people can say online?"
+  },
+  {
+   "id": "202",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "ما البرامج الساخرة الشهيرة التي تسخر من السياسيين؟",
+   "en": "What famous satirical shows mock politicians?"
+  },
+  {
+   "id": "203",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "ما الصحفيون الذين سُجنوا بسبب ما نشروه؟",
+   "en": "What journalists have been jailed for their reporting?"
+  },
+  {
+   "id": "204",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "ما الكتب أو الأفلام التي مُنعت؟",
+   "en": "What books or films have been banned?"
+  },
+  {
+   "id": "205",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "ما المباني من العهد الاستعماري التي لا تزال الحكومة تستخدمها؟",
+   "en": "What colonial-era buildings are still used by the government?"
+  },
+  {
+   "id": "206",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "ما العطلات التي تخلّد ذكرى الاستقلال من الاستعمار؟",
+   "en": "What holidays mark independence from colonial rule?"
+  },
+  {
+   "id": "207",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "ما القوانين الاستعمارية التي لا تزال جزءًا من النظام القانوني؟",
+   "en": "What colonial laws remain part of the legal system?"
+  },
+  {
+   "id": "208",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "ما النصب التذكارية لشخصيات استعمارية التي أُزيلت أو أثارت جدلًا؟",
+   "en": "What monuments to colonial figures have been removed or debated?"
+  },
+  {
+   "id": "209",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "ما اللغات الأجنبية من الحقبة الاستعمارية التي ما زالت رسمية؟",
+   "en": "What foreign languages from colonial times remain official?"
+  },
+  {
+   "id": "210",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "ما الألقاب التي تُستخدم لمخاطبة كبار المسؤولين؟",
+   "en": "What titles are used to address powerful officials?"
+  },
+  {
+   "id": "211",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "ما العائلات التي هيمنت على الحياة السياسية لفترة طويلة؟",
+   "en": "What families have long dominated political life?"
+  },
+  {
+   "id": "212",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "ما الطبقات الاجتماعية الأكثر نفوذًا في السياسة؟",
+   "en": "What social classes hold the most political influence?"
+  },
+  {
+   "id": "213",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "كيف يؤثر كبار السن في القرارات السياسية؟",
+   "en": "How do elders influence political decisions?"
+  },
+  {
+   "id": "214",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "ما الإيماءات التي تدل على احترام القادة السياسيين؟",
+   "en": "What gestures show respect toward political leaders?"
+  },
+  {
+   "id": "215",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "ما الحركات الاجتماعية التي شكّلت التاريخ الحديث؟",
+   "en": "What social movements have shaped recent history?"
+  },
+  {
+   "id": "216",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "ما قضايا حقوق الإنسان الأكثر نقاشًا اليوم؟",
+   "en": "What human rights issues are most debated today?"
+  },
+  {
+   "id": "217",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "ما الناشطون الذين يُحتفى بهم كأبطال وطنيين؟",
+   "en": "Which activists are celebrated as national heroes?"
+  },
+  {
+   "id": "218",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "ما الرموز التي تستخدمها حركات الاحتجاج عادةً؟",
+   "en": "What symbols do protest movements commonly use?"
+  },
+  {
+   "id": "219",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "ما الأغاني المرتبطة بحركات العدالة الاجتماعية؟",
+   "en": "What songs are associated with social justice movements?"
+  },
+  {
+   "id": "220",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "ما الوصفات المنزلية الشائعة لعلاج الزكام؟",
+   "en": "What home remedies are commonly used for colds?"
+  },
+  {
+   "id": "221",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "ما ممارسات العلاج التقليدي التي لا تزال شائعة الاستخدام؟",
+   "en": "What traditional healing practices are still widely used?"
+  },
+  {
+   "id": "222",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "ما الأطعمة التي يتناولها الناس للحفاظ على صحتهم؟",
+   "en": "What foods are eaten to stay healthy?"
+  },
+  {
+   "id": "223",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "ما المشروبات العشبية الشائعة لفوائدها الصحية؟",
+   "en": "What herbal teas are popular for health benefits?"
+  },
+  {
+   "id": "224",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "ما العادات المتبعة بعد الولادة للتعافي؟",
+   "en": "What practices are followed after childbirth for recovery?"
+  },
+  {
+   "id": "225",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "ما حملات التطعيم التي يُروَّج لها عادةً؟",
+   "en": "What vaccination campaigns are commonly promoted?"
+  },
+  {
+   "id": "226",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "ما الشعارات الصحية العامة المعروفة على نطاق واسع؟",
+   "en": "What public health slogans are widely recognized?"
+  },
+  {
+   "id": "227",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "ما عادات النظافة التي يُشجَّع عليها في الأماكن العامة؟",
+   "en": "What hygiene habits are encouraged in public places?"
+  },
+  {
+   "id": "228",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "ما إجراءات مكافحة التدخين الشائعة؟",
+   "en": "What anti-smoking measures are commonly seen?"
+  },
+  {
+   "id": "229",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "ما الفحوصات الصحية التي تُقدَّم للبالغين بشكل دوري؟",
+   "en": "What health screenings are routinely offered to adults?"
+  },
+  {
+   "id": "230",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "ما ممارسات الاسترخاء التي يلجأ إليها الناس عادةً لتخفيف التوتر؟",
+   "en": "What relaxation practices do people commonly use to relieve stress?"
+  },
+  {
+   "id": "231",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "ما عادات الاستحمام أو الساونا التقليدية التي تعزز العافية؟",
+   "en": "What traditional bathing or sauna customs support wellbeing?"
+  },
+  {
+   "id": "232",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "ما العادات اليومية التي تُعد أساسية لطول العمر؟",
+   "en": "What daily habits are considered key to a long life?"
+  },
+  {
+   "id": "233",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "ما الأطعمة التي يُعتقد أنها تعزز الطاقة والحيوية؟",
+   "en": "What foods are believed to boost energy and vitality?"
+  },
+  {
+   "id": "234",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "كيف يوازن الناس عادةً بين العمل ووقت الفراغ؟",
+   "en": "How do people typically balance work and leisure time?"
+  },
+  {
+   "id": "235",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "ما تقاليد التعافي بعد الولادة التي تتبعها الأمهات الجدد؟",
+   "en": "What postpartum recovery traditions do new mothers follow?"
+  },
+  {
+   "id": "236",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "ما الأطعمة الموصى بها للحوامل؟",
+   "en": "What foods are recommended for pregnant women?"
+  },
+  {
+   "id": "237",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "ما الطقوس المتبعة لاستقبال المولود الجديد؟",
+   "en": "What rituals welcome a newborn baby?"
+  },
+  {
+   "id": "238",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "من الذي يساعد النساء عادةً أثناء الولادة؟",
+   "en": "Who typically assists women during childbirth?"
+  },
+  {
+   "id": "239",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "ما المحظورات أو الخرافات المتعلقة بالحمل التي يُلتزم بها عادةً؟",
+   "en": "What pregnancy taboos or superstitions are commonly observed?"
+  },
+  {
+   "id": "240",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "ما الصحف المحلية التي يقرؤها الناس؟",
+   "en": "What local newspapers do people read?"
+  },
+  {
+   "id": "241",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "ما محطات الإذاعة المجتمعية الأكثر شعبية؟",
+   "en": "What community radio stations are popular?"
+  },
+  {
+   "id": "242",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "ما القنوات التلفزيونية الإقليمية التي تبث الأخبار المحلية؟",
+   "en": "What regional television channels broadcast local news?"
+  },
+  {
+   "id": "243",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "ما البرامج الحوارية المحلية الأكثر مشاهدة؟",
+   "en": "What local talk shows are widely watched?"
+  },
+  {
+   "id": "244",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "ما النشرات أو الصحف الصغيرة التي تُوزَّع في الأحياء؟",
+   "en": "What neighborhood newsletters or bulletins circulate?"
+  },
+  {
+   "id": "245",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "ما أكثر منصات التواصل الاجتماعي شعبية؟",
+   "en": "What social media platforms are most popular?"
+  },
+  {
+   "id": "246",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "ما خدمات البث التي يستخدمها الناس عادةً؟",
+   "en": "What streaming services do people commonly use?"
+  },
+  {
+   "id": "247",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "ما البودكاست الأكثر استماعًا؟",
+   "en": "What podcasts are widely listened to?"
+  },
+  {
+   "id": "248",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "من المؤثرون على الإنترنت الذين لديهم عدد كبير من المتابعين؟",
+   "en": "Which online influencers have large followings?"
+  },
+  {
+   "id": "249",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "ما الميمات التي انتشرت مؤخرًا؟",
+   "en": "What memes have gone viral recently?"
+  },
+  {
+   "id": "250",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "ما شركات الترفيه الكبرى المهيمنة على السوق؟",
+   "en": "What major entertainment companies dominate the market?"
+  },
+  {
+   "id": "251",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "ما الشبكات التلفزيونية التي تنتج أشهر البرامج؟",
+   "en": "What television networks produce the most popular shows?"
+  },
+  {
+   "id": "252",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "ما شركات الإنتاج الموسيقي الأكثر تأثيرًا؟",
+   "en": "What music record labels are most influential?"
+  },
+  {
+   "id": "253",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "ما استوديوهات الأفلام الشهيرة الموجودة هناك؟",
+   "en": "What famous film studios are based there?"
+  },
+  {
+   "id": "254",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "ما شركات ألعاب الفيديو المعروفة؟",
+   "en": "What video game companies are well known?"
+  },
+  {
+   "id": "255",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "ما الصحف التي يقرؤها الناس أكثر؟",
+   "en": "What newspapers do people read most?"
+  },
+  {
+   "id": "256",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "ما القنوات الإخبارية التلفزيونية الأكثر مشاهدة؟",
+   "en": "What television news channels are most watched?"
+  },
+  {
+   "id": "257",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "ما المواقع الإخبارية الشهيرة؟",
+   "en": "What news websites are popular?"
+  },
+  {
+   "id": "258",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "ما محطات الإذاعة التي يستمع إليها الناس للأخبار؟",
+   "en": "What radio stations do people listen to for news?"
+  },
+  {
+   "id": "259",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "من الصحفيون المعروفون والموثوق بهم على نطاق واسع؟",
+   "en": "Which journalists are widely known and trusted?"
+  },
+  {
+   "id": "260",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "من المشاهير الأكثر متابعة؟",
+   "en": "What celebrities are most widely followed?"
+  },
+  {
+   "id": "261",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "ما البرامج التلفزيونية التي تُعدّ ظواهر ثقافية؟",
+   "en": "What television shows are considered cultural phenomena?"
+  },
+  {
+   "id": "262",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "ما الأغاني التي يحفظها الجميع تقريبًا عن ظهر قلب؟",
+   "en": "What songs does nearly everyone know by heart?"
+  },
+  {
+   "id": "263",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "ما العبارات الشهيرة من الأفلام التي يرددها الناس كثيرًا؟",
+   "en": "What catchphrases from movies are commonly quoted?"
+  },
+  {
+   "id": "264",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "ما الشخصيات الخيالية الأيقونية؟",
+   "en": "What fictional characters are iconic?"
+  },
+  {
+   "id": "265",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "ما استوديوهات ألعاب الفيديو المعروفة؟",
+   "en": "What video game studios are well known?"
+  },
+  {
+   "id": "266",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "ما ألعاب الفيديو الأكثر شعبية؟",
+   "en": "What video games are most popular?"
+  },
+  {
+   "id": "267",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "ما الألعاب التقليدية التي حُوِّلت إلى ألعاب رقمية؟",
+   "en": "What traditional games have been adapted into digital games?"
+  },
+  {
+   "id": "268",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "ما معارض أو مؤتمرات الألعاب التي تقام؟",
+   "en": "What gaming conventions or expos take place?"
+  },
+  {
+   "id": "269",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "ما فرق الرياضات الإلكترونية التي لديها متابعون كثر؟",
+   "en": "What esports teams have large followings?"
+  },
+  {
+   "id": "270",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "ما الأحداث التاريخية التي تُخلَّد بعطل وطنية؟",
+   "en": "What historical events are commemorated with national holidays?"
+  },
+  {
+   "id": "271",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "ما الثورات التي صنعت تاريخ الأمة؟",
+   "en": "What revolutions shaped the nation's history?"
+  },
+  {
+   "id": "272",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "ما أبرز المعارك التي لا تزال تُذكر حتى اليوم؟",
+   "en": "What major battles are remembered today?"
+  },
+  {
+   "id": "273",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "ما الأحداث التاريخية التي تُدرَّس في المدارس؟",
+   "en": "What historical events are taught in schools?"
+  },
+  {
+   "id": "274",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "ما أحداث الاستقلال التي يُحتفل بها كل عام؟",
+   "en": "What independence events are celebrated annually?"
+  },
+  {
+   "id": "275",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "ما الشخصيات التاريخية التي تظهر على الأوراق النقدية؟",
+   "en": "Which historical figures appear on banknotes?"
+  },
+  {
+   "id": "276",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "ما القادة التاريخيون الذين يُحتفى بهم في العطل الوطنية؟",
+   "en": "What historical leaders are celebrated with national holidays?"
+  },
+  {
+   "id": "277",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "ما أكثر النساء التاريخيات اللواتي يُحتفى بذكراهن؟",
+   "en": "Which historical women are most widely commemorated?"
+  },
+  {
+   "id": "278",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "ما التماثيل التي تكرّم شخصيات تاريخية مشهورة؟",
+   "en": "What statues honor famous historical figures?"
+  },
+  {
+   "id": "279",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "ما الشخصيات التاريخية التي تُعدّ أبطالاً وطنيين؟",
+   "en": "Which historical figures are considered national heroes?"
+  },
+  {
+   "id": "280",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "ما العطل الوطنية التي تخلّد أحداثاً تاريخية؟",
+   "en": "What national holidays commemorate historical events?"
+  },
+  {
+   "id": "281",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "ما النصب التذكارية التي تكرّم ضحايا الحروب الماضية؟",
+   "en": "What monuments honor victims of past wars?"
+  },
+  {
+   "id": "282",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "ما الشخصيات التاريخية التي تظهر على الأوراق النقدية؟",
+   "en": "What historical figures appear on banknotes?"
+  },
+  {
+   "id": "283",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "ما الأغاني الشعبية التي تحفظ ذكرى أحداث تاريخية؟",
+   "en": "What folk songs preserve memories of historical events?"
+  },
+  {
+   "id": "284",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "ما المتاحف التي توثّق الفصول الصعبة من التاريخ؟",
+   "en": "What museums document difficult chapters of history?"
+  },
+  {
+   "id": "285",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "ما انتفاضات مقاومة الاستعمار التي تُحيا ذكراها اليوم؟",
+   "en": "What anti-colonial uprisings are commemorated today?"
+  },
+  {
+   "id": "286",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "ما قادة الاستقلال الذين يُحتفى بهم كأبطال وطنيين؟",
+   "en": "Which independence leaders are celebrated as national heroes?"
+  },
+  {
+   "id": "287",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "ما النصب التي تكرّم مقاومة الحكم الاستعماري؟",
+   "en": "What monuments honor resistance against colonial rule?"
+  },
+  {
+   "id": "288",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "ما الأغاني التي ولدت من رحم نضالات الاستقلال؟",
+   "en": "What songs emerged from independence struggles?"
+  },
+  {
+   "id": "289",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "ما المباني من الحقبة الاستعمارية التي لا تزال قائمة حتى اليوم؟",
+   "en": "Which colonial-era buildings still stand today?"
+  },
+  {
+   "id": "290",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "ما الأساطير المؤسِّسة التي تشكّل الهوية الوطنية؟",
+   "en": "What founding myths shape national identity?"
+  },
+  {
+   "id": "291",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "ما الأبطال التاريخيون الذين يُحتفى بهم كرموز وطنية؟",
+   "en": "What historical heroes are celebrated as national symbols?"
+  },
+  {
+   "id": "292",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "ما الأحداث التي تُحيا ذكراها في العطل الوطنية؟",
+   "en": "What events are commemorated on national holidays?"
+  },
+  {
+   "id": "293",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "ما المعالم الوطنية التي تروي قصة الأمة؟",
+   "en": "What national monuments tell the story of the nation?"
+  },
+  {
+   "id": "294",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "ما المعارك التاريخية التي تُذكر بوصفها لحظات فارقة؟",
+   "en": "What historical battles are remembered as defining moments?"
+  },
+  {
+   "id": "295",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "ما المباني التاريخية التي رُمِّمت مؤخراً؟",
+   "en": "What historic buildings have been restored recently?"
+  },
+  {
+   "id": "296",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "ما مواقع التراث التي يحميها القانون؟",
+   "en": "What heritage sites are protected by law?"
+  },
+  {
+   "id": "297",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "ما المتاحف التي تحافظ على الحِرف التقليدية؟",
+   "en": "What museums preserve traditional crafts?"
+  },
+  {
+   "id": "298",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "ما المنظمات التي تعمل على صون الآثار التاريخية؟",
+   "en": "What organizations work to preserve historical monuments?"
+  },
+  {
+   "id": "299",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "ما الآثار القديمة المهددة بسبب التوسع العمراني؟",
+   "en": "What ancient ruins are threatened by development?"
+  },
+  {
+   "id": "300",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "ما الصناعات التي تقود الاقتصاد الوطني؟",
+   "en": "What industries drive the national economy?"
+  },
+  {
+   "id": "301",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "ما السلع التي تُصنَّع للتصدير؟",
+   "en": "What goods are manufactured for export?"
+  },
+  {
+   "id": "302",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "ما الموارد الطبيعية التي تُستخرج وتُعالَج تجاريًا؟",
+   "en": "What natural resources are extracted and processed commercially?"
+  },
+  {
+   "id": "303",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "ما الحرف التقليدية التي أصبحت صناعات كبرى؟",
+   "en": "What traditional crafts have become major industries?"
+  },
+  {
+   "id": "304",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "ما دور السياحة في الاقتصاد؟",
+   "en": "What role does tourism play in the economy?"
+  },
+  {
+   "id": "305",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "ما ممارسات المقايضة التقليدية التي لا تزال موجودة؟",
+   "en": "What traditional bartering practices still exist?"
+  },
+  {
+   "id": "306",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "ما أهم السلع المصدَّرة؟",
+   "en": "What are the main export goods?"
+  },
+  {
+   "id": "307",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "ما طرق التجارة التاريخية التي مرّت من هنا؟",
+   "en": "What historic trade routes passed through here?"
+  },
+  {
+   "id": "308",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "ما العادات المرتبطة بالمساومة في الأسواق المحلية؟",
+   "en": "What customs surround haggling at local markets?"
+  },
+  {
+   "id": "309",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "ما السلع التي تُستورد عادةً من الخارج؟",
+   "en": "What goods are commonly imported from abroad?"
+  },
+  {
+   "id": "310",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "ما الأعمال غير الرسمية التي يمارسها الناس عادةً؟",
+   "en": "What informal jobs do people commonly do?"
+  },
+  {
+   "id": "311",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "ما أكثر النقابات العمالية تأثيرًا؟",
+   "en": "What labor unions are most influential?"
+  },
+  {
+   "id": "312",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "ما المهن الأعلى مكانة اجتماعية؟",
+   "en": "What occupations carry the highest social prestige?"
+  },
+  {
+   "id": "313",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "ما ساعات العمل وأيام الراحة المعتادة؟",
+   "en": "What are typical working hours and rest days?"
+  },
+  {
+   "id": "314",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "ما العطلات الرسمية التي تضمن للعمال إجازة؟",
+   "en": "What public holidays guarantee workers time off?"
+  },
+  {
+   "id": "315",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "ما مظاهر الثراء التي يعرضها الناس علنًا؟",
+   "en": "What signals of wealth do people display publicly?"
+  },
+  {
+   "id": "316",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "ما الوظائف التي تُعدّ متدنية المكانة رغم أجرها الجيد؟",
+   "en": "What jobs are considered low-status despite paying well?"
+  },
+  {
+   "id": "317",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "ما الأحياء المرتبطة بالأثرياء جدًا؟",
+   "en": "What neighborhoods are associated with the very rich?"
+  },
+  {
+   "id": "318",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "ما برامج الرعاية التي تدعم أفقر الأسر؟",
+   "en": "What welfare programs support the poorest households?"
+  },
+  {
+   "id": "319",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "ما مجموعات الادخار غير الرسمية التي يستخدمها أصحاب الدخل المحدود؟",
+   "en": "What informal savings groups do low-income people use?"
+  },
+  {
+   "id": "320",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "ما الصناعات التي قادت أسرع فترات النمو الاقتصادي؟",
+   "en": "What industries drove the fastest periods of economic growth?"
+  },
+  {
+   "id": "321",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "ما خطط التنمية التي شكّلت السياسة الاقتصادية الوطنية؟",
+   "en": "What development plans have shaped national economic policy?"
+  },
+  {
+   "id": "322",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "ما مشاريع البنية التحتية التي ترمز إلى التحديث الاقتصادي؟",
+   "en": "What infrastructure projects symbolize economic modernization?"
+  },
+  {
+   "id": "323",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "ما المناطق الاقتصادية الخاصة التي جذبت الاستثمار الأجنبي؟",
+   "en": "What special economic zones have attracted foreign investment?"
+  },
+  {
+   "id": "324",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "ما الأحداث التاريخية التي أطلقت طفرات اقتصادية كبرى؟",
+   "en": "What historical events triggered major economic booms?"
+  },
+  {
+   "id": "325",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "ما المنتجات الثقافية الأكثر نجاحًا في التصدير إلى الخارج؟",
+   "en": "What cultural products are exported abroad most successfully?"
+  },
+  {
+   "id": "326",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "ما سلاسل الوجبات السريعة الأجنبية التي كيّفت قوائمها محليًا؟",
+   "en": "What foreign fast-food chains have adapted their local menus?"
+  },
+  {
+   "id": "327",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "ما الحرف التقليدية التي تُباع أساسًا للسياح؟",
+   "en": "What traditional crafts are sold mainly to tourists?"
+  },
+  {
+   "id": "328",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "ما العلامات التجارية الأجنبية التي تُعدّ رمزًا للمكانة الاجتماعية؟",
+   "en": "What foreign brands are considered status symbols?"
+  },
+  {
+   "id": "329",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "ما العلامات التجارية المحلية التي توسعت في الأسواق العالمية؟",
+   "en": "What local brands have expanded into international markets?"
+  }
+ ]
+}

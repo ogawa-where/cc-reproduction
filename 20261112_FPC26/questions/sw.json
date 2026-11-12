@@ -1,0 +1,2316 @@
+{
+ "lang": "sw",
+ "suffix": "Jibu kwa ufupi. Chagua mwenyewe mahali.",
+ "questions": [
+  {
+   "id": "000",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "Ni mila gani huashiria mtoto kuingia katika imani?",
+   "en": "What rituals mark a child's entry into the faith?"
+  },
+  {
+   "id": "001",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "Waumini hufanya hija gani, na kwa nini?",
+   "en": "What pilgrimages do believers undertake, and why?"
+  },
+  {
+   "id": "002",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "Ni sadaka gani hutolewa kwenye madhabahu ya nyumbani?",
+   "en": "What offerings are made at household shrines or altars?"
+  },
+  {
+   "id": "003",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "Ni mizimu gani inaaminika kukaa katika maeneo ya asili?",
+   "en": "What spirits are believed to inhabit natural places?"
+  },
+  {
+   "id": "004",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "Ni sikukuu gani za kidini huongoza kalenda ya mwaka?",
+   "en": "What religious festivals shape the yearly calendar?"
+  },
+  {
+   "id": "005",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "Methali hufundisha watoto kuthamini fadhila zipi zaidi?",
+   "en": "What virtues do proverbs teach children to value most?"
+  },
+  {
+   "id": "006",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "Watoto wakubwa wana wajibu gani kwa wazazi wao wazee?",
+   "en": "What duties do adult children owe their aging parents?"
+  },
+  {
+   "id": "007",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "Ni nini humfanya mtu astahili heshima katika jamii?",
+   "en": "What makes someone deserving of respect in the community?"
+  },
+  {
+   "id": "008",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "Ni tabia gani huiletea aibu familia nzima?",
+   "en": "What behaviors bring shame upon an entire family?"
+  },
+  {
+   "id": "009",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "Kukaribishwa na wageni kunakuja na wajibu gani?",
+   "en": "What obligations come with accepting hospitality from strangers?"
+  },
+  {
+   "id": "010",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "Ni rangi gani zina maana maalum?",
+   "en": "What colors carry special meaning?"
+  },
+  {
+   "id": "011",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "Ni wanyama gani huashiria bahati njema?",
+   "en": "What animals symbolize good fortune?"
+  },
+  {
+   "id": "012",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "Ni nambari gani huchukuliwa kuwa za bahati au mkosi?",
+   "en": "What numbers are considered lucky or unlucky?"
+  },
+  {
+   "id": "013",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "Ni maua au mimea gani ina maana ya kiishara?",
+   "en": "What flowers or plants hold symbolic significance?"
+  },
+  {
+   "id": "014",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "Ni alama gani huaminika kufukuza uovu?",
+   "en": "What symbols are believed to ward off evil?"
+  },
+  {
+   "id": "015",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "Ni viumbe gani husemekana kutembea msituni usiku?",
+   "en": "What creatures are said to haunt forests at night?"
+  },
+  {
+   "id": "016",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "Ni mashujaa gani husifiwa katika hadithi za jadi?",
+   "en": "What folk heroes are celebrated in traditional tales?"
+  },
+  {
+   "id": "017",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "Ni hadithi gani huwaonya watoto dhidi ya utovu wa nidhamu?",
+   "en": "What stories warn children against misbehaving?"
+  },
+  {
+   "id": "018",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "Ni wajanja gani huonekana katika hadithi za zamani?",
+   "en": "What tricksters appear in old folk tales?"
+  },
+  {
+   "id": "019",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "Ni mizimu gani inaaminika kuishi majumbani?",
+   "en": "What spirits are believed to live in homes?"
+  },
+  {
+   "id": "020",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "Ni methali gani zinaelezea mke au mume bora?",
+   "en": "What proverbs describe the ideal wife or husband?"
+  },
+  {
+   "id": "021",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "Ni kazi gani za nyumbani hupewa wanaume kijadi?",
+   "en": "What household chores are traditionally assigned to men?"
+  },
+  {
+   "id": "022",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "Ni mila gani huashiria mvulana kuwa mwanamume?",
+   "en": "What rituals mark a boy becoming a man?"
+  },
+  {
+   "id": "023",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "Ni imani gani za jadi huwawekea wanawake vikwazo wakati wa hedhi?",
+   "en": "What traditional beliefs restrict women during menstruation?"
+  },
+  {
+   "id": "024",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "Ni hadithi gani za kale hueleza kwa nini wanaume na wanawake hutofautiana?",
+   "en": "What myths explain why men and women differ?"
+  },
+  {
+   "id": "025",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "Babu na bibi wana nafasi gani?",
+   "en": "What is the role of grandparents?"
+  },
+  {
+   "id": "026",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "Mtoto wa kwanza hutarajiwa kufanya nini?",
+   "en": "What is expected of the eldest child?"
+  },
+  {
+   "id": "027",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "Ni nani kwa kawaida huwatunza wazazi wazee?",
+   "en": "Who usually cares for aging parents?"
+  },
+  {
+   "id": "028",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "Wakwe wana nafasi gani katika maisha ya ndoa?",
+   "en": "What role do in-laws play in married life?"
+  },
+  {
+   "id": "029",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "Kazi za nyumbani hugawanywa vipi kwa kawaida?",
+   "en": "How are household chores typically divided?"
+  },
+  {
+   "id": "030",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "Ni matukio gani ya kijamii huwakutanisha wakazi?",
+   "en": "What community events bring residents together?"
+  },
+  {
+   "id": "031",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "Watu huwakaribishaje wageni wapya mtaani?",
+   "en": "How do people welcome newcomers to a neighborhood?"
+  },
+  {
+   "id": "032",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "Masoko ya hapa yana nafasi gani katika maisha ya jamii?",
+   "en": "What role do local markets play in community life?"
+  },
+  {
+   "id": "033",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "Ni maeneo gani ya mikusanyiko yanayotumika kama vitovu vya jamii?",
+   "en": "What gathering places serve as community hubs?"
+  },
+  {
+   "id": "034",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "Jamii huwasaidiaje wanachama wake wakati wa shida?",
+   "en": "How do communities support members during hard times?"
+  },
+  {
+   "id": "035",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "Adabu sahihi za mezani wakati wa mlo wa familia ni zipi?",
+   "en": "What are proper table manners during a family meal?"
+  },
+  {
+   "id": "036",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "Wageni wanapaswa kuwaje wanapotembelea nyumbani kwa mtu?",
+   "en": "How should guests behave when visiting someone's home?"
+  },
+  {
+   "id": "037",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "Ni njia ipi inayofaa kuwasalimu wazee?",
+   "en": "What is the appropriate way to greet elders?"
+  },
+  {
+   "id": "038",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "Ni zawadi gani huchukuliwa kuwa za adabu unapomtembelea mwenyeji?",
+   "en": "What gifts are considered polite when visiting a host?"
+  },
+  {
+   "id": "039",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "Ni ishara gani huchukuliwa kuwa za kukosa adabu hadharani?",
+   "en": "What gestures are considered rude in public?"
+  },
+  {
+   "id": "040",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "Siku ya kazi huwa na muda gani kwa kawaida?",
+   "en": "What is the typical length of a working day?"
+  },
+  {
+   "id": "041",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "Wakubwa wa kazi huitwaje kwa kawaida kazini?",
+   "en": "How are bosses usually addressed at work?"
+  },
+  {
+   "id": "042",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "Mavazi gani huchukuliwa kuwa yanafaa ofisini?",
+   "en": "What is considered appropriate attire in the office?"
+  },
+  {
+   "id": "043",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "Mikusanyiko ya baada ya kazi ina nafasi gani miongoni mwa wafanyakazi wenzako?",
+   "en": "What role do after-work gatherings play among colleagues?"
+  },
+  {
+   "id": "044",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "Wafanyakazi huitumiaje kwa kawaida mapumziko ya chakula cha mchana?",
+   "en": "How is lunch break typically spent by workers?"
+  },
+  {
+   "id": "045",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "Wazee wana nafasi gani katika kutatua migogoro?",
+   "en": "What is the role of elders in settling disputes?"
+  },
+  {
+   "id": "046",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "Familia hutatuaje kwa kawaida migogoro ya urithi?",
+   "en": "How do families usually resolve inheritance disagreements?"
+  },
+  {
+   "id": "047",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "Wapatanishi wana nafasi gani katika migogoro ya jamii?",
+   "en": "What role do mediators play in community conflicts?"
+  },
+  {
+   "id": "048",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "Migogoro kati ya majirani hushughulikiwaje kwa kawaida?",
+   "en": "How are disputes between neighbors typically handled?"
+  },
+  {
+   "id": "049",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "Ni ishara gani hutumika kuomba msamaha baada ya ugomvi?",
+   "en": "What gestures are used to apologize after an argument?"
+  },
+  {
+   "id": "050",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "Ni lugha gani za kigeni hufundishwa shuleni?",
+   "en": "What languages are taught as foreign languages in schools?"
+  },
+  {
+   "id": "051",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "Ni lugha gani hutumika kufundishia madarasani?",
+   "en": "What language is used for instruction in classrooms?"
+  },
+  {
+   "id": "052",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "Wanafunzi huwaitaje walimu wao?",
+   "en": "How do students address their teachers?"
+  },
+  {
+   "id": "053",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "Watoto hujifunza mifumo gani ya uandishi kwanza?",
+   "en": "What writing systems do children learn first?"
+  },
+  {
+   "id": "054",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "Mazoezi ya mwandiko yana nafasi gani shuleni?",
+   "en": "What role does handwriting practice play in schooling?"
+  },
+  {
+   "id": "055",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "Watoto huanza elimu ya lazima wakiwa na umri gani kwa kawaida?",
+   "en": "What age do children typically start compulsory schooling?"
+  },
+  {
+   "id": "056",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "Ni mitihani gani mikuu huamua mustakabali wa wanafunzi?",
+   "en": "What major exams determine students' future paths?"
+  },
+  {
+   "id": "057",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "Mwaka wa shule hupangwaje kwa kawaida?",
+   "en": "How is the school year typically structured?"
+  },
+  {
+   "id": "058",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "Shule binafsi zina nafasi gani katika elimu?",
+   "en": "What role do private schools play in education?"
+  },
+  {
+   "id": "059",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "Nini hutokea baada ya wanafunzi kumaliza shule ya sekondari?",
+   "en": "What happens after students finish secondary school?"
+  },
+  {
+   "id": "060",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "Wanafunzi huwa wanatumia vifaa gani kwa kazi za shule?",
+   "en": "What devices do students typically use for schoolwork?"
+  },
+  {
+   "id": "061",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "Ni programu zipi za kujifunzia zinazopendwa zaidi na wanafunzi?",
+   "en": "What learning apps are most popular among students?"
+  },
+  {
+   "id": "062",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "Simu janja zina nafasi gani madarasani?",
+   "en": "What role do smartphones play in classrooms?"
+  },
+  {
+   "id": "063",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "Walimu hutumia majukwaa gani ya mtandaoni kutoa kazi za nyumbani?",
+   "en": "What online platforms do teachers use to assign homework?"
+  },
+  {
+   "id": "064",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "Ni teknolojia gani inayopatikana kwa kawaida madarasani?",
+   "en": "What technology is commonly found in classrooms?"
+  },
+  {
+   "id": "065",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "Ni ujuzi gani wa jadi ambao wazee huwarithisha watoto?",
+   "en": "What traditional skills do elders pass down to children?"
+  },
+  {
+   "id": "066",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "Ni hadithi zipi husimuliwa kwa kawaida kuwafundisha watoto maadili?",
+   "en": "What stories are commonly told to teach children values?"
+  },
+  {
+   "id": "067",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "Ni ufundi gani hujifunzwa kwa kuwa mwanagenzi?",
+   "en": "What crafts are learned through apprenticeship?"
+  },
+  {
+   "id": "068",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "Ni methali zipi hutumiwa kufundisha mafunzo ya maisha?",
+   "en": "What proverbs are used to teach life lessons?"
+  },
+  {
+   "id": "069",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "Ni maarifa gani hurithishwa kwa mdomo badala ya kuandikwa?",
+   "en": "What knowledge is passed down orally rather than written?"
+  },
+  {
+   "id": "070",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "Ni wanasayansi gani husifiwa kama mashujaa wa taifa shuleni?",
+   "en": "Which scientists are celebrated as national heroes in schools?"
+  },
+  {
+   "id": "071",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "Wanafunzi husoma wanafalsafa gani katika shule ya sekondari?",
+   "en": "What philosophers do students study in secondary school?"
+  },
+  {
+   "id": "072",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "Nadharia ya mageuzi hufundishwaje katika masomo ya sayansi?",
+   "en": "How is evolution taught in science classes?"
+  },
+  {
+   "id": "073",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "Ni mafanikio gani ya kisayansi yanayoonekana zaidi katika vitabu vya shule?",
+   "en": "What scientific achievements appear prominently in school textbooks?"
+  },
+  {
+   "id": "074",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "Je, falsafa ni somo la lazima katika shule ya sekondari?",
+   "en": "Is philosophy a compulsory subject in high school?"
+  },
+  {
+   "id": "075",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "Ni ala gani za muziki za jadi zinazochezwa mara nyingi?",
+   "en": "What traditional musical instruments are commonly played?"
+  },
+  {
+   "id": "076",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "Ni nyimbo gani za asili ambazo watu wengi huzijua kwa moyo?",
+   "en": "What folk songs do most people know by heart?"
+  },
+  {
+   "id": "077",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "Ni muziki gani huchezwa kwa kawaida kwenye harusi?",
+   "en": "What music is typically played at weddings?"
+  },
+  {
+   "id": "078",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "Ni wanamuziki gani wanaochukuliwa kuwa nembo za taifa?",
+   "en": "Which musicians are considered national icons?"
+  },
+  {
+   "id": "079",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "Ni nyimbo gani huimbwa kwenye mazishi au matanga?",
+   "en": "What songs are sung at funerals or mourning ceremonies?"
+  },
+  {
+   "id": "080",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "Ni ngoma gani za asili huchezwa kwenye harusi?",
+   "en": "What folk dances are performed at weddings?"
+  },
+  {
+   "id": "081",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "Ni ngoma gani zinazohusiana na sherehe za mavuno?",
+   "en": "What dances are associated with harvest festivals?"
+  },
+  {
+   "id": "082",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "Ni mitindo gani ya kucheza inayopendwa na vijana siku hizi?",
+   "en": "Which dance styles are popular among young people today?"
+  },
+  {
+   "id": "083",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "Ni mavazi gani huvaliwa katika maonyesho ya ngoma za jadi?",
+   "en": "What costumes are worn for traditional dance performances?"
+  },
+  {
+   "id": "084",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "Ni nani wabunifu wa ngoma maarufu zaidi?",
+   "en": "Who are the most famous choreographers?"
+  },
+  {
+   "id": "085",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "Ni mitindo gani ya jadi ya uchoraji iliyopo?",
+   "en": "What traditional painting styles exist?"
+  },
+  {
+   "id": "086",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "Ni wachoraji gani wanaosifiwa zaidi?",
+   "en": "Who are the most celebrated painters?"
+  },
+  {
+   "id": "087",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "Ni kazi gani za sanaa maarufu zinazotambulika kwa wingi?",
+   "en": "What famous artworks are widely recognized?"
+  },
+  {
+   "id": "088",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "Ni mila gani za sanaa asilia bado zinafanywa?",
+   "en": "What folk art traditions are still practiced?"
+  },
+  {
+   "id": "089",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "Ni makumbusho gani ya sanaa muhimu zaidi?",
+   "en": "What art museums are most important?"
+  },
+  {
+   "id": "090",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "Watoto huambiwa hadithi gani za kienyeji?",
+   "en": "What folktales are commonly told to children?"
+  },
+  {
+   "id": "091",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "Riwaya zipi za kale huchukuliwa kuwa hazina ya fasihi ya taifa?",
+   "en": "Which classic novels are considered national literary treasures?"
+  },
+  {
+   "id": "092",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "Ni tenzi zipi husomwa au kufundishwa kwa jadi?",
+   "en": "What epic poems are traditionally recited or studied?"
+  },
+  {
+   "id": "093",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "Ni nani washairi mashuhuri zaidi?",
+   "en": "Who are the most celebrated poets?"
+  },
+  {
+   "id": "094",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "Ni mila gani za usimulizi wa mdomo zinazoendelea hadi leo?",
+   "en": "What oral storytelling traditions still exist today?"
+  },
+  {
+   "id": "095",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "Kuna aina gani za maigizo ya kitamaduni?",
+   "en": "What traditional theater forms exist?"
+  },
+  {
+   "id": "096",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "Ni michezo gani ya vikaragosi huchezwa?",
+   "en": "What puppetry traditions are performed?"
+  },
+  {
+   "id": "097",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "Ni nani waandishi mashuhuri zaidi wa tamthilia?",
+   "en": "Who are the most celebrated playwrights?"
+  },
+  {
+   "id": "098",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "Ni tamthilia zipi maarufu huchukuliwa kuwa za kiklasiki za taifa?",
+   "en": "What famous plays are considered national classics?"
+  },
+  {
+   "id": "099",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "Ni vinyago gani hutumika katika maonyesho ya kitamaduni?",
+   "en": "What masks are used in traditional performances?"
+  },
+  {
+   "id": "100",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "Ni filamu zipi huchukuliwa kuwa za kiklasiki za sinema ya taifa?",
+   "en": "What films are considered national cinema classics?"
+  },
+  {
+   "id": "101",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "Ni waongozaji gani wa filamu mashuhuri zaidi?",
+   "en": "Which film directors are most celebrated?"
+  },
+  {
+   "id": "102",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "Ni tamasha gani za filamu hufanyika kila mwaka?",
+   "en": "What film festivals are held annually?"
+  },
+  {
+   "id": "103",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "Ni waigizaji gani huhesabiwa kuwa nyota wa kudumu wa skrini?",
+   "en": "Which actors are regarded as screen legends?"
+  },
+  {
+   "id": "104",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "Ni aina gani za filamu zinazopendwa zaidi hapa?",
+   "en": "What film genres are most popular locally?"
+  },
+  {
+   "id": "105",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "Ni kazi gani za mikono za kitamaduni hutengenezwa?",
+   "en": "What traditional handicrafts are made?"
+  },
+  {
+   "id": "106",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "Ni mbinu gani za kusuka nguo hutumika kijadi?",
+   "en": "What textile weaving techniques are traditionally practiced?"
+  },
+  {
+   "id": "107",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "Ni mitindo gani ya ufinyanzi hutengenezwa kijadi?",
+   "en": "What pottery styles are traditionally produced?"
+  },
+  {
+   "id": "108",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "Kuna kazi gani za jadi za kuchonga mbao?",
+   "en": "What traditional woodcarving crafts exist?"
+  },
+  {
+   "id": "109",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "Ni zawadi gani za kutengenezwa kwa mikono zinazopendwa na wageni?",
+   "en": "What handmade souvenirs are popular with visitors?"
+  },
+  {
+   "id": "110",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "Ni vito gani vya jadi huvaliwa harusini?",
+   "en": "What traditional jewelry is worn at weddings?"
+  },
+  {
+   "id": "111",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "Ni vifaa gani hutumika sana kutengeneza vito vya jadi?",
+   "en": "What materials are commonly used in traditional jewelry?"
+  },
+  {
+   "id": "112",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "Ni aina gani za kuchora tattoo zenye maana ya kitamaduni?",
+   "en": "What forms of tattooing have traditional significance?"
+  },
+  {
+   "id": "113",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "Ni desturi gani za kutoboa mwili za kitamaduni?",
+   "en": "What body piercing practices are culturally traditional?"
+  },
+  {
+   "id": "114",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "Ni kito gani huonyesha hali ya ndoa ya mtu?",
+   "en": "What jewelry signals a person's marital status?"
+  },
+  {
+   "id": "115",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "Kuna mitindo gani ya jadi ya nyumba?",
+   "en": "What traditional house styles exist?"
+  },
+  {
+   "id": "116",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "Ni vifaa gani hutumika kijadi kujenga nyumba?",
+   "en": "What building materials are traditionally used for homes?"
+  },
+  {
+   "id": "117",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "Kuna majengo gani maarufu ya kihistoria?",
+   "en": "What famous historic buildings are there?"
+  },
+  {
+   "id": "118",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "Ni mitindo gani ya usanifu majengo hutambulisha miji ya zamani?",
+   "en": "What architectural styles define old town centers?"
+  },
+  {
+   "id": "119",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "Ni mapambo gani hupamba majengo ya jadi?",
+   "en": "What decorative elements adorn traditional buildings?"
+  },
+  {
+   "id": "120",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "Ni vyakula gani huandaliwa katika sherehe za harusi?",
+   "en": "What dishes are served at wedding celebrations?"
+  },
+  {
+   "id": "121",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "Ni vyakula gani huliwa wakati wa kifungua kinywa?",
+   "en": "What foods are eaten for breakfast?"
+  },
+  {
+   "id": "122",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "Ni vyakula gani vya mitaani vinavyopendwa zaidi?",
+   "en": "What street foods are most popular?"
+  },
+  {
+   "id": "123",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "Ni viungo gani hutumiwa sana katika kupika?",
+   "en": "What spices are commonly used in cooking?"
+  },
+  {
+   "id": "124",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "Ni vyakula gani huandaliwa wakati wa sikukuu kubwa?",
+   "en": "What dishes are prepared for major holidays?"
+  },
+  {
+   "id": "125",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "Ni vinywaji gani hutolewa kuwakaribisha wageni?",
+   "en": "What drinks are served to welcome guests?"
+  },
+  {
+   "id": "126",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "Ni vinywaji gani hunywewa kwenye harusi?",
+   "en": "What beverages are drunk at weddings?"
+  },
+  {
+   "id": "127",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "Ni vinywaji gani vya moto vinavyotumika sana wakati wa baridi?",
+   "en": "What hot drinks are common in winter?"
+  },
+  {
+   "id": "128",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "Ni vinywaji gani hutengenezwa kwa nafaka zilizochachushwa?",
+   "en": "What drinks are made from fermented grains?"
+  },
+  {
+   "id": "129",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "Ni vinywaji gani huandamana na kifungua kinywa?",
+   "en": "What beverages accompany breakfast?"
+  },
+  {
+   "id": "130",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "Ni vitafunio gani huliwa wakati wa kutazama michezo?",
+   "en": "What snacks are eaten while watching sports games?"
+  },
+  {
+   "id": "131",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "Ni vyakula gani hubebwa kwenda pikniki?",
+   "en": "What foods are brought on picnics?"
+  },
+  {
+   "id": "132",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "Ni vyakula gani huuzwa kwenye bustani za burudani?",
+   "en": "What foods are sold at amusement parks?"
+  },
+  {
+   "id": "133",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "Ni vitafunio gani huliwa sinema?",
+   "en": "What snacks are eaten at the movie theater?"
+  },
+  {
+   "id": "134",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "Ni vyakula gani huchomwa kwenye mikusanyiko ya nje?",
+   "en": "What foods are grilled at outdoor gatherings?"
+  },
+  {
+   "id": "135",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "Ni vyakula gani huliwa wakati wa kutazama mechi za michezo?",
+   "en": "What foods are eaten while watching sports matches?"
+  },
+  {
+   "id": "136",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "Ni vitafunio gani huuzwa kwenye viwanja vya michezo?",
+   "en": "What snacks are sold at sports stadiums?"
+  },
+  {
+   "id": "137",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "Ni vyakula gani wanamichezo hula kijadi kabla ya mashindano?",
+   "en": "What foods do athletes traditionally eat before competitions?"
+  },
+  {
+   "id": "138",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "Ni vyakula gani hutolewa kwenye sherehe za siku ya mechi?",
+   "en": "What dishes are served at game day parties?"
+  },
+  {
+   "id": "139",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "Ni vyakula gani hutumika katika mashindano ya jadi ya kula?",
+   "en": "What foods are used in traditional eating contests?"
+  },
+  {
+   "id": "140",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "Ni vyakula gani hutolewa kwenye harusi?",
+   "en": "What foods are served at weddings?"
+  },
+  {
+   "id": "141",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "Ni vyakula gani huliwa baada ya mtoto kuzaliwa?",
+   "en": "What foods are eaten after a baby is born?"
+  },
+  {
+   "id": "142",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "Ni vyakula gani hutolewa kwenye mazishi?",
+   "en": "What foods are served at funerals?"
+  },
+  {
+   "id": "143",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "Ni vyakula gani husherehekea siku ya kwanza ya kuzaliwa ya mtoto?",
+   "en": "What dishes celebrate a child's first birthday?"
+  },
+  {
+   "id": "144",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "Ni vyakula gani hutolewa kuwaenzi mababu waliofariki?",
+   "en": "What foods are offered to honor deceased ancestors?"
+  },
+  {
+   "id": "145",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "Ni vyakula gani huliwa wakati wa sherehe za mwaka mpya?",
+   "en": "What foods are eaten during the new year celebration?"
+  },
+  {
+   "id": "146",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "Ni vyakula gani huandaliwa kwa karamu za harusi?",
+   "en": "What dishes are prepared for wedding feasts?"
+  },
+  {
+   "id": "147",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "Ni peremende gani hugawiwa wakati wa sherehe kubwa?",
+   "en": "What sweets are shared during major festivals?"
+  },
+  {
+   "id": "148",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "Ni vyakula gani hutolewa kwenye sherehe za kuzaliwa?",
+   "en": "What foods are served at birthday celebrations?"
+  },
+  {
+   "id": "149",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "Ni vinywaji gani vinavyopendwa wakati wa mikusanyiko ya sherehe?",
+   "en": "What drinks are popular during festive gatherings?"
+  },
+  {
+   "id": "150",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "Hali gani ya hewa ya msimu huathiri sherehe za wenyeji?",
+   "en": "What seasonal weather shapes local festivals?"
+  },
+  {
+   "id": "151",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "Nyumba gani za kienyeji zimejengwa kulingana na hali ya hewa?",
+   "en": "What traditional houses are designed for the climate?"
+  },
+  {
+   "id": "152",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "Vyakula gani huhifadhiwa ili kustahimili misimu migumu?",
+   "en": "What foods are preserved to survive harsh seasons?"
+  },
+  {
+   "id": "153",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "Mila gani za mavazi zinaonyesha hali ya hewa ya huko?",
+   "en": "What clothing traditions reflect the local climate?"
+  },
+  {
+   "id": "154",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "Maafa gani ya asili huathiri matambiko ya jamii?",
+   "en": "What natural disasters shape community rituals?"
+  },
+  {
+   "id": "155",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "Milima gani huathiri mila za wenyeji?",
+   "en": "What mountains shape local traditions?"
+  },
+  {
+   "id": "156",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "Matuta gani ya kilimo yana umuhimu wa kitamaduni?",
+   "en": "What farming terraces are culturally significant?"
+  },
+  {
+   "id": "157",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "Mandhari gani hutajwa katika nyimbo za asili?",
+   "en": "What landscapes appear in traditional folk songs?"
+  },
+  {
+   "id": "158",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "Nyanda gani za chini hutumika kulima mpunga au nafaka?",
+   "en": "What lowlands are used for rice or grain farming?"
+  },
+  {
+   "id": "159",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "Nyanda gani za juu zinajulikana kwa ufugaji wa kuhamahama?",
+   "en": "What highlands are known for pastoral herding?"
+  },
+  {
+   "id": "160",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "Sherehe gani huadhimishwa tofauti vijijini na mijini?",
+   "en": "What festivals are celebrated differently in villages and cities?"
+  },
+  {
+   "id": "161",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "Vyakula gani huchukuliwa kuwa vya kijijini zaidi kuliko vya mjini?",
+   "en": "What foods are considered typically rural rather than urban?"
+  },
+  {
+   "id": "162",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "Watu wa mjini wana dhana potofu gani kuhusu wanakijiji?",
+   "en": "What stereotypes do city dwellers hold about villagers?"
+  },
+  {
+   "id": "163",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "Wahamiaji huleta mila gani kutoka vijijini hadi mijini?",
+   "en": "What traditions do migrants bring from villages to cities?"
+  },
+  {
+   "id": "164",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "Mavazi gani huwatofautisha wakazi wa vijijini na wa mijini?",
+   "en": "What clothing distinguishes rural residents from urban residents?"
+  },
+  {
+   "id": "165",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "Lahaja gani huonyesha utambulisho wa kimkoa?",
+   "en": "What dialects mark regional identity?"
+  },
+  {
+   "id": "166",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "Vyakula gani vya kimkoa huleta fahari ya wenyeji?",
+   "en": "What regional dishes define local pride?"
+  },
+  {
+   "id": "167",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "Mandhari gani huunda utambulisho wa kimkoa?",
+   "en": "What landscapes shape regional identity?"
+  },
+  {
+   "id": "168",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "Kuna ushindani gani kati ya mikoa?",
+   "en": "What rivalries exist between regions?"
+  },
+  {
+   "id": "169",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "Sherehe gani huadhimisha urithi wa kimkoa?",
+   "en": "What festivals celebrate regional heritage?"
+  },
+  {
+   "id": "170",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "Sifa gani za asili huweka mipaka ya nchi?",
+   "en": "What natural features define national borders?"
+  },
+  {
+   "id": "171",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "Maeneo gani yenye mzozo huathiri utambulisho wa taifa?",
+   "en": "What disputed territories shape national identity?"
+  },
+  {
+   "id": "172",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "Miji gani ya mpakani huchanganya mila za majirani?",
+   "en": "What border towns blend neighboring cultural traditions?"
+  },
+  {
+   "id": "173",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "Mikataba gani ya kihistoria ilianzisha mipaka ya sasa?",
+   "en": "What historical treaties established current boundaries?"
+  },
+  {
+   "id": "174",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "Sherehe gani huadhimisha jamii za pande zote za mpaka?",
+   "en": "What festivals celebrate cross-border communities?"
+  },
+  {
+   "id": "175",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "Mitaa gani iliundwa na jamii za wahamiaji?",
+   "en": "What neighborhoods were shaped by immigrant communities?"
+  },
+  {
+   "id": "176",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "Vyakula gani vilifika na makundi ya wahamiaji?",
+   "en": "What foods arrived with migrant groups?"
+  },
+  {
+   "id": "177",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "Jamii za diaspora huadhimisha sherehe gani ughaibuni?",
+   "en": "What festivals do diaspora communities celebrate abroad?"
+  },
+  {
+   "id": "178",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "Matukio gani ya kihistoria yalisababisha wimbi kubwa la watu kuhama?",
+   "en": "What historical events triggered large waves of emigration?"
+  },
+  {
+   "id": "179",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "Wahamiaji wa awali walifanya kazi gani kwa kawaida?",
+   "en": "What jobs did early immigrants commonly take?"
+  },
+  {
+   "id": "180",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "Ni vivutio gani vya asili vinavyochukuliwa kuwa vitakatifu?",
+   "en": "What natural landmarks are considered sacred?"
+  },
+  {
+   "id": "181",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "Ni sherehe zipi huadhimisha mabadiliko ya majira ya asili?",
+   "en": "What festivals celebrate seasonal changes in nature?"
+  },
+  {
+   "id": "182",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "Ni wanyama gani wenye umuhimu wa kiishara katika utamaduni?",
+   "en": "What animals hold symbolic cultural importance?"
+  },
+  {
+   "id": "183",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "Ni desturi zipi za jadi zinazolinda misitu au wanyamapori?",
+   "en": "What traditional practices protect forests or wildlife?"
+  },
+  {
+   "id": "184",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "Ni mimea gani hutumika katika tiba asilia?",
+   "en": "What plants are used in traditional medicine?"
+  },
+  {
+   "id": "185",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "Ni aina gani ya serikali iliyopo?",
+   "en": "What form of government is in place?"
+  },
+  {
+   "id": "186",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "Mkuu wa nchi huchaguliwaje?",
+   "en": "How is the head of state chosen?"
+  },
+  {
+   "id": "187",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "Ufalme una nafasi gani katika serikali?",
+   "en": "What role does the monarchy play in government?"
+  },
+  {
+   "id": "188",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "Madaraka hugawanywaje kati ya serikali kuu na serikali za mitaa?",
+   "en": "How is power divided between national and local governments?"
+  },
+  {
+   "id": "189",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "Rais au waziri mkuu ana mamlaka gani?",
+   "en": "What powers does the president or prime minister hold?"
+  },
+  {
+   "id": "190",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "Ni mila gani za kisheria zinazounda mfumo wa mahakama?",
+   "en": "What legal traditions shape the court system?"
+  },
+  {
+   "id": "191",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "Ni kesi gani maarufu zinazokumbukwa sana?",
+   "en": "What famous trials are widely remembered?"
+  },
+  {
+   "id": "192",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "Ni sheria gani za kimila bado zinaathiri maisha ya kila siku?",
+   "en": "What customary laws still influence daily life?"
+  },
+  {
+   "id": "193",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "Ni adhabu gani zinazokubalika kiutamaduni?",
+   "en": "What punishments are considered culturally acceptable?"
+  },
+  {
+   "id": "194",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "Ni haki gani za kisheria zinazotetewa kwa nguvu zaidi?",
+   "en": "What legal rights are most fiercely defended?"
+  },
+  {
+   "id": "195",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "Ni wajibu gani wa kiraia wananchi wanatarajiwa kutimiza?",
+   "en": "What civic duties are citizens expected to fulfill?"
+  },
+  {
+   "id": "196",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "Ni nini huwahamasisha watu kupiga kura katika uchaguzi?",
+   "en": "What motivates people to vote in elections?"
+  },
+  {
+   "id": "197",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "Vijana hushiriki vipi kwa kawaida katika siasa?",
+   "en": "How do young people typically get involved in politics?"
+  },
+  {
+   "id": "198",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "Ni aina gani za kujitolea zinazohesabiwa kuwa mchango kwa jamii?",
+   "en": "What forms of volunteering are considered civic contributions?"
+  },
+  {
+   "id": "199",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "Ni maadili gani hufundishwa katika masomo ya uraia?",
+   "en": "What values are taught in civic education classes?"
+  },
+  {
+   "id": "200",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "Ni mada gani zinazochukuliwa kuwa mwiko kukosolewa hadharani?",
+   "en": "What topics are considered taboo to criticize publicly?"
+  },
+  {
+   "id": "201",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "Ni sheria gani zinazozuia watu kusema wanachotaka mtandaoni?",
+   "en": "What laws restrict what people can say online?"
+  },
+  {
+   "id": "202",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "Ni vipindi gani maarufu vya vichekesho vinavyowadhihaki wanasiasa?",
+   "en": "What famous satirical shows mock politicians?"
+  },
+  {
+   "id": "203",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "Ni waandishi wa habari gani wamefungwa kwa sababu ya kazi yao?",
+   "en": "What journalists have been jailed for their reporting?"
+  },
+  {
+   "id": "204",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "Ni vitabu au filamu gani zimepigwa marufuku?",
+   "en": "What books or films have been banned?"
+  },
+  {
+   "id": "205",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "Ni majengo gani ya enzi za ukoloni bado yanatumiwa na serikali?",
+   "en": "What colonial-era buildings are still used by the government?"
+  },
+  {
+   "id": "206",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "Ni sikukuu zipi huadhimisha uhuru kutoka kwa utawala wa kikoloni?",
+   "en": "What holidays mark independence from colonial rule?"
+  },
+  {
+   "id": "207",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "Ni sheria gani za kikoloni bado ni sehemu ya mfumo wa sheria?",
+   "en": "What colonial laws remain part of the legal system?"
+  },
+  {
+   "id": "208",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "Ni sanamu gani za viongozi wa kikoloni zimeondolewa au kujadiliwa?",
+   "en": "What monuments to colonial figures have been removed or debated?"
+  },
+  {
+   "id": "209",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "Ni lugha gani za kigeni kutoka enzi za ukoloni bado ni rasmi?",
+   "en": "What foreign languages from colonial times remain official?"
+  },
+  {
+   "id": "210",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "Maafisa wenye mamlaka makubwa huitwa kwa vyeo gani?",
+   "en": "What titles are used to address powerful officials?"
+  },
+  {
+   "id": "211",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "Ni familia gani zimetawala siasa kwa muda mrefu?",
+   "en": "What families have long dominated political life?"
+  },
+  {
+   "id": "212",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "Ni matabaka gani ya kijamii yenye ushawishi mkubwa zaidi wa kisiasa?",
+   "en": "What social classes hold the most political influence?"
+  },
+  {
+   "id": "213",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "Wazee huathiri vipi maamuzi ya kisiasa?",
+   "en": "How do elders influence political decisions?"
+  },
+  {
+   "id": "214",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "Ni ishara gani huonyesha heshima kwa viongozi wa kisiasa?",
+   "en": "What gestures show respect toward political leaders?"
+  },
+  {
+   "id": "215",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "Ni harakati gani za kijamii zimeunda historia ya hivi karibuni?",
+   "en": "What social movements have shaped recent history?"
+  },
+  {
+   "id": "216",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "Ni masuala gani ya haki za binadamu yanayojadiliwa zaidi leo?",
+   "en": "What human rights issues are most debated today?"
+  },
+  {
+   "id": "217",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "Ni wanaharakati gani husherehekewa kama mashujaa wa taifa?",
+   "en": "Which activists are celebrated as national heroes?"
+  },
+  {
+   "id": "218",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "Ni alama gani hutumiwa kwa kawaida na harakati za maandamano?",
+   "en": "What symbols do protest movements commonly use?"
+  },
+  {
+   "id": "219",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "Ni nyimbo gani zinazohusishwa na harakati za haki za kijamii?",
+   "en": "What songs are associated with social justice movements?"
+  },
+  {
+   "id": "220",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "Ni tiba gani za nyumbani hutumiwa sana kwa mafua?",
+   "en": "What home remedies are commonly used for colds?"
+  },
+  {
+   "id": "221",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "Ni mbinu gani za jadi za uponyaji bado zinatumika sana?",
+   "en": "What traditional healing practices are still widely used?"
+  },
+  {
+   "id": "222",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "Watu hula vyakula gani ili kuwa na afya njema?",
+   "en": "What foods are eaten to stay healthy?"
+  },
+  {
+   "id": "223",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "Ni chai gani za mitishamba zinazopendwa kwa faida za kiafya?",
+   "en": "What herbal teas are popular for health benefits?"
+  },
+  {
+   "id": "224",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "Ni desturi gani hufuatwa baada ya kujifungua ili kupata nafuu?",
+   "en": "What practices are followed after childbirth for recovery?"
+  },
+  {
+   "id": "225",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "Ni kampeni gani za chanjo hukuzwa mara nyingi?",
+   "en": "What vaccination campaigns are commonly promoted?"
+  },
+  {
+   "id": "226",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "Ni kauli mbiu gani za afya ya umma zinazojulikana sana?",
+   "en": "What public health slogans are widely recognized?"
+  },
+  {
+   "id": "227",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "Ni tabia gani za usafi huhimizwa katika maeneo ya umma?",
+   "en": "What hygiene habits are encouraged in public places?"
+  },
+  {
+   "id": "228",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "Ni hatua gani za kupinga uvutaji sigara huonekana mara nyingi?",
+   "en": "What anti-smoking measures are commonly seen?"
+  },
+  {
+   "id": "229",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "Ni vipimo gani vya afya hutolewa mara kwa mara kwa watu wazima?",
+   "en": "What health screenings are routinely offered to adults?"
+  },
+  {
+   "id": "230",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "Watu hutumia njia gani za kutuliza akili ili kupunguza msongo wa mawazo?",
+   "en": "What relaxation practices do people commonly use to relieve stress?"
+  },
+  {
+   "id": "231",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "Ni desturi gani za kuoga au sauna za jadi zinazosaidia ustawi?",
+   "en": "What traditional bathing or sauna customs support wellbeing?"
+  },
+  {
+   "id": "232",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "Ni mazoea gani ya kila siku yanayochukuliwa kuwa ufunguo wa maisha marefu?",
+   "en": "What daily habits are considered key to a long life?"
+  },
+  {
+   "id": "233",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "Ni vyakula gani vinaaminika kuongeza nguvu na uchangamfu?",
+   "en": "What foods are believed to boost energy and vitality?"
+  },
+  {
+   "id": "234",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "Watu husawazishaje kwa kawaida muda wa kazi na wa mapumziko?",
+   "en": "How do people typically balance work and leisure time?"
+  },
+  {
+   "id": "235",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "Ni mila gani za kupona baada ya kujifungua wanazofuata akina mama wapya?",
+   "en": "What postpartum recovery traditions do new mothers follow?"
+  },
+  {
+   "id": "236",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "Ni vyakula gani vinapendekezwa kwa wajawazito?",
+   "en": "What foods are recommended for pregnant women?"
+  },
+  {
+   "id": "237",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "Ni matambiko gani hufanywa kumkaribisha mtoto mchanga?",
+   "en": "What rituals welcome a newborn baby?"
+  },
+  {
+   "id": "238",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "Ni nani kwa kawaida huwasaidia wanawake wakati wa kujifungua?",
+   "en": "Who typically assists women during childbirth?"
+  },
+  {
+   "id": "239",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "Ni miiko au imani potofu gani za ujauzito huzingatiwa mara nyingi?",
+   "en": "What pregnancy taboos or superstitions are commonly observed?"
+  },
+  {
+   "id": "240",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "Watu husoma magazeti gani ya eneo hili?",
+   "en": "What local newspapers do people read?"
+  },
+  {
+   "id": "241",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "Ni redio gani za jamii zinazopendwa?",
+   "en": "What community radio stations are popular?"
+  },
+  {
+   "id": "242",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "Ni vituo gani vya televisheni vya kanda vinavyorusha habari za hapa?",
+   "en": "What regional television channels broadcast local news?"
+  },
+  {
+   "id": "243",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "Ni vipindi gani vya mazungumzo vya hapa vinavyotazamwa sana?",
+   "en": "What local talk shows are widely watched?"
+  },
+  {
+   "id": "244",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "Ni majarida au taarifa gani za mtaani zinazosambazwa?",
+   "en": "What neighborhood newsletters or bulletins circulate?"
+  },
+  {
+   "id": "245",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "Ni mitandao gani ya kijamii inayopendwa zaidi?",
+   "en": "What social media platforms are most popular?"
+  },
+  {
+   "id": "246",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "Ni huduma gani za kutiririsha watu hutumia mara nyingi?",
+   "en": "What streaming services do people commonly use?"
+  },
+  {
+   "id": "247",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "Ni podikasti gani zinazosikilizwa sana?",
+   "en": "What podcasts are widely listened to?"
+  },
+  {
+   "id": "248",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "Ni washawishi gani wa mitandaoni wenye wafuasi wengi?",
+   "en": "Which online influencers have large followings?"
+  },
+  {
+   "id": "249",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "Ni memes gani zimesambaa sana hivi karibuni?",
+   "en": "What memes have gone viral recently?"
+  },
+  {
+   "id": "250",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "Ni kampuni gani kubwa za burudani zinazotawala soko?",
+   "en": "What major entertainment companies dominate the market?"
+  },
+  {
+   "id": "251",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "Ni mitandao gani ya televisheni inayotengeneza vipindi maarufu zaidi?",
+   "en": "What television networks produce the most popular shows?"
+  },
+  {
+   "id": "252",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "Ni kampuni gani za muziki zenye ushawishi zaidi?",
+   "en": "What music record labels are most influential?"
+  },
+  {
+   "id": "253",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "Ni studio gani maarufu za filamu ziko hapa?",
+   "en": "What famous film studios are based there?"
+  },
+  {
+   "id": "254",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "Ni kampuni gani za michezo ya video zinazojulikana?",
+   "en": "What video game companies are well known?"
+  },
+  {
+   "id": "255",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "Watu husoma magazeti gani zaidi?",
+   "en": "What newspapers do people read most?"
+  },
+  {
+   "id": "256",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "Ni vituo gani vya habari vya televisheni vinavyotazamwa zaidi?",
+   "en": "What television news channels are most watched?"
+  },
+  {
+   "id": "257",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "Ni tovuti gani za habari zinazopendwa?",
+   "en": "What news websites are popular?"
+  },
+  {
+   "id": "258",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "Watu husikiliza redio gani kupata habari?",
+   "en": "What radio stations do people listen to for news?"
+  },
+  {
+   "id": "259",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "Ni waandishi wa habari gani wanaojulikana na kuaminiwa sana?",
+   "en": "Which journalists are widely known and trusted?"
+  },
+  {
+   "id": "260",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "Ni watu mashuhuri gani wanaofuatwa zaidi?",
+   "en": "What celebrities are most widely followed?"
+  },
+  {
+   "id": "261",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "Ni vipindi gani vya televisheni vimekuwa gumzo la kitamaduni?",
+   "en": "What television shows are considered cultural phenomena?"
+  },
+  {
+   "id": "262",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "Ni nyimbo gani karibu kila mtu anazijua kwa moyo?",
+   "en": "What songs does nearly everyone know by heart?"
+  },
+  {
+   "id": "263",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "Ni misemo gani ya kwenye filamu inayonukuliwa sana?",
+   "en": "What catchphrases from movies are commonly quoted?"
+  },
+  {
+   "id": "264",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "Ni wahusika gani wa kubuni walio nembo?",
+   "en": "What fictional characters are iconic?"
+  },
+  {
+   "id": "265",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "Ni studio gani za michezo ya video zinazojulikana?",
+   "en": "What video game studios are well known?"
+  },
+  {
+   "id": "266",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "Ni michezo gani ya video inayopendwa zaidi?",
+   "en": "What video games are most popular?"
+  },
+  {
+   "id": "267",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "Ni michezo gani ya jadi imegeuzwa kuwa michezo ya kidijitali?",
+   "en": "What traditional games have been adapted into digital games?"
+  },
+  {
+   "id": "268",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "Ni maonyesho au mikutano gani ya michezo ya video hufanyika?",
+   "en": "What gaming conventions or expos take place?"
+  },
+  {
+   "id": "269",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "Ni timu gani za michezo ya kielektroniki zenye wafuasi wengi?",
+   "en": "What esports teams have large followings?"
+  },
+  {
+   "id": "270",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "Ni matukio gani ya kihistoria huadhimishwa kwa sikukuu za kitaifa?",
+   "en": "What historical events are commemorated with national holidays?"
+  },
+  {
+   "id": "271",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "Ni mapinduzi gani yaliyoathiri historia ya taifa?",
+   "en": "What revolutions shaped the nation's history?"
+  },
+  {
+   "id": "272",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "Ni vita gani vikubwa vinavyokumbukwa leo?",
+   "en": "What major battles are remembered today?"
+  },
+  {
+   "id": "273",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "Ni matukio gani ya kihistoria hufundishwa shuleni?",
+   "en": "What historical events are taught in schools?"
+  },
+  {
+   "id": "274",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "Ni matukio gani ya uhuru huadhimishwa kila mwaka?",
+   "en": "What independence events are celebrated annually?"
+  },
+  {
+   "id": "275",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "Ni watu gani wa kihistoria huonekana kwenye noti za benki?",
+   "en": "Which historical figures appear on banknotes?"
+  },
+  {
+   "id": "276",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "Ni viongozi gani wa kihistoria huadhimishwa kwa sikukuu za kitaifa?",
+   "en": "What historical leaders are celebrated with national holidays?"
+  },
+  {
+   "id": "277",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "Ni wanawake gani wa kihistoria wanaokumbukwa zaidi?",
+   "en": "Which historical women are most widely commemorated?"
+  },
+  {
+   "id": "278",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "Ni sanamu gani huwaenzi watu mashuhuri wa kihistoria?",
+   "en": "What statues honor famous historical figures?"
+  },
+  {
+   "id": "279",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "Ni watu gani wa kihistoria wanaochukuliwa kuwa mashujaa wa taifa?",
+   "en": "Which historical figures are considered national heroes?"
+  },
+  {
+   "id": "280",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "Ni sikukuu gani za kitaifa huadhimisha matukio ya kihistoria?",
+   "en": "What national holidays commemorate historical events?"
+  },
+  {
+   "id": "281",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "Ni makumbusho gani ya kumbukumbu huwaenzi waathirika wa vita vya zamani?",
+   "en": "What monuments honor victims of past wars?"
+  },
+  {
+   "id": "282",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "Ni watu gani wa kihistoria huonekana kwenye noti za benki?",
+   "en": "What historical figures appear on banknotes?"
+  },
+  {
+   "id": "283",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "Ni nyimbo gani za kienyeji huhifadhi kumbukumbu za matukio ya kihistoria?",
+   "en": "What folk songs preserve memories of historical events?"
+  },
+  {
+   "id": "284",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "Ni makumbusho gani huandika sura ngumu za historia?",
+   "en": "What museums document difficult chapters of history?"
+  },
+  {
+   "id": "285",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "Ni maasi gani dhidi ya ukoloni yanayokumbukwa leo?",
+   "en": "What anti-colonial uprisings are commemorated today?"
+  },
+  {
+   "id": "286",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "Ni viongozi gani wa uhuru huadhimishwa kama mashujaa wa taifa?",
+   "en": "Which independence leaders are celebrated as national heroes?"
+  },
+  {
+   "id": "287",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "Ni makumbusho gani ya kumbukumbu huenzi upinzani dhidi ya utawala wa kikoloni?",
+   "en": "What monuments honor resistance against colonial rule?"
+  },
+  {
+   "id": "288",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "Ni nyimbo gani zilizozaliwa kutokana na harakati za kupigania uhuru?",
+   "en": "What songs emerged from independence struggles?"
+  },
+  {
+   "id": "289",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "Ni majengo gani ya enzi za ukoloni bado yamesimama hadi leo?",
+   "en": "Which colonial-era buildings still stand today?"
+  },
+  {
+   "id": "290",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "Ni hadithi gani za asili ya taifa zinazounda utambulisho wa taifa?",
+   "en": "What founding myths shape national identity?"
+  },
+  {
+   "id": "291",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "Ni mashujaa gani wa kihistoria huadhimishwa kama alama za taifa?",
+   "en": "What historical heroes are celebrated as national symbols?"
+  },
+  {
+   "id": "292",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "Ni matukio gani huadhimishwa kwenye sikukuu za kitaifa?",
+   "en": "What events are commemorated on national holidays?"
+  },
+  {
+   "id": "293",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "Ni makumbusho gani ya kitaifa husimulia hadithi ya taifa?",
+   "en": "What national monuments tell the story of the nation?"
+  },
+  {
+   "id": "294",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "Ni vita gani vya kihistoria vinavyokumbukwa kama nyakati muhimu za mabadiliko?",
+   "en": "What historical battles are remembered as defining moments?"
+  },
+  {
+   "id": "295",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "Ni majengo gani ya kihistoria yamekarabatiwa hivi karibuni?",
+   "en": "What historic buildings have been restored recently?"
+  },
+  {
+   "id": "296",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "Ni maeneo gani ya urithi yanayolindwa kisheria?",
+   "en": "What heritage sites are protected by law?"
+  },
+  {
+   "id": "297",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "Ni makumbusho gani huhifadhi ufundi wa jadi?",
+   "en": "What museums preserve traditional crafts?"
+  },
+  {
+   "id": "298",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "Ni mashirika gani hufanya kazi ya kuhifadhi makumbusho ya kihistoria?",
+   "en": "What organizations work to preserve historical monuments?"
+  },
+  {
+   "id": "299",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "Ni magofu gani ya kale yanayotishiwa na maendeleo?",
+   "en": "What ancient ruins are threatened by development?"
+  },
+  {
+   "id": "300",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "Ni viwanda gani vinaendesha uchumi wa taifa?",
+   "en": "What industries drive the national economy?"
+  },
+  {
+   "id": "301",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "Ni bidhaa gani hutengenezwa kwa ajili ya kuuza nje?",
+   "en": "What goods are manufactured for export?"
+  },
+  {
+   "id": "302",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "Ni maliasili gani huchimbwa na kusindikwa kibiashara?",
+   "en": "What natural resources are extracted and processed commercially?"
+  },
+  {
+   "id": "303",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "Ni ufundi gani wa jadi umekuwa viwanda vikubwa?",
+   "en": "What traditional crafts have become major industries?"
+  },
+  {
+   "id": "304",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "Utalii una nafasi gani katika uchumi?",
+   "en": "What role does tourism play in the economy?"
+  },
+  {
+   "id": "305",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "Ni desturi gani za jadi za kubadilishana bidhaa bado zipo?",
+   "en": "What traditional bartering practices still exist?"
+  },
+  {
+   "id": "306",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "Ni bidhaa gani kuu zinazouzwa nje?",
+   "en": "What are the main export goods?"
+  },
+  {
+   "id": "307",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "Ni njia gani za kihistoria za biashara zilipita hapa?",
+   "en": "What historic trade routes passed through here?"
+  },
+  {
+   "id": "308",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "Ni desturi gani zinazohusu kunadi bei sokoni?",
+   "en": "What customs surround haggling at local markets?"
+  },
+  {
+   "id": "309",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "Ni bidhaa gani huagizwa sana kutoka nje?",
+   "en": "What goods are commonly imported from abroad?"
+  },
+  {
+   "id": "310",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "Ni kazi gani zisizo rasmi ambazo watu hufanya mara nyingi?",
+   "en": "What informal jobs do people commonly do?"
+  },
+  {
+   "id": "311",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "Ni vyama gani vya wafanyakazi vyenye ushawishi zaidi?",
+   "en": "What labor unions are most influential?"
+  },
+  {
+   "id": "312",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "Ni kazi gani zinazoheshimika zaidi katika jamii?",
+   "en": "What occupations carry the highest social prestige?"
+  },
+  {
+   "id": "313",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "Saa za kazi na siku za mapumziko ni zipi kwa kawaida?",
+   "en": "What are typical working hours and rest days?"
+  },
+  {
+   "id": "314",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "Ni sikukuu gani za umma zinazowahakikishia wafanyakazi likizo?",
+   "en": "What public holidays guarantee workers time off?"
+  },
+  {
+   "id": "315",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "Watu huonyesha utajiri wao hadharani kwa njia gani?",
+   "en": "What signals of wealth do people display publicly?"
+  },
+  {
+   "id": "316",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "Ni kazi gani huonekana duni ingawa zinalipa vizuri?",
+   "en": "What jobs are considered low-status despite paying well?"
+  },
+  {
+   "id": "317",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "Ni mitaa gani inayohusishwa na matajiri wakubwa?",
+   "en": "What neighborhoods are associated with the very rich?"
+  },
+  {
+   "id": "318",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "Ni mipango gani ya ustawi wa jamii inayosaidia kaya maskini zaidi?",
+   "en": "What welfare programs support the poorest households?"
+  },
+  {
+   "id": "319",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "Ni vikundi gani vya kuweka akiba visivyo rasmi vinavyotumiwa na watu wa kipato cha chini?",
+   "en": "What informal savings groups do low-income people use?"
+  },
+  {
+   "id": "320",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "Ni viwanda gani vilichochea vipindi vya ukuaji wa haraka zaidi wa uchumi?",
+   "en": "What industries drove the fastest periods of economic growth?"
+  },
+  {
+   "id": "321",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "Ni mipango gani ya maendeleo imeunda sera ya uchumi wa taifa?",
+   "en": "What development plans have shaped national economic policy?"
+  },
+  {
+   "id": "322",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "Ni miradi gani ya miundombinu inayoashiria kisasa cha uchumi?",
+   "en": "What infrastructure projects symbolize economic modernization?"
+  },
+  {
+   "id": "323",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "Ni maeneo gani maalum ya kiuchumi yamevutia wawekezaji wa kigeni?",
+   "en": "What special economic zones have attracted foreign investment?"
+  },
+  {
+   "id": "324",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "Ni matukio gani ya kihistoria yalisababisha kuimarika kwa uchumi?",
+   "en": "What historical events triggered major economic booms?"
+  },
+  {
+   "id": "325",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "Ni bidhaa gani za kitamaduni zinazouzwa nje kwa mafanikio zaidi?",
+   "en": "What cultural products are exported abroad most successfully?"
+  },
+  {
+   "id": "326",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "Ni mikahawa gani ya vyakula vya haraka vya kigeni imebadilisha menyu zake kulingana na wenyeji?",
+   "en": "What foreign fast-food chains have adapted their local menus?"
+  },
+  {
+   "id": "327",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "Ni ufundi gani wa jadi unaouzwa hasa kwa watalii?",
+   "en": "What traditional crafts are sold mainly to tourists?"
+  },
+  {
+   "id": "328",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "Ni chapa gani za kigeni huchukuliwa kuwa ishara ya hadhi?",
+   "en": "What foreign brands are considered status symbols?"
+  },
+  {
+   "id": "329",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "Ni chapa gani za ndani zimepanuka hadi masoko ya kimataifa?",
+   "en": "What local brands have expanded into international markets?"
+  }
+ ]
+}
