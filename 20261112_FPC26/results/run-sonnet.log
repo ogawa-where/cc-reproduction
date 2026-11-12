@@ -1,0 +1,21 @@
+[15:36:56] model=sonnet: 1980 calls -> results/sonnet
+[15:37:58] 100/1980 done, 0 errors
+[15:38:57] 200/1980 done, 0 errors
+[15:39:59] 300/1980 done, 0 errors
+[15:41:03] 400/1980 done, 0 errors
+[15:42:01] 500/1980 done, 0 errors
+[15:43:06] 600/1980 done, 0 errors
+[15:44:13] 700/1980 done, 0 errors
+[15:45:14] 800/1980 done, 0 errors
+[15:46:27] 900/1980 done, 0 errors
+[15:47:40] 1000/1980 done, 0 errors
+[15:48:44] 1100/1980 done, 0 errors
+[15:49:52] 1200/1980 done, 0 errors
+[15:50:59] 1300/1980 done, 0 errors
+[15:52:24] 1400/1980 done, 0 errors
+[15:53:43] 1500/1980 done, 0 errors
+[15:55:13] 1600/1980 done, 0 errors
+[15:56:37] 1700/1980 done, 0 errors
+[15:57:57] 1800/1980 done, 0 errors
+[15:59:28] 1900/1980 done, 0 errors
+[16:00:36] finished 1980 calls, 0 errors
