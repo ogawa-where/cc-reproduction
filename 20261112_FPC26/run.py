@@ -42,11 +42,19 @@ def main():
         jobs += [(lang, qs["suffix"], q, path) for q in items if q["id"] not in done]
     print(f"[{dt.datetime.now():%H:%M:%S}] model={args.model}: {len(jobs)} calls -> {args.out}", flush=True)
 
+    stop = threading.Event()
+
     def one(job):
         lang, suffix, q, path = job
+        if stop.is_set():
+            return "skipped after a usage-limit error"
         sep = "" if lang in ("ja", "zh") else " "
         prompt = q["text"] + sep + suffix
         data, err = cc.call(prompt, args.model, system_prompt=args.system_prompt)
+        if err and cc.LIMIT_MARK in err:
+            stop.set()
+            print(f"usage limit reached, stopping: {err}", flush=True)
+            return err
         rec = {"lang": lang, "id": q["id"], "domain": q["domain"], "subtopic": q["subtopic"], "prompt": prompt,
                "model": args.model, "answer": data["result"] if data else None,
                "model_used": list((data or {}).get("modelUsage", {})), "cost_usd": (data or {}).get("total_cost_usd"),

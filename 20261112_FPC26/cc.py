@@ -14,6 +14,7 @@ import subprocess
 import tempfile
 import time
 
+LIMIT_MARK = "hit your"  # "You've hit your 5-hour limit"
 _SCRUB = re.compile(r"^(CLAUDE|ANTHROPIC)", re.I)
 MODELS = {"opus": "claude-opus-5-5", "sonnet": "claude-sonnet-5-5", "haiku": "claude-haiku-5-5",
           "fable": "claude-fable-5-1"}
@@ -50,6 +51,8 @@ def call(prompt, model, system_prompt=None, schema=None, timeout=300, attempts=4
             data = json.loads(r.stdout)
             if data.get("is_error"):
                 last = f"is_error: {str(data.get('result'))[:300]}"
+                if LIMIT_MARK in last:  # retrying cannot help until the usage limit resets
+                    return None, last
             elif schema is not None and not data.get("structured_output"):
                 last = f"no structured_output: {r.stdout[-300:]}"
             else:
