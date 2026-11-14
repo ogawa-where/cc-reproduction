@@ -17,3 +17,8 @@ FPC26 の再現では、英語の質問で Sonnet 5.5 と Haiku 5.5 のどちら
   - own を除いた参照のうち日本の割合
   - own を除いた参照の 2 位の国と、日本との比
   - NA、diversity、entropy（FPC26 と同じ）
+
+## 使えなかったモデル（2026-11-12 の確認）
+
+- `claude-3-5-haiku-20241022` と `claude-sonnet-4`: `claude -p` が "There's an issue with the selected model ... It may not exist or you may not have access to it" で失敗した。
+- `claude-opus-4-1`: 呼び出しは成功したが、`modelUsage` は `claude-opus-5-5` で、別のモデルが応答していた。
