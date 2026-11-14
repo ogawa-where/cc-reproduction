@@ -1,0 +1,61 @@
+[16:34:18] model=fable: 330 calls -> ../20261112_FPC26-ext/results/fable
+[16:35:48] 100/330 done, 0 errors
+[16:37:13] 200/330 done, 0 errors
+[16:38:38] 300/330 done, 0 errors
+[16:39:08] finished 330 calls, 0 errors
+22 judge calls
+done, 0 failed batches
+[16:39:54] model=opus: 330 calls -> ../20261112_FPC26-ext/results/opus
+[16:41:07] 100/330 done, 0 errors
+[16:42:14] 200/330 done, 0 errors
+[16:43:29] 300/330 done, 0 errors
+[16:43:49] finished 330 calls, 0 errors
+22 judge calls
+done, 0 failed batches
+[16:44:39] model=claude-sonnet-5: 330 calls -> ../20261112_FPC26-ext/results/claude-sonnet-5
+[16:45:41] 100/330 done, 0 errors
+[16:46:38] 200/330 done, 0 errors
+[16:47:35] 300/330 done, 0 errors
+[16:47:54] finished 330 calls, 0 errors
+22 judge calls
+done, 0 failed batches
+[16:48:34] model=claude-opus-4-7: 330 calls -> ../20261112_FPC26-ext/results/claude-opus-4-7
+[16:49:38] 100/330 done, 0 errors
+[16:50:43] 200/330 done, 0 errors
+[16:51:51] 300/330 done, 0 errors
+[16:52:13] finished 330 calls, 0 errors
+22 judge calls
+done, 0 failed batches
+[16:52:57] model=claude-opus-4-6: 330 calls -> ../20261112_FPC26-ext/results/claude-opus-4-6
+[16:57:50] 100/330 done, 49 errors
+[17:04:58] 200/330 done, 149 errors
+[17:12:33] 300/330 done, 249 errors
+[17:14:24] finished 330 calls, 279 errors
+4 judge calls
+done, 4 failed batches
+../20261112_FPC26-ext/results/claude-opus-4-6/judged-en.jsonl: is_error: You've hit your 5-hour limit · resets 8:20pm (UTC)
+../20261112_FPC26-ext/results/claude-opus-4-6/judged-en.jsonl: is_error: You've hit your 5-hour limit · resets 8:20pm (UTC)
+../20261112_FPC26-ext/results/claude-opus-4-6/judged-en.jsonl: is_error: You've hit your 5-hour limit · resets 8:20pm (UTC)
+../20261112_FPC26-ext/results/claude-opus-4-6/judged-en.jsonl: is_error: You've hit your 5-hour limit · resets 8:20pm (UTC)
+[17:15:00] model=claude-opus-4-5: 330 calls -> ../20261112_FPC26-ext/results/claude-opus-4-5
+[17:22:42] 100/330 done, 100 errors
+[17:29:47] 200/330 done, 200 errors
+[17:37:25] 300/330 done, 300 errors
+[17:39:45] finished 330 calls, 330 errors
+0 judge calls
+done, 0 failed batches
+[17:39:45] model=claude-sonnet-4-6: 330 calls -> ../20261112_FPC26-ext/results/claude-sonnet-4-6
+[17:47:27] 100/330 done, 100 errors
+[17:54:33] 200/330 done, 200 errors
+[18:02:11] 300/330 done, 300 errors
+[18:04:32] finished 330 calls, 330 errors
+0 judge calls
+done, 0 failed batches
+[18:04:32] model=claude-sonnet-4-5: 330 calls -> ../20261112_FPC26-ext/results/claude-sonnet-4-5
+[18:12:15] 100/330 done, 100 errors
+[18:19:21] 200/330 done, 200 errors
+[18:26:58] 300/330 done, 300 errors
+[18:29:17] finished 330 calls, 330 errors
+0 judge calls
+done, 0 failed batches
+[18:29:17] model=claude-haiku-4-5: 330 calls -> ../20261112_FPC26-ext/results/claude-haiku-4-5
