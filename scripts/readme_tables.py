@@ -37,9 +37,9 @@ EXTENSIONS = [  # date, question lines (each <= 31 chars), based-on key, directo
     ("2026-11-12", ["Which Claude models pick Japan", "most for open cultural", "questions?"],
      "FPC26", "20261112_FPC26-ext",
      ["● FPC26-ext: all 11 Claude models put Japan first in English. Opus 4.7 picks it most",
-      "  (16%), Haiku 5.5 least (7%); newer Sonnet and Opus pick it more often."],
+      "  (16%), Haiku 5.5 least (7%); newer Sonnet models pick it more often."],
      ["● FPC26-ext: 英語では 11 モデルすべてで日本が首位。最多は Opus 4.7（16%）、",
-      "  最少は Haiku 5.5（7%）。Sonnet と Opus は新しい世代ほど日本を選ぶ。"]),
+      "  最少は Haiku 5.5（7%）。Sonnet は新しい世代ほど日本を選ぶ。"]),
 ]
 
 

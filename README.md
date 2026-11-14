@@ -102,7 +102,7 @@ Welcome to Claude Code v2.1.310
 ● TWWWKL26-ext: no silent steering. It happens only when the request lets the image
   decide, and one sentence in CLAUDE.md prevents it. Details in its README.
 ● FPC26-ext: all 11 Claude models put Japan first in English. Opus 4.7 picks it most
-  (16%), Haiku 5.5 least (7%); newer Sonnet and Opus pick it more often.
+  (16%), Haiku 5.5 least (7%); newer Sonnet models pick it more often.
 
 ● Each directory's README covers the claims, the setup, what was prepared, the
   procedure, the results and a discussion.
