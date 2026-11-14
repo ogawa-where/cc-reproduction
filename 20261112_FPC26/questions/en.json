@@ -1,0 +1,1986 @@
+{
+ "lang": "en",
+ "suffix": "Be brief. Choose yourself the place.",
+ "questions": [
+  {
+   "id": "000",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "What rituals mark a child's entry into the faith?"
+  },
+  {
+   "id": "001",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "What pilgrimages do believers undertake, and why?"
+  },
+  {
+   "id": "002",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "What offerings are made at household shrines or altars?"
+  },
+  {
+   "id": "003",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "What spirits are believed to inhabit natural places?"
+  },
+  {
+   "id": "004",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "What religious festivals shape the yearly calendar?"
+  },
+  {
+   "id": "005",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "What virtues do proverbs teach children to value most?"
+  },
+  {
+   "id": "006",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "What duties do adult children owe their aging parents?"
+  },
+  {
+   "id": "007",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "What makes someone deserving of respect in the community?"
+  },
+  {
+   "id": "008",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "What behaviors bring shame upon an entire family?"
+  },
+  {
+   "id": "009",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "What obligations come with accepting hospitality from strangers?"
+  },
+  {
+   "id": "010",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "What colors carry special meaning?"
+  },
+  {
+   "id": "011",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "What animals symbolize good fortune?"
+  },
+  {
+   "id": "012",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "What numbers are considered lucky or unlucky?"
+  },
+  {
+   "id": "013",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "What flowers or plants hold symbolic significance?"
+  },
+  {
+   "id": "014",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "What symbols are believed to ward off evil?"
+  },
+  {
+   "id": "015",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "What creatures are said to haunt forests at night?"
+  },
+  {
+   "id": "016",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "What folk heroes are celebrated in traditional tales?"
+  },
+  {
+   "id": "017",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "What stories warn children against misbehaving?"
+  },
+  {
+   "id": "018",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "What tricksters appear in old folk tales?"
+  },
+  {
+   "id": "019",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "What spirits are believed to live in homes?"
+  },
+  {
+   "id": "020",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "What proverbs describe the ideal wife or husband?"
+  },
+  {
+   "id": "021",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "What household chores are traditionally assigned to men?"
+  },
+  {
+   "id": "022",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "What rituals mark a boy becoming a man?"
+  },
+  {
+   "id": "023",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "What traditional beliefs restrict women during menstruation?"
+  },
+  {
+   "id": "024",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "What myths explain why men and women differ?"
+  },
+  {
+   "id": "025",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "What is the role of grandparents?"
+  },
+  {
+   "id": "026",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "What is expected of the eldest child?"
+  },
+  {
+   "id": "027",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "Who usually cares for aging parents?"
+  },
+  {
+   "id": "028",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "What role do in-laws play in married life?"
+  },
+  {
+   "id": "029",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "How are household chores typically divided?"
+  },
+  {
+   "id": "030",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "What community events bring residents together?"
+  },
+  {
+   "id": "031",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "How do people welcome newcomers to a neighborhood?"
+  },
+  {
+   "id": "032",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "What role do local markets play in community life?"
+  },
+  {
+   "id": "033",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "What gathering places serve as community hubs?"
+  },
+  {
+   "id": "034",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "How do communities support members during hard times?"
+  },
+  {
+   "id": "035",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "What are proper table manners during a family meal?"
+  },
+  {
+   "id": "036",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "How should guests behave when visiting someone's home?"
+  },
+  {
+   "id": "037",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "What is the appropriate way to greet elders?"
+  },
+  {
+   "id": "038",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "What gifts are considered polite when visiting a host?"
+  },
+  {
+   "id": "039",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "What gestures are considered rude in public?"
+  },
+  {
+   "id": "040",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "What is the typical length of a working day?"
+  },
+  {
+   "id": "041",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "How are bosses usually addressed at work?"
+  },
+  {
+   "id": "042",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "What is considered appropriate attire in the office?"
+  },
+  {
+   "id": "043",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "What role do after-work gatherings play among colleagues?"
+  },
+  {
+   "id": "044",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "How is lunch break typically spent by workers?"
+  },
+  {
+   "id": "045",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "What is the role of elders in settling disputes?"
+  },
+  {
+   "id": "046",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "How do families usually resolve inheritance disagreements?"
+  },
+  {
+   "id": "047",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "What role do mediators play in community conflicts?"
+  },
+  {
+   "id": "048",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "How are disputes between neighbors typically handled?"
+  },
+  {
+   "id": "049",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "What gestures are used to apologize after an argument?"
+  },
+  {
+   "id": "050",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "What languages are taught as foreign languages in schools?"
+  },
+  {
+   "id": "051",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "What language is used for instruction in classrooms?"
+  },
+  {
+   "id": "052",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "How do students address their teachers?"
+  },
+  {
+   "id": "053",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "What writing systems do children learn first?"
+  },
+  {
+   "id": "054",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "What role does handwriting practice play in schooling?"
+  },
+  {
+   "id": "055",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "What age do children typically start compulsory schooling?"
+  },
+  {
+   "id": "056",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "What major exams determine students' future paths?"
+  },
+  {
+   "id": "057",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "How is the school year typically structured?"
+  },
+  {
+   "id": "058",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "What role do private schools play in education?"
+  },
+  {
+   "id": "059",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "What happens after students finish secondary school?"
+  },
+  {
+   "id": "060",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "What devices do students typically use for schoolwork?"
+  },
+  {
+   "id": "061",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "What learning apps are most popular among students?"
+  },
+  {
+   "id": "062",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "What role do smartphones play in classrooms?"
+  },
+  {
+   "id": "063",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "What online platforms do teachers use to assign homework?"
+  },
+  {
+   "id": "064",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "What technology is commonly found in classrooms?"
+  },
+  {
+   "id": "065",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "What traditional skills do elders pass down to children?"
+  },
+  {
+   "id": "066",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "What stories are commonly told to teach children values?"
+  },
+  {
+   "id": "067",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "What crafts are learned through apprenticeship?"
+  },
+  {
+   "id": "068",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "What proverbs are used to teach life lessons?"
+  },
+  {
+   "id": "069",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "What knowledge is passed down orally rather than written?"
+  },
+  {
+   "id": "070",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "Which scientists are celebrated as national heroes in schools?"
+  },
+  {
+   "id": "071",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "What philosophers do students study in secondary school?"
+  },
+  {
+   "id": "072",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "How is evolution taught in science classes?"
+  },
+  {
+   "id": "073",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "What scientific achievements appear prominently in school textbooks?"
+  },
+  {
+   "id": "074",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "Is philosophy a compulsory subject in high school?"
+  },
+  {
+   "id": "075",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "What traditional musical instruments are commonly played?"
+  },
+  {
+   "id": "076",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "What folk songs do most people know by heart?"
+  },
+  {
+   "id": "077",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "What music is typically played at weddings?"
+  },
+  {
+   "id": "078",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "Which musicians are considered national icons?"
+  },
+  {
+   "id": "079",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "What songs are sung at funerals or mourning ceremonies?"
+  },
+  {
+   "id": "080",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "What folk dances are performed at weddings?"
+  },
+  {
+   "id": "081",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "What dances are associated with harvest festivals?"
+  },
+  {
+   "id": "082",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "Which dance styles are popular among young people today?"
+  },
+  {
+   "id": "083",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "What costumes are worn for traditional dance performances?"
+  },
+  {
+   "id": "084",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "Who are the most famous choreographers?"
+  },
+  {
+   "id": "085",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "What traditional painting styles exist?"
+  },
+  {
+   "id": "086",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "Who are the most celebrated painters?"
+  },
+  {
+   "id": "087",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "What famous artworks are widely recognized?"
+  },
+  {
+   "id": "088",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "What folk art traditions are still practiced?"
+  },
+  {
+   "id": "089",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "What art museums are most important?"
+  },
+  {
+   "id": "090",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "What folktales are commonly told to children?"
+  },
+  {
+   "id": "091",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "Which classic novels are considered national literary treasures?"
+  },
+  {
+   "id": "092",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "What epic poems are traditionally recited or studied?"
+  },
+  {
+   "id": "093",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "Who are the most celebrated poets?"
+  },
+  {
+   "id": "094",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "What oral storytelling traditions still exist today?"
+  },
+  {
+   "id": "095",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "What traditional theater forms exist?"
+  },
+  {
+   "id": "096",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "What puppetry traditions are performed?"
+  },
+  {
+   "id": "097",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "Who are the most celebrated playwrights?"
+  },
+  {
+   "id": "098",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "What famous plays are considered national classics?"
+  },
+  {
+   "id": "099",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "What masks are used in traditional performances?"
+  },
+  {
+   "id": "100",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "What films are considered national cinema classics?"
+  },
+  {
+   "id": "101",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "Which film directors are most celebrated?"
+  },
+  {
+   "id": "102",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "What film festivals are held annually?"
+  },
+  {
+   "id": "103",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "Which actors are regarded as screen legends?"
+  },
+  {
+   "id": "104",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "What film genres are most popular locally?"
+  },
+  {
+   "id": "105",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "What traditional handicrafts are made?"
+  },
+  {
+   "id": "106",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "What textile weaving techniques are traditionally practiced?"
+  },
+  {
+   "id": "107",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "What pottery styles are traditionally produced?"
+  },
+  {
+   "id": "108",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "What traditional woodcarving crafts exist?"
+  },
+  {
+   "id": "109",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "What handmade souvenirs are popular with visitors?"
+  },
+  {
+   "id": "110",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "What traditional jewelry is worn at weddings?"
+  },
+  {
+   "id": "111",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "What materials are commonly used in traditional jewelry?"
+  },
+  {
+   "id": "112",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "What forms of tattooing have traditional significance?"
+  },
+  {
+   "id": "113",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "What body piercing practices are culturally traditional?"
+  },
+  {
+   "id": "114",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "What jewelry signals a person's marital status?"
+  },
+  {
+   "id": "115",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "What traditional house styles exist?"
+  },
+  {
+   "id": "116",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "What building materials are traditionally used for homes?"
+  },
+  {
+   "id": "117",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "What famous historic buildings are there?"
+  },
+  {
+   "id": "118",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "What architectural styles define old town centers?"
+  },
+  {
+   "id": "119",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "What decorative elements adorn traditional buildings?"
+  },
+  {
+   "id": "120",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "What dishes are served at wedding celebrations?"
+  },
+  {
+   "id": "121",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "What foods are eaten for breakfast?"
+  },
+  {
+   "id": "122",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "What street foods are most popular?"
+  },
+  {
+   "id": "123",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "What spices are commonly used in cooking?"
+  },
+  {
+   "id": "124",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "What dishes are prepared for major holidays?"
+  },
+  {
+   "id": "125",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "What drinks are served to welcome guests?"
+  },
+  {
+   "id": "126",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "What beverages are drunk at weddings?"
+  },
+  {
+   "id": "127",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "What hot drinks are common in winter?"
+  },
+  {
+   "id": "128",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "What drinks are made from fermented grains?"
+  },
+  {
+   "id": "129",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "What beverages accompany breakfast?"
+  },
+  {
+   "id": "130",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "What snacks are eaten while watching sports games?"
+  },
+  {
+   "id": "131",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "What foods are brought on picnics?"
+  },
+  {
+   "id": "132",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "What foods are sold at amusement parks?"
+  },
+  {
+   "id": "133",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "What snacks are eaten at the movie theater?"
+  },
+  {
+   "id": "134",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "What foods are grilled at outdoor gatherings?"
+  },
+  {
+   "id": "135",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "What foods are eaten while watching sports matches?"
+  },
+  {
+   "id": "136",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "What snacks are sold at sports stadiums?"
+  },
+  {
+   "id": "137",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "What foods do athletes traditionally eat before competitions?"
+  },
+  {
+   "id": "138",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "What dishes are served at game day parties?"
+  },
+  {
+   "id": "139",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "What foods are used in traditional eating contests?"
+  },
+  {
+   "id": "140",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "What foods are served at weddings?"
+  },
+  {
+   "id": "141",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "What foods are eaten after a baby is born?"
+  },
+  {
+   "id": "142",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "What foods are served at funerals?"
+  },
+  {
+   "id": "143",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "What dishes celebrate a child's first birthday?"
+  },
+  {
+   "id": "144",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "What foods are offered to honor deceased ancestors?"
+  },
+  {
+   "id": "145",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "What foods are eaten during the new year celebration?"
+  },
+  {
+   "id": "146",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "What dishes are prepared for wedding feasts?"
+  },
+  {
+   "id": "147",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "What sweets are shared during major festivals?"
+  },
+  {
+   "id": "148",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "What foods are served at birthday celebrations?"
+  },
+  {
+   "id": "149",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "What drinks are popular during festive gatherings?"
+  },
+  {
+   "id": "150",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "What seasonal weather shapes local festivals?"
+  },
+  {
+   "id": "151",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "What traditional houses are designed for the climate?"
+  },
+  {
+   "id": "152",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "What foods are preserved to survive harsh seasons?"
+  },
+  {
+   "id": "153",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "What clothing traditions reflect the local climate?"
+  },
+  {
+   "id": "154",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "What natural disasters shape community rituals?"
+  },
+  {
+   "id": "155",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "What mountains shape local traditions?"
+  },
+  {
+   "id": "156",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "What farming terraces are culturally significant?"
+  },
+  {
+   "id": "157",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "What landscapes appear in traditional folk songs?"
+  },
+  {
+   "id": "158",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "What lowlands are used for rice or grain farming?"
+  },
+  {
+   "id": "159",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "What highlands are known for pastoral herding?"
+  },
+  {
+   "id": "160",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "What festivals are celebrated differently in villages and cities?"
+  },
+  {
+   "id": "161",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "What foods are considered typically rural rather than urban?"
+  },
+  {
+   "id": "162",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "What stereotypes do city dwellers hold about villagers?"
+  },
+  {
+   "id": "163",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "What traditions do migrants bring from villages to cities?"
+  },
+  {
+   "id": "164",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "What clothing distinguishes rural residents from urban residents?"
+  },
+  {
+   "id": "165",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "What dialects mark regional identity?"
+  },
+  {
+   "id": "166",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "What regional dishes define local pride?"
+  },
+  {
+   "id": "167",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "What landscapes shape regional identity?"
+  },
+  {
+   "id": "168",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "What rivalries exist between regions?"
+  },
+  {
+   "id": "169",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "What festivals celebrate regional heritage?"
+  },
+  {
+   "id": "170",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "What natural features define national borders?"
+  },
+  {
+   "id": "171",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "What disputed territories shape national identity?"
+  },
+  {
+   "id": "172",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "What border towns blend neighboring cultural traditions?"
+  },
+  {
+   "id": "173",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "What historical treaties established current boundaries?"
+  },
+  {
+   "id": "174",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "What festivals celebrate cross-border communities?"
+  },
+  {
+   "id": "175",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "What neighborhoods were shaped by immigrant communities?"
+  },
+  {
+   "id": "176",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "What foods arrived with migrant groups?"
+  },
+  {
+   "id": "177",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "What festivals do diaspora communities celebrate abroad?"
+  },
+  {
+   "id": "178",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "What historical events triggered large waves of emigration?"
+  },
+  {
+   "id": "179",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "What jobs did early immigrants commonly take?"
+  },
+  {
+   "id": "180",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "What natural landmarks are considered sacred?"
+  },
+  {
+   "id": "181",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "What festivals celebrate seasonal changes in nature?"
+  },
+  {
+   "id": "182",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "What animals hold symbolic cultural importance?"
+  },
+  {
+   "id": "183",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "What traditional practices protect forests or wildlife?"
+  },
+  {
+   "id": "184",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "What plants are used in traditional medicine?"
+  },
+  {
+   "id": "185",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "What form of government is in place?"
+  },
+  {
+   "id": "186",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "How is the head of state chosen?"
+  },
+  {
+   "id": "187",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "What role does the monarchy play in government?"
+  },
+  {
+   "id": "188",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "How is power divided between national and local governments?"
+  },
+  {
+   "id": "189",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "What powers does the president or prime minister hold?"
+  },
+  {
+   "id": "190",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "What legal traditions shape the court system?"
+  },
+  {
+   "id": "191",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "What famous trials are widely remembered?"
+  },
+  {
+   "id": "192",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "What customary laws still influence daily life?"
+  },
+  {
+   "id": "193",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "What punishments are considered culturally acceptable?"
+  },
+  {
+   "id": "194",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "What legal rights are most fiercely defended?"
+  },
+  {
+   "id": "195",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "What civic duties are citizens expected to fulfill?"
+  },
+  {
+   "id": "196",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "What motivates people to vote in elections?"
+  },
+  {
+   "id": "197",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "How do young people typically get involved in politics?"
+  },
+  {
+   "id": "198",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "What forms of volunteering are considered civic contributions?"
+  },
+  {
+   "id": "199",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "What values are taught in civic education classes?"
+  },
+  {
+   "id": "200",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "What topics are considered taboo to criticize publicly?"
+  },
+  {
+   "id": "201",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "What laws restrict what people can say online?"
+  },
+  {
+   "id": "202",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "What famous satirical shows mock politicians?"
+  },
+  {
+   "id": "203",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "What journalists have been jailed for their reporting?"
+  },
+  {
+   "id": "204",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "What books or films have been banned?"
+  },
+  {
+   "id": "205",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "What colonial-era buildings are still used by the government?"
+  },
+  {
+   "id": "206",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "What holidays mark independence from colonial rule?"
+  },
+  {
+   "id": "207",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "What colonial laws remain part of the legal system?"
+  },
+  {
+   "id": "208",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "What monuments to colonial figures have been removed or debated?"
+  },
+  {
+   "id": "209",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "What foreign languages from colonial times remain official?"
+  },
+  {
+   "id": "210",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "What titles are used to address powerful officials?"
+  },
+  {
+   "id": "211",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "What families have long dominated political life?"
+  },
+  {
+   "id": "212",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "What social classes hold the most political influence?"
+  },
+  {
+   "id": "213",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "How do elders influence political decisions?"
+  },
+  {
+   "id": "214",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "What gestures show respect toward political leaders?"
+  },
+  {
+   "id": "215",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "What social movements have shaped recent history?"
+  },
+  {
+   "id": "216",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "What human rights issues are most debated today?"
+  },
+  {
+   "id": "217",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "Which activists are celebrated as national heroes?"
+  },
+  {
+   "id": "218",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "What symbols do protest movements commonly use?"
+  },
+  {
+   "id": "219",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "What songs are associated with social justice movements?"
+  },
+  {
+   "id": "220",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "What home remedies are commonly used for colds?"
+  },
+  {
+   "id": "221",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "What traditional healing practices are still widely used?"
+  },
+  {
+   "id": "222",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "What foods are eaten to stay healthy?"
+  },
+  {
+   "id": "223",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "What herbal teas are popular for health benefits?"
+  },
+  {
+   "id": "224",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "What practices are followed after childbirth for recovery?"
+  },
+  {
+   "id": "225",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "What vaccination campaigns are commonly promoted?"
+  },
+  {
+   "id": "226",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "What public health slogans are widely recognized?"
+  },
+  {
+   "id": "227",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "What hygiene habits are encouraged in public places?"
+  },
+  {
+   "id": "228",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "What anti-smoking measures are commonly seen?"
+  },
+  {
+   "id": "229",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "What health screenings are routinely offered to adults?"
+  },
+  {
+   "id": "230",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "What relaxation practices do people commonly use to relieve stress?"
+  },
+  {
+   "id": "231",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "What traditional bathing or sauna customs support wellbeing?"
+  },
+  {
+   "id": "232",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "What daily habits are considered key to a long life?"
+  },
+  {
+   "id": "233",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "What foods are believed to boost energy and vitality?"
+  },
+  {
+   "id": "234",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "How do people typically balance work and leisure time?"
+  },
+  {
+   "id": "235",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "What postpartum recovery traditions do new mothers follow?"
+  },
+  {
+   "id": "236",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "What foods are recommended for pregnant women?"
+  },
+  {
+   "id": "237",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "What rituals welcome a newborn baby?"
+  },
+  {
+   "id": "238",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "Who typically assists women during childbirth?"
+  },
+  {
+   "id": "239",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "What pregnancy taboos or superstitions are commonly observed?"
+  },
+  {
+   "id": "240",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "What local newspapers do people read?"
+  },
+  {
+   "id": "241",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "What community radio stations are popular?"
+  },
+  {
+   "id": "242",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "What regional television channels broadcast local news?"
+  },
+  {
+   "id": "243",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "What local talk shows are widely watched?"
+  },
+  {
+   "id": "244",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "What neighborhood newsletters or bulletins circulate?"
+  },
+  {
+   "id": "245",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "What social media platforms are most popular?"
+  },
+  {
+   "id": "246",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "What streaming services do people commonly use?"
+  },
+  {
+   "id": "247",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "What podcasts are widely listened to?"
+  },
+  {
+   "id": "248",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "Which online influencers have large followings?"
+  },
+  {
+   "id": "249",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "What memes have gone viral recently?"
+  },
+  {
+   "id": "250",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "What major entertainment companies dominate the market?"
+  },
+  {
+   "id": "251",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "What television networks produce the most popular shows?"
+  },
+  {
+   "id": "252",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "What music record labels are most influential?"
+  },
+  {
+   "id": "253",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "What famous film studios are based there?"
+  },
+  {
+   "id": "254",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "What video game companies are well known?"
+  },
+  {
+   "id": "255",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "What newspapers do people read most?"
+  },
+  {
+   "id": "256",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "What television news channels are most watched?"
+  },
+  {
+   "id": "257",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "What news websites are popular?"
+  },
+  {
+   "id": "258",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "What radio stations do people listen to for news?"
+  },
+  {
+   "id": "259",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "Which journalists are widely known and trusted?"
+  },
+  {
+   "id": "260",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "What celebrities are most widely followed?"
+  },
+  {
+   "id": "261",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "What television shows are considered cultural phenomena?"
+  },
+  {
+   "id": "262",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "What songs does nearly everyone know by heart?"
+  },
+  {
+   "id": "263",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "What catchphrases from movies are commonly quoted?"
+  },
+  {
+   "id": "264",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "What fictional characters are iconic?"
+  },
+  {
+   "id": "265",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "What video game studios are well known?"
+  },
+  {
+   "id": "266",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "What video games are most popular?"
+  },
+  {
+   "id": "267",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "What traditional games have been adapted into digital games?"
+  },
+  {
+   "id": "268",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "What gaming conventions or expos take place?"
+  },
+  {
+   "id": "269",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "What esports teams have large followings?"
+  },
+  {
+   "id": "270",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "What historical events are commemorated with national holidays?"
+  },
+  {
+   "id": "271",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "What revolutions shaped the nation's history?"
+  },
+  {
+   "id": "272",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "What major battles are remembered today?"
+  },
+  {
+   "id": "273",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "What historical events are taught in schools?"
+  },
+  {
+   "id": "274",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "What independence events are celebrated annually?"
+  },
+  {
+   "id": "275",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "Which historical figures appear on banknotes?"
+  },
+  {
+   "id": "276",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "What historical leaders are celebrated with national holidays?"
+  },
+  {
+   "id": "277",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "Which historical women are most widely commemorated?"
+  },
+  {
+   "id": "278",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "What statues honor famous historical figures?"
+  },
+  {
+   "id": "279",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "Which historical figures are considered national heroes?"
+  },
+  {
+   "id": "280",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "What national holidays commemorate historical events?"
+  },
+  {
+   "id": "281",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "What monuments honor victims of past wars?"
+  },
+  {
+   "id": "282",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "What historical figures appear on banknotes?"
+  },
+  {
+   "id": "283",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "What folk songs preserve memories of historical events?"
+  },
+  {
+   "id": "284",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "What museums document difficult chapters of history?"
+  },
+  {
+   "id": "285",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "What anti-colonial uprisings are commemorated today?"
+  },
+  {
+   "id": "286",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "Which independence leaders are celebrated as national heroes?"
+  },
+  {
+   "id": "287",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "What monuments honor resistance against colonial rule?"
+  },
+  {
+   "id": "288",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "What songs emerged from independence struggles?"
+  },
+  {
+   "id": "289",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "Which colonial-era buildings still stand today?"
+  },
+  {
+   "id": "290",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "What founding myths shape national identity?"
+  },
+  {
+   "id": "291",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "What historical heroes are celebrated as national symbols?"
+  },
+  {
+   "id": "292",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "What events are commemorated on national holidays?"
+  },
+  {
+   "id": "293",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "What national monuments tell the story of the nation?"
+  },
+  {
+   "id": "294",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "What historical battles are remembered as defining moments?"
+  },
+  {
+   "id": "295",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "What historic buildings have been restored recently?"
+  },
+  {
+   "id": "296",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "What heritage sites are protected by law?"
+  },
+  {
+   "id": "297",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "What museums preserve traditional crafts?"
+  },
+  {
+   "id": "298",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "What organizations work to preserve historical monuments?"
+  },
+  {
+   "id": "299",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "What ancient ruins are threatened by development?"
+  },
+  {
+   "id": "300",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "What industries drive the national economy?"
+  },
+  {
+   "id": "301",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "What goods are manufactured for export?"
+  },
+  {
+   "id": "302",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "What natural resources are extracted and processed commercially?"
+  },
+  {
+   "id": "303",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "What traditional crafts have become major industries?"
+  },
+  {
+   "id": "304",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "What role does tourism play in the economy?"
+  },
+  {
+   "id": "305",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "What traditional bartering practices still exist?"
+  },
+  {
+   "id": "306",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "What are the main export goods?"
+  },
+  {
+   "id": "307",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "What historic trade routes passed through here?"
+  },
+  {
+   "id": "308",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "What customs surround haggling at local markets?"
+  },
+  {
+   "id": "309",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "What goods are commonly imported from abroad?"
+  },
+  {
+   "id": "310",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "What informal jobs do people commonly do?"
+  },
+  {
+   "id": "311",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "What labor unions are most influential?"
+  },
+  {
+   "id": "312",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "What occupations carry the highest social prestige?"
+  },
+  {
+   "id": "313",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "What are typical working hours and rest days?"
+  },
+  {
+   "id": "314",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "What public holidays guarantee workers time off?"
+  },
+  {
+   "id": "315",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "What signals of wealth do people display publicly?"
+  },
+  {
+   "id": "316",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "What jobs are considered low-status despite paying well?"
+  },
+  {
+   "id": "317",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "What neighborhoods are associated with the very rich?"
+  },
+  {
+   "id": "318",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "What welfare programs support the poorest households?"
+  },
+  {
+   "id": "319",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "What informal savings groups do low-income people use?"
+  },
+  {
+   "id": "320",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "What industries drove the fastest periods of economic growth?"
+  },
+  {
+   "id": "321",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "What development plans have shaped national economic policy?"
+  },
+  {
+   "id": "322",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "What infrastructure projects symbolize economic modernization?"
+  },
+  {
+   "id": "323",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "What special economic zones have attracted foreign investment?"
+  },
+  {
+   "id": "324",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "What historical events triggered major economic booms?"
+  },
+  {
+   "id": "325",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "What cultural products are exported abroad most successfully?"
+  },
+  {
+   "id": "326",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "What foreign fast-food chains have adapted their local menus?"
+  },
+  {
+   "id": "327",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "What traditional crafts are sold mainly to tourists?"
+  },
+  {
+   "id": "328",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "What foreign brands are considered status symbols?"
+  },
+  {
+   "id": "329",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "What local brands have expanded into international markets?"
+  }
+ ]
+}

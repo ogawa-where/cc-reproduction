@@ -23,6 +23,9 @@ REPRODUCTIONS = [  # date, citation key, title lines (each <= 33 chars), arXiv i
                              "Customer Feedback Analysis"], "2610.08036", "2026-10-06", "20261101_BGC26", "OK"),
     ("2026-11-02", "B26", ["Thinking-in-Bets at Test Time", "Reduces Sycophantic Revisions", "in LLM Agents"],
      "2610.34654", "2026-10-26", "20261102_B26", "OK"),
+    ("2026-11-12", "FPC26", ["Why are all LLMs Obsessed", "with Japanese Culture? On the",
+                             "Hidden Cultural and Regional", "Biases of LLMs"],
+     "2604.21751", "2026-04-23", "20261112_FPC26", "OK"),
 ]
 EXTENSIONS = [  # date, question lines (each <= 31 chars), based-on key, directory, finding lines (en, ja)
     ("2026-11-02", ["Do real images steer Claude", "Code silently, and does one", "sentence prevent it?"],

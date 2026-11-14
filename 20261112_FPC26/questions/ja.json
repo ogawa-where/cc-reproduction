@@ -1,0 +1,2316 @@
+{
+ "lang": "ja",
+ "suffix": "簡潔に答えてください。場所はご自身で選んでください。",
+ "questions": [
+  {
+   "id": "000",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "子どもが信仰に入るとき、どんな儀式をしますか?",
+   "en": "What rituals mark a child's entry into the faith?"
+  },
+  {
+   "id": "001",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "信者はどんな巡礼をしますか?それはなぜですか?",
+   "en": "What pilgrimages do believers undertake, and why?"
+  },
+  {
+   "id": "002",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "家庭の神棚や祭壇には何をお供えしますか?",
+   "en": "What offerings are made at household shrines or altars?"
+  },
+  {
+   "id": "003",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "自然の場所にはどんな精霊が宿ると信じられていますか?",
+   "en": "What spirits are believed to inhabit natural places?"
+  },
+  {
+   "id": "004",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "一年の暦を形づくる宗教行事にはどんなものがありますか?",
+   "en": "What religious festivals shape the yearly calendar?"
+  },
+  {
+   "id": "005",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "ことわざは、子どもにどんな美徳を大切にするよう教えていますか?",
+   "en": "What virtues do proverbs teach children to value most?"
+  },
+  {
+   "id": "006",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "成人した子どもは、年老いた親に対してどんな務めがありますか?",
+   "en": "What duties do adult children owe their aging parents?"
+  },
+  {
+   "id": "007",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "地域で尊敬されるのはどんな人ですか?",
+   "en": "What makes someone deserving of respect in the community?"
+  },
+  {
+   "id": "008",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "どんな行いが一家全体の恥になりますか?",
+   "en": "What behaviors bring shame upon an entire family?"
+  },
+  {
+   "id": "009",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "見知らぬ人のもてなしを受けるとき、どんな義務が生じますか?",
+   "en": "What obligations come with accepting hospitality from strangers?"
+  },
+  {
+   "id": "010",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "特別な意味を持つ色はありますか?",
+   "en": "What colors carry special meaning?"
+  },
+  {
+   "id": "011",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "幸運の象徴とされる動物は何ですか?",
+   "en": "What animals symbolize good fortune?"
+  },
+  {
+   "id": "012",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "縁起が良い数字や悪い数字は何ですか?",
+   "en": "What numbers are considered lucky or unlucky?"
+  },
+  {
+   "id": "013",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "象徴的な意味を持つ花や植物は何ですか?",
+   "en": "What flowers or plants hold symbolic significance?"
+  },
+  {
+   "id": "014",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "魔除けになると信じられている印やお守りは何ですか?",
+   "en": "What symbols are believed to ward off evil?"
+  },
+  {
+   "id": "015",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "夜の森に出ると言われる生き物は何ですか?",
+   "en": "What creatures are said to haunt forests at night?"
+  },
+  {
+   "id": "016",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "昔話で称えられている英雄は誰ですか?",
+   "en": "What folk heroes are celebrated in traditional tales?"
+  },
+  {
+   "id": "017",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "子どもに悪さをしないよう戒める話にはどんなものがありますか?",
+   "en": "What stories warn children against misbehaving?"
+  },
+  {
+   "id": "018",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "昔話に出てくるいたずら者やトリックスターは誰ですか?",
+   "en": "What tricksters appear in old folk tales?"
+  },
+  {
+   "id": "019",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "家に住むと信じられている精霊は何ですか?",
+   "en": "What spirits are believed to live in homes?"
+  },
+  {
+   "id": "020",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "理想の妻や夫を表すことわざはどんなものですか?",
+   "en": "What proverbs describe the ideal wife or husband?"
+  },
+  {
+   "id": "021",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "昔から男性が担当する家事は何ですか?",
+   "en": "What household chores are traditionally assigned to men?"
+  },
+  {
+   "id": "022",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "男の子が大人になるとき、どんな儀式をしますか?",
+   "en": "What rituals mark a boy becoming a man?"
+  },
+  {
+   "id": "023",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "月経中の女性に課される昔ながらの禁忌にはどんなものがありますか?",
+   "en": "What traditional beliefs restrict women during menstruation?"
+  },
+  {
+   "id": "024",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "男女が違う理由を説明する神話にはどんなものがありますか?",
+   "en": "What myths explain why men and women differ?"
+  },
+  {
+   "id": "025",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "祖父母にはどんな役割がありますか?",
+   "en": "What is the role of grandparents?"
+  },
+  {
+   "id": "026",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "長子には何が期待されますか?",
+   "en": "What is expected of the eldest child?"
+  },
+  {
+   "id": "027",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "年老いた親の世話は、たいてい誰がしますか?",
+   "en": "Who usually cares for aging parents?"
+  },
+  {
+   "id": "028",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "結婚生活で、姻戚はどんな役割を果たしますか?",
+   "en": "What role do in-laws play in married life?"
+  },
+  {
+   "id": "029",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "家事は普通どのように分担されますか?",
+   "en": "How are household chores typically divided?"
+  },
+  {
+   "id": "030",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "住民が集まる地域のイベントにはどんなものがありますか?",
+   "en": "What community events bring residents together?"
+  },
+  {
+   "id": "031",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "新しく引っ越してきた人をどのように迎えますか?",
+   "en": "How do people welcome newcomers to a neighborhood?"
+  },
+  {
+   "id": "032",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "地元の市場は地域の暮らしでどんな役割を果たしていますか?",
+   "en": "What role do local markets play in community life?"
+  },
+  {
+   "id": "033",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "地域の中心になっている集まりの場所はどこですか?",
+   "en": "What gathering places serve as community hubs?"
+  },
+  {
+   "id": "034",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "大変な時、地域ではどのように支え合いますか?",
+   "en": "How do communities support members during hard times?"
+  },
+  {
+   "id": "035",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "家族での食事の時の正しいテーブルマナーは何ですか?",
+   "en": "What are proper table manners during a family meal?"
+  },
+  {
+   "id": "036",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "人の家を訪ねる時、客はどう振る舞うべきですか?",
+   "en": "How should guests behave when visiting someone's home?"
+  },
+  {
+   "id": "037",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "年長者への正しい挨拶の仕方は何ですか?",
+   "en": "What is the appropriate way to greet elders?"
+  },
+  {
+   "id": "038",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "訪問先にはどんな贈り物が礼儀にかないますか?",
+   "en": "What gifts are considered polite when visiting a host?"
+  },
+  {
+   "id": "039",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "人前で失礼とされる身ぶりは何ですか?",
+   "en": "What gestures are considered rude in public?"
+  },
+  {
+   "id": "040",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "一日の労働時間は普通どのくらいですか?",
+   "en": "What is the typical length of a working day?"
+  },
+  {
+   "id": "041",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "職場では上司を普通どう呼びますか?",
+   "en": "How are bosses usually addressed at work?"
+  },
+  {
+   "id": "042",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "職場ではどんな服装が適切とされますか?",
+   "en": "What is considered appropriate attire in the office?"
+  },
+  {
+   "id": "043",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "仕事帰りの付き合いは同僚の間でどんな役割がありますか?",
+   "en": "What role do after-work gatherings play among colleagues?"
+  },
+  {
+   "id": "044",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "働く人は昼休みを普通どう過ごしますか?",
+   "en": "How is lunch break typically spent by workers?"
+  },
+  {
+   "id": "045",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "もめ事の解決で年長者はどんな役割をしますか?",
+   "en": "What is the role of elders in settling disputes?"
+  },
+  {
+   "id": "046",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "家族は相続の争いを普通どう解決しますか?",
+   "en": "How do families usually resolve inheritance disagreements?"
+  },
+  {
+   "id": "047",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "地域の対立で仲裁者はどんな役割を担いますか?",
+   "en": "What role do mediators play in community conflicts?"
+  },
+  {
+   "id": "048",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "隣人同士のトラブルは普通どう対処されますか?",
+   "en": "How are disputes between neighbors typically handled?"
+  },
+  {
+   "id": "049",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "口論の後に謝る時はどんな身ぶりをしますか?",
+   "en": "What gestures are used to apologize after an argument?"
+  },
+  {
+   "id": "050",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "学校では外国語としてどんな言語を教えますか?",
+   "en": "What languages are taught as foreign languages in schools?"
+  },
+  {
+   "id": "051",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "授業ではどんな言語が使われますか?",
+   "en": "What language is used for instruction in classrooms?"
+  },
+  {
+   "id": "052",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "生徒は先生をどう呼びますか?",
+   "en": "How do students address their teachers?"
+  },
+  {
+   "id": "053",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "子どもが最初に習う文字は何ですか?",
+   "en": "What writing systems do children learn first?"
+  },
+  {
+   "id": "054",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "学校教育で手書きの練習はどんな役割がありますか?",
+   "en": "What role does handwriting practice play in schooling?"
+  },
+  {
+   "id": "055",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "義務教育は普通何歳から始まりますか?",
+   "en": "What age do children typically start compulsory schooling?"
+  },
+  {
+   "id": "056",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "生徒の将来を左右する主な試験は何ですか?",
+   "en": "What major exams determine students' future paths?"
+  },
+  {
+   "id": "057",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "学校の一年は普通どんな構成ですか?",
+   "en": "How is the school year typically structured?"
+  },
+  {
+   "id": "058",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "私立学校は教育でどんな役割を果たしていますか?",
+   "en": "What role do private schools play in education?"
+  },
+  {
+   "id": "059",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "中等教育を終えた後は何をしますか?",
+   "en": "What happens after students finish secondary school?"
+  },
+  {
+   "id": "060",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "生徒は普段、勉強にどんな機器を使いますか?",
+   "en": "What devices do students typically use for schoolwork?"
+  },
+  {
+   "id": "061",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "生徒に一番人気の学習アプリは何ですか?",
+   "en": "What learning apps are most popular among students?"
+  },
+  {
+   "id": "062",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "教室でスマートフォンはどんな役割を果たしていますか?",
+   "en": "What role do smartphones play in classrooms?"
+  },
+  {
+   "id": "063",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "先生は宿題を出すのにどんなオンラインサービスを使いますか?",
+   "en": "What online platforms do teachers use to assign homework?"
+  },
+  {
+   "id": "064",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "教室によくあるテクノロジーは何ですか?",
+   "en": "What technology is commonly found in classrooms?"
+  },
+  {
+   "id": "065",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "お年寄りは子どもにどんな伝統的な技を伝えますか?",
+   "en": "What traditional skills do elders pass down to children?"
+  },
+  {
+   "id": "066",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "子どもに価値観を教えるために、よく語られる話は何ですか?",
+   "en": "What stories are commonly told to teach children values?"
+  },
+  {
+   "id": "067",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "弟子入りして学ぶ工芸にはどんなものがありますか?",
+   "en": "What crafts are learned through apprenticeship?"
+  },
+  {
+   "id": "068",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "人生の教訓を伝えるのに、どんなことわざが使われますか?",
+   "en": "What proverbs are used to teach life lessons?"
+  },
+  {
+   "id": "069",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "文字ではなく口伝えで受け継がれている知識は何ですか?",
+   "en": "What knowledge is passed down orally rather than written?"
+  },
+  {
+   "id": "070",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "学校で国民的英雄として称えられている科学者は誰ですか?",
+   "en": "Which scientists are celebrated as national heroes in schools?"
+  },
+  {
+   "id": "071",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "中等教育では、どんな哲学者を学びますか?",
+   "en": "What philosophers do students study in secondary school?"
+  },
+  {
+   "id": "072",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "理科の授業では進化をどのように教えていますか?",
+   "en": "How is evolution taught in science classes?"
+  },
+  {
+   "id": "073",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "教科書で大きく取り上げられている科学的な業績は何ですか?",
+   "en": "What scientific achievements appear prominently in school textbooks?"
+  },
+  {
+   "id": "074",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "高校で哲学は必修科目ですか?",
+   "en": "Is philosophy a compulsory subject in high school?"
+  },
+  {
+   "id": "075",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "よく演奏される伝統楽器は何ですか?",
+   "en": "What traditional musical instruments are commonly played?"
+  },
+  {
+   "id": "076",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "ほとんどの人が暗記している民謡は何ですか?",
+   "en": "What folk songs do most people know by heart?"
+  },
+  {
+   "id": "077",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "結婚式では普通どんな音楽が流れますか?",
+   "en": "What music is typically played at weddings?"
+  },
+  {
+   "id": "078",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "国民的アイコンとされている音楽家は誰ですか?",
+   "en": "Which musicians are considered national icons?"
+  },
+  {
+   "id": "079",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "葬儀や追悼の儀式ではどんな歌が歌われますか?",
+   "en": "What songs are sung at funerals or mourning ceremonies?"
+  },
+  {
+   "id": "080",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "結婚式ではどんな民俗舞踊が披露されますか?",
+   "en": "What folk dances are performed at weddings?"
+  },
+  {
+   "id": "081",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "収穫祭と結びついた踊りには何がありますか?",
+   "en": "What dances are associated with harvest festivals?"
+  },
+  {
+   "id": "082",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "今、若者に人気のダンスのジャンルは何ですか?",
+   "en": "Which dance styles are popular among young people today?"
+  },
+  {
+   "id": "083",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "伝統舞踊の公演ではどんな衣装を着ますか?",
+   "en": "What costumes are worn for traditional dance performances?"
+  },
+  {
+   "id": "084",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "最も有名な振付家は誰ですか?",
+   "en": "Who are the most famous choreographers?"
+  },
+  {
+   "id": "085",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "伝統的な絵画の様式にはどんなものがありますか?",
+   "en": "What traditional painting styles exist?"
+  },
+  {
+   "id": "086",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "最も称賛されている画家は誰ですか?",
+   "en": "Who are the most celebrated painters?"
+  },
+  {
+   "id": "087",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "広く知られている有名な芸術作品は何ですか?",
+   "en": "What famous artworks are widely recognized?"
+  },
+  {
+   "id": "088",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "今も受け継がれている民芸の伝統には何がありますか?",
+   "en": "What folk art traditions are still practiced?"
+  },
+  {
+   "id": "089",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "最も重要な美術館はどこですか?",
+   "en": "What art museums are most important?"
+  },
+  {
+   "id": "090",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "子どもにはどんな昔話がよく語られていますか?",
+   "en": "What folktales are commonly told to children?"
+  },
+  {
+   "id": "091",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "国民的文学とされる古典小説は何ですか?",
+   "en": "Which classic novels are considered national literary treasures?"
+  },
+  {
+   "id": "092",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "伝統的に朗誦されたり学ばれたりしている叙事詩は何ですか?",
+   "en": "What epic poems are traditionally recited or studied?"
+  },
+  {
+   "id": "093",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "最も有名な詩人は誰ですか?",
+   "en": "Who are the most celebrated poets?"
+  },
+  {
+   "id": "094",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "今も残っている口承の語り芸にはどんなものがありますか?",
+   "en": "What oral storytelling traditions still exist today?"
+  },
+  {
+   "id": "095",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "伝統的な演劇にはどんな種類がありますか?",
+   "en": "What traditional theater forms exist?"
+  },
+  {
+   "id": "096",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "どんな人形芝居が上演されていますか?",
+   "en": "What puppetry traditions are performed?"
+  },
+  {
+   "id": "097",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "最も有名な劇作家は誰ですか?",
+   "en": "Who are the most celebrated playwrights?"
+  },
+  {
+   "id": "098",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "国民的な古典とされる有名な戯曲は何ですか?",
+   "en": "What famous plays are considered national classics?"
+  },
+  {
+   "id": "099",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "伝統芸能ではどんな面が使われますか?",
+   "en": "What masks are used in traditional performances?"
+  },
+  {
+   "id": "100",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "国民的な名作とされる映画は何ですか?",
+   "en": "What films are considered national cinema classics?"
+  },
+  {
+   "id": "101",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "最も有名な映画監督は誰ですか?",
+   "en": "Which film directors are most celebrated?"
+  },
+  {
+   "id": "102",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "毎年開かれる映画祭にはどんなものがありますか?",
+   "en": "What film festivals are held annually?"
+  },
+  {
+   "id": "103",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "銀幕の伝説と言われる俳優は誰ですか?",
+   "en": "Which actors are regarded as screen legends?"
+  },
+  {
+   "id": "104",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "地元で最も人気のある映画ジャンルは何ですか?",
+   "en": "What film genres are most popular locally?"
+  },
+  {
+   "id": "105",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "どんな伝統工芸品が作られていますか?",
+   "en": "What traditional handicrafts are made?"
+  },
+  {
+   "id": "106",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "伝統的にどんな織物の技法が行われていますか?",
+   "en": "What textile weaving techniques are traditionally practiced?"
+  },
+  {
+   "id": "107",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "伝統的にどんな陶器が作られていますか?",
+   "en": "What pottery styles are traditionally produced?"
+  },
+  {
+   "id": "108",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "どんな伝統的な木彫り工芸がありますか?",
+   "en": "What traditional woodcarving crafts exist?"
+  },
+  {
+   "id": "109",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "観光客に人気の手作りのお土産は何ですか?",
+   "en": "What handmade souvenirs are popular with visitors?"
+  },
+  {
+   "id": "110",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "結婚式ではどんな伝統的な装身具を身につけますか?",
+   "en": "What traditional jewelry is worn at weddings?"
+  },
+  {
+   "id": "111",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "伝統的な装身具にはどんな素材がよく使われますか?",
+   "en": "What materials are commonly used in traditional jewelry?"
+  },
+  {
+   "id": "112",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "伝統的な意味を持つ入れ墨にはどんなものがありますか?",
+   "en": "What forms of tattooing have traditional significance?"
+  },
+  {
+   "id": "113",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "文化的に伝統とされるピアスの習慣にはどんなものがありますか?",
+   "en": "What body piercing practices are culturally traditional?"
+  },
+  {
+   "id": "114",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "どんな装身具で結婚しているかどうかがわかりますか?",
+   "en": "What jewelry signals a person's marital status?"
+  },
+  {
+   "id": "115",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "伝統的な住宅にはどんな様式がありますか?",
+   "en": "What traditional house styles exist?"
+  },
+  {
+   "id": "116",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "家には伝統的にどんな建材が使われていますか?",
+   "en": "What building materials are traditionally used for homes?"
+  },
+  {
+   "id": "117",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "有名な歴史的建造物にはどんなものがありますか?",
+   "en": "What famous historic buildings are there?"
+  },
+  {
+   "id": "118",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "旧市街の街並みを特徴づける建築様式は何ですか?",
+   "en": "What architectural styles define old town centers?"
+  },
+  {
+   "id": "119",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "伝統的な建物にはどんな装飾が施されていますか?",
+   "en": "What decorative elements adorn traditional buildings?"
+  },
+  {
+   "id": "120",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "結婚式のお祝いではどんな料理が出されますか?",
+   "en": "What dishes are served at wedding celebrations?"
+  },
+  {
+   "id": "121",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "朝食にはどんなものを食べますか?",
+   "en": "What foods are eaten for breakfast?"
+  },
+  {
+   "id": "122",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "人気の屋台料理は何ですか?",
+   "en": "What street foods are most popular?"
+  },
+  {
+   "id": "123",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "料理によく使われるスパイスは何ですか?",
+   "en": "What spices are commonly used in cooking?"
+  },
+  {
+   "id": "124",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "大きな祝日にはどんな料理を作りますか?",
+   "en": "What dishes are prepared for major holidays?"
+  },
+  {
+   "id": "125",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "お客さんを迎えるときにはどんな飲み物を出しますか?",
+   "en": "What drinks are served to welcome guests?"
+  },
+  {
+   "id": "126",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "結婚式ではどんな飲み物を飲みますか?",
+   "en": "What beverages are drunk at weddings?"
+  },
+  {
+   "id": "127",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "冬によく飲む温かい飲み物は何ですか?",
+   "en": "What hot drinks are common in winter?"
+  },
+  {
+   "id": "128",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "穀物を発酵させて作る飲み物には何がありますか?",
+   "en": "What drinks are made from fermented grains?"
+  },
+  {
+   "id": "129",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "朝食にはどんな飲み物を合わせますか?",
+   "en": "What beverages accompany breakfast?"
+  },
+  {
+   "id": "130",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "スポーツの試合を見ながらどんなおやつを食べますか?",
+   "en": "What snacks are eaten while watching sports games?"
+  },
+  {
+   "id": "131",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "ピクニックにはどんな食べ物を持っていきますか?",
+   "en": "What foods are brought on picnics?"
+  },
+  {
+   "id": "132",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "遊園地ではどんな食べ物が売られていますか?",
+   "en": "What foods are sold at amusement parks?"
+  },
+  {
+   "id": "133",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "映画館ではどんなおやつを食べますか?",
+   "en": "What snacks are eaten at the movie theater?"
+  },
+  {
+   "id": "134",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "屋外の集まりではどんなものを焼きますか?",
+   "en": "What foods are grilled at outdoor gatherings?"
+  },
+  {
+   "id": "135",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "スポーツ観戦中にはどんなものを食べますか?",
+   "en": "What foods are eaten while watching sports matches?"
+  },
+  {
+   "id": "136",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "スタジアムではどんな軽食が売られていますか?",
+   "en": "What snacks are sold at sports stadiums?"
+  },
+  {
+   "id": "137",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "選手は試合の前に伝統的にどんなものを食べますか?",
+   "en": "What foods do athletes traditionally eat before competitions?"
+  },
+  {
+   "id": "138",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "試合観戦パーティーではどんな料理が出ますか?",
+   "en": "What dishes are served at game day parties?"
+  },
+  {
+   "id": "139",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "伝統的な大食い競争ではどんな食べ物が使われますか?",
+   "en": "What foods are used in traditional eating contests?"
+  },
+  {
+   "id": "140",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "結婚式ではどんな料理が出ますか?",
+   "en": "What foods are served at weddings?"
+  },
+  {
+   "id": "141",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "赤ちゃんが生まれた後にはどんなものを食べますか?",
+   "en": "What foods are eaten after a baby is born?"
+  },
+  {
+   "id": "142",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "葬式ではどんな料理が出ますか?",
+   "en": "What foods are served at funerals?"
+  },
+  {
+   "id": "143",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "子どもの1歳の誕生日にはどんな料理でお祝いしますか?",
+   "en": "What dishes celebrate a child's first birthday?"
+  },
+  {
+   "id": "144",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "亡くなった先祖を供養するためにどんな食べ物をお供えしますか?",
+   "en": "What foods are offered to honor deceased ancestors?"
+  },
+  {
+   "id": "145",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "お正月にはどんなものを食べますか?",
+   "en": "What foods are eaten during the new year celebration?"
+  },
+  {
+   "id": "146",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "結婚祝いの宴会ではどんな料理を用意しますか?",
+   "en": "What dishes are prepared for wedding feasts?"
+  },
+  {
+   "id": "147",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "大きなお祭りではどんなお菓子を分け合いますか?",
+   "en": "What sweets are shared during major festivals?"
+  },
+  {
+   "id": "148",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "誕生日のお祝いではどんな料理が出ますか?",
+   "en": "What foods are served at birthday celebrations?"
+  },
+  {
+   "id": "149",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "お祝いの集まりで人気の飲み物は何ですか?",
+   "en": "What drinks are popular during festive gatherings?"
+  },
+  {
+   "id": "150",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "季節の天候は地元の祭りにどう影響していますか?",
+   "en": "What seasonal weather shapes local festivals?"
+  },
+  {
+   "id": "151",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "気候に合わせて作られた伝統的な家はどんなものですか?",
+   "en": "What traditional houses are designed for the climate?"
+  },
+  {
+   "id": "152",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "厳しい季節を乗り切るために保存される食べ物は何ですか?",
+   "en": "What foods are preserved to survive harsh seasons?"
+  },
+  {
+   "id": "153",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "地元の気候を反映した衣服の伝統は何ですか?",
+   "en": "What clothing traditions reflect the local climate?"
+  },
+  {
+   "id": "154",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "地域の儀式を形づくってきた自然災害は何ですか?",
+   "en": "What natural disasters shape community rituals?"
+  },
+  {
+   "id": "155",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "地元の伝統に影響を与えている山はどこですか?",
+   "en": "What mountains shape local traditions?"
+  },
+  {
+   "id": "156",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "文化的に重要な棚田はどこですか?",
+   "en": "What farming terraces are culturally significant?"
+  },
+  {
+   "id": "157",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "伝統的な民謡にはどんな風景が登場しますか?",
+   "en": "What landscapes appear in traditional folk songs?"
+  },
+  {
+   "id": "158",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "米や穀物の栽培に使われる低地はどこですか?",
+   "en": "What lowlands are used for rice or grain farming?"
+  },
+  {
+   "id": "159",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "牧畜で知られる高地はどこですか?",
+   "en": "What highlands are known for pastoral herding?"
+  },
+  {
+   "id": "160",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "村と都市で祝い方が違う祭りは何ですか?",
+   "en": "What festivals are celebrated differently in villages and cities?"
+  },
+  {
+   "id": "161",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "都会的ではなく田舎らしいとされる食べ物は何ですか?",
+   "en": "What foods are considered typically rural rather than urban?"
+  },
+  {
+   "id": "162",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "都会の人は村の人にどんな偏見を持っていますか?",
+   "en": "What stereotypes do city dwellers hold about villagers?"
+  },
+  {
+   "id": "163",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "移住者は村からどんな伝統を都市へ持ち込みますか?",
+   "en": "What traditions do migrants bring from villages to cities?"
+  },
+  {
+   "id": "164",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "田舎の人と都会の人を分ける服装は何ですか?",
+   "en": "What clothing distinguishes rural residents from urban residents?"
+  },
+  {
+   "id": "165",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "地域のアイデンティティを示す方言は何ですか?",
+   "en": "What dialects mark regional identity?"
+  },
+  {
+   "id": "166",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "地元の誇りとなっている郷土料理は何ですか?",
+   "en": "What regional dishes define local pride?"
+  },
+  {
+   "id": "167",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "地域のアイデンティティを形づくる風景は何ですか?",
+   "en": "What landscapes shape regional identity?"
+  },
+  {
+   "id": "168",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "地域間にはどんなライバル関係がありますか?",
+   "en": "What rivalries exist between regions?"
+  },
+  {
+   "id": "169",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "地域の伝統を祝う祭りは何ですか?",
+   "en": "What festivals celebrate regional heritage?"
+  },
+  {
+   "id": "170",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "国境を定めている自然の地形は何ですか?",
+   "en": "What natural features define national borders?"
+  },
+  {
+   "id": "171",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "国のアイデンティティに関わる係争地は何ですか?",
+   "en": "What disputed territories shape national identity?"
+  },
+  {
+   "id": "172",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "隣接する文化の伝統が混ざり合う国境の町はどこですか?",
+   "en": "What border towns blend neighboring cultural traditions?"
+  },
+  {
+   "id": "173",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "現在の国境を定めた歴史的な条約は何ですか?",
+   "en": "What historical treaties established current boundaries?"
+  },
+  {
+   "id": "174",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "国境を越えたコミュニティを祝う祭りは何ですか?",
+   "en": "What festivals celebrate cross-border communities?"
+  },
+  {
+   "id": "175",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "移民のコミュニティによって形づくられた地区はどこですか?",
+   "en": "What neighborhoods were shaped by immigrant communities?"
+  },
+  {
+   "id": "176",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "移民の人々とともに伝わった食べ物は何ですか?",
+   "en": "What foods arrived with migrant groups?"
+  },
+  {
+   "id": "177",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "海外のディアスポラの人々はどんな祭りを祝いますか?",
+   "en": "What festivals do diaspora communities celebrate abroad?"
+  },
+  {
+   "id": "178",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "大規模な移民の波を引き起こした歴史的な出来事は何ですか?",
+   "en": "What historical events triggered large waves of emigration?"
+  },
+  {
+   "id": "179",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "初期の移民は一般的にどんな仕事に就きましたか?",
+   "en": "What jobs did early immigrants commonly take?"
+  },
+  {
+   "id": "180",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "神聖とされる自然の名所は何ですか?",
+   "en": "What natural landmarks are considered sacred?"
+  },
+  {
+   "id": "181",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "自然の季節の移り変わりを祝う祭りは何ですか?",
+   "en": "What festivals celebrate seasonal changes in nature?"
+  },
+  {
+   "id": "182",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "文化的に象徴的な意味を持つ動物は何ですか?",
+   "en": "What animals hold symbolic cultural importance?"
+  },
+  {
+   "id": "183",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "森や野生動物を守る伝統的な慣習は何ですか?",
+   "en": "What traditional practices protect forests or wildlife?"
+  },
+  {
+   "id": "184",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "伝統医療に使われる植物は何ですか?",
+   "en": "What plants are used in traditional medicine?"
+  },
+  {
+   "id": "185",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "どんな政治体制ですか?",
+   "en": "What form of government is in place?"
+  },
+  {
+   "id": "186",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "国家元首はどのように選ばれますか?",
+   "en": "How is the head of state chosen?"
+  },
+  {
+   "id": "187",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "君主制は政治でどんな役割を果たしていますか?",
+   "en": "What role does the monarchy play in government?"
+  },
+  {
+   "id": "188",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "国と地方の間で権力はどう分けられていますか?",
+   "en": "How is power divided between national and local governments?"
+  },
+  {
+   "id": "189",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "大統領や首相にはどんな権限がありますか?",
+   "en": "What powers does the president or prime minister hold?"
+  },
+  {
+   "id": "190",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "裁判制度はどんな法の伝統に基づいていますか?",
+   "en": "What legal traditions shape the court system?"
+  },
+  {
+   "id": "191",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "広く記憶されている有名な裁判は何ですか?",
+   "en": "What famous trials are widely remembered?"
+  },
+  {
+   "id": "192",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "今も日常生活に影響している慣習法は何ですか?",
+   "en": "What customary laws still influence daily life?"
+  },
+  {
+   "id": "193",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "文化的に容認される刑罰は何ですか?",
+   "en": "What punishments are considered culturally acceptable?"
+  },
+  {
+   "id": "194",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "最も強く守られている法的権利は何ですか?",
+   "en": "What legal rights are most fiercely defended?"
+  },
+  {
+   "id": "195",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "市民にはどんな義務が期待されていますか?",
+   "en": "What civic duties are citizens expected to fulfill?"
+  },
+  {
+   "id": "196",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "人々が選挙で投票する動機は何ですか?",
+   "en": "What motivates people to vote in elections?"
+  },
+  {
+   "id": "197",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "若者は普通どのように政治に関わりますか?",
+   "en": "How do young people typically get involved in politics?"
+  },
+  {
+   "id": "198",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "どんなボランティア活動が市民貢献とみなされますか?",
+   "en": "What forms of volunteering are considered civic contributions?"
+  },
+  {
+   "id": "199",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "公民の授業ではどんな価値観を教えますか?",
+   "en": "What values are taught in civic education classes?"
+  },
+  {
+   "id": "200",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "公に批判するのがタブーとされる話題は何ですか?",
+   "en": "What topics are considered taboo to criticize publicly?"
+  },
+  {
+   "id": "201",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "ネット上の発言を制限する法律にはどんなものがありますか?",
+   "en": "What laws restrict what people can say online?"
+  },
+  {
+   "id": "202",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "政治家を風刺する有名な番組は何ですか?",
+   "en": "What famous satirical shows mock politicians?"
+  },
+  {
+   "id": "203",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "報道が原因で投獄されたジャーナリストは誰ですか?",
+   "en": "What journalists have been jailed for their reporting?"
+  },
+  {
+   "id": "204",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "発禁になった本や映画は何ですか?",
+   "en": "What books or films have been banned?"
+  },
+  {
+   "id": "205",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "植民地時代の建物で今も政府が使っているものは何ですか?",
+   "en": "What colonial-era buildings are still used by the government?"
+  },
+  {
+   "id": "206",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "植民地支配からの独立を記念する祝日は何ですか?",
+   "en": "What holidays mark independence from colonial rule?"
+  },
+  {
+   "id": "207",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "植民地時代の法律で今も法制度に残っているものは何ですか?",
+   "en": "What colonial laws remain part of the legal system?"
+  },
+  {
+   "id": "208",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "撤去されたり議論になったりした植民地時代の人物の記念碑は何ですか?",
+   "en": "What monuments to colonial figures have been removed or debated?"
+  },
+  {
+   "id": "209",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "植民地時代の外国語で今も公用語になっているものは何ですか?",
+   "en": "What foreign languages from colonial times remain official?"
+  },
+  {
+   "id": "210",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "権力のある役人はどんな敬称で呼ばれますか?",
+   "en": "What titles are used to address powerful officials?"
+  },
+  {
+   "id": "211",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "長く政治を支配してきた家系はどこですか?",
+   "en": "What families have long dominated political life?"
+  },
+  {
+   "id": "212",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "最も政治的な影響力を持つ社会階層はどれですか?",
+   "en": "What social classes hold the most political influence?"
+  },
+  {
+   "id": "213",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "長老は政治的な決定にどのように影響を与えますか?",
+   "en": "How do elders influence political decisions?"
+  },
+  {
+   "id": "214",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "政治指導者への敬意を示す仕草には何がありますか?",
+   "en": "What gestures show respect toward political leaders?"
+  },
+  {
+   "id": "215",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "近年の歴史を形作ってきた社会運動は何ですか?",
+   "en": "What social movements have shaped recent history?"
+  },
+  {
+   "id": "216",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "今、最も議論されている人権問題は何ですか?",
+   "en": "What human rights issues are most debated today?"
+  },
+  {
+   "id": "217",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "国民的英雄として称えられている活動家は誰ですか?",
+   "en": "Which activists are celebrated as national heroes?"
+  },
+  {
+   "id": "218",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "抗議運動でよく使われるシンボルは何ですか?",
+   "en": "What symbols do protest movements commonly use?"
+  },
+  {
+   "id": "219",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "社会正義の運動と結びついている歌は何ですか?",
+   "en": "What songs are associated with social justice movements?"
+  },
+  {
+   "id": "220",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "風邪のときによく使われる家庭療法は何ですか?",
+   "en": "What home remedies are commonly used for colds?"
+  },
+  {
+   "id": "221",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "今も広く行われている伝統的な療法は何ですか?",
+   "en": "What traditional healing practices are still widely used?"
+  },
+  {
+   "id": "222",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "健康のために食べられているものは何ですか?",
+   "en": "What foods are eaten to stay healthy?"
+  },
+  {
+   "id": "223",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "健康効果で人気のハーブティーは何ですか?",
+   "en": "What herbal teas are popular for health benefits?"
+  },
+  {
+   "id": "224",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "産後の回復のために行われていることは何ですか?",
+   "en": "What practices are followed after childbirth for recovery?"
+  },
+  {
+   "id": "225",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "よく推進されている予防接種キャンペーンは何ですか?",
+   "en": "What vaccination campaigns are commonly promoted?"
+  },
+  {
+   "id": "226",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "広く知られている公衆衛生のスローガンは何ですか?",
+   "en": "What public health slogans are widely recognized?"
+  },
+  {
+   "id": "227",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "公共の場で奨励されている衛生習慣は何ですか?",
+   "en": "What hygiene habits are encouraged in public places?"
+  },
+  {
+   "id": "228",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "よく見かける禁煙対策は何ですか?",
+   "en": "What anti-smoking measures are commonly seen?"
+  },
+  {
+   "id": "229",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "大人に定期的に提供されている健康診断は何ですか?",
+   "en": "What health screenings are routinely offered to adults?"
+  },
+  {
+   "id": "230",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "ストレス解消にみんながよくやるリラックス方法は何ですか?",
+   "en": "What relaxation practices do people commonly use to relieve stress?"
+  },
+  {
+   "id": "231",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "健康に役立つ伝統的な入浴やサウナの習慣は何ですか?",
+   "en": "What traditional bathing or sauna customs support wellbeing?"
+  },
+  {
+   "id": "232",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "長生きの秘訣とされる毎日の習慣は何ですか?",
+   "en": "What daily habits are considered key to a long life?"
+  },
+  {
+   "id": "233",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "元気や活力が出るといわれる食べ物は何ですか?",
+   "en": "What foods are believed to boost energy and vitality?"
+  },
+  {
+   "id": "234",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "仕事と余暇のバランスはどうとっていますか?",
+   "en": "How do people typically balance work and leisure time?"
+  },
+  {
+   "id": "235",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "新米ママが守る産後の回復の習わしは何ですか?",
+   "en": "What postpartum recovery traditions do new mothers follow?"
+  },
+  {
+   "id": "236",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "妊婦さんに勧められる食べ物は何ですか?",
+   "en": "What foods are recommended for pregnant women?"
+  },
+  {
+   "id": "237",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "赤ちゃんの誕生を祝う儀式は何ですか?",
+   "en": "What rituals welcome a newborn baby?"
+  },
+  {
+   "id": "238",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "出産のとき、たいてい誰が女性を助けますか?",
+   "en": "Who typically assists women during childbirth?"
+  },
+  {
+   "id": "239",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "妊娠中のタブーや迷信でよく守られているものは何ですか?",
+   "en": "What pregnancy taboos or superstitions are commonly observed?"
+  },
+  {
+   "id": "240",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "どんな地元紙が読まれていますか?",
+   "en": "What local newspapers do people read?"
+  },
+  {
+   "id": "241",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "どんなコミュニティラジオ局が人気ですか?",
+   "en": "What community radio stations are popular?"
+  },
+  {
+   "id": "242",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "地域のニュースを放送しているローカルテレビ局はどこですか?",
+   "en": "What regional television channels broadcast local news?"
+  },
+  {
+   "id": "243",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "どんな地元のトーク番組がよく見られていますか?",
+   "en": "What local talk shows are widely watched?"
+  },
+  {
+   "id": "244",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "どんな地域の会報や情報紙が出回っていますか?",
+   "en": "What neighborhood newsletters or bulletins circulate?"
+  },
+  {
+   "id": "245",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "どのSNSが一番人気ですか?",
+   "en": "What social media platforms are most popular?"
+  },
+  {
+   "id": "246",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "よく使われている動画配信サービスは何ですか?",
+   "en": "What streaming services do people commonly use?"
+  },
+  {
+   "id": "247",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "よく聴かれているポッドキャストは何ですか?",
+   "en": "What podcasts are widely listened to?"
+  },
+  {
+   "id": "248",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "フォロワーの多いネットインフルエンサーは誰ですか?",
+   "en": "Which online influencers have large followings?"
+  },
+  {
+   "id": "249",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "最近流行したネットミームは何ですか?",
+   "en": "What memes have gone viral recently?"
+  },
+  {
+   "id": "250",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "市場を支配している大手エンターテインメント企業はどこですか?",
+   "en": "What major entertainment companies dominate the market?"
+  },
+  {
+   "id": "251",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "人気番組を多く制作しているテレビ局はどこですか?",
+   "en": "What television networks produce the most popular shows?"
+  },
+  {
+   "id": "252",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "影響力のあるレコード会社はどこですか?",
+   "en": "What music record labels are most influential?"
+  },
+  {
+   "id": "253",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "有名な映画スタジオにはどんなところがありますか?",
+   "en": "What famous film studios are based there?"
+  },
+  {
+   "id": "254",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "よく知られているゲーム会社はどこですか?",
+   "en": "What video game companies are well known?"
+  },
+  {
+   "id": "255",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "一番よく読まれている新聞は何ですか?",
+   "en": "What newspapers do people read most?"
+  },
+  {
+   "id": "256",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "一番よく見られているニュース専門チャンネルは何ですか?",
+   "en": "What television news channels are most watched?"
+  },
+  {
+   "id": "257",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "人気のニュースサイトは何ですか?",
+   "en": "What news websites are popular?"
+  },
+  {
+   "id": "258",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "ニュースを聞くのにどのラジオ局が聴かれていますか?",
+   "en": "What radio stations do people listen to for news?"
+  },
+  {
+   "id": "259",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "広く知られ、信頼されているジャーナリストは誰ですか?",
+   "en": "Which journalists are widely known and trusted?"
+  },
+  {
+   "id": "260",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "一番フォローされている有名人は誰ですか?",
+   "en": "What celebrities are most widely followed?"
+  },
+  {
+   "id": "261",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "社会現象になったテレビ番組は何ですか?",
+   "en": "What television shows are considered cultural phenomena?"
+  },
+  {
+   "id": "262",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "ほとんどの人が歌える曲は何ですか?",
+   "en": "What songs does nearly everyone know by heart?"
+  },
+  {
+   "id": "263",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "よく引用される映画の決め台詞は何ですか?",
+   "en": "What catchphrases from movies are commonly quoted?"
+  },
+  {
+   "id": "264",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "象徴的なキャラクターは誰ですか?",
+   "en": "What fictional characters are iconic?"
+  },
+  {
+   "id": "265",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "よく知られているゲームスタジオはどこですか?",
+   "en": "What video game studios are well known?"
+  },
+  {
+   "id": "266",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "一番人気のゲームは何ですか?",
+   "en": "What video games are most popular?"
+  },
+  {
+   "id": "267",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "デジタルゲーム化された伝統的な遊びには何がありますか?",
+   "en": "What traditional games have been adapted into digital games?"
+  },
+  {
+   "id": "268",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "どんなゲームイベントや展示会が開かれていますか?",
+   "en": "What gaming conventions or expos take place?"
+  },
+  {
+   "id": "269",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "ファンの多いeスポーツチームはどこですか?",
+   "en": "What esports teams have large followings?"
+  },
+  {
+   "id": "270",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "どんな歴史的出来事が祝日になっていますか?",
+   "en": "What historical events are commemorated with national holidays?"
+  },
+  {
+   "id": "271",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "歴史を形作った革命にはどんなものがありますか?",
+   "en": "What revolutions shaped the nation's history?"
+  },
+  {
+   "id": "272",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "今でも語り継がれている主な戦いは何ですか?",
+   "en": "What major battles are remembered today?"
+  },
+  {
+   "id": "273",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "学校ではどんな歴史的出来事を教えていますか?",
+   "en": "What historical events are taught in schools?"
+  },
+  {
+   "id": "274",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "毎年祝われている独立の記念日にはどんなものがありますか?",
+   "en": "What independence events are celebrated annually?"
+  },
+  {
+   "id": "275",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "紙幣にはどんな歴史上の人物が描かれていますか?",
+   "en": "Which historical figures appear on banknotes?"
+  },
+  {
+   "id": "276",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "祝日になっている歴史的な指導者は誰ですか?",
+   "en": "What historical leaders are celebrated with national holidays?"
+  },
+  {
+   "id": "277",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "最も広く顕彰されている歴史上の女性は誰ですか?",
+   "en": "Which historical women are most widely commemorated?"
+  },
+  {
+   "id": "278",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "有名な歴史上の人物をたたえる像にはどんなものがありますか?",
+   "en": "What statues honor famous historical figures?"
+  },
+  {
+   "id": "279",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "国民的英雄とされている歴史上の人物は誰ですか?",
+   "en": "Which historical figures are considered national heroes?"
+  },
+  {
+   "id": "280",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "歴史的出来事を記念した祝日にはどんなものがありますか?",
+   "en": "What national holidays commemorate historical events?"
+  },
+  {
+   "id": "281",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "過去の戦争の犠牲者を追悼する記念碑にはどんなものがありますか?",
+   "en": "What monuments honor victims of past wars?"
+  },
+  {
+   "id": "282",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "紙幣に載っている歴史上の人物は誰ですか?",
+   "en": "What historical figures appear on banknotes?"
+  },
+  {
+   "id": "283",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "歴史的出来事の記憶を伝える民謡にはどんなものがありますか?",
+   "en": "What folk songs preserve memories of historical events?"
+  },
+  {
+   "id": "284",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "歴史の辛い部分を伝える博物館にはどんなものがありますか?",
+   "en": "What museums document difficult chapters of history?"
+  },
+  {
+   "id": "285",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "今も追悼されている反植民地の蜂起にはどんなものがありますか?",
+   "en": "What anti-colonial uprisings are commemorated today?"
+  },
+  {
+   "id": "286",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "国民的英雄として称えられている独立の指導者は誰ですか?",
+   "en": "Which independence leaders are celebrated as national heroes?"
+  },
+  {
+   "id": "287",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "植民地支配への抵抗をたたえる記念碑にはどんなものがありますか?",
+   "en": "What monuments honor resistance against colonial rule?"
+  },
+  {
+   "id": "288",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "独立闘争から生まれた歌にはどんなものがありますか?",
+   "en": "What songs emerged from independence struggles?"
+  },
+  {
+   "id": "289",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "今も残っている植民地時代の建物にはどんなものがありますか?",
+   "en": "Which colonial-era buildings still stand today?"
+  },
+  {
+   "id": "290",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "国民のアイデンティティを形作っている建国神話にはどんなものがありますか?",
+   "en": "What founding myths shape national identity?"
+  },
+  {
+   "id": "291",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "国の象徴として称えられている歴史上の英雄は誰ですか?",
+   "en": "What historical heroes are celebrated as national symbols?"
+  },
+  {
+   "id": "292",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "祝日にはどんな出来事を記念していますか?",
+   "en": "What events are commemorated on national holidays?"
+  },
+  {
+   "id": "293",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "国の歴史を物語る記念建造物にはどんなものがありますか?",
+   "en": "What national monuments tell the story of the nation?"
+  },
+  {
+   "id": "294",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "転換点として記憶されている歴史的な戦いにはどんなものがありますか?",
+   "en": "What historical battles are remembered as defining moments?"
+  },
+  {
+   "id": "295",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "最近修復された歴史的建造物にはどんなものがありますか?",
+   "en": "What historic buildings have been restored recently?"
+  },
+  {
+   "id": "296",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "法律で保護されている遺産にはどんなものがありますか?",
+   "en": "What heritage sites are protected by law?"
+  },
+  {
+   "id": "297",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "伝統工芸を保存している博物館にはどんなものがありますか?",
+   "en": "What museums preserve traditional crafts?"
+  },
+  {
+   "id": "298",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "歴史的記念物の保存に取り組んでいる団体にはどんなものがありますか?",
+   "en": "What organizations work to preserve historical monuments?"
+  },
+  {
+   "id": "299",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "開発で脅かされている古代遺跡にはどんなものがありますか?",
+   "en": "What ancient ruins are threatened by development?"
+  },
+  {
+   "id": "300",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "国の経済を支えている産業は何ですか?",
+   "en": "What industries drive the national economy?"
+  },
+  {
+   "id": "301",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "輸出向けに作られている製品は何ですか?",
+   "en": "What goods are manufactured for export?"
+  },
+  {
+   "id": "302",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "商業的に採掘・加工されている天然資源は何ですか?",
+   "en": "What natural resources are extracted and processed commercially?"
+  },
+  {
+   "id": "303",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "大きな産業に成長した伝統工芸は何ですか?",
+   "en": "What traditional crafts have become major industries?"
+  },
+  {
+   "id": "304",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "観光は経済でどんな役割を果たしていますか?",
+   "en": "What role does tourism play in the economy?"
+  },
+  {
+   "id": "305",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "今も残っている伝統的な物々交換の習慣は何ですか?",
+   "en": "What traditional bartering practices still exist?"
+  },
+  {
+   "id": "306",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "主な輸出品は何ですか?",
+   "en": "What are the main export goods?"
+  },
+  {
+   "id": "307",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "昔、ここを通っていた交易路は何ですか?",
+   "en": "What historic trade routes passed through here?"
+  },
+  {
+   "id": "308",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "地元の市場での値段交渉には、どんな習慣がありますか?",
+   "en": "What customs surround haggling at local markets?"
+  },
+  {
+   "id": "309",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "海外からよく輸入されているものは何ですか?",
+   "en": "What goods are commonly imported from abroad?"
+  },
+  {
+   "id": "310",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "人々がよくやっている非公式の仕事は何ですか?",
+   "en": "What informal jobs do people commonly do?"
+  },
+  {
+   "id": "311",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "最も影響力のある労働組合はどこですか?",
+   "en": "What labor unions are most influential?"
+  },
+  {
+   "id": "312",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "社会的な地位が最も高いとされる職業は何ですか?",
+   "en": "What occupations carry the highest social prestige?"
+  },
+  {
+   "id": "313",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "一般的な勤務時間と休日はどうなっていますか?",
+   "en": "What are typical working hours and rest days?"
+  },
+  {
+   "id": "314",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "労働者が休める祝日は何ですか?",
+   "en": "What public holidays guarantee workers time off?"
+  },
+  {
+   "id": "315",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "人々は富をどんなふうに人前で示しますか?",
+   "en": "What signals of wealth do people display publicly?"
+  },
+  {
+   "id": "316",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "給料が良くても地位が低いと見られる仕事は何ですか?",
+   "en": "What jobs are considered low-status despite paying well?"
+  },
+  {
+   "id": "317",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "大金持ちが住む地域として知られているのはどこですか?",
+   "en": "What neighborhoods are associated with the very rich?"
+  },
+  {
+   "id": "318",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "最貧困層の世帯を支える福祉制度には何がありますか?",
+   "en": "What welfare programs support the poorest households?"
+  },
+  {
+   "id": "319",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "低所得の人たちが使っている非公式の貯蓄グループは何ですか?",
+   "en": "What informal savings groups do low-income people use?"
+  },
+  {
+   "id": "320",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "最も急速な経済成長を牽引した産業は何ですか?",
+   "en": "What industries drove the fastest periods of economic growth?"
+  },
+  {
+   "id": "321",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "国の経済政策を方向づけた開発計画は何ですか?",
+   "en": "What development plans have shaped national economic policy?"
+  },
+  {
+   "id": "322",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "経済の近代化を象徴するインフラ事業は何ですか?",
+   "en": "What infrastructure projects symbolize economic modernization?"
+  },
+  {
+   "id": "323",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "外国からの投資を集めた経済特区はどこですか?",
+   "en": "What special economic zones have attracted foreign investment?"
+  },
+  {
+   "id": "324",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "大きな好景気のきっかけとなった歴史的な出来事は何ですか?",
+   "en": "What historical events triggered major economic booms?"
+  },
+  {
+   "id": "325",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "海外で最も成功している文化的な輸出品は何ですか?",
+   "en": "What cultural products are exported abroad most successfully?"
+  },
+  {
+   "id": "326",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "メニューを現地向けに変えた外国のファストフード店はどこですか?",
+   "en": "What foreign fast-food chains have adapted their local menus?"
+  },
+  {
+   "id": "327",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "主に観光客向けに売られている伝統工芸品は何ですか?",
+   "en": "What traditional crafts are sold mainly to tourists?"
+  },
+  {
+   "id": "328",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "ステータスシンボルとされている外国ブランドは何ですか?",
+   "en": "What foreign brands are considered status symbols?"
+  },
+  {
+   "id": "329",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "海外市場に進出した地元ブランドは何ですか?",
+   "en": "What local brands have expanded into international markets?"
+  }
+ ]
+}

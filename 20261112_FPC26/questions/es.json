@@ -1,0 +1,2316 @@
+{
+ "lang": "es",
+ "suffix": "Sé breve. Elige tú mismo el lugar.",
+ "questions": [
+  {
+   "id": "000",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "¿Qué rituales marcan la entrada de un niño en la fe?",
+   "en": "What rituals mark a child's entry into the faith?"
+  },
+  {
+   "id": "001",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "¿Qué peregrinaciones hacen los creyentes y por qué?",
+   "en": "What pilgrimages do believers undertake, and why?"
+  },
+  {
+   "id": "002",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "¿Qué ofrendas se hacen en los altares o santuarios del hogar?",
+   "en": "What offerings are made at household shrines or altars?"
+  },
+  {
+   "id": "003",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "¿Qué espíritus se cree que habitan en los lugares naturales?",
+   "en": "What spirits are believed to inhabit natural places?"
+  },
+  {
+   "id": "004",
+   "domain": "Beliefs",
+   "subtopic": "Religion & Spirituality",
+   "text": "¿Qué fiestas religiosas marcan el calendario anual?",
+   "en": "What religious festivals shape the yearly calendar?"
+  },
+  {
+   "id": "005",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "¿Qué virtudes enseñan los refranes a los niños a valorar más?",
+   "en": "What virtues do proverbs teach children to value most?"
+  },
+  {
+   "id": "006",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "¿Qué deberes tienen los hijos adultos con sus padres ancianos?",
+   "en": "What duties do adult children owe their aging parents?"
+  },
+  {
+   "id": "007",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "¿Qué hace que alguien merezca respeto en la comunidad?",
+   "en": "What makes someone deserving of respect in the community?"
+  },
+  {
+   "id": "008",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "¿Qué comportamientos avergüenzan a toda una familia?",
+   "en": "What behaviors bring shame upon an entire family?"
+  },
+  {
+   "id": "009",
+   "domain": "Beliefs",
+   "subtopic": "Values & Ethics",
+   "text": "¿Qué obligaciones conlleva aceptar la hospitalidad de desconocidos?",
+   "en": "What obligations come with accepting hospitality from strangers?"
+  },
+  {
+   "id": "010",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "¿Qué colores tienen un significado especial?",
+   "en": "What colors carry special meaning?"
+  },
+  {
+   "id": "011",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "¿Qué animales simbolizan la buena suerte?",
+   "en": "What animals symbolize good fortune?"
+  },
+  {
+   "id": "012",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "¿Qué números se consideran de buena o mala suerte?",
+   "en": "What numbers are considered lucky or unlucky?"
+  },
+  {
+   "id": "013",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "¿Qué flores o plantas tienen un significado simbólico?",
+   "en": "What flowers or plants hold symbolic significance?"
+  },
+  {
+   "id": "014",
+   "domain": "Beliefs",
+   "subtopic": "Symbolism",
+   "text": "¿Qué símbolos se cree que protegen del mal?",
+   "en": "What symbols are believed to ward off evil?"
+  },
+  {
+   "id": "015",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "¿Qué criaturas se dice que rondan los bosques de noche?",
+   "en": "What creatures are said to haunt forests at night?"
+  },
+  {
+   "id": "016",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "¿Qué héroes populares se celebran en los cuentos tradicionales?",
+   "en": "What folk heroes are celebrated in traditional tales?"
+  },
+  {
+   "id": "017",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "¿Qué cuentos advierten a los niños que no se porten mal?",
+   "en": "What stories warn children against misbehaving?"
+  },
+  {
+   "id": "018",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "¿Qué embaucadores aparecen en los cuentos populares antiguos?",
+   "en": "What tricksters appear in old folk tales?"
+  },
+  {
+   "id": "019",
+   "domain": "Beliefs",
+   "subtopic": "Mythology & Folklore",
+   "text": "¿Qué espíritus se cree que viven en las casas?",
+   "en": "What spirits are believed to live in homes?"
+  },
+  {
+   "id": "020",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "¿Qué refranes describen a la esposa o al esposo ideal?",
+   "en": "What proverbs describe the ideal wife or husband?"
+  },
+  {
+   "id": "021",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "¿Qué tareas del hogar se asignan tradicionalmente a los hombres?",
+   "en": "What household chores are traditionally assigned to men?"
+  },
+  {
+   "id": "022",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "¿Qué rituales marcan el paso de un niño a hombre?",
+   "en": "What rituals mark a boy becoming a man?"
+  },
+  {
+   "id": "023",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "¿Qué creencias tradicionales restringen a las mujeres durante la menstruación?",
+   "en": "What traditional beliefs restrict women during menstruation?"
+  },
+  {
+   "id": "024",
+   "domain": "Beliefs",
+   "subtopic": "Gender Roles",
+   "text": "¿Qué mitos explican por qué los hombres y las mujeres son diferentes?",
+   "en": "What myths explain why men and women differ?"
+  },
+  {
+   "id": "025",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "¿Cuál es el papel de los abuelos?",
+   "en": "What is the role of grandparents?"
+  },
+  {
+   "id": "026",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "¿Qué se espera del hijo mayor?",
+   "en": "What is expected of the eldest child?"
+  },
+  {
+   "id": "027",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "¿Quién suele cuidar de los padres ancianos?",
+   "en": "Who usually cares for aging parents?"
+  },
+  {
+   "id": "028",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "¿Qué papel juegan los suegros en la vida matrimonial?",
+   "en": "What role do in-laws play in married life?"
+  },
+  {
+   "id": "029",
+   "domain": "Social",
+   "subtopic": "Family & Social Roles",
+   "text": "¿Cómo se suelen repartir las tareas del hogar?",
+   "en": "How are household chores typically divided?"
+  },
+  {
+   "id": "030",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "¿Qué eventos comunitarios reúnen a los vecinos?",
+   "en": "What community events bring residents together?"
+  },
+  {
+   "id": "031",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "¿Cómo se da la bienvenida a los recién llegados al barrio?",
+   "en": "How do people welcome newcomers to a neighborhood?"
+  },
+  {
+   "id": "032",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "¿Qué papel tienen los mercados locales en la vida comunitaria?",
+   "en": "What role do local markets play in community life?"
+  },
+  {
+   "id": "033",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "¿Qué lugares de reunión funcionan como centros de la comunidad?",
+   "en": "What gathering places serve as community hubs?"
+  },
+  {
+   "id": "034",
+   "domain": "Social",
+   "subtopic": "Community Life",
+   "text": "¿Cómo apoyan las comunidades a sus miembros en los momentos difíciles?",
+   "en": "How do communities support members during hard times?"
+  },
+  {
+   "id": "035",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "¿Qué modales se esperan en la mesa durante una comida familiar?",
+   "en": "What are proper table manners during a family meal?"
+  },
+  {
+   "id": "036",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "¿Cómo debe comportarse un invitado al visitar una casa?",
+   "en": "How should guests behave when visiting someone's home?"
+  },
+  {
+   "id": "037",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "¿Cuál es la forma correcta de saludar a los mayores?",
+   "en": "What is the appropriate way to greet elders?"
+  },
+  {
+   "id": "038",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "¿Qué regalos se consideran apropiados al visitar a un anfitrión?",
+   "en": "What gifts are considered polite when visiting a host?"
+  },
+  {
+   "id": "039",
+   "domain": "Social",
+   "subtopic": "Manners & Etiquette",
+   "text": "¿Qué gestos se consideran groseros en público?",
+   "en": "What gestures are considered rude in public?"
+  },
+  {
+   "id": "040",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "¿Cuánto dura normalmente una jornada laboral?",
+   "en": "What is the typical length of a working day?"
+  },
+  {
+   "id": "041",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "¿Cómo se suele tratar a los jefes en el trabajo?",
+   "en": "How are bosses usually addressed at work?"
+  },
+  {
+   "id": "042",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "¿Qué vestimenta se considera adecuada en la oficina?",
+   "en": "What is considered appropriate attire in the office?"
+  },
+  {
+   "id": "043",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "¿Qué papel tienen las reuniones después del trabajo entre compañeros?",
+   "en": "What role do after-work gatherings play among colleagues?"
+  },
+  {
+   "id": "044",
+   "domain": "Social",
+   "subtopic": "Work Culture",
+   "text": "¿Cómo suelen pasar los trabajadores la hora del almuerzo?",
+   "en": "How is lunch break typically spent by workers?"
+  },
+  {
+   "id": "045",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "¿Qué papel tienen los mayores en la resolución de disputas?",
+   "en": "What is the role of elders in settling disputes?"
+  },
+  {
+   "id": "046",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "¿Cómo suelen resolver las familias los desacuerdos por una herencia?",
+   "en": "How do families usually resolve inheritance disagreements?"
+  },
+  {
+   "id": "047",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "¿Qué papel tienen los mediadores en los conflictos de la comunidad?",
+   "en": "What role do mediators play in community conflicts?"
+  },
+  {
+   "id": "048",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "¿Cómo se suelen manejar las disputas entre vecinos?",
+   "en": "How are disputes between neighbors typically handled?"
+  },
+  {
+   "id": "049",
+   "domain": "Social",
+   "subtopic": "Conflict Resolution",
+   "text": "¿Qué gestos se usan para pedir perdón después de una discusión?",
+   "en": "What gestures are used to apologize after an argument?"
+  },
+  {
+   "id": "050",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "¿Qué idiomas se enseñan como lenguas extranjeras en las escuelas?",
+   "en": "What languages are taught as foreign languages in schools?"
+  },
+  {
+   "id": "051",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "¿Qué idioma se usa para dar clases en las aulas?",
+   "en": "What language is used for instruction in classrooms?"
+  },
+  {
+   "id": "052",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "¿Cómo se dirigen los estudiantes a sus profesores?",
+   "en": "How do students address their teachers?"
+  },
+  {
+   "id": "053",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "¿Qué sistemas de escritura aprenden primero los niños?",
+   "en": "What writing systems do children learn first?"
+  },
+  {
+   "id": "054",
+   "domain": "Education",
+   "subtopic": "Language & Communication",
+   "text": "¿Qué importancia tiene la práctica de la caligrafía en la escuela?",
+   "en": "What role does handwriting practice play in schooling?"
+  },
+  {
+   "id": "055",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "¿A qué edad empiezan los niños la escolaridad obligatoria?",
+   "en": "What age do children typically start compulsory schooling?"
+  },
+  {
+   "id": "056",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "¿Qué exámenes importantes determinan el futuro de los estudiantes?",
+   "en": "What major exams determine students' future paths?"
+  },
+  {
+   "id": "057",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "¿Cómo se organiza normalmente el año escolar?",
+   "en": "How is the school year typically structured?"
+  },
+  {
+   "id": "058",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "¿Qué papel tienen las escuelas privadas en la educación?",
+   "en": "What role do private schools play in education?"
+  },
+  {
+   "id": "059",
+   "domain": "Education",
+   "subtopic": "Education Systems",
+   "text": "¿Qué sucede después de que los estudiantes terminan la secundaria?",
+   "en": "What happens after students finish secondary school?"
+  },
+  {
+   "id": "060",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "¿Qué dispositivos suelen usar los estudiantes para las tareas escolares?",
+   "en": "What devices do students typically use for schoolwork?"
+  },
+  {
+   "id": "061",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "¿Qué aplicaciones de aprendizaje son las más populares entre los estudiantes?",
+   "en": "What learning apps are most popular among students?"
+  },
+  {
+   "id": "062",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "¿Qué papel tienen los celulares en las aulas?",
+   "en": "What role do smartphones play in classrooms?"
+  },
+  {
+   "id": "063",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "¿Qué plataformas en línea usan los profesores para asignar tareas?",
+   "en": "What online platforms do teachers use to assign homework?"
+  },
+  {
+   "id": "064",
+   "domain": "Education",
+   "subtopic": "Technology & Tools",
+   "text": "¿Qué tecnología es común en las aulas?",
+   "en": "What technology is commonly found in classrooms?"
+  },
+  {
+   "id": "065",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "¿Qué habilidades tradicionales les enseñan los mayores a los niños?",
+   "en": "What traditional skills do elders pass down to children?"
+  },
+  {
+   "id": "066",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "¿Qué historias se cuentan normalmente para enseñar valores a los niños?",
+   "en": "What stories are commonly told to teach children values?"
+  },
+  {
+   "id": "067",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "¿Qué oficios se aprenden como aprendiz?",
+   "en": "What crafts are learned through apprenticeship?"
+  },
+  {
+   "id": "068",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "¿Qué refranes se usan para enseñar lecciones de vida?",
+   "en": "What proverbs are used to teach life lessons?"
+  },
+  {
+   "id": "069",
+   "domain": "Education",
+   "subtopic": "Knowledge Transmission",
+   "text": "¿Qué conocimientos se transmiten de forma oral y no por escrito?",
+   "en": "What knowledge is passed down orally rather than written?"
+  },
+  {
+   "id": "070",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "¿Qué científicos son celebrados como héroes nacionales en las escuelas?",
+   "en": "Which scientists are celebrated as national heroes in schools?"
+  },
+  {
+   "id": "071",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "¿Qué filósofos estudian los alumnos en secundaria?",
+   "en": "What philosophers do students study in secondary school?"
+  },
+  {
+   "id": "072",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "¿Cómo se enseña la evolución en las clases de ciencias?",
+   "en": "How is evolution taught in science classes?"
+  },
+  {
+   "id": "073",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "¿Qué logros científicos aparecen más en los libros de texto escolares?",
+   "en": "What scientific achievements appear prominently in school textbooks?"
+  },
+  {
+   "id": "074",
+   "domain": "Education",
+   "subtopic": "Science & Philosophy",
+   "text": "¿Es la filosofía una materia obligatoria en el bachillerato?",
+   "en": "Is philosophy a compulsory subject in high school?"
+  },
+  {
+   "id": "075",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "¿Qué instrumentos musicales tradicionales se tocan comúnmente?",
+   "en": "What traditional musical instruments are commonly played?"
+  },
+  {
+   "id": "076",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "¿Qué canciones folclóricas se sabe casi todo el mundo de memoria?",
+   "en": "What folk songs do most people know by heart?"
+  },
+  {
+   "id": "077",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "¿Qué música se suele tocar en las bodas?",
+   "en": "What music is typically played at weddings?"
+  },
+  {
+   "id": "078",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "¿Qué músicos se consideran íconos nacionales?",
+   "en": "Which musicians are considered national icons?"
+  },
+  {
+   "id": "079",
+   "domain": "Arts",
+   "subtopic": "Music",
+   "text": "¿Qué canciones se cantan en los funerales o en los velorios?",
+   "en": "What songs are sung at funerals or mourning ceremonies?"
+  },
+  {
+   "id": "080",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "¿Qué bailes folclóricos se bailan en las bodas?",
+   "en": "What folk dances are performed at weddings?"
+  },
+  {
+   "id": "081",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "¿Qué bailes se asocian con las fiestas de la cosecha?",
+   "en": "What dances are associated with harvest festivals?"
+  },
+  {
+   "id": "082",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "¿Qué estilos de baile son populares entre los jóvenes hoy en día?",
+   "en": "Which dance styles are popular among young people today?"
+  },
+  {
+   "id": "083",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "¿Qué trajes se usan en las presentaciones de danza tradicional?",
+   "en": "What costumes are worn for traditional dance performances?"
+  },
+  {
+   "id": "084",
+   "domain": "Arts",
+   "subtopic": "Dance",
+   "text": "¿Quiénes son los coreógrafos más famosos?",
+   "en": "Who are the most famous choreographers?"
+  },
+  {
+   "id": "085",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "¿Qué estilos tradicionales de pintura existen?",
+   "en": "What traditional painting styles exist?"
+  },
+  {
+   "id": "086",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "¿Quiénes son los pintores más celebrados?",
+   "en": "Who are the most celebrated painters?"
+  },
+  {
+   "id": "087",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "¿Qué obras de arte famosas son ampliamente reconocidas?",
+   "en": "What famous artworks are widely recognized?"
+  },
+  {
+   "id": "088",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "¿Qué tradiciones de arte popular se siguen practicando?",
+   "en": "What folk art traditions are still practiced?"
+  },
+  {
+   "id": "089",
+   "domain": "Arts",
+   "subtopic": "Art",
+   "text": "¿Cuáles son los museos de arte más importantes?",
+   "en": "What art museums are most important?"
+  },
+  {
+   "id": "090",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "¿Qué cuentos populares se les cuentan comúnmente a los niños?",
+   "en": "What folktales are commonly told to children?"
+  },
+  {
+   "id": "091",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "¿Qué novelas clásicas se consideran tesoros literarios nacionales?",
+   "en": "Which classic novels are considered national literary treasures?"
+  },
+  {
+   "id": "092",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "¿Qué poemas épicos se recitan o se estudian tradicionalmente?",
+   "en": "What epic poems are traditionally recited or studied?"
+  },
+  {
+   "id": "093",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "¿Quiénes son los poetas más celebrados?",
+   "en": "Who are the most celebrated poets?"
+  },
+  {
+   "id": "094",
+   "domain": "Arts",
+   "subtopic": "Literature & Storytelling",
+   "text": "¿Qué tradiciones de narración oral siguen vivas hoy?",
+   "en": "What oral storytelling traditions still exist today?"
+  },
+  {
+   "id": "095",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "¿Qué formas de teatro tradicional existen?",
+   "en": "What traditional theater forms exist?"
+  },
+  {
+   "id": "096",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "¿Qué tradiciones de títeres se representan?",
+   "en": "What puppetry traditions are performed?"
+  },
+  {
+   "id": "097",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "¿Quiénes son los dramaturgos más celebrados?",
+   "en": "Who are the most celebrated playwrights?"
+  },
+  {
+   "id": "098",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "¿Qué obras de teatro famosas se consideran clásicos nacionales?",
+   "en": "What famous plays are considered national classics?"
+  },
+  {
+   "id": "099",
+   "domain": "Arts",
+   "subtopic": "Theater & Performance",
+   "text": "¿Qué máscaras se usan en las representaciones tradicionales?",
+   "en": "What masks are used in traditional performances?"
+  },
+  {
+   "id": "100",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "¿Qué películas se consideran clásicos del cine nacional?",
+   "en": "What films are considered national cinema classics?"
+  },
+  {
+   "id": "101",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "¿Qué directores de cine son los más celebrados?",
+   "en": "Which film directors are most celebrated?"
+  },
+  {
+   "id": "102",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "¿Qué festivales de cine se celebran cada año?",
+   "en": "What film festivals are held annually?"
+  },
+  {
+   "id": "103",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "¿Qué actores se consideran leyendas de la pantalla?",
+   "en": "Which actors are regarded as screen legends?"
+  },
+  {
+   "id": "104",
+   "domain": "Arts",
+   "subtopic": "Film & Cinema",
+   "text": "¿Qué géneros de cine son los más populares allí?",
+   "en": "What film genres are most popular locally?"
+  },
+  {
+   "id": "105",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "¿Qué artesanías tradicionales se elaboran?",
+   "en": "What traditional handicrafts are made?"
+  },
+  {
+   "id": "106",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "¿Qué técnicas de tejido textil se practican tradicionalmente?",
+   "en": "What textile weaving techniques are traditionally practiced?"
+  },
+  {
+   "id": "107",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "¿Qué estilos de cerámica se producen tradicionalmente?",
+   "en": "What pottery styles are traditionally produced?"
+  },
+  {
+   "id": "108",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "¿Qué artesanías tradicionales de talla en madera existen?",
+   "en": "What traditional woodcarving crafts exist?"
+  },
+  {
+   "id": "109",
+   "domain": "Arts",
+   "subtopic": "Crafts & Handicrafts",
+   "text": "¿Qué recuerdos hechos a mano son populares entre los visitantes?",
+   "en": "What handmade souvenirs are popular with visitors?"
+  },
+  {
+   "id": "110",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "¿Qué joyas tradicionales se llevan en las bodas?",
+   "en": "What traditional jewelry is worn at weddings?"
+  },
+  {
+   "id": "111",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "¿Qué materiales se usan comúnmente en la joyería tradicional?",
+   "en": "What materials are commonly used in traditional jewelry?"
+  },
+  {
+   "id": "112",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "¿Qué formas de tatuaje tienen un significado tradicional?",
+   "en": "What forms of tattooing have traditional significance?"
+  },
+  {
+   "id": "113",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "¿Qué prácticas de perforación corporal son tradicionales en la cultura?",
+   "en": "What body piercing practices are culturally traditional?"
+  },
+  {
+   "id": "114",
+   "domain": "Arts",
+   "subtopic": "Jewelry & Body Decoration",
+   "text": "¿Qué joyas indican el estado civil de una persona?",
+   "en": "What jewelry signals a person's marital status?"
+  },
+  {
+   "id": "115",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "¿Qué estilos tradicionales de casas existen?",
+   "en": "What traditional house styles exist?"
+  },
+  {
+   "id": "116",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "¿Qué materiales de construcción se usan tradicionalmente para las casas?",
+   "en": "What building materials are traditionally used for homes?"
+  },
+  {
+   "id": "117",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "¿Qué edificios históricos famosos hay?",
+   "en": "What famous historic buildings are there?"
+  },
+  {
+   "id": "118",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "¿Qué estilos arquitectónicos definen los cascos antiguos?",
+   "en": "What architectural styles define old town centers?"
+  },
+  {
+   "id": "119",
+   "domain": "Arts",
+   "subtopic": "Architecture & Housing",
+   "text": "¿Qué elementos decorativos adornan los edificios tradicionales?",
+   "en": "What decorative elements adorn traditional buildings?"
+  },
+  {
+   "id": "120",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "¿Qué platos se sirven en las bodas?",
+   "en": "What dishes are served at wedding celebrations?"
+  },
+  {
+   "id": "121",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "¿Qué se come en el desayuno?",
+   "en": "What foods are eaten for breakfast?"
+  },
+  {
+   "id": "122",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "¿Qué comidas callejeras son las más populares?",
+   "en": "What street foods are most popular?"
+  },
+  {
+   "id": "123",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "¿Qué especias se usan comúnmente para cocinar?",
+   "en": "What spices are commonly used in cooking?"
+  },
+  {
+   "id": "124",
+   "domain": "Food",
+   "subtopic": "Food & Cuisine",
+   "text": "¿Qué platos se preparan en las fiestas más importantes?",
+   "en": "What dishes are prepared for major holidays?"
+  },
+  {
+   "id": "125",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "¿Qué bebidas se sirven para recibir a los invitados?",
+   "en": "What drinks are served to welcome guests?"
+  },
+  {
+   "id": "126",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "¿Qué se bebe en las bodas?",
+   "en": "What beverages are drunk at weddings?"
+  },
+  {
+   "id": "127",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "¿Qué bebidas calientes son comunes en invierno?",
+   "en": "What hot drinks are common in winter?"
+  },
+  {
+   "id": "128",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "¿Qué bebidas se hacen con cereales fermentados?",
+   "en": "What drinks are made from fermented grains?"
+  },
+  {
+   "id": "129",
+   "domain": "Food",
+   "subtopic": "Traditional Beverages",
+   "text": "¿Qué se bebe con el desayuno?",
+   "en": "What beverages accompany breakfast?"
+  },
+  {
+   "id": "130",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "¿Qué se pica mientras se ven partidos deportivos?",
+   "en": "What snacks are eaten while watching sports games?"
+  },
+  {
+   "id": "131",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "¿Qué comida se lleva de picnic?",
+   "en": "What foods are brought on picnics?"
+  },
+  {
+   "id": "132",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "¿Qué comidas se venden en los parques de atracciones?",
+   "en": "What foods are sold at amusement parks?"
+  },
+  {
+   "id": "133",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "¿Qué se come en el cine?",
+   "en": "What snacks are eaten at the movie theater?"
+  },
+  {
+   "id": "134",
+   "domain": "Food",
+   "subtopic": "Recreation & Leisure",
+   "text": "¿Qué se asa en las reuniones al aire libre?",
+   "en": "What foods are grilled at outdoor gatherings?"
+  },
+  {
+   "id": "135",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "¿Qué se come mientras se ven partidos?",
+   "en": "What foods are eaten while watching sports matches?"
+  },
+  {
+   "id": "136",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "¿Qué snacks se venden en los estadios?",
+   "en": "What snacks are sold at sports stadiums?"
+  },
+  {
+   "id": "137",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "¿Qué suelen comer los deportistas antes de competir?",
+   "en": "What foods do athletes traditionally eat before competitions?"
+  },
+  {
+   "id": "138",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "¿Qué platos se sirven en las fiestas de partido?",
+   "en": "What dishes are served at game day parties?"
+  },
+  {
+   "id": "139",
+   "domain": "Food",
+   "subtopic": "Sports & Games",
+   "text": "¿Qué comidas se usan en los concursos tradicionales de comer?",
+   "en": "What foods are used in traditional eating contests?"
+  },
+  {
+   "id": "140",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "¿Qué comidas se sirven en las bodas?",
+   "en": "What foods are served at weddings?"
+  },
+  {
+   "id": "141",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "¿Qué se come después de que nace un bebé?",
+   "en": "What foods are eaten after a baby is born?"
+  },
+  {
+   "id": "142",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "¿Qué comidas se sirven en los funerales?",
+   "en": "What foods are served at funerals?"
+  },
+  {
+   "id": "143",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "¿Qué platos se preparan para el primer cumpleaños de un niño?",
+   "en": "What dishes celebrate a child's first birthday?"
+  },
+  {
+   "id": "144",
+   "domain": "Food",
+   "subtopic": "Life-Cycle Rituals",
+   "text": "¿Qué comidas se ofrecen en honor a los antepasados difuntos?",
+   "en": "What foods are offered to honor deceased ancestors?"
+  },
+  {
+   "id": "145",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "¿Qué se come en la celebración del año nuevo?",
+   "en": "What foods are eaten during the new year celebration?"
+  },
+  {
+   "id": "146",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "¿Qué platos se preparan para los banquetes de boda?",
+   "en": "What dishes are prepared for wedding feasts?"
+  },
+  {
+   "id": "147",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "¿Qué dulces se comparten en las grandes fiestas?",
+   "en": "What sweets are shared during major festivals?"
+  },
+  {
+   "id": "148",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "¿Qué comidas se sirven en los cumpleaños?",
+   "en": "What foods are served at birthday celebrations?"
+  },
+  {
+   "id": "149",
+   "domain": "Food",
+   "subtopic": "Festivals & Celebrations",
+   "text": "¿Qué bebidas son populares en las celebraciones?",
+   "en": "What drinks are popular during festive gatherings?"
+  },
+  {
+   "id": "150",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "¿Qué clima estacional marca las fiestas locales?",
+   "en": "What seasonal weather shapes local festivals?"
+  },
+  {
+   "id": "151",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "¿Qué casas tradicionales están diseñadas para el clima?",
+   "en": "What traditional houses are designed for the climate?"
+  },
+  {
+   "id": "152",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "¿Qué alimentos se conservan para sobrevivir a las estaciones duras?",
+   "en": "What foods are preserved to survive harsh seasons?"
+  },
+  {
+   "id": "153",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "¿Qué tradiciones de vestimenta reflejan el clima local?",
+   "en": "What clothing traditions reflect the local climate?"
+  },
+  {
+   "id": "154",
+   "domain": "Geography",
+   "subtopic": "Climate & Environment",
+   "text": "¿Qué desastres naturales marcan los rituales de la comunidad?",
+   "en": "What natural disasters shape community rituals?"
+  },
+  {
+   "id": "155",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "¿Qué montañas marcan las tradiciones locales?",
+   "en": "What mountains shape local traditions?"
+  },
+  {
+   "id": "156",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "¿Qué terrazas de cultivo tienen importancia cultural?",
+   "en": "What farming terraces are culturally significant?"
+  },
+  {
+   "id": "157",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "¿Qué paisajes aparecen en las canciones populares tradicionales?",
+   "en": "What landscapes appear in traditional folk songs?"
+  },
+  {
+   "id": "158",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "¿Qué tierras bajas se usan para cultivar arroz o cereales?",
+   "en": "What lowlands are used for rice or grain farming?"
+  },
+  {
+   "id": "159",
+   "domain": "Geography",
+   "subtopic": "Topography & Land Use",
+   "text": "¿Qué tierras altas son conocidas por el pastoreo?",
+   "en": "What highlands are known for pastoral herding?"
+  },
+  {
+   "id": "160",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "¿Qué fiestas se celebran de forma distinta en los pueblos y en las ciudades?",
+   "en": "What festivals are celebrated differently in villages and cities?"
+  },
+  {
+   "id": "161",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "¿Qué comidas se consideran típicamente rurales y no urbanas?",
+   "en": "What foods are considered typically rural rather than urban?"
+  },
+  {
+   "id": "162",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "¿Qué estereotipos tienen los habitantes de la ciudad sobre la gente del pueblo?",
+   "en": "What stereotypes do city dwellers hold about villagers?"
+  },
+  {
+   "id": "163",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "¿Qué tradiciones llevan los migrantes de los pueblos a las ciudades?",
+   "en": "What traditions do migrants bring from villages to cities?"
+  },
+  {
+   "id": "164",
+   "domain": "Geography",
+   "subtopic": "Rural vs Urban Culture",
+   "text": "¿Qué ropa distingue a los habitantes rurales de los urbanos?",
+   "en": "What clothing distinguishes rural residents from urban residents?"
+  },
+  {
+   "id": "165",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "¿Qué dialectos marcan la identidad regional?",
+   "en": "What dialects mark regional identity?"
+  },
+  {
+   "id": "166",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "¿Qué platos regionales definen el orgullo local?",
+   "en": "What regional dishes define local pride?"
+  },
+  {
+   "id": "167",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "¿Qué paisajes marcan la identidad regional?",
+   "en": "What landscapes shape regional identity?"
+  },
+  {
+   "id": "168",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "¿Qué rivalidades existen entre regiones?",
+   "en": "What rivalries exist between regions?"
+  },
+  {
+   "id": "169",
+   "domain": "Geography",
+   "subtopic": "Regional Identity",
+   "text": "¿Qué fiestas celebran el patrimonio regional?",
+   "en": "What festivals celebrate regional heritage?"
+  },
+  {
+   "id": "170",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "¿Qué rasgos naturales definen las fronteras nacionales?",
+   "en": "What natural features define national borders?"
+  },
+  {
+   "id": "171",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "¿Qué territorios en disputa marcan la identidad nacional?",
+   "en": "What disputed territories shape national identity?"
+  },
+  {
+   "id": "172",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "¿Qué pueblos fronterizos mezclan las tradiciones culturales de los países vecinos?",
+   "en": "What border towns blend neighboring cultural traditions?"
+  },
+  {
+   "id": "173",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "¿Qué tratados históricos establecieron los límites actuales?",
+   "en": "What historical treaties established current boundaries?"
+  },
+  {
+   "id": "174",
+   "domain": "Geography",
+   "subtopic": "Borders & Territory",
+   "text": "¿Qué fiestas celebran a las comunidades transfronterizas?",
+   "en": "What festivals celebrate cross-border communities?"
+  },
+  {
+   "id": "175",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "¿Qué barrios fueron moldeados por comunidades inmigrantes?",
+   "en": "What neighborhoods were shaped by immigrant communities?"
+  },
+  {
+   "id": "176",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "¿Qué comidas llegaron con los grupos migrantes?",
+   "en": "What foods arrived with migrant groups?"
+  },
+  {
+   "id": "177",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "¿Qué fiestas celebran las comunidades de la diáspora en el extranjero?",
+   "en": "What festivals do diaspora communities celebrate abroad?"
+  },
+  {
+   "id": "178",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "¿Qué hechos históricos provocaron grandes oleadas de emigración?",
+   "en": "What historical events triggered large waves of emigration?"
+  },
+  {
+   "id": "179",
+   "domain": "Geography",
+   "subtopic": "Migration & Diaspora",
+   "text": "¿Qué trabajos solían tomar los primeros inmigrantes?",
+   "en": "What jobs did early immigrants commonly take?"
+  },
+  {
+   "id": "180",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "¿Qué paisajes naturales se consideran sagrados?",
+   "en": "What natural landmarks are considered sacred?"
+  },
+  {
+   "id": "181",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "¿Qué fiestas celebran los cambios de estación?",
+   "en": "What festivals celebrate seasonal changes in nature?"
+  },
+  {
+   "id": "182",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "¿Qué animales tienen un valor simbólico en la cultura?",
+   "en": "What animals hold symbolic cultural importance?"
+  },
+  {
+   "id": "183",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "¿Qué prácticas tradicionales protegen los bosques o la fauna?",
+   "en": "What traditional practices protect forests or wildlife?"
+  },
+  {
+   "id": "184",
+   "domain": "Geography",
+   "subtopic": "Relationship with Nature",
+   "text": "¿Qué plantas se usan en la medicina tradicional?",
+   "en": "What plants are used in traditional medicine?"
+  },
+  {
+   "id": "185",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "¿Qué forma de gobierno hay?",
+   "en": "What form of government is in place?"
+  },
+  {
+   "id": "186",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "¿Cómo se elige al jefe de Estado?",
+   "en": "How is the head of state chosen?"
+  },
+  {
+   "id": "187",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "¿Qué papel tiene la monarquía en el gobierno?",
+   "en": "What role does the monarchy play in government?"
+  },
+  {
+   "id": "188",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "¿Cómo se reparte el poder entre el gobierno nacional y los locales?",
+   "en": "How is power divided between national and local governments?"
+  },
+  {
+   "id": "189",
+   "domain": "Politics",
+   "subtopic": "Government Systems",
+   "text": "¿Qué poderes tiene el presidente o el primer ministro?",
+   "en": "What powers does the president or prime minister hold?"
+  },
+  {
+   "id": "190",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "¿Qué tradiciones jurídicas influyen en el sistema judicial?",
+   "en": "What legal traditions shape the court system?"
+  },
+  {
+   "id": "191",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "¿Qué juicios famosos se recuerdan mucho?",
+   "en": "What famous trials are widely remembered?"
+  },
+  {
+   "id": "192",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "¿Qué leyes consuetudinarias siguen influyendo en la vida diaria?",
+   "en": "What customary laws still influence daily life?"
+  },
+  {
+   "id": "193",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "¿Qué castigos se consideran aceptables culturalmente?",
+   "en": "What punishments are considered culturally acceptable?"
+  },
+  {
+   "id": "194",
+   "domain": "Politics",
+   "subtopic": "Law & Legal Traditions",
+   "text": "¿Qué derechos legales se defienden con más fuerza?",
+   "en": "What legal rights are most fiercely defended?"
+  },
+  {
+   "id": "195",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "¿Qué deberes cívicos se espera que cumplan los ciudadanos?",
+   "en": "What civic duties are citizens expected to fulfill?"
+  },
+  {
+   "id": "196",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "¿Qué motiva a la gente a votar en las elecciones?",
+   "en": "What motivates people to vote in elections?"
+  },
+  {
+   "id": "197",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "¿Cómo suelen involucrarse los jóvenes en la política?",
+   "en": "How do young people typically get involved in politics?"
+  },
+  {
+   "id": "198",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "¿Qué tipos de voluntariado se consideran una contribución cívica?",
+   "en": "What forms of volunteering are considered civic contributions?"
+  },
+  {
+   "id": "199",
+   "domain": "Politics",
+   "subtopic": "Civic Values & Participation",
+   "text": "¿Qué valores se enseñan en las clases de educación cívica?",
+   "en": "What values are taught in civic education classes?"
+  },
+  {
+   "id": "200",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "¿Qué temas son tabú para criticar en público?",
+   "en": "What topics are considered taboo to criticize publicly?"
+  },
+  {
+   "id": "201",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "¿Qué leyes limitan lo que se puede decir en internet?",
+   "en": "What laws restrict what people can say online?"
+  },
+  {
+   "id": "202",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "¿Qué programas satíricos famosos se burlan de los políticos?",
+   "en": "What famous satirical shows mock politicians?"
+  },
+  {
+   "id": "203",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "¿Qué periodistas han sido encarcelados por su trabajo?",
+   "en": "What journalists have been jailed for their reporting?"
+  },
+  {
+   "id": "204",
+   "domain": "Politics",
+   "subtopic": "Freedom of Expression",
+   "text": "¿Qué libros o películas han sido prohibidos?",
+   "en": "What books or films have been banned?"
+  },
+  {
+   "id": "205",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "¿Qué edificios de la época colonial usa todavía el gobierno?",
+   "en": "What colonial-era buildings are still used by the government?"
+  },
+  {
+   "id": "206",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "¿Qué fiestas conmemoran la independencia del dominio colonial?",
+   "en": "What holidays mark independence from colonial rule?"
+  },
+  {
+   "id": "207",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "¿Qué leyes coloniales siguen vigentes en el sistema legal?",
+   "en": "What colonial laws remain part of the legal system?"
+  },
+  {
+   "id": "208",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "¿Qué monumentos a figuras coloniales se han retirado o se han debatido?",
+   "en": "What monuments to colonial figures have been removed or debated?"
+  },
+  {
+   "id": "209",
+   "domain": "Politics",
+   "subtopic": "Colonial History & Influence",
+   "text": "¿Qué idiomas extranjeros de la época colonial siguen siendo oficiales?",
+   "en": "What foreign languages from colonial times remain official?"
+  },
+  {
+   "id": "210",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "¿Qué títulos se usan para dirigirse a los funcionarios poderosos?",
+   "en": "What titles are used to address powerful officials?"
+  },
+  {
+   "id": "211",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "¿Qué familias han dominado durante mucho tiempo la vida política?",
+   "en": "What families have long dominated political life?"
+  },
+  {
+   "id": "212",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "¿Qué clases sociales tienen más influencia política?",
+   "en": "What social classes hold the most political influence?"
+  },
+  {
+   "id": "213",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "¿Cómo influyen los mayores en las decisiones políticas?",
+   "en": "How do elders influence political decisions?"
+  },
+  {
+   "id": "214",
+   "domain": "Politics",
+   "subtopic": "Power & Hierarchy",
+   "text": "¿Qué gestos muestran respeto hacia los líderes políticos?",
+   "en": "What gestures show respect toward political leaders?"
+  },
+  {
+   "id": "215",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "¿Qué movimientos sociales han marcado la historia reciente?",
+   "en": "What social movements have shaped recent history?"
+  },
+  {
+   "id": "216",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "¿Qué temas de derechos humanos se debaten más hoy en día?",
+   "en": "What human rights issues are most debated today?"
+  },
+  {
+   "id": "217",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "¿Qué activistas son celebrados como héroes nacionales?",
+   "en": "Which activists are celebrated as national heroes?"
+  },
+  {
+   "id": "218",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "¿Qué símbolos usan comúnmente los movimientos de protesta?",
+   "en": "What symbols do protest movements commonly use?"
+  },
+  {
+   "id": "219",
+   "domain": "Politics",
+   "subtopic": "Human Rights & Social Movements",
+   "text": "¿Qué canciones se asocian con los movimientos por la justicia social?",
+   "en": "What songs are associated with social justice movements?"
+  },
+  {
+   "id": "220",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "¿Qué remedios caseros se usan comúnmente para los resfriados?",
+   "en": "What home remedies are commonly used for colds?"
+  },
+  {
+   "id": "221",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "¿Qué prácticas curativas tradicionales se siguen usando mucho?",
+   "en": "What traditional healing practices are still widely used?"
+  },
+  {
+   "id": "222",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "¿Qué alimentos se comen para mantenerse sano?",
+   "en": "What foods are eaten to stay healthy?"
+  },
+  {
+   "id": "223",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "¿Qué tés de hierbas son populares por sus beneficios para la salud?",
+   "en": "What herbal teas are popular for health benefits?"
+  },
+  {
+   "id": "224",
+   "domain": "Health",
+   "subtopic": "Health Practices",
+   "text": "¿Qué prácticas se siguen después del parto para recuperarse?",
+   "en": "What practices are followed after childbirth for recovery?"
+  },
+  {
+   "id": "225",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "¿Qué campañas de vacunación se promueven comúnmente?",
+   "en": "What vaccination campaigns are commonly promoted?"
+  },
+  {
+   "id": "226",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "¿Qué lemas de salud pública son ampliamente conocidos?",
+   "en": "What public health slogans are widely recognized?"
+  },
+  {
+   "id": "227",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "¿Qué hábitos de higiene se fomentan en los lugares públicos?",
+   "en": "What hygiene habits are encouraged in public places?"
+  },
+  {
+   "id": "228",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "¿Qué medidas contra el tabaco se ven comúnmente?",
+   "en": "What anti-smoking measures are commonly seen?"
+  },
+  {
+   "id": "229",
+   "domain": "Health",
+   "subtopic": "Public Health",
+   "text": "¿Qué chequeos de salud se ofrecen de forma rutinaria a los adultos?",
+   "en": "What health screenings are routinely offered to adults?"
+  },
+  {
+   "id": "230",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "¿Qué prácticas de relajación usa la gente comúnmente para aliviar el estrés?",
+   "en": "What relaxation practices do people commonly use to relieve stress?"
+  },
+  {
+   "id": "231",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "¿Qué costumbres tradicionales de baño o sauna favorecen el bienestar?",
+   "en": "What traditional bathing or sauna customs support wellbeing?"
+  },
+  {
+   "id": "232",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "¿Qué hábitos diarios se consideran clave para una vida larga?",
+   "en": "What daily habits are considered key to a long life?"
+  },
+  {
+   "id": "233",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "¿Qué alimentos se cree que dan energía y vitalidad?",
+   "en": "What foods are believed to boost energy and vitality?"
+  },
+  {
+   "id": "234",
+   "domain": "Health",
+   "subtopic": "Wellbeing & Lifestyle",
+   "text": "¿Cómo suele la gente equilibrar el trabajo y el tiempo libre?",
+   "en": "How do people typically balance work and leisure time?"
+  },
+  {
+   "id": "235",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "¿Qué tradiciones de recuperación posparto siguen las madres primerizas?",
+   "en": "What postpartum recovery traditions do new mothers follow?"
+  },
+  {
+   "id": "236",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "¿Qué alimentos se recomiendan a las mujeres embarazadas?",
+   "en": "What foods are recommended for pregnant women?"
+  },
+  {
+   "id": "237",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "¿Qué rituales dan la bienvenida a un recién nacido?",
+   "en": "What rituals welcome a newborn baby?"
+  },
+  {
+   "id": "238",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "¿Quién suele asistir a las mujeres durante el parto?",
+   "en": "Who typically assists women during childbirth?"
+  },
+  {
+   "id": "239",
+   "domain": "Health",
+   "subtopic": "Birth & Reproductive Health",
+   "text": "¿Qué tabúes o supersticiones sobre el embarazo se observan comúnmente?",
+   "en": "What pregnancy taboos or superstitions are commonly observed?"
+  },
+  {
+   "id": "240",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "¿Qué periódicos locales lee la gente?",
+   "en": "What local newspapers do people read?"
+  },
+  {
+   "id": "241",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "¿Qué radios comunitarias son populares?",
+   "en": "What community radio stations are popular?"
+  },
+  {
+   "id": "242",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "¿Qué canales de televisión regionales transmiten noticias locales?",
+   "en": "What regional television channels broadcast local news?"
+  },
+  {
+   "id": "243",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "¿Qué programas de entrevistas locales son los más vistos?",
+   "en": "What local talk shows are widely watched?"
+  },
+  {
+   "id": "244",
+   "domain": "Media",
+   "subtopic": "Local Media",
+   "text": "¿Qué boletines o gacetas de barrio circulan?",
+   "en": "What neighborhood newsletters or bulletins circulate?"
+  },
+  {
+   "id": "245",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "¿Qué redes sociales son las más populares?",
+   "en": "What social media platforms are most popular?"
+  },
+  {
+   "id": "246",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "¿Qué servicios de streaming usa la gente normalmente?",
+   "en": "What streaming services do people commonly use?"
+  },
+  {
+   "id": "247",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "¿Qué podcasts se escuchan mucho?",
+   "en": "What podcasts are widely listened to?"
+  },
+  {
+   "id": "248",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "¿Qué influencers tienen muchos seguidores?",
+   "en": "Which online influencers have large followings?"
+  },
+  {
+   "id": "249",
+   "domain": "Media",
+   "subtopic": "Digital Media",
+   "text": "¿Qué memes se han hecho virales últimamente?",
+   "en": "What memes have gone viral recently?"
+  },
+  {
+   "id": "250",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "¿Qué grandes empresas de entretenimiento dominan el mercado?",
+   "en": "What major entertainment companies dominate the market?"
+  },
+  {
+   "id": "251",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "¿Qué cadenas de televisión producen los programas más populares?",
+   "en": "What television networks produce the most popular shows?"
+  },
+  {
+   "id": "252",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "¿Qué discográficas son las más influyentes?",
+   "en": "What music record labels are most influential?"
+  },
+  {
+   "id": "253",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "¿Qué estudios de cine famosos hay?",
+   "en": "What famous film studios are based there?"
+  },
+  {
+   "id": "254",
+   "domain": "Media",
+   "subtopic": "Entertainment Industries",
+   "text": "¿Qué empresas de videojuegos son conocidas?",
+   "en": "What video game companies are well known?"
+  },
+  {
+   "id": "255",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "¿Qué periódicos lee más la gente?",
+   "en": "What newspapers do people read most?"
+  },
+  {
+   "id": "256",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "¿Qué canales de noticias son los más vistos?",
+   "en": "What television news channels are most watched?"
+  },
+  {
+   "id": "257",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "¿Qué sitios web de noticias son populares?",
+   "en": "What news websites are popular?"
+  },
+  {
+   "id": "258",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "¿Qué emisoras de radio escucha la gente para informarse?",
+   "en": "What radio stations do people listen to for news?"
+  },
+  {
+   "id": "259",
+   "domain": "Media",
+   "subtopic": "News & Information",
+   "text": "¿Qué periodistas son muy conocidos y confiables?",
+   "en": "Which journalists are widely known and trusted?"
+  },
+  {
+   "id": "260",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "¿A qué famosos sigue más la gente?",
+   "en": "What celebrities are most widely followed?"
+  },
+  {
+   "id": "261",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "¿Qué programas de televisión se consideran un fenómeno cultural?",
+   "en": "What television shows are considered cultural phenomena?"
+  },
+  {
+   "id": "262",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "¿Qué canciones se sabe casi todo el mundo de memoria?",
+   "en": "What songs does nearly everyone know by heart?"
+  },
+  {
+   "id": "263",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "¿Qué frases de películas se citan con frecuencia?",
+   "en": "What catchphrases from movies are commonly quoted?"
+  },
+  {
+   "id": "264",
+   "domain": "Media",
+   "subtopic": "Popular Culture",
+   "text": "¿Qué personajes de ficción son icónicos?",
+   "en": "What fictional characters are iconic?"
+  },
+  {
+   "id": "265",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "¿Qué estudios de videojuegos son conocidos?",
+   "en": "What video game studios are well known?"
+  },
+  {
+   "id": "266",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "¿Qué videojuegos son los más populares?",
+   "en": "What video games are most popular?"
+  },
+  {
+   "id": "267",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "¿Qué juegos tradicionales se han adaptado a videojuegos?",
+   "en": "What traditional games have been adapted into digital games?"
+  },
+  {
+   "id": "268",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "¿Qué convenciones o ferias de videojuegos se celebran?",
+   "en": "What gaming conventions or expos take place?"
+  },
+  {
+   "id": "269",
+   "domain": "Media",
+   "subtopic": "Gaming & Interactive Media",
+   "text": "¿Qué equipos de esports tienen muchos seguidores?",
+   "en": "What esports teams have large followings?"
+  },
+  {
+   "id": "270",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "¿Qué hechos históricos se conmemoran con fiestas nacionales?",
+   "en": "What historical events are commemorated with national holidays?"
+  },
+  {
+   "id": "271",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "¿Qué revoluciones marcaron la historia de la nación?",
+   "en": "What revolutions shaped the nation's history?"
+  },
+  {
+   "id": "272",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "¿Qué grandes batallas se recuerdan hoy?",
+   "en": "What major battles are remembered today?"
+  },
+  {
+   "id": "273",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "¿Qué hechos históricos se enseñan en las escuelas?",
+   "en": "What historical events are taught in schools?"
+  },
+  {
+   "id": "274",
+   "domain": "History",
+   "subtopic": "Historical Events",
+   "text": "¿Qué acontecimientos de independencia se celebran cada año?",
+   "en": "What independence events are celebrated annually?"
+  },
+  {
+   "id": "275",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "¿Qué personajes históricos aparecen en los billetes?",
+   "en": "Which historical figures appear on banknotes?"
+  },
+  {
+   "id": "276",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "¿Qué líderes históricos se celebran con fiestas nacionales?",
+   "en": "What historical leaders are celebrated with national holidays?"
+  },
+  {
+   "id": "277",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "¿Qué mujeres de la historia son más recordadas?",
+   "en": "Which historical women are most widely commemorated?"
+  },
+  {
+   "id": "278",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "¿Qué estatuas rinden homenaje a personajes históricos famosos?",
+   "en": "What statues honor famous historical figures?"
+  },
+  {
+   "id": "279",
+   "domain": "History",
+   "subtopic": "Historical Figures",
+   "text": "¿Qué personajes históricos se consideran héroes nacionales?",
+   "en": "Which historical figures are considered national heroes?"
+  },
+  {
+   "id": "280",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "¿Qué fiestas nacionales conmemoran hechos históricos?",
+   "en": "What national holidays commemorate historical events?"
+  },
+  {
+   "id": "281",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "¿Qué monumentos rinden homenaje a las víctimas de guerras pasadas?",
+   "en": "What monuments honor victims of past wars?"
+  },
+  {
+   "id": "282",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "¿Qué personajes históricos aparecen en los billetes?",
+   "en": "What historical figures appear on banknotes?"
+  },
+  {
+   "id": "283",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "¿Qué canciones populares conservan la memoria de hechos históricos?",
+   "en": "What folk songs preserve memories of historical events?"
+  },
+  {
+   "id": "284",
+   "domain": "History",
+   "subtopic": "Cultural Memory",
+   "text": "¿Qué museos documentan los capítulos difíciles de la historia?",
+   "en": "What museums document difficult chapters of history?"
+  },
+  {
+   "id": "285",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "¿Qué levantamientos anticoloniales se conmemoran hoy?",
+   "en": "What anti-colonial uprisings are commemorated today?"
+  },
+  {
+   "id": "286",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "¿Qué líderes de la independencia se celebran como héroes nacionales?",
+   "en": "Which independence leaders are celebrated as national heroes?"
+  },
+  {
+   "id": "287",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "¿Qué monumentos rinden homenaje a la resistencia contra el dominio colonial?",
+   "en": "What monuments honor resistance against colonial rule?"
+  },
+  {
+   "id": "288",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "¿Qué canciones surgieron de las luchas por la independencia?",
+   "en": "What songs emerged from independence struggles?"
+  },
+  {
+   "id": "289",
+   "domain": "History",
+   "subtopic": "Colonialism & Resistance",
+   "text": "¿Qué edificios de la época colonial siguen en pie hoy?",
+   "en": "Which colonial-era buildings still stand today?"
+  },
+  {
+   "id": "290",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "¿Qué mitos fundacionales moldean la identidad nacional?",
+   "en": "What founding myths shape national identity?"
+  },
+  {
+   "id": "291",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "¿Qué héroes históricos se celebran como símbolos nacionales?",
+   "en": "What historical heroes are celebrated as national symbols?"
+  },
+  {
+   "id": "292",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "¿Qué hechos se conmemoran en las fiestas nacionales?",
+   "en": "What events are commemorated on national holidays?"
+  },
+  {
+   "id": "293",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "¿Qué monumentos nacionales cuentan la historia de la nación?",
+   "en": "What national monuments tell the story of the nation?"
+  },
+  {
+   "id": "294",
+   "domain": "History",
+   "subtopic": "National Narratives",
+   "text": "¿Qué batallas históricas se recuerdan como momentos decisivos?",
+   "en": "What historical battles are remembered as defining moments?"
+  },
+  {
+   "id": "295",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "¿Qué edificios históricos se han restaurado recientemente?",
+   "en": "What historic buildings have been restored recently?"
+  },
+  {
+   "id": "296",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "¿Qué sitios patrimoniales están protegidos por ley?",
+   "en": "What heritage sites are protected by law?"
+  },
+  {
+   "id": "297",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "¿Qué museos conservan las artesanías tradicionales?",
+   "en": "What museums preserve traditional crafts?"
+  },
+  {
+   "id": "298",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "¿Qué organizaciones trabajan para conservar los monumentos históricos?",
+   "en": "What organizations work to preserve historical monuments?"
+  },
+  {
+   "id": "299",
+   "domain": "History",
+   "subtopic": "Heritage & Preservation",
+   "text": "¿Qué ruinas antiguas están amenazadas por el desarrollo urbano?",
+   "en": "What ancient ruins are threatened by development?"
+  },
+  {
+   "id": "300",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "¿Qué industrias impulsan la economía nacional?",
+   "en": "What industries drive the national economy?"
+  },
+  {
+   "id": "301",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "¿Qué productos se fabrican para la exportación?",
+   "en": "What goods are manufactured for export?"
+  },
+  {
+   "id": "302",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "¿Qué recursos naturales se extraen y se procesan comercialmente?",
+   "en": "What natural resources are extracted and processed commercially?"
+  },
+  {
+   "id": "303",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "¿Qué artesanías tradicionales se han convertido en grandes industrias?",
+   "en": "What traditional crafts have become major industries?"
+  },
+  {
+   "id": "304",
+   "domain": "Economy",
+   "subtopic": "Key Industries",
+   "text": "¿Qué papel juega el turismo en la economía?",
+   "en": "What role does tourism play in the economy?"
+  },
+  {
+   "id": "305",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "¿Qué prácticas tradicionales de trueque aún existen?",
+   "en": "What traditional bartering practices still exist?"
+  },
+  {
+   "id": "306",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "¿Cuáles son los principales productos de exportación?",
+   "en": "What are the main export goods?"
+  },
+  {
+   "id": "307",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "¿Qué antiguas rutas comerciales pasaban por aquí?",
+   "en": "What historic trade routes passed through here?"
+  },
+  {
+   "id": "308",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "¿Cuáles son las costumbres del regateo en los mercados locales?",
+   "en": "What customs surround haggling at local markets?"
+  },
+  {
+   "id": "309",
+   "domain": "Economy",
+   "subtopic": "Trade & Exchange",
+   "text": "¿Qué productos se importan del extranjero con más frecuencia?",
+   "en": "What goods are commonly imported from abroad?"
+  },
+  {
+   "id": "310",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "¿Qué trabajos informales hace la gente comúnmente?",
+   "en": "What informal jobs do people commonly do?"
+  },
+  {
+   "id": "311",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "¿Qué sindicatos son los más influyentes?",
+   "en": "What labor unions are most influential?"
+  },
+  {
+   "id": "312",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "¿Qué profesiones tienen mayor prestigio social?",
+   "en": "What occupations carry the highest social prestige?"
+  },
+  {
+   "id": "313",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "¿Cuáles son los horarios de trabajo y los días de descanso habituales?",
+   "en": "What are typical working hours and rest days?"
+  },
+  {
+   "id": "314",
+   "domain": "Economy",
+   "subtopic": "Labor & Employment",
+   "text": "¿Qué días festivos garantizan descanso a los trabajadores?",
+   "en": "What public holidays guarantee workers time off?"
+  },
+  {
+   "id": "315",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "¿Qué señales de riqueza exhibe la gente en público?",
+   "en": "What signals of wealth do people display publicly?"
+  },
+  {
+   "id": "316",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "¿Qué trabajos se consideran de bajo estatus aunque estén bien pagados?",
+   "en": "What jobs are considered low-status despite paying well?"
+  },
+  {
+   "id": "317",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "¿Qué barrios se asocian con los más ricos?",
+   "en": "What neighborhoods are associated with the very rich?"
+  },
+  {
+   "id": "318",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "¿Qué programas sociales apoyan a los hogares más pobres?",
+   "en": "What welfare programs support the poorest households?"
+  },
+  {
+   "id": "319",
+   "domain": "Economy",
+   "subtopic": "Wealth & Inequality",
+   "text": "¿Qué grupos informales de ahorro usan las personas de bajos ingresos?",
+   "en": "What informal savings groups do low-income people use?"
+  },
+  {
+   "id": "320",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "¿Qué industrias impulsaron los períodos de crecimiento económico más rápido?",
+   "en": "What industries drove the fastest periods of economic growth?"
+  },
+  {
+   "id": "321",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "¿Qué planes de desarrollo han marcado la política económica nacional?",
+   "en": "What development plans have shaped national economic policy?"
+  },
+  {
+   "id": "322",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "¿Qué proyectos de infraestructura simbolizan la modernización económica?",
+   "en": "What infrastructure projects symbolize economic modernization?"
+  },
+  {
+   "id": "323",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "¿Qué zonas económicas especiales han atraído inversión extranjera?",
+   "en": "What special economic zones have attracted foreign investment?"
+  },
+  {
+   "id": "324",
+   "domain": "Economy",
+   "subtopic": "Economic Growth & Development",
+   "text": "¿Qué acontecimientos históricos desencadenaron grandes booms económicos?",
+   "en": "What historical events triggered major economic booms?"
+  },
+  {
+   "id": "325",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "¿Qué productos culturales se exportan con más éxito?",
+   "en": "What cultural products are exported abroad most successfully?"
+  },
+  {
+   "id": "326",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "¿Qué cadenas extranjeras de comida rápida han adaptado sus menús locales?",
+   "en": "What foreign fast-food chains have adapted their local menus?"
+  },
+  {
+   "id": "327",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "¿Qué artesanías tradicionales se venden principalmente a los turistas?",
+   "en": "What traditional crafts are sold mainly to tourists?"
+  },
+  {
+   "id": "328",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "¿Qué marcas extranjeras se consideran símbolos de estatus?",
+   "en": "What foreign brands are considered status symbols?"
+  },
+  {
+   "id": "329",
+   "domain": "Economy",
+   "subtopic": "Globalization & Cultural Economy",
+   "text": "¿Qué marcas locales se han expandido a mercados internacionales?",
+   "en": "What local brands have expanded into international markets?"
+  }
+ ]
+}

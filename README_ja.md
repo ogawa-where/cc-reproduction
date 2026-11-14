@@ -42,7 +42,7 @@ Welcome to Claude Code v2.1.310
 > 再現の一覧を見せて
 
 ● Glob(**/README.md)
-  ⎿  Found 6 studies
+  ⎿  Found 7 studies
 
 ● これまでの再現です（OK: 報告された現象が再現、Done: 実験は完了したが現行の
   Claude Code では現象が出ない。理由は README）。
@@ -74,6 +74,12 @@ Welcome to Claude Code v2.1.310
   │            │ <a href="https://arxiv.org/abs/2610.34654">Reduces Sycophantic Revisions</a>       │                    │        │
   │            │ <a href="https://arxiv.org/abs/2610.34654">in LLM Agents</a>                       │                    │        │
   │            │ (2026-10-26)                        │                    │        │
+  ├────────────┼─────────────────────────────────────┼────────────────────┼────────┤
+  │ 2026-11-12 │ [FPC26] <a href="https://arxiv.org/abs/2604.21751">Why are all LLMs Obsessed</a>   │ <a href="./20261112_FPC26/">20261112_FPC26/</a>    │ OK     │
+  │            │ <a href="https://arxiv.org/abs/2604.21751">with Japanese Culture? On the</a>       │                    │        │
+  │            │ <a href="https://arxiv.org/abs/2604.21751">Hidden Cultural and Regional</a>        │                    │        │
+  │            │ <a href="https://arxiv.org/abs/2604.21751">Biases of LLMs</a>                      │                    │        │
+  │            │ (2026-04-23)                        │                    │        │
   └────────────┴─────────────────────────────────────┴────────────────────┴────────┘
 
 > 拡張研究の一覧も

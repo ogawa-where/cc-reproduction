@@ -1,0 +1,330 @@
+{"id": "000", "lang": "sw", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "001", "lang": "sw", "domain": "Beliefs", "names": ["Saudi Arabia"], "codes": ["SA"], "unmapped": [], "primary": "SA"}
+{"id": "002", "lang": "sw", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "003", "lang": "sw", "domain": "Beliefs", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "004", "lang": "sw", "domain": "Beliefs", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "005", "lang": "sw", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "006", "lang": "sw", "domain": "Beliefs", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "007", "lang": "sw", "domain": "Beliefs", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "008", "lang": "sw", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "009", "lang": "sw", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "010", "lang": "sw", "domain": "Beliefs", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "011", "lang": "sw", "domain": "Beliefs", "names": ["Japan", "China"], "codes": ["CN", "JP"], "unmapped": [], "primary": null}
+{"id": "012", "lang": "sw", "domain": "Beliefs", "names": ["China", "United States"], "codes": ["CN", "US"], "unmapped": [], "primary": null}
+{"id": "013", "lang": "sw", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "014", "lang": "sw", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "030", "lang": "sw", "domain": "Social", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "031", "lang": "sw", "domain": "Social", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "032", "lang": "sw", "domain": "Social", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "033", "lang": "sw", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "034", "lang": "sw", "domain": "Social", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "035", "lang": "sw", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "036", "lang": "sw", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "037", "lang": "sw", "domain": "Social", "names": ["Tanzania", "Kenya", "Uganda"], "codes": ["KE", "TZ", "UG"], "unmapped": [], "primary": null}
+{"id": "038", "lang": "sw", "domain": "Social", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "039", "lang": "sw", "domain": "Social", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "040", "lang": "sw", "domain": "Social", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "041", "lang": "sw", "domain": "Social", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "042", "lang": "sw", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "043", "lang": "sw", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "044", "lang": "sw", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "015", "lang": "sw", "domain": "Beliefs", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "016", "lang": "sw", "domain": "Beliefs", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "017", "lang": "sw", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "018", "lang": "sw", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "019", "lang": "sw", "domain": "Beliefs", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "020", "lang": "sw", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "021", "lang": "sw", "domain": "Beliefs", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "022", "lang": "sw", "domain": "Beliefs", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "023", "lang": "sw", "domain": "Beliefs", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "024", "lang": "sw", "domain": "Beliefs", "names": ["Greece"], "codes": ["GR"], "unmapped": [], "primary": "GR"}
+{"id": "025", "lang": "sw", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "026", "lang": "sw", "domain": "Social", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "027", "lang": "sw", "domain": "Social", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "028", "lang": "sw", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "029", "lang": "sw", "domain": "Social", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "045", "lang": "sw", "domain": "Social", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "046", "lang": "sw", "domain": "Social", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "047", "lang": "sw", "domain": "Social", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "048", "lang": "sw", "domain": "Social", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "049", "lang": "sw", "domain": "Social", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "050", "lang": "sw", "domain": "Education", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "051", "lang": "sw", "domain": "Education", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "052", "lang": "sw", "domain": "Education", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "053", "lang": "sw", "domain": "Education", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "054", "lang": "sw", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "055", "lang": "sw", "domain": "Education", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "056", "lang": "sw", "domain": "Education", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "057", "lang": "sw", "domain": "Education", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "058", "lang": "sw", "domain": "Education", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "059", "lang": "sw", "domain": "Education", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "060", "lang": "sw", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "061", "lang": "sw", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "062", "lang": "sw", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "063", "lang": "sw", "domain": "Education", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "064", "lang": "sw", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "065", "lang": "sw", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "066", "lang": "sw", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "067", "lang": "sw", "domain": "Education", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "068", "lang": "sw", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "069", "lang": "sw", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "070", "lang": "sw", "domain": "Education", "names": ["India"], "codes": ["IN"], "unmapped": [], "primary": "IN"}
+{"id": "071", "lang": "sw", "domain": "Education", "names": ["France", "Greece"], "codes": ["FR", "GR"], "unmapped": [], "primary": "FR"}
+{"id": "072", "lang": "sw", "domain": "Education", "names": ["Tanzania", "Kenya", "United Kingdom"], "codes": ["GB", "KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "073", "lang": "sw", "domain": "Education", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "074", "lang": "sw", "domain": "Education", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "135", "lang": "sw", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "136", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "137", "lang": "sw", "domain": "Food", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "138", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "139", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "140", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "141", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "142", "lang": "sw", "domain": "Food", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "143", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "144", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "145", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "146", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "147", "lang": "sw", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "148", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "149", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "120", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "121", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "122", "lang": "sw", "domain": "Food", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "123", "lang": "sw", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "124", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "125", "lang": "sw", "domain": "Food", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "126", "lang": "sw", "domain": "Food", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "127", "lang": "sw", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "128", "lang": "sw", "domain": "Food", "names": ["Japan", "Turkey"], "codes": ["JP", "TR"], "unmapped": [], "primary": null}
+{"id": "129", "lang": "sw", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "130", "lang": "sw", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "131", "lang": "sw", "domain": "Food", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "132", "lang": "sw", "domain": "Food", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "133", "lang": "sw", "domain": "Food", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "134", "lang": "sw", "domain": "Food", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "090", "lang": "sw", "domain": "Arts", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "091", "lang": "sw", "domain": "Arts", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "092", "lang": "sw", "domain": "Arts", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "093", "lang": "sw", "domain": "Arts", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "094", "lang": "sw", "domain": "Arts", "names": ["Mali", "Senegal", "Guinea"], "codes": ["GN", "ML", "SN"], "unmapped": [], "primary": null}
+{"id": "095", "lang": "sw", "domain": "Arts", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "096", "lang": "sw", "domain": "Arts", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "097", "lang": "sw", "domain": "Arts", "names": ["United Kingdom", "Greece", "France", "Norway", "Russia"], "codes": ["FR", "GB", "GR", "NO", "RU"], "unmapped": [], "primary": null}
+{"id": "098", "lang": "sw", "domain": "Arts", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "099", "lang": "sw", "domain": "Arts", "names": ["Indonesia"], "codes": ["ID"], "unmapped": [], "primary": "ID"}
+{"id": "100", "lang": "sw", "domain": "Arts", "names": ["Egypt"], "codes": ["EG"], "unmapped": [], "primary": "EG"}
+{"id": "101", "lang": "sw", "domain": "Arts", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "102", "lang": "sw", "domain": "Arts", "names": ["France", "Germany", "Italy", "Canada", "United States"], "codes": ["CA", "DE", "FR", "IT", "US"], "unmapped": [], "primary": null}
+{"id": "103", "lang": "sw", "domain": "Arts", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "104", "lang": "sw", "domain": "Arts", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "150", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "151", "lang": "sw", "domain": "Geography", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "152", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "153", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "154", "lang": "sw", "domain": "Geography", "names": ["Japan"], "codes": ["JP"], "unmapped": [], "primary": "JP"}
+{"id": "155", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "156", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "157", "lang": "sw", "domain": "Geography", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "158", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "159", "lang": "sw", "domain": "Geography", "names": ["Iran"], "codes": ["IR"], "unmapped": [], "primary": "IR"}
+{"id": "160", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "161", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "162", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "163", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "164", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "075", "lang": "sw", "domain": "Arts", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "076", "lang": "sw", "domain": "Arts", "names": ["South Africa"], "codes": ["ZA"], "unmapped": [], "primary": "ZA"}
+{"id": "077", "lang": "sw", "domain": "Arts", "names": ["Tanzania", "Kenya", "Congo"], "codes": ["CG", "KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "078", "lang": "sw", "domain": "Arts", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "079", "lang": "sw", "domain": "Arts", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "080", "lang": "sw", "domain": "Arts", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "081", "lang": "sw", "domain": "Arts", "names": ["Ghana"], "codes": ["GH"], "unmapped": [], "primary": "GH"}
+{"id": "082", "lang": "sw", "domain": "Arts", "names": ["Tanzania", "Kenya", "South Africa"], "codes": ["KE", "TZ", "ZA"], "unmapped": [], "primary": null}
+{"id": "083", "lang": "sw", "domain": "Arts", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "084", "lang": "sw", "domain": "Arts", "names": ["Japan"], "codes": ["JP"], "unmapped": [], "primary": null}
+{"id": "085", "lang": "sw", "domain": "Arts", "names": ["Japan"], "codes": ["JP"], "unmapped": [], "primary": "JP"}
+{"id": "086", "lang": "sw", "domain": "Arts", "names": ["Italy", "Netherlands", "Spain", "France"], "codes": ["ES", "FR", "IT", "NL"], "unmapped": [], "primary": null}
+{"id": "087", "lang": "sw", "domain": "Arts", "names": ["France", "United States", "Norway", "Italy", "Spain"], "codes": ["ES", "FR", "IT", "NO", "US"], "unmapped": [], "primary": "FR"}
+{"id": "088", "lang": "sw", "domain": "Arts", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "089", "lang": "sw", "domain": "Arts", "names": ["France"], "codes": ["FR"], "unmapped": [], "primary": "FR"}
+{"id": "105", "lang": "sw", "domain": "Arts", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "106", "lang": "sw", "domain": "Arts", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "107", "lang": "sw", "domain": "Arts", "names": ["Nigeria"], "codes": ["NG"], "unmapped": [], "primary": "NG"}
+{"id": "108", "lang": "sw", "domain": "Arts", "names": ["Tanzania", "Mozambique"], "codes": ["MZ", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "109", "lang": "sw", "domain": "Arts", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "110", "lang": "sw", "domain": "Arts", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "111", "lang": "sw", "domain": "Arts", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "112", "lang": "sw", "domain": "Arts", "names": ["Ghana", "Samoa", "New Zealand"], "codes": ["GH", "NZ", "WS"], "unmapped": [], "primary": null}
+{"id": "113", "lang": "sw", "domain": "Arts", "names": ["Kenya", "Tanzania", "Myanmar", "Thailand", "India"], "codes": ["IN", "KE", "MM", "TH", "TZ"], "unmapped": [], "primary": null}
+{"id": "114", "lang": "sw", "domain": "Arts", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "115", "lang": "sw", "domain": "Arts", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "116", "lang": "sw", "domain": "Arts", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "117", "lang": "sw", "domain": "Arts", "names": ["Tanzania", "Oman"], "codes": ["OM", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "118", "lang": "sw", "domain": "Arts", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "119", "lang": "sw", "domain": "Arts", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "180", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "181", "lang": "sw", "domain": "Geography", "names": ["Iran"], "codes": ["IR"], "unmapped": [], "primary": "IR"}
+{"id": "182", "lang": "sw", "domain": "Geography", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "183", "lang": "sw", "domain": "Geography", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "184", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "185", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "186", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "187", "lang": "sw", "domain": "Politics", "names": ["United Kingdom"], "codes": ["GB"], "unmapped": [], "primary": "GB"}
+{"id": "188", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "189", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "190", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "191", "lang": "sw", "domain": "Politics", "names": ["United States", "Germany", "South Africa"], "codes": ["DE", "US", "ZA"], "unmapped": [], "primary": null}
+{"id": "192", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "193", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "194", "lang": "sw", "domain": "Politics", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "225", "lang": "sw", "domain": "Health", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "226", "lang": "sw", "domain": "Health", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "227", "lang": "sw", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "228", "lang": "sw", "domain": "Health", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "229", "lang": "sw", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "230", "lang": "sw", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "231", "lang": "sw", "domain": "Health", "names": ["Finland"], "codes": ["FI"], "unmapped": [], "primary": "FI"}
+{"id": "232", "lang": "sw", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "233", "lang": "sw", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "234", "lang": "sw", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "235", "lang": "sw", "domain": "Health", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "236", "lang": "sw", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "237", "lang": "sw", "domain": "Health", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "238", "lang": "sw", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "239", "lang": "sw", "domain": "Health", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "210", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "211", "lang": "sw", "domain": "Politics", "names": ["India"], "codes": ["IN"], "unmapped": [], "primary": "IN"}
+{"id": "212", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "213", "lang": "sw", "domain": "Politics", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "214", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "215", "lang": "sw", "domain": "Politics", "names": ["Tunisia", "Egypt", "United States", "Kenya"], "codes": ["EG", "KE", "TN", "US"], "unmapped": [], "primary": null}
+{"id": "216", "lang": "sw", "domain": "Politics", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "217", "lang": "sw", "domain": "Politics", "names": ["Tanzania", "Germany"], "codes": ["DE", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "218", "lang": "sw", "domain": "Politics", "names": ["China", "Belarus"], "codes": ["BY", "CN"], "unmapped": [], "primary": null}
+{"id": "219", "lang": "sw", "domain": "Politics", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "220", "lang": "sw", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "221", "lang": "sw", "domain": "Health", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "222", "lang": "sw", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "223", "lang": "sw", "domain": "Health", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "224", "lang": "sw", "domain": "Health", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "165", "lang": "sw", "domain": "Geography", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "166", "lang": "sw", "domain": "Geography", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "167", "lang": "sw", "domain": "Geography", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "168", "lang": "sw", "domain": "Geography", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "169", "lang": "sw", "domain": "Geography", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "170", "lang": "sw", "domain": "Geography", "names": ["France", "Spain", "United States", "Mexico", "Uganda"], "codes": ["ES", "FR", "MX", "UG", "US"], "unmapped": [], "primary": null}
+{"id": "171", "lang": "sw", "domain": "Geography", "names": ["Cyprus", "Greece", "Turkey"], "codes": ["CY", "GR", "TR"], "unmapped": [], "primary": "CY"}
+{"id": "172", "lang": "sw", "domain": "Geography", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "173", "lang": "sw", "domain": "Geography", "names": ["Kenya", "Tanzania", "United Kingdom", "Germany"], "codes": ["DE", "GB", "KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "174", "lang": "sw", "domain": "Geography", "names": ["Spain", "France"], "codes": ["ES", "FR"], "unmapped": [], "primary": null}
+{"id": "175", "lang": "sw", "domain": "Geography", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "176", "lang": "sw", "domain": "Geography", "names": ["Madagascar"], "codes": ["MG"], "unmapped": [], "primary": "MG"}
+{"id": "177", "lang": "sw", "domain": "Geography", "names": ["United Kingdom", "Kenya"], "codes": ["GB", "KE"], "unmapped": [], "primary": "GB"}
+{"id": "178", "lang": "sw", "domain": "Geography", "names": ["Ireland", "United States", "Canada", "United Kingdom", "Australia"], "codes": ["AU", "CA", "GB", "IE", "US"], "unmapped": [], "primary": "IE"}
+{"id": "179", "lang": "sw", "domain": "Geography", "names": ["United States", "Italy"], "codes": ["IT", "US"], "unmapped": [], "primary": "US"}
+{"id": "195", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "196", "lang": "sw", "domain": "Politics", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "197", "lang": "sw", "domain": "Politics", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "198", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "199", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "200", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "201", "lang": "sw", "domain": "Politics", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "202", "lang": "sw", "domain": "Politics", "names": ["Kenya", "United States", "United Kingdom"], "codes": ["GB", "KE", "US"], "unmapped": [], "primary": "KE"}
+{"id": "203", "lang": "sw", "domain": "Politics", "names": ["Eritrea", "Sweden"], "codes": ["ER", "SE"], "unmapped": [], "primary": "ER"}
+{"id": "204", "lang": "sw", "domain": "Politics", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "205", "lang": "sw", "domain": "Politics", "names": ["Tanzania", "Germany", "United Kingdom"], "codes": ["DE", "GB", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "206", "lang": "sw", "domain": "Politics", "names": ["Kenya", "United Kingdom"], "codes": ["GB", "KE"], "unmapped": [], "primary": "KE"}
+{"id": "207", "lang": "sw", "domain": "Politics", "names": ["Tanzania", "India"], "codes": ["IN", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "208", "lang": "sw", "domain": "Politics", "names": ["South Africa", "Belgium"], "codes": ["BE", "ZA"], "unmapped": [], "primary": null}
+{"id": "209", "lang": "sw", "domain": "Politics", "names": ["Kenya", "United Kingdom"], "codes": ["GB", "KE"], "unmapped": [], "primary": "KE"}
+{"id": "240", "lang": "sw", "domain": "Media", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "241", "lang": "sw", "domain": "Media", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "242", "lang": "sw", "domain": "Media", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "243", "lang": "sw", "domain": "Media", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "244", "lang": "sw", "domain": "Media", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "245", "lang": "sw", "domain": "Media", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "246", "lang": "sw", "domain": "Media", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "247", "lang": "sw", "domain": "Media", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "248", "lang": "sw", "domain": "Media", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": null}
+{"id": "249", "lang": "sw", "domain": "Media", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "250", "lang": "sw", "domain": "Media", "names": ["United States", "Japan", "Netherlands", "France", "China"], "codes": ["CN", "FR", "JP", "NL", "US"], "unmapped": [], "primary": null}
+{"id": "251", "lang": "sw", "domain": "Media", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "252", "lang": "sw", "domain": "Media", "names": ["France", "United States", "Japan"], "codes": ["FR", "JP", "US"], "unmapped": [], "primary": null}
+{"id": "253", "lang": "sw", "domain": "Media", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "254", "lang": "sw", "domain": "Media", "names": ["Japan", "United States", "France", "China"], "codes": ["CN", "FR", "JP", "US"], "unmapped": [], "primary": null}
+{"id": "270", "lang": "sw", "domain": "History", "names": ["Tanzania", "United Kingdom"], "codes": ["GB", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "271", "lang": "sw", "domain": "History", "names": ["France"], "codes": ["FR"], "unmapped": [], "primary": "FR"}
+{"id": "272", "lang": "sw", "domain": "History", "names": ["France"], "codes": ["FR"], "unmapped": [], "primary": "FR"}
+{"id": "273", "lang": "sw", "domain": "History", "names": ["Tanzania", "Germany", "United Kingdom", "Uganda"], "codes": ["DE", "GB", "TZ", "UG"], "unmapped": [], "primary": "TZ"}
+{"id": "274", "lang": "sw", "domain": "History", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "275", "lang": "sw", "domain": "History", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "276", "lang": "sw", "domain": "History", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "277", "lang": "sw", "domain": "History", "names": ["Egypt", "France", "Poland", "United Kingdom", "United States"], "codes": ["EG", "FR", "GB", "PL", "US"], "unmapped": [], "primary": null}
+{"id": "278", "lang": "sw", "domain": "History", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "279", "lang": "sw", "domain": "History", "names": ["Tanzania", "Germany"], "codes": ["DE", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "280", "lang": "sw", "domain": "History", "names": ["Tanzania", "United Kingdom"], "codes": ["GB", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "281", "lang": "sw", "domain": "History", "names": ["Japan"], "codes": ["JP"], "unmapped": [], "primary": "JP"}
+{"id": "282", "lang": "sw", "domain": "History", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "283", "lang": "sw", "domain": "History", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "284", "lang": "sw", "domain": "History", "names": ["Poland"], "codes": ["PL"], "unmapped": [], "primary": "PL"}
+{"id": "300", "lang": "sw", "domain": "Economy", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "301", "lang": "sw", "domain": "Economy", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "302", "lang": "sw", "domain": "Economy", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "303", "lang": "sw", "domain": "Economy", "names": ["Ghana"], "codes": ["GH"], "unmapped": [], "primary": "GH"}
+{"id": "304", "lang": "sw", "domain": "Economy", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "305", "lang": "sw", "domain": "Economy", "names": ["Papua New Guinea"], "codes": ["PG"], "unmapped": [], "primary": "PG"}
+{"id": "306", "lang": "sw", "domain": "Economy", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "307", "lang": "sw", "domain": "Economy", "names": ["Tanzania", "Mozambique", "Zimbabwe", "China", "India"], "codes": ["CN", "IN", "MZ", "TZ", "ZW"], "unmapped": [], "primary": "TZ"}
+{"id": "308", "lang": "sw", "domain": "Economy", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "309", "lang": "sw", "domain": "Economy", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "310", "lang": "sw", "domain": "Economy", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "311", "lang": "sw", "domain": "Economy", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "312", "lang": "sw", "domain": "Economy", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "313", "lang": "sw", "domain": "Economy", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "314", "lang": "sw", "domain": "Economy", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "285", "lang": "sw", "domain": "History", "names": ["Tanzania", "Germany"], "codes": ["DE", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "286", "lang": "sw", "domain": "History", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "287", "lang": "sw", "domain": "History", "names": ["Tanzania", "Germany"], "codes": ["DE", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "288", "lang": "sw", "domain": "History", "names": ["South Africa"], "codes": ["ZA"], "unmapped": [], "primary": "ZA"}
+{"id": "289", "lang": "sw", "domain": "History", "names": ["Tanzania", "Germany", "United Kingdom"], "codes": ["DE", "GB", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "290", "lang": "sw", "domain": "History", "names": ["Ethiopia", "Italy"], "codes": ["ET", "IT"], "unmapped": [], "primary": "ET"}
+{"id": "291", "lang": "sw", "domain": "History", "names": ["Tanzania", "Germany"], "codes": ["DE", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "292", "lang": "sw", "domain": "History", "names": ["Tanzania", "United Kingdom"], "codes": ["GB", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "293", "lang": "sw", "domain": "History", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "294", "lang": "sw", "domain": "History", "names": ["United States", "Soviet Union", "Germany", "Tanzania"], "codes": ["DE", "TZ", "US"], "unmapped": ["Soviet Union"], "primary": null}
+{"id": "295", "lang": "sw", "domain": "History", "names": ["France"], "codes": ["FR"], "unmapped": [], "primary": "FR"}
+{"id": "296", "lang": "sw", "domain": "History", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "297", "lang": "sw", "domain": "History", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "298", "lang": "sw", "domain": "History", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "299", "lang": "sw", "domain": "History", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "255", "lang": "sw", "domain": "Media", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "256", "lang": "sw", "domain": "Media", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "257", "lang": "sw", "domain": "Media", "names": ["Tanzania", "Kenya", "Germany"], "codes": ["DE", "KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "258", "lang": "sw", "domain": "Media", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "259", "lang": "sw", "domain": "Media", "names": ["United Kingdom", "United States", "Poland", "Afghanistan", "Syria"], "codes": ["AF", "GB", "PL", "SY", "US"], "unmapped": [], "primary": null}
+{"id": "260", "lang": "sw", "domain": "Media", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "261", "lang": "sw", "domain": "Media", "names": ["Kenya"], "codes": ["KE"], "unmapped": [], "primary": "KE"}
+{"id": "262", "lang": "sw", "domain": "Media", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "263", "lang": "sw", "domain": "Media", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "264", "lang": "sw", "domain": "Media", "names": ["Ghana", "United States", "United Kingdom"], "codes": ["GB", "GH", "US"], "unmapped": [], "primary": null}
+{"id": "265", "lang": "sw", "domain": "Media", "names": ["Japan", "United States", "France", "Poland"], "codes": ["FR", "JP", "PL", "US"], "unmapped": [], "primary": null}
+{"id": "266", "lang": "sw", "domain": "Media", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "267", "lang": "sw", "domain": "Media", "names": [], "codes": [], "unmapped": [], "primary": null}
+{"id": "268", "lang": "sw", "domain": "Media", "names": ["Germany", "Japan", "United States"], "codes": ["DE", "JP", "US"], "unmapped": [], "primary": null}
+{"id": "269", "lang": "sw", "domain": "Media", "names": ["Korea"], "codes": ["KR"], "unmapped": [], "primary": null}
+{"id": "315", "lang": "sw", "domain": "Economy", "names": ["Tanzania", "United Arab Emirates"], "codes": ["AE", "TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "316", "lang": "sw", "domain": "Economy", "names": ["Kenya", "Tanzania"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "317", "lang": "sw", "domain": "Economy", "names": ["United States"], "codes": ["US"], "unmapped": [], "primary": "US"}
+{"id": "318", "lang": "sw", "domain": "Economy", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "319", "lang": "sw", "domain": "Economy", "names": ["Tanzania", "Kenya", "Ghana", "Nigeria", "South Africa"], "codes": ["GH", "KE", "NG", "TZ", "ZA"], "unmapped": [], "primary": null}
+{"id": "320", "lang": "sw", "domain": "Economy", "names": ["South Korea"], "codes": ["KR"], "unmapped": [], "primary": "KR"}
+{"id": "321", "lang": "sw", "domain": "Economy", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "322", "lang": "sw", "domain": "Economy", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "323", "lang": "sw", "domain": "Economy", "names": ["Egypt", "China"], "codes": ["CN", "EG"], "unmapped": [], "primary": "EG"}
+{"id": "324", "lang": "sw", "domain": "Economy", "names": ["Japan", "United States"], "codes": ["JP", "US"], "unmapped": [], "primary": "JP"}
+{"id": "325", "lang": "sw", "domain": "Economy", "names": ["Morocco", "United States"], "codes": ["MA", "US"], "unmapped": [], "primary": "MA"}
+{"id": "326", "lang": "sw", "domain": "Economy", "names": ["India"], "codes": ["IN"], "unmapped": [], "primary": "IN"}
+{"id": "327", "lang": "sw", "domain": "Economy", "names": ["Tanzania"], "codes": ["TZ"], "unmapped": [], "primary": "TZ"}
+{"id": "328", "lang": "sw", "domain": "Economy", "names": ["Tanzania", "Kenya"], "codes": ["KE", "TZ"], "unmapped": [], "primary": null}
+{"id": "329", "lang": "sw", "domain": "Economy", "names": ["Kenya", "Tanzania", "Mozambique", "Democratic Republic of the Congo", "Ethiopia"], "codes": ["CD", "ET", "KE", "MZ", "TZ"], "unmapped": [], "primary": "KE"}

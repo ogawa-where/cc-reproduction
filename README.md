@@ -42,7 +42,7 @@ Welcome to Claude Code v2.1.310
 > Show me the reproductions
 
 ● Glob(**/README.md)
-  ⎿  Found 6 studies
+  ⎿  Found 7 studies
 
 ● Reproductions so far (OK: the reported effect reproduced; Done: the experiment ran,
   but the effect is absent in current Claude Code, see the README):
@@ -74,6 +74,12 @@ Welcome to Claude Code v2.1.310
   │            │ <a href="https://arxiv.org/abs/2610.34654">Reduces Sycophantic Revisions</a>       │                    │        │
   │            │ <a href="https://arxiv.org/abs/2610.34654">in LLM Agents</a>                       │                    │        │
   │            │ (2026-10-26)                        │                    │        │
+  ├────────────┼─────────────────────────────────────┼────────────────────┼────────┤
+  │ 2026-11-12 │ [FPC26] <a href="https://arxiv.org/abs/2604.21751">Why are all LLMs Obsessed</a>   │ <a href="./20261112_FPC26/">20261112_FPC26/</a>    │ OK     │
+  │            │ <a href="https://arxiv.org/abs/2604.21751">with Japanese Culture? On the</a>       │                    │        │
+  │            │ <a href="https://arxiv.org/abs/2604.21751">Hidden Cultural and Regional</a>        │                    │        │
+  │            │ <a href="https://arxiv.org/abs/2604.21751">Biases of LLMs</a>                      │                    │        │
+  │            │ (2026-04-23)                        │                    │        │
   └────────────┴─────────────────────────────────────┴────────────────────┴────────┘
 
 > And the extension studies
