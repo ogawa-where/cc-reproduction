@@ -1,0 +1,4 @@
+data/
+prompts/
+runs-*/
+__pycache__/
