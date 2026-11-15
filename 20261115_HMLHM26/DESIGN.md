@@ -29,6 +29,11 @@ Hitzig, Massenkoff, Lyubich, Heller, McCrory, "Agentic coding and persistent ret
   報告書も分類器の検証に SWE-chat の 198 セッションを使っている。
 - `sessions.parquet` のエージェントが Claude Code で、ユーザーのプロンプトが 1 件以上あるセッションに絞る
   （報告書はヘッドレス実行を除いている）。
+- 中身（2026-11-15 に `sessions.parquet` で確認）: Claude Code のセッションは 12,418 件（プロンプト 1 件以上は 12,335 件）。
+  利用者 503 人、リポジトリ 599 件、期間は 2026-01-15〜2026-09-04。報告書（2025-10〜2026-04）とは 3 か月重なる。
+  利用者の偏りが大きい（最多の 1 人で 531 件、上位 10 人で 19.5%）。標準誤差は利用者でクラスタする。
+- `sessions` には SWE-chat 独自のラベル（`user_persona`: Expert Nitpicker、Vague Requester など。`session_success`: 0〜100）がある。
+  本再現の専門性・成功のラベルとの対応を副次的に見る。
 - データ本体はリポジトリに入れない。`data/` に置き `.gitignore` で除く。コミットするのはセッション ID、ラベル、集計だけ。
 
 ## 分類器
@@ -67,6 +72,13 @@ Hitzig, Massenkoff, Lyubich, Heller, McCrory, "Agentic coding and persistent ret
 ## モデル別の集計
 
 `sessions.model` で応答モデルを分け、件数が足りるモデル（目安 200 件以上）ごとに主張 1、2 の傾きを出す。
+`[1m]` や `us.anthropic.` などの表記揺れはまとめる。
+
+- 件数（Claude Code）: Opus 4.6 850、Opus 4.8 843、Opus 4.7 645、Opus 5 517、Sonnet 5 436、Sonnet 4.6 394、Fable 5 330。
+  Haiku 4.5、Opus 4.5、Fable 5.1 は 50 件未満。
+- 66%（8,244 件）は `model` が空。2026-02 までは全件が空で、空の割合は月とともに下がる（2026-08 で 10%）。
+  空のセッションは `conversations` の記録からモデルを補えるか確かめる。
+- 最新の 5.5 系はデータ期間の後に出たので含まれない。比べられるのは 4.6 から 5 系まで。
 モデルを選ぶのは利用者なので、利用者の違いが混ざる。統制した比較は拡張研究（`HMLHM26-ext`）で行う。
 
 ## 規模と進め方
