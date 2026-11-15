@@ -22,6 +22,7 @@
 - コミットは ogawa-where の名義で行い、Claude の署名、Co-Authored-By、セッション URL は入れない。
 - メッセージは日本語で、`feat:`、`fix:`、`docs:`、`data:`、`chore:` の prefix を付け、研究には `[KEY]` を添える（例 `feat: [B26] 2ターン実験ハーネスを追加`）。1 コミット 1 変更で細かく分ける。force push や amend はしない。
 - PR は日本語の題名と本文（概要、結論、内容）。Claude の署名やフッターは入れない。自動で付いた場合は本文を更新して消す。
+- ブランチ名は `<prefix>/<KEY>-<作業内容>`。prefix はコミットと同じものを使い、作業内容は英小文字とハイフンで短く書く（例 `docs/HMLHM26-design`、`feat/B26-two-turn-harness`）。研究に属さない作業は `<prefix>/<作業内容>`（例 `chore/readme-tables-url`）。
 - マージ後は作業ブランチが自動削除されるので、`origin/main` から作り直してから次の作業を始める。
 
 ## 実験の注意点
