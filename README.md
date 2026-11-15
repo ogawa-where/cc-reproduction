@@ -42,7 +42,7 @@ Welcome to Claude Code v2.1.310
 > Show me the reproductions
 
 ● Glob(**/README.md)
-  ⎿  Found 7 studies
+  ⎿  Found 8 studies
 
 ● Reproductions so far (OK: the reported effect reproduced; Done: the experiment ran,
   but the effect is absent in current Claude Code, see the README):
@@ -87,16 +87,22 @@ Welcome to Claude Code v2.1.310
 ● Extension studies start from a reproduced result and ask a question the paper left
   open; what they found is summarised under the table:
 
-  ┌────────────┬─────────────────────────────┬──────────┬────────────────────────┐
-  │ Date       │ Question                    │ Based on │ Directory              │
-  ├────────────┼─────────────────────────────┼──────────┼────────────────────────┤
-  │ 2026-11-02 │ Do real images steer Claude │ TWWWKL26 │ <a href="./20261102_TWWWKL26-ext/">20261102_TWWWKL26-ext/</a> │
-  │            │ Code silently, and does one │          │                        │
-  │            │ sentence prevent it?        │          │                        │
-  └────────────┴─────────────────────────────┴──────────┴────────────────────────┘
+  ┌────────────┬────────────────────────────────┬──────────┬────────────────────────┐
+  │ Date       │ Question                       │ Based on │ Directory              │
+  ├────────────┼────────────────────────────────┼──────────┼────────────────────────┤
+  │ 2026-11-02 │ Do real images steer Claude    │ TWWWKL26 │ <a href="./20261102_TWWWKL26-ext/">20261102_TWWWKL26-ext/</a> │
+  │            │ Code silently, and does one    │          │                        │
+  │            │ sentence prevent it?           │          │                        │
+  ├────────────┼────────────────────────────────┼──────────┼────────────────────────┤
+  │ 2026-11-12 │ Which Claude models pick Japan │ FPC26    │ <a href="./20261112_FPC26-ext/">20261112_FPC26-ext/</a>    │
+  │            │ most for open cultural         │          │                        │
+  │            │ questions?                     │          │                        │
+  └────────────┴────────────────────────────────┴──────────┴────────────────────────┘
 
 ● TWWWKL26-ext: no silent steering. It happens only when the request lets the image
   decide, and one sentence in CLAUDE.md prevents it. Details in its README.
+● FPC26-ext: all 11 Claude models put Japan first in English. Opus 4.7 picks it most
+  (16%), Haiku 5.5 least (7%); newer Sonnet models pick it more often.
 
 ● Each directory's README covers the claims, the setup, what was prepared, the
   procedure, the results and a discussion.

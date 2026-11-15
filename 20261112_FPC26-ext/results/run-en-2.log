@@ -1,0 +1,34 @@
+[04:14:21] model=claude-opus-4-6: 279 calls -> ../20261112_FPC26-ext/results/claude-opus-4-6
+[04:15:48] 100/279 done, 0 errors
+[04:17:27] 200/279 done, 0 errors
+[04:18:41] finished 279 calls, 0 errors
+22 judge calls
+done, 0 failed batches
+[04:19:21] model=claude-opus-4-5: 330 calls -> ../20261112_FPC26-ext/results/claude-opus-4-5
+[04:20:36] 100/330 done, 0 errors
+[04:21:47] 200/330 done, 0 errors
+[04:23:02] 300/330 done, 0 errors
+[04:23:25] finished 330 calls, 0 errors
+22 judge calls
+done, 0 failed batches
+[04:24:05] model=claude-sonnet-4-6: 330 calls -> ../20261112_FPC26-ext/results/claude-sonnet-4-6
+[04:25:31] 100/330 done, 0 errors
+[04:26:51] 200/330 done, 0 errors
+[04:28:23] 300/330 done, 0 errors
+[04:28:50] finished 330 calls, 0 errors
+22 judge calls
+done, 0 failed batches
+[04:29:35] model=claude-sonnet-4-5: 330 calls -> ../20261112_FPC26-ext/results/claude-sonnet-4-5
+[04:31:14] 100/330 done, 0 errors
+[04:32:46] 200/330 done, 0 errors
+[04:34:28] 300/330 done, 0 errors
+[04:34:55] finished 330 calls, 0 errors
+22 judge calls
+done, 0 failed batches
+[04:35:34] model=claude-haiku-4-5: 330 calls -> ../20261112_FPC26-ext/results/claude-haiku-4-5
+[04:36:37] 100/330 done, 0 errors
+[04:37:34] 200/330 done, 0 errors
+[04:38:36] 300/330 done, 0 errors
+[04:38:55] finished 330 calls, 0 errors
+22 judge calls
+done, 0 failed batches
